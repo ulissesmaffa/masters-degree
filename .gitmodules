@@ -1,0 +1,3 @@
+[submodule "husa"]
+	path = husa
+	url = https://github.com/ulissesmaffa/husa.git
