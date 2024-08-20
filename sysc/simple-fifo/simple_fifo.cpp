@@ -55,7 +55,7 @@ class read_if : virtual public sc_interface {
 /* Channel */
 class fifo : public sc_channel, public write_if, public read_if {
   public:
-    // 
+    // Construtor
     fifo(sc_module_name name) : sc_channel(name), num_elements(0), first(0) {}
     // Processes
     void write(char c) {
@@ -82,81 +82,92 @@ class fifo : public sc_channel, public write_if, public read_if {
     int num_available() { return num_elements;}
 
   private:
-    enum e { max = 10 };
-    char data[max];
-    int num_elements, first;
-    sc_event write_event, read_event;
+    //Definições e componentes da FIFO
+    enum e { max = 10 }; //tamanho máximo da FIFO
+    char data[max]; //buffer de dados
+    int num_elements, first; //rastreamento do número de elementos e o primeiro
+    sc_event write_event, read_event; //eventos usados para sincronização
 };
 
 /* Producer */
+/* Módulo que gera dados. Escreve na FIFO através de uma porta que 
+implementa a interface "write_if"*/
 class producer : public sc_module{
-   public:
-     sc_port<write_if> out;
+  public:
+    //Ports: interfaces de comunicação do módulo
+    sc_port<write_if> out;
 
-     SC_HAS_PROCESS(producer);
+    //Processes: ação executadas durante a simulação
+    SC_HAS_PROCESS(producer);
 
-     producer(sc_module_name name) : sc_module(name){
-       SC_THREAD(main);
-     }
+    void main(){
+      const char *str="Visit www.systemc.org and see what SystemC can do for you today!\n";
 
-     void main(){
-       const char *str =
-         "Visit www.systemc.org and see what SystemC can do for you today!\n";
+      while (*str)
+        out->write(*str++);
+    }
 
-       while (*str)
-         out->write(*str++);
-     }
+    //Constructor: inicializa o módulo e registra os processos
+    producer(sc_module_name name) : sc_module(name){
+      SC_THREAD(main);
+    }
 };
 
 /* Consumer */
+/* Módulo que consome dados*/
 class consumer : public sc_module{
   public:
+    //Ports
     sc_port<read_if> in;
 
+    //Processes
     SC_HAS_PROCESS(consumer);
 
+    void main(){
+      char c;
+      cout << endl << endl;
+
+      while (true) {
+        in->read(c);
+        cout << c << flush;
+
+        if (in->num_available() == 1)
+    cout << "<1>" << flush;
+        if (in->num_available() == 9)
+    cout << "<9>" << flush;
+      }
+    }
+
+    //Constructor
     consumer(sc_module_name name) : sc_module(name){
       SC_THREAD(main);
     }
-
-     void main(){
-       char c;
-       cout << endl << endl;
-
-       while (true) {
-         in->read(c);
-         cout << c << flush;
-
-         if (in->num_available() == 1)
-	   cout << "<1>" << flush;
-         if (in->num_available() == 9)
-	   cout << "<9>" << flush;
-       }
-     }
 };
 
 /* Top */
 class top : public sc_module {
-   public:
-     fifo *fifo_inst;
-     producer *prod_inst;
-     consumer *cons_inst;
+  public:
+    // Modules
+    fifo *fifo_inst;
+    producer *prod_inst;
+    consumer *cons_inst;
 
-     top(sc_module_name name) : sc_module(name)
-     {
-       fifo_inst = new fifo("Fifo1");
+    top(sc_module_name name) : sc_module(name){
+      // Cria instâncias
+      fifo_inst = new fifo("Fifo1");
+      prod_inst = new producer("Producer1");
+      cons_inst = new consumer("Consumer1");
 
-       prod_inst = new producer("Producer1");
-       prod_inst->out(*fifo_inst);
-
-       cons_inst = new consumer("Consumer1");
-       cons_inst->in(*fifo_inst);
-     }
+      // Conecta os módulos
+      prod_inst->out(*fifo_inst);      
+      cons_inst->in(*fifo_inst);
+    }
 };
 
 /* Main */
 int sc_main (int argc , char *argv[]) {
    top top1("Top1");
+   //Run the simulation
    sc_start();
    return 0;
 }
