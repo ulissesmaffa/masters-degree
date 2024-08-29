@@ -132,9 +132,9 @@ class consumer : public sc_module{
         cout << c << flush;
 
         if (in->num_available() == 1)
-    cout << "<1>" << flush;
+          cout << "<1>" << flush;
         if (in->num_available() == 9)
-    cout << "<9>" << flush;
+          cout << "<9>" << flush;
       }
     }
 

@@ -1,8 +1,7 @@
 #include "memory_channel.h"
 
-// Iniciar memória simulada
 memory_channel::memory_channel(sc_module_name name) : sc_module(name) {
-  std::fill(mem, mem+255, 0); //preenche mem com zeros
+  std::fill(mem, mem+255, 0);
 }
 
 
