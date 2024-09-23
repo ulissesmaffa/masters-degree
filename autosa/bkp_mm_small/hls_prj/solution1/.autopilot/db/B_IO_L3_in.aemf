@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1726169219709">
+  <ports id="1" name="fifo_B_B_IO_L3_in_serialize" type="PortType" originalName="fifo_B_in" coreName="FIFO_SRL" coreId="1885414944" bitwidth="512" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="fifo_B_B_IO_L2_in_0" type="PortType" originalName="fifo_B_local_out" coreName="FIFO_SRL" coreId="0" bitwidth="512" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="33" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="34" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="35" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="36" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="39" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="42" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="43" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="44" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="47" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="50" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@ports.1"/>
+  <edges id="51" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="52" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="53" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="54" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="136" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="137" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="138" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="139" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="140" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="141" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="142" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <blocks id="9" name="entry" type="BlockType">
+    <controlOutputObjs>for.inc</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="3" name="indvar_flatten56" coreId="3215140150" bitwidth="11" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="indvar_flatten56_write_ln353" lineNumber="353" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="1397508187" contextFuncName="B_IO_L3_in" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="353" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L3_in"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="br_ln353" lineNumber="353" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="2708953248" contextFuncName="B_IO_L3_in" opcode="br" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="353" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L3_in"/>
+      <controlInputObjs>for.inc</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/kernel_kernel.cpp">
+      <validLinenumbers>353</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="28" name="for.end29" type="BlockType">
+    <controlInputObjs>for.inc</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="_ln374" lineNumber="374" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="2707817040" contextFuncName="B_IO_L3_in" opcode="ret" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="374" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L3_in"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/kernel_kernel.cpp">
+      <validLinenumbers>374</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="79" pipe_depth="2" RegionName="VITIS_LOOP_353_1_VITIS_LOOP_355_3_VITIS_LOOP_358_4_VITIS_LOOP_360_5">
+    <basic_blocks id="14" name="for.inc" type="BlockType">
+      <controlInputObjs>entry</controlInputObjs>
+      <controlInputObjs>for.inc27</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.end29</controlOutputObjs>
+      <controlOutputObjs>for.inc27</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="10" name="indvar_flatten56_load" lineNumber="353" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="2709367104" contextFuncName="B_IO_L3_in" bitwidth="11" opcode="load" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="353" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L3_in"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="11" name="icmp_ln353" lineNumber="353" fileName="src/kernel_kernel.cpp" fileDirectory="../." rtlName="icmp_ln353_fu_78_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="B_IO_L3_in" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.73" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="353" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L3_in"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="add_ln353" lineNumber="353" fileName="src/kernel_kernel.cpp" fileDirectory="../." rtlName="add_ln353_fu_84_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="B_IO_L3_in" bitwidth="11" opcode="add" m_display="0" m_delay="0.73" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="353" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L3_in"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="br_ln353" lineNumber="353" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="2709731488" contextFuncName="B_IO_L3_in" opcode="br" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="353" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L3_in"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>for.inc27</controlInputObjs>
+        <controlInputObjs>for.end29</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="src/kernel_kernel.cpp">
+        <validLinenumbers>353</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="26" name="for.inc27" type="BlockType">
+      <controlInputObjs>for.inc</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.inc</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="fifo_B_B_IO_L3_in_serialize_read" lineNumber="367" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="B_IO_L3_in" bitwidth="512" opcode="read" nodeLabel="1.0" m_display="0" m_delay="1.41" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="367" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L3_in"/>
+        <dataInputObjs>fifo_B_B_IO_L3_in_serialize</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="fifo_B_B_IO_L2_in_0_write_ln369" lineNumber="369" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="B_IO_L3_in" opcode="write" nodeLabel="1.0" m_display="0" m_delay="1.41" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="369" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L3_in"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>fifo_B_B_IO_L2_in_0</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="indvar_flatten56_write_ln360" lineNumber="360" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="105" contextFuncName="B_IO_L3_in" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="360" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L3_in"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="br_ln360" lineNumber="360" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="2709156416" contextFuncName="B_IO_L3_in" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="360" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L3_in"/>
+        <controlInputObjs>for.inc</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="src/kernel_kernel.cpp">
+        <validLinenumbers>367</validLinenumbers>
+        <validLinenumbers>369</validLinenumbers>
+        <validLinenumbers>360</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <regnodes realName="indvar_flatten56_reg_95">
+    <nodeIds>3</nodeIds>
+  </regnodes>
+  <expressionNodes realName="add_ln353_fu_84">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln353_fu_78">
+    <nodeIds>11</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar_flatten56_fu_52">
+    <nodeIds>3</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="store_ln353_store_fu_70">
+    <nodeIds>7</nodeIds>
+  </ioNodes>
+  <ioNodes realName="fifo_B_B_IO_L3_in_serialize_read_read_fu_56">
+    <nodeIds>22</nodeIds>
+  </ioNodes>
+  <ioNodes realName="indvar_flatten56_load_load_fu_75">
+    <nodeIds>10</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln360_store_fu_90">
+    <nodeIds>24</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln369_write_fu_62">
+    <nodeIds>23</nodeIds>
+  </ioNodes>
+  <ioPorts name="fifo_B_B_IO_L2_in_0">
+    <contents name="write">
+      <nodeIds>23</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="fifo_B_B_IO_L3_in_serialize">
+    <contents name="read">
+      <nodeIds>22</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="3" stage="1" latency="1"/>
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="B_IO_L3_in" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1026" mMaxLatency="1026">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>9</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_353_1_VITIS_LOOP_355_3_VITIS_LOOP_358_4_VITIS_LOOP_360_5" mII="1" mDepth="2" mMinTripCount="1024" mMaxTripCount="1024" mMinLatency="1024" mMaxLatency="1024" mType="1">
+      <basicBlocks>14</basicBlocks>
+      <basicBlocks>26</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>28</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

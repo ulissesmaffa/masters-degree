@@ -1,0 +1,174 @@
+
+
+================================================================
+== Vitis HLS Report for 'C_drain_IO_L1_out_Pipeline_VITIS_LOOP_849_1_VITIS_s'
+================================================================
+* Date:           Thu Sep 12 16:27:02 2024
+
+* Version:        2023.1.1 (Build 3869133 on Jun 15 2023)
+* Project:        hls_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcu200-fsgd2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  3.067 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       67|       67|  0.335 us|  0.335 us|   67|   67|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                     |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |              Loop Name              |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_849_1_VITIS_LOOP_851_2  |       65|       65|         3|          1|          1|    64|       yes|
+        +-------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        0|       79|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        -|     -|        -|        -|    -|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        -|      119|    -|
+|Register             |        -|     -|       60|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        0|     0|       60|      198|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1440|  2280|   788160|   394080|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4320|  6840|  2364480|  1182240|  960|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |add_ln849_2_fu_193_p2             |         +|   0|  0|  14|           7|           1|
+    |add_ln849_fu_210_p2               |         +|   0|  0|  12|           4|           1|
+    |add_ln851_fu_267_p2               |         +|   0|  0|  12|           4|           1|
+    |ap_block_pp0_stage0_11001         |       and|   0|  0|   2|           1|           1|
+    |ap_block_state2_pp0_stage0_iter1  |       and|   0|  0|   2|           1|           1|
+    |icmp_ln849_fu_187_p2              |      icmp|   0|  0|  15|           7|           8|
+    |icmp_ln851_fu_216_p2              |      icmp|   0|  0|  12|           4|           5|
+    |select_ln849_2_fu_234_p3          |    select|   0|  0|   4|           1|           4|
+    |select_ln849_fu_222_p3            |    select|   0|  0|   4|           1|           1|
+    |ap_enable_pp0                     |       xor|   0|  0|   2|           1|           2|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0|  79|          31|          25|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------------------+----+-----------+-----+-----------+
+    |                  Name                  | LUT| Input Size| Bits| Total Bits|
+    +----------------------------------------+----+-----------+-----+-----------+
+    |ap_done_int                             |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1                 |   9|          2|    1|          2|
+    |ap_phi_mux_data_split_12_phi_fu_159_p8  |  14|          3|   32|         96|
+    |ap_phi_mux_data_split_13_phi_fu_146_p8  |  14|          3|   32|         96|
+    |ap_phi_mux_data_split_14_phi_fu_133_p8  |  14|          3|   32|         96|
+    |ap_phi_mux_data_split_15_phi_fu_120_p8  |  14|          3|   32|         96|
+    |ap_sig_allocacmp_indvar_flatten_load    |   9|          2|    7|         14|
+    |c6_fu_86                                |   9|          2|    4|          8|
+    |c7_fu_82                                |   9|          2|    4|          8|
+    |fifo_C_drain_PE_0_1_blk_n               |   9|          2|    1|          2|
+    |indvar_flatten_fu_90                    |   9|          2|    7|         14|
+    +----------------------------------------+----+-----------+-----+-----------+
+    |Total                                   | 119|         26|  153|        434|
+    +----------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------+----+----+-----+-----------+
+    |               Name               | FF | LUT| Bits| Const Bits|
+    +----------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                         |   1|   0|    1|          0|
+    |ap_done_reg                       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2           |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg  |   1|   0|    1|          0|
+    |c6_fu_86                          |   4|   0|    4|          0|
+    |c7_fu_82                          |   4|   0|    4|          0|
+    |data_split_11_reg_377             |  32|   0|   32|          0|
+    |icmp_ln849_reg_363                |   1|   0|    1|          0|
+    |icmp_ln849_reg_363_pp0_iter1_reg  |   1|   0|    1|          0|
+    |indvar_flatten_fu_90              |   7|   0|    7|          0|
+    |local_C_addr_reg_371              |   4|   0|    4|          0|
+    |trunc_ln849_3_reg_367             |   2|   0|    2|          0|
+    +----------------------------------+----+----+-----+-----------+
+    |Total                             |  60|   0|   60|          0|
+    +----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------------+-----+-----+------------+----------------------------------------------------+--------------+
+|              RTL Ports             | Dir | Bits|  Protocol  |                    Source Object                   |    C Type    |
++------------------------------------+-----+-----+------------+----------------------------------------------------+--------------+
+|ap_clk                              |   in|    1|  ap_ctrl_hs|  C_drain_IO_L1_out_Pipeline_VITIS_LOOP_849_1_VITIS_|  return value|
+|ap_rst                              |   in|    1|  ap_ctrl_hs|  C_drain_IO_L1_out_Pipeline_VITIS_LOOP_849_1_VITIS_|  return value|
+|ap_start                            |   in|    1|  ap_ctrl_hs|  C_drain_IO_L1_out_Pipeline_VITIS_LOOP_849_1_VITIS_|  return value|
+|ap_done                             |  out|    1|  ap_ctrl_hs|  C_drain_IO_L1_out_Pipeline_VITIS_LOOP_849_1_VITIS_|  return value|
+|ap_idle                             |  out|    1|  ap_ctrl_hs|  C_drain_IO_L1_out_Pipeline_VITIS_LOOP_849_1_VITIS_|  return value|
+|ap_ready                            |  out|    1|  ap_ctrl_hs|  C_drain_IO_L1_out_Pipeline_VITIS_LOOP_849_1_VITIS_|  return value|
+|fifo_C_drain_PE_0_1_dout            |   in|   32|     ap_fifo|                                 fifo_C_drain_PE_0_1|       pointer|
+|fifo_C_drain_PE_0_1_num_data_valid  |   in|    2|     ap_fifo|                                 fifo_C_drain_PE_0_1|       pointer|
+|fifo_C_drain_PE_0_1_fifo_cap        |   in|    2|     ap_fifo|                                 fifo_C_drain_PE_0_1|       pointer|
+|fifo_C_drain_PE_0_1_empty_n         |   in|    1|     ap_fifo|                                 fifo_C_drain_PE_0_1|       pointer|
+|fifo_C_drain_PE_0_1_read            |  out|    1|     ap_fifo|                                 fifo_C_drain_PE_0_1|       pointer|
+|local_C_address0                    |  out|    4|   ap_memory|                                             local_C|         array|
+|local_C_ce0                         |  out|    1|   ap_memory|                                             local_C|         array|
+|local_C_q0                          |   in|  128|   ap_memory|                                             local_C|         array|
+|local_C_address1                    |  out|    4|   ap_memory|                                             local_C|         array|
+|local_C_ce1                         |  out|    1|   ap_memory|                                             local_C|         array|
+|local_C_we1                         |  out|    1|   ap_memory|                                             local_C|         array|
+|local_C_d1                          |  out|  128|   ap_memory|                                             local_C|         array|
++------------------------------------+-----+-----+------------+----------------------------------------------------+--------------+
+

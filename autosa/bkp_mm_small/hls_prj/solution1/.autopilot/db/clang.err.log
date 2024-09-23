@@ -1,0 +1,127 @@
+src/kernel_kernel.cpp:161:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=local_A_ping core=RAM_2P_BRAM
+        ^
+src/kernel_kernel.cpp:163:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=local_A_pong core=RAM_2P_BRAM
+        ^
+src/kernel_kernel.cpp:258:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=local_A_ping core=RAM_2P_BRAM
+        ^
+src/kernel_kernel.cpp:260:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=local_A_pong core=RAM_2P_BRAM
+        ^
+src/kernel_kernel.cpp:506:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=local_B_ping core=RAM_2P_BRAM
+        ^
+src/kernel_kernel.cpp:508:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=local_B_pong core=RAM_2P_BRAM
+        ^
+src/kernel_kernel.cpp:603:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=local_B_ping core=RAM_2P_BRAM
+        ^
+src/kernel_kernel.cpp:605:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=local_B_pong core=RAM_2P_BRAM
+        ^
+src/kernel_kernel.cpp:702:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=local_C core=RAM_2P_BRAM
+        ^
+src/kernel_kernel.cpp:950:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=local_C core=RAM_2P_BRAM
+        ^
+src/kernel_kernel.cpp:997:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=local_C core=RAM_2P_BRAM
+        ^
+src/kernel_kernel.cpp:1201:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_A_A_IO_L2_in_0 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1204:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_A_A_IO_L2_in_1 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1207:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_A_A_IO_L2_in_2 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1210:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_B_B_IO_L2_in_0 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1213:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_B_B_IO_L2_in_1 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1216:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_B_B_IO_L2_in_2 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1219:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_A_PE_0_0 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1222:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_A_PE_0_1 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1225:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_A_PE_0_2 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1228:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_A_PE_1_0 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1231:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_A_PE_1_1 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1234:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_A_PE_1_2 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1237:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_B_PE_0_0 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1240:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_B_PE_1_0 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1243:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_B_PE_2_0 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1246:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_B_PE_0_1 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1249:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_B_PE_1_1 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1252:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_B_PE_2_1 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1255:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_C_drain_PE_0_0 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1258:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_C_drain_PE_1_0 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1261:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_C_drain_PE_0_1 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1264:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_C_drain_PE_1_1 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1267:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_C_drain_C_drain_IO_L1_out_0_0 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1270:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_C_drain_C_drain_IO_L1_out_0_1 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1273:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_C_drain_C_drain_IO_L1_out_0_2 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1276:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_C_drain_C_drain_IO_L1_out_1_0 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1279:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_C_drain_C_drain_IO_L1_out_1_1 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1282:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_C_drain_C_drain_IO_L1_out_1_2 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1285:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_C_drain_C_drain_IO_L2_out_0 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1288:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_C_drain_C_drain_IO_L2_out_1 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1291:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_C_drain_C_drain_IO_L2_out_2 core=FIFO_SRL
+        ^
+42 warnings generated.

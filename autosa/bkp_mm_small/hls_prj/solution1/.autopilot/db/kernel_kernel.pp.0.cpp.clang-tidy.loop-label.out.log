@@ -1,0 +1,746 @@
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:1321:7: warning: Added loop label VITIS_LOOP_1213_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1213_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:1321:7: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:2295:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:2295:5: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:2309:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:2309:5: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:2323:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:2323:5: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:3934:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:3934:7: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5863:3: warning: Added loop label VITIS_LOOP_25_1:   [xilinx-label-all-loops]
+  for (int c0 = 0; c0 <= 3; c0 += 1)
+  ^~~
+  VITIS_LOOP_25_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5863:3: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5864:5: warning: Added loop label VITIS_LOOP_26_2:   [xilinx-label-all-loops]
+    for (int c1 = 0; c1 <= 3; c1 += 1)
+    ^~~
+    VITIS_LOOP_26_2: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5864:5: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5865:7: warning: Added loop label VITIS_LOOP_27_3:   [xilinx-label-all-loops]
+      for (int c2 = 0; c2 <= 3; c2 += 1) {
+      ^~~
+      VITIS_LOOP_27_3: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5865:7: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5868:9: warning: Added loop label VITIS_LOOP_30_4:   [xilinx-label-all-loops]
+        for (int c3 = 0; c3 <= 1; c3 += 1) {
+        ^~~
+        VITIS_LOOP_30_4: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5868:9: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5870:11: warning: Added loop label VITIS_LOOP_32_5:   [xilinx-label-all-loops]
+          for (int c4 = 0; c4 <= 7; c4 += 1)
+          ^~~
+          VITIS_LOOP_32_5: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5870:11: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5871:13: warning: Added loop label VITIS_LOOP_33_6:   [xilinx-label-all-loops]
+            for (int c5 = 0; c5 <= 15; c5 += 1)
+            ^~~
+            VITIS_LOOP_33_6: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5871:13: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5884:3: warning: Added loop label VITIS_LOOP_46_1:   [xilinx-label-all-loops]
+  for (int c0 = 0; c0 <= 3; c0 += 1)
+  ^~~
+  VITIS_LOOP_46_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5884:3: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5885:5: warning: Added loop label VITIS_LOOP_47_2:   [xilinx-label-all-loops]
+    for (int c1 = 0; c1 <= 3; c1 += 1)
+    ^~~
+    VITIS_LOOP_47_2: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5885:5: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5886:7: warning: Added loop label VITIS_LOOP_48_3:   [xilinx-label-all-loops]
+      for (int c2 = 0; c2 <= 3; c2 += 1) {
+      ^~~
+      VITIS_LOOP_48_3: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5886:7: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5889:9: warning: Added loop label VITIS_LOOP_51_4:   [xilinx-label-all-loops]
+        for (int c3 = 0; c3 <= 1; c3 += 1) {
+        ^~~
+        VITIS_LOOP_51_4: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5889:9: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5891:11: warning: Added loop label VITIS_LOOP_53_5:   [xilinx-label-all-loops]
+          for (int c4 = 0; c4 <= 7; c4 += 1)
+          ^~~
+          VITIS_LOOP_53_5: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5891:11: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5892:13: warning: Added loop label VITIS_LOOP_54_6:   [xilinx-label-all-loops]
+            for (int c5 = 0; c5 <= 15; c5 += 1)
+            ^~~
+            VITIS_LOOP_54_6: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5892:13: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5905:3: warning: Added loop label VITIS_LOOP_67_1:   [xilinx-label-all-loops]
+  for (int c0 = 0; c0 <= 3; c0 += 1)
+  ^~~
+  VITIS_LOOP_67_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5905:3: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5906:5: warning: Added loop label VITIS_LOOP_68_2:   [xilinx-label-all-loops]
+    for (int c1 = 0; c1 <= 3; c1 += 1) {
+    ^~~
+    VITIS_LOOP_68_2: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5906:5: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5909:7: warning: Added loop label VITIS_LOOP_71_3:   [xilinx-label-all-loops]
+      for (int c3 = 0; c3 <= 1; c3 += 1) {
+      ^~~
+      VITIS_LOOP_71_3: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5909:7: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5911:9: warning: Added loop label VITIS_LOOP_73_4:   [xilinx-label-all-loops]
+        for (int c4 = 0; c4 <= 1; c4 += 1) {
+        ^~~
+        VITIS_LOOP_73_4: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5911:9: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5914:11: warning: Added loop label VITIS_LOOP_76_5:   [xilinx-label-all-loops]
+          for (int c5 = 0; c5 <= 7; c5 += 1)
+          ^~~
+          VITIS_LOOP_76_5: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5914:11: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5915:13: warning: Added loop label VITIS_LOOP_77_6:   [xilinx-label-all-loops]
+            for (int c6 = 0; c6 <= 7; c6 += 1)
+            ^~~
+            VITIS_LOOP_77_6: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5915:13: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5943:2: warning: Added loop label VITIS_LOOP_8_1:   [xilinx-label-all-loops]
+ for (ap_uint<3> c0 = 0; c0 <= 3; c0 += 1)
+ ^~~
+ VITIS_LOOP_8_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5943:2: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5944:5: warning: Added loop label VITIS_LOOP_9_2:   [xilinx-label-all-loops]
+    for (ap_uint<3> c1 = 0; c1 <= 3; c1 += 1)
+    ^~~
+    VITIS_LOOP_9_2: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5944:5: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5945:7: warning: Added loop label VITIS_LOOP_10_3:   [xilinx-label-all-loops]
+      for (ap_uint<3> c2 = 0; c2 <= 3; c2 += 1) {
+      ^~~
+      VITIS_LOOP_10_3: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5945:7: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5948:9: warning: Added loop label VITIS_LOOP_13_4:   [xilinx-label-all-loops]
+        for (ap_uint<2> c3 = 0; c3 <= 1; c3 += 1) {
+        ^~~
+        VITIS_LOOP_13_4: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5948:9: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5950:11: warning: Added loop label VITIS_LOOP_15_5:   [xilinx-label-all-loops]
+          for (ap_uint<4> c4 = 0; c4 <= 7; c4 += 1) {
+          ^~~
+          VITIS_LOOP_15_5: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5950:11: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5973:2: warning: Added loop label VITIS_LOOP_38_1:   [xilinx-label-all-loops]
+ for (ap_uint<11> i = 0; i < 1024; i++) {
+ ^~~
+ VITIS_LOOP_38_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5973:2: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5997:3: warning: Added loop label VITIS_LOOP_62_1:   [xilinx-label-all-loops]
+  for (ap_uint<4> c5 = 0; c5 <= 7; c5 += 1) {
+  ^~~
+  VITIS_LOOP_62_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5997:3: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5999:5: warning: Added loop label VITIS_LOOP_64_2:   [xilinx-label-all-loops]
+    for (ap_uint<4> c6 = 0; c6 <= 7; c6 += 1) {
+    ^~~
+    VITIS_LOOP_64_2: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:5999:5: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6001:7: warning: Added loop label VITIS_LOOP_66_3:   [xilinx-label-all-loops]
+      for (ap_uint<4> c7 = 0; c7 <= 7; c7 += 1) {
+      ^~~
+      VITIS_LOOP_66_3: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6001:7: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6008:11: warning: Added loop label VITIS_LOOP_73_4:   [xilinx-label-all-loops]
+          for (ap_uint<4> n = 0; n < 8; n++) {
+          ^~~
+          VITIS_LOOP_73_4: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6008:11: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6032:3: warning: Added loop label VITIS_LOOP_97_1:   [xilinx-label-all-loops]
+  for (ap_uint<2> c3 = p0; c3 <= 1; c3 += 1) {
+  ^~~
+  VITIS_LOOP_97_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6032:3: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6035:7: warning: Added loop label VITIS_LOOP_100_2:   [xilinx-label-all-loops]
+      for (ap_uint<4> c4 = 0; c4 <= 7; c4 += 1) {
+      ^~~
+      VITIS_LOOP_100_2: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6035:7: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6047:7: warning: Added loop label VITIS_LOOP_112_3:   [xilinx-label-all-loops]
+      for (ap_uint<4> c4 = 0; c4 <= 7; c4 += 1) {
+      ^~~
+      VITIS_LOOP_112_3: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6047:7: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6072:3: warning: Added loop label VITIS_LOOP_137_1:   [xilinx-label-all-loops]
+  for (ap_uint<2> c3 = p0; c3 <= 1; c3 += 1)
+  ^~~
+  VITIS_LOOP_137_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6072:3: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6075:7: warning: Added loop label VITIS_LOOP_140_2:   [xilinx-label-all-loops]
+      for (ap_uint<4> c4 = 0; c4 <= 7; c4 += 1) {
+      ^~~
+      VITIS_LOOP_140_2: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6075:7: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6096:9: error: Resource with core_name: RAM_2P_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=local_A_ping core=RAM_2P_BRAM
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6098:9: error: Resource with core_name: RAM_2P_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=local_A_pong core=RAM_2P_BRAM
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6108:5: warning: Added loop label VITIS_LOOP_173_1:   [xilinx-label-all-loops]
+    for (ap_uint<3> c0 = 0; c0 <= 3; c0 += 1)
+    ^~~
+    VITIS_LOOP_173_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6108:5: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6109:7: warning: Added loop label VITIS_LOOP_174_2:   [xilinx-label-all-loops]
+      for (ap_uint<3> c1 = 0; c1 <= 3; c1 += 1)
+      ^~~
+      VITIS_LOOP_174_2: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6109:7: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6110:9: warning: Added loop label VITIS_LOOP_175_3:   [xilinx-label-all-loops]
+        for (ap_uint<3> c2 = 0; c2 <= 3; c2 += 1) {
+        ^~~
+        VITIS_LOOP_175_3: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6110:9: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6193:9: error: Resource with core_name: RAM_2P_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=local_A_ping core=RAM_2P_BRAM
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6195:9: error: Resource with core_name: RAM_2P_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=local_A_pong core=RAM_2P_BRAM
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6205:5: warning: Added loop label VITIS_LOOP_270_1:   [xilinx-label-all-loops]
+    for (ap_uint<3> c0 = 0; c0 <= 3; c0 += 1)
+    ^~~
+    VITIS_LOOP_270_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6205:5: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6206:7: warning: Added loop label VITIS_LOOP_271_2:   [xilinx-label-all-loops]
+      for (ap_uint<3> c1 = 0; c1 <= 3; c1 += 1)
+      ^~~
+      VITIS_LOOP_271_2: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6206:7: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6207:9: warning: Added loop label VITIS_LOOP_272_3:   [xilinx-label-all-loops]
+        for (ap_uint<3> c2 = 0; c2 <= 3; c2 += 1) {
+        ^~~
+        VITIS_LOOP_272_3: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6207:9: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6288:2: warning: Added loop label VITIS_LOOP_353_1:   [xilinx-label-all-loops]
+ for (ap_uint<3> c0 = 0; c0 <= 3; c0 += 1)
+ ^~~
+ VITIS_LOOP_353_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6288:2: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6289:5: warning: Added loop label VITIS_LOOP_354_2:   [xilinx-label-all-loops]
+    for (ap_uint<3> c1 = 0; c1 <= 3; c1 += 1)
+    ^~~
+    VITIS_LOOP_354_2: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6289:5: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6290:7: warning: Added loop label VITIS_LOOP_355_3:   [xilinx-label-all-loops]
+      for (ap_uint<3> c2 = 0; c2 <= 3; c2 += 1) {
+      ^~~
+      VITIS_LOOP_355_3: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6290:7: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6293:9: warning: Added loop label VITIS_LOOP_358_4:   [xilinx-label-all-loops]
+        for (ap_uint<2> c3 = 0; c3 <= 1; c3 += 1) {
+        ^~~
+        VITIS_LOOP_358_4: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6293:9: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6295:11: warning: Added loop label VITIS_LOOP_360_5:   [xilinx-label-all-loops]
+          for (ap_uint<4> c4 = 0; c4 <= 7; c4 += 1) {
+          ^~~
+          VITIS_LOOP_360_5: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6295:11: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6318:2: warning: Added loop label VITIS_LOOP_383_1:   [xilinx-label-all-loops]
+ for (ap_uint<11> i = 0; i < 1024; i++) {
+ ^~~
+ VITIS_LOOP_383_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6318:2: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6342:3: warning: Added loop label VITIS_LOOP_407_1:   [xilinx-label-all-loops]
+  for (ap_uint<4> c5 = 0; c5 <= 7; c5 += 1) {
+  ^~~
+  VITIS_LOOP_407_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6342:3: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6344:5: warning: Added loop label VITIS_LOOP_409_2:   [xilinx-label-all-loops]
+    for (ap_uint<4> c6 = 0; c6 <= 7; c6 += 1) {
+    ^~~
+    VITIS_LOOP_409_2: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6344:5: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6346:7: warning: Added loop label VITIS_LOOP_411_3:   [xilinx-label-all-loops]
+      for (ap_uint<4> c7 = 0; c7 <= 7; c7 += 1) {
+      ^~~
+      VITIS_LOOP_411_3: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6346:7: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6353:11: warning: Added loop label VITIS_LOOP_418_4:   [xilinx-label-all-loops]
+          for (ap_uint<4> n = 0; n < 8; n++) {
+          ^~~
+          VITIS_LOOP_418_4: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6353:11: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6377:3: warning: Added loop label VITIS_LOOP_442_1:   [xilinx-label-all-loops]
+  for (ap_uint<2> c3 = p0; c3 <= 1; c3 += 1) {
+  ^~~
+  VITIS_LOOP_442_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6377:3: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6380:7: warning: Added loop label VITIS_LOOP_445_2:   [xilinx-label-all-loops]
+      for (ap_uint<4> c4 = 0; c4 <= 7; c4 += 1) {
+      ^~~
+      VITIS_LOOP_445_2: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6380:7: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6392:7: warning: Added loop label VITIS_LOOP_457_3:   [xilinx-label-all-loops]
+      for (ap_uint<4> c4 = 0; c4 <= 7; c4 += 1) {
+      ^~~
+      VITIS_LOOP_457_3: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6392:7: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6417:3: warning: Added loop label VITIS_LOOP_482_1:   [xilinx-label-all-loops]
+  for (ap_uint<2> c3 = p0; c3 <= 1; c3 += 1)
+  ^~~
+  VITIS_LOOP_482_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6417:3: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6420:7: warning: Added loop label VITIS_LOOP_485_2:   [xilinx-label-all-loops]
+      for (ap_uint<4> c4 = 0; c4 <= 7; c4 += 1) {
+      ^~~
+      VITIS_LOOP_485_2: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6420:7: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6441:9: error: Resource with core_name: RAM_2P_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=local_B_ping core=RAM_2P_BRAM
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6443:9: error: Resource with core_name: RAM_2P_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=local_B_pong core=RAM_2P_BRAM
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6453:5: warning: Added loop label VITIS_LOOP_518_1:   [xilinx-label-all-loops]
+    for (ap_uint<3> c0 = 0; c0 <= 3; c0 += 1)
+    ^~~
+    VITIS_LOOP_518_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6453:5: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6454:7: warning: Added loop label VITIS_LOOP_519_2:   [xilinx-label-all-loops]
+      for (ap_uint<3> c1 = 0; c1 <= 3; c1 += 1)
+      ^~~
+      VITIS_LOOP_519_2: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6454:7: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6455:9: warning: Added loop label VITIS_LOOP_520_3:   [xilinx-label-all-loops]
+        for (ap_uint<3> c2 = 0; c2 <= 3; c2 += 1) {
+        ^~~
+        VITIS_LOOP_520_3: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6455:9: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6538:9: error: Resource with core_name: RAM_2P_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=local_B_ping core=RAM_2P_BRAM
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6540:9: error: Resource with core_name: RAM_2P_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=local_B_pong core=RAM_2P_BRAM
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6550:5: warning: Added loop label VITIS_LOOP_615_1:   [xilinx-label-all-loops]
+    for (ap_uint<3> c0 = 0; c0 <= 3; c0 += 1)
+    ^~~
+    VITIS_LOOP_615_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6550:5: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6551:7: warning: Added loop label VITIS_LOOP_616_2:   [xilinx-label-all-loops]
+      for (ap_uint<3> c1 = 0; c1 <= 3; c1 += 1)
+      ^~~
+      VITIS_LOOP_616_2: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6551:7: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6552:9: warning: Added loop label VITIS_LOOP_617_3:   [xilinx-label-all-loops]
+        for (ap_uint<3> c2 = 0; c2 <= 3; c2 += 1) {
+        ^~~
+        VITIS_LOOP_617_3: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6552:9: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6637:9: error: Resource with core_name: RAM_2P_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=local_C core=RAM_2P_BRAM
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6640:2: warning: Added loop label VITIS_LOOP_705_1:   [xilinx-label-all-loops]
+ for (ap_uint<3> c0 = 0; c0 <= 3; c0 += 1)
+ ^~~
+ VITIS_LOOP_705_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6640:2: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6641:5: warning: Added loop label VITIS_LOOP_706_2:   [xilinx-label-all-loops]
+    for (ap_uint<3> c1 = 0; c1 <= 3; c1 += 1)
+    ^~~
+    VITIS_LOOP_706_2: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6641:5: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6642:7: warning: Added loop label VITIS_LOOP_707_3:   [xilinx-label-all-loops]
+      for (ap_uint<3> c2 = 0; c2 <= 3; c2 += 1) {
+      ^~~
+      VITIS_LOOP_707_3: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6642:7: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6645:9: warning: Added loop label VITIS_LOOP_710_4:   [xilinx-label-all-loops]
+        for (ap_uint<4> c5 = 0; c5 <= 7; c5 += 1) {
+        ^~~
+        VITIS_LOOP_710_4: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6645:9: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6647:11: warning: Added loop label VITIS_LOOP_712_5:   [xilinx-label-all-loops]
+          for (ap_uint<4> c6 = 0; c6 <= 7; c6 += 1) {
+          ^~~
+          VITIS_LOOP_712_5: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6647:11: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6649:13: warning: Added loop label VITIS_LOOP_714_6:   [xilinx-label-all-loops]
+            for (ap_uint<4> c7 = 0; c7 <= 7; c7 += 1) {
+            ^~~
+            VITIS_LOOP_714_6: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6649:13: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6655:19: warning: Added loop label VITIS_LOOP_720_7:   [xilinx-label-all-loops]
+                  for (ap_uint<2> n = 0; n < 2; n++) {
+                  ^~~
+                  VITIS_LOOP_720_7: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6655:19: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6666:19: warning: Added loop label VITIS_LOOP_731_8:   [xilinx-label-all-loops]
+                  for (ap_uint<2> n = 0; n < 2; n++) {
+                  ^~~
+                  VITIS_LOOP_731_8: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6666:19: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6675:17: warning: Added loop label VITIS_LOOP_740_9:   [xilinx-label-all-loops]
+                for (ap_uint<2> c8 = 0; c8 <= 1; c8 += 1) {
+                ^~~
+                VITIS_LOOP_740_9: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6675:17: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6725:3: warning: Added loop label VITIS_LOOP_790_1:   [xilinx-label-all-loops]
+  for (ap_uint<3> c0 = 0; c0 <= 3; c0 += 1)
+  ^~~
+  VITIS_LOOP_790_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6725:3: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6726:5: warning: Added loop label VITIS_LOOP_791_2:   [xilinx-label-all-loops]
+    for (ap_uint<3> c1 = 0; c1 <= 3; c1 += 1)
+    ^~~
+    VITIS_LOOP_791_2: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6726:5: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6727:7: warning: Added loop label VITIS_LOOP_792_3:   [xilinx-label-all-loops]
+      for (ap_uint<3> c2 = 0; c2 <= 3; c2 += 1) {
+      ^~~
+      VITIS_LOOP_792_3: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6727:7: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6730:9: warning: Added loop label VITIS_LOOP_795_4:   [xilinx-label-all-loops]
+        for (ap_uint<4> c5 = 0; c5 <= 7; c5 += 1) {
+        ^~~
+        VITIS_LOOP_795_4: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6730:9: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6732:11: warning: Added loop label VITIS_LOOP_797_5:   [xilinx-label-all-loops]
+          for (ap_uint<4> c6 = 0; c6 <= 7; c6 += 1) {
+          ^~~
+          VITIS_LOOP_797_5: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6732:11: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6734:13: warning: Added loop label VITIS_LOOP_799_6:   [xilinx-label-all-loops]
+            for (ap_uint<4> c7 = 0; c7 <= 7; c7 += 1) {
+            ^~~
+            VITIS_LOOP_799_6: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6734:13: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6751:3: warning: Added loop label VITIS_LOOP_816_1:   [xilinx-label-all-loops]
+  for (ap_uint<3> c0 = 0; c0 <= 3; c0 += 1)
+  ^~~
+  VITIS_LOOP_816_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6751:3: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6752:5: warning: Added loop label VITIS_LOOP_817_2:   [xilinx-label-all-loops]
+    for (ap_uint<3> c1 = 0; c1 <= 3; c1 += 1)
+    ^~~
+    VITIS_LOOP_817_2: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6752:5: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6753:7: warning: Added loop label VITIS_LOOP_818_3:   [xilinx-label-all-loops]
+      for (ap_uint<3> c2 = 0; c2 <= 3; c2 += 1) {
+      ^~~
+      VITIS_LOOP_818_3: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6753:7: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6756:9: warning: Added loop label VITIS_LOOP_821_4:   [xilinx-label-all-loops]
+        for (ap_uint<4> c5 = 0; c5 <= 7; c5 += 1) {
+        ^~~
+        VITIS_LOOP_821_4: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6756:9: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6758:11: warning: Added loop label VITIS_LOOP_823_5:   [xilinx-label-all-loops]
+          for (ap_uint<4> c6 = 0; c6 <= 7; c6 += 1) {
+          ^~~
+          VITIS_LOOP_823_5: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6758:11: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6760:13: warning: Added loop label VITIS_LOOP_825_6:   [xilinx-label-all-loops]
+            for (ap_uint<4> c7 = 0; c7 <= 7; c7 += 1) {
+            ^~~
+            VITIS_LOOP_825_6: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6760:13: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6784:2: warning: Added loop label VITIS_LOOP_849_1:   [xilinx-label-all-loops]
+ for (ap_uint<4> c6 = 0; c6 <= 7; c6 += 1) {
+ ^~~
+ VITIS_LOOP_849_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6784:2: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6786:5: warning: Added loop label VITIS_LOOP_851_2:   [xilinx-label-all-loops]
+    for (ap_uint<4> c7 = 0; c7 <= 7; c7 += 1) {
+    ^~~
+    VITIS_LOOP_851_2: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6786:5: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6795:9: warning: Added loop label VITIS_LOOP_860_3:   [xilinx-label-all-loops]
+        for (ap_uint<3> n = 0; n < 4; n++) {
+        ^~~
+        VITIS_LOOP_860_3: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6795:9: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6817:3: warning: Added loop label VITIS_LOOP_882_1:   [xilinx-label-all-loops]
+  for (ap_uint<2> c4 = p1; c4 <= 1; c4 += 1) {
+  ^~~
+  VITIS_LOOP_882_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6817:3: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6820:7: warning: Added loop label VITIS_LOOP_885_2:   [xilinx-label-all-loops]
+      for (ap_uint<4> c5 = 0; c5 <= 7; c5 += 1) {
+      ^~~
+      VITIS_LOOP_885_2: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6820:7: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6822:9: warning: Added loop label VITIS_LOOP_887_3:   [xilinx-label-all-loops]
+        for (ap_uint<2> c6 = 0; c6 <= 1; c6 += 1) {
+        ^~~
+        VITIS_LOOP_887_3: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6822:9: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6834:7: warning: Added loop label VITIS_LOOP_899_4:   [xilinx-label-all-loops]
+      for (ap_uint<4> c5 = 0; c5 <= 7; c5 += 1) {
+      ^~~
+      VITIS_LOOP_899_4: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6834:7: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6836:9: warning: Added loop label VITIS_LOOP_901_5:   [xilinx-label-all-loops]
+        for (ap_uint<2> c6 = 0; c6 <= 1; c6 += 1) {
+        ^~~
+        VITIS_LOOP_901_5: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6836:9: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6859:3: warning: Added loop label VITIS_LOOP_924_1:   [xilinx-label-all-loops]
+  for (ap_uint<2> c4 = p1; c4 <= 1; c4 += 1)
+  ^~~
+  VITIS_LOOP_924_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6859:3: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6862:7: warning: Added loop label VITIS_LOOP_927_2:   [xilinx-label-all-loops]
+      for (ap_uint<4> c5 = 0; c5 <= 7; c5 += 1) {
+      ^~~
+      VITIS_LOOP_927_2: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6862:7: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6864:9: warning: Added loop label VITIS_LOOP_929_3:   [xilinx-label-all-loops]
+        for (ap_uint<2> c6 = 0; c6 <= 1; c6 += 1) {
+        ^~~
+        VITIS_LOOP_929_3: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6864:9: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6885:9: error: Resource with core_name: RAM_2P_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=local_C core=RAM_2P_BRAM
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6888:2: warning: Added loop label VITIS_LOOP_953_1:   [xilinx-label-all-loops]
+ for (ap_uint<3> c0 = 0; c0 <= 3; c0 += 1)
+ ^~~
+ VITIS_LOOP_953_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6888:2: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6889:5: warning: Added loop label VITIS_LOOP_954_2:   [xilinx-label-all-loops]
+    for (ap_uint<3> c1 = 0; c1 <= 3; c1 += 1) {
+    ^~~
+    VITIS_LOOP_954_2: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6889:5: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6932:9: error: Resource with core_name: RAM_2P_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=local_C core=RAM_2P_BRAM
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6935:2: warning: Added loop label VITIS_LOOP_1000_1:   [xilinx-label-all-loops]
+ for (ap_uint<3> c0 = 0; c0 <= 3; c0 += 1)
+ ^~~
+ VITIS_LOOP_1000_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6935:2: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6936:5: warning: Added loop label VITIS_LOOP_1001_2:   [xilinx-label-all-loops]
+    for (ap_uint<3> c1 = 0; c1 <= 3; c1 += 1) {
+    ^~~
+    VITIS_LOOP_1001_2: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6936:5: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6978:3: warning: Added loop label VITIS_LOOP_1043_1:   [xilinx-label-all-loops]
+  for (ap_uint<3> c0 = 0; c0 <= 3; c0 += 1)
+  ^~~
+  VITIS_LOOP_1043_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6978:3: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6979:5: warning: Added loop label VITIS_LOOP_1044_2:   [xilinx-label-all-loops]
+    for (ap_uint<3> c1 = 0; c1 <= 3; c1 += 1) {
+    ^~~
+    VITIS_LOOP_1044_2: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6979:5: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6982:7: warning: Added loop label VITIS_LOOP_1047_3:   [xilinx-label-all-loops]
+      for (ap_uint<2> c3 = p0; c3 <= 1; c3 += 1) {
+      ^~~
+      VITIS_LOOP_1047_3: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6982:7: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6985:11: warning: Added loop label VITIS_LOOP_1050_4:   [xilinx-label-all-loops]
+          for (ap_uint<2> c4 = 0; c4 <= 1; c4 += 1) {
+          ^~~
+          VITIS_LOOP_1050_4: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6985:11: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6987:13: warning: Added loop label VITIS_LOOP_1052_5:   [xilinx-label-all-loops]
+            for (ap_uint<4> c5 = 0; c5 <= 7; c5 += 1) {
+            ^~~
+            VITIS_LOOP_1052_5: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6987:13: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6989:15: warning: Added loop label VITIS_LOOP_1054_6:   [xilinx-label-all-loops]
+              for (ap_uint<2> c6 = 0; c6 <= 1; c6 += 1) {
+              ^~~
+              VITIS_LOOP_1054_6: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:6989:15: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7002:11: warning: Added loop label VITIS_LOOP_1067_7:   [xilinx-label-all-loops]
+          for (ap_uint<2> c4 = 0; c4 <= 1; c4 += 1) {
+          ^~~
+          VITIS_LOOP_1067_7: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7002:11: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7004:13: warning: Added loop label VITIS_LOOP_1069_8:   [xilinx-label-all-loops]
+            for (ap_uint<4> c5 = 0; c5 <= 7; c5 += 1) {
+            ^~~
+            VITIS_LOOP_1069_8: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7004:13: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7006:15: warning: Added loop label VITIS_LOOP_1071_9:   [xilinx-label-all-loops]
+              for (ap_uint<2> c6 = 0; c6 <= 1; c6 += 1) {
+              ^~~
+              VITIS_LOOP_1071_9: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7006:15: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7031:3: warning: Added loop label VITIS_LOOP_1096_1:   [xilinx-label-all-loops]
+  for (ap_uint<3> c0 = 0; c0 <= 3; c0 += 1)
+  ^~~
+  VITIS_LOOP_1096_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7031:3: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7032:5: warning: Added loop label VITIS_LOOP_1097_2:   [xilinx-label-all-loops]
+    for (ap_uint<3> c1 = 0; c1 <= 3; c1 += 1) {
+    ^~~
+    VITIS_LOOP_1097_2: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7032:5: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7035:7: warning: Added loop label VITIS_LOOP_1100_3:   [xilinx-label-all-loops]
+      for (ap_uint<2> c3 = p0; c3 <= 1; c3 += 1)
+      ^~~
+      VITIS_LOOP_1100_3: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7035:7: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7038:11: warning: Added loop label VITIS_LOOP_1103_4:   [xilinx-label-all-loops]
+          for (ap_uint<2> c4 = 0; c4 <= 1; c4 += 1) {
+          ^~~
+          VITIS_LOOP_1103_4: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7038:11: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7040:13: warning: Added loop label VITIS_LOOP_1105_5:   [xilinx-label-all-loops]
+            for (ap_uint<4> c5 = 0; c5 <= 7; c5 += 1) {
+            ^~~
+            VITIS_LOOP_1105_5: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7040:13: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7042:15: warning: Added loop label VITIS_LOOP_1107_6:   [xilinx-label-all-loops]
+              for (ap_uint<2> c6 = 0; c6 <= 1; c6 += 1) {
+              ^~~
+              VITIS_LOOP_1107_6: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7042:15: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7065:2: warning: Added loop label VITIS_LOOP_1130_1:   [xilinx-label-all-loops]
+ for (ap_uint<3> c0 = 0; c0 <= 3; c0 += 1)
+ ^~~
+ VITIS_LOOP_1130_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7065:2: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7066:5: warning: Added loop label VITIS_LOOP_1131_2:   [xilinx-label-all-loops]
+    for (ap_uint<3> c1 = 0; c1 <= 3; c1 += 1) {
+    ^~~
+    VITIS_LOOP_1131_2: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7066:5: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7069:7: warning: Added loop label VITIS_LOOP_1134_3:   [xilinx-label-all-loops]
+      for (ap_uint<2> c3 = 0; c3 <= 1; c3 += 1) {
+      ^~~
+      VITIS_LOOP_1134_3: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7069:7: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7071:9: warning: Added loop label VITIS_LOOP_1136_4:   [xilinx-label-all-loops]
+        for (ap_uint<2> c4 = 0; c4 <= 1; c4 += 1) {
+        ^~~
+        VITIS_LOOP_1136_4: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7071:9: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7073:11: warning: Added loop label VITIS_LOOP_1138_5:   [xilinx-label-all-loops]
+          for (ap_uint<4> c5 = 0; c5 <= 7; c5 += 1) {
+          ^~~
+          VITIS_LOOP_1138_5: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7073:11: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7076:13: warning: Added loop label VITIS_LOOP_1141_6:   [xilinx-label-all-loops]
+            for (ap_uint<2> c6 = 0; c6 <= 1; c6 += 1) {
+            ^~~
+            VITIS_LOOP_1141_6: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7076:13: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7099:2: warning: Added loop label VITIS_LOOP_1164_1:   [xilinx-label-all-loops]
+ for (ap_uint<9> i = 0; i < 256; i++) {
+ ^~~
+ VITIS_LOOP_1164_1: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7099:2: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7105:2: warning: Added loop label VITIS_LOOP_1170_2:   [xilinx-label-all-loops]
+ for (ap_uint<3> p = 0; p < 4; p++) {
+ ^~~
+ VITIS_LOOP_1170_2: 
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7105:2: note: FIX-IT applied suggested code changes
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7140:9: error: Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=fifo_A_A_IO_L2_in_0 core=FIFO_SRL
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7143:9: error: Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=fifo_A_A_IO_L2_in_1 core=FIFO_SRL
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7146:9: error: Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=fifo_A_A_IO_L2_in_2 core=FIFO_SRL
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7149:9: error: Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=fifo_B_B_IO_L2_in_0 core=FIFO_SRL
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7152:9: error: Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=fifo_B_B_IO_L2_in_1 core=FIFO_SRL
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7155:9: error: Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=fifo_B_B_IO_L2_in_2 core=FIFO_SRL
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7158:9: error: Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=fifo_A_PE_0_0 core=FIFO_SRL
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7161:9: error: Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=fifo_A_PE_0_1 core=FIFO_SRL
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7164:9: error: Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=fifo_A_PE_0_2 core=FIFO_SRL
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7167:9: error: Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=fifo_A_PE_1_0 core=FIFO_SRL
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7170:9: error: Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=fifo_A_PE_1_1 core=FIFO_SRL
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7173:9: error: Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=fifo_A_PE_1_2 core=FIFO_SRL
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7176:9: error: Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=fifo_B_PE_0_0 core=FIFO_SRL
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7179:9: error: Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=fifo_B_PE_1_0 core=FIFO_SRL
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7182:9: error: Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=fifo_B_PE_2_0 core=FIFO_SRL
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7185:9: error: Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=fifo_B_PE_0_1 core=FIFO_SRL
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7188:9: error: Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=fifo_B_PE_1_1 core=FIFO_SRL
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7191:9: error: Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=fifo_B_PE_2_1 core=FIFO_SRL
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7194:9: error: Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=fifo_C_drain_PE_0_0 core=FIFO_SRL
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7197:9: error: Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=fifo_C_drain_PE_1_0 core=FIFO_SRL
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7200:9: error: Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=fifo_C_drain_PE_0_1 core=FIFO_SRL
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7203:9: error: Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=fifo_C_drain_PE_1_1 core=FIFO_SRL
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7206:9: error: Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=fifo_C_drain_C_drain_IO_L1_out_0_0 core=FIFO_SRL
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7209:9: error: Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=fifo_C_drain_C_drain_IO_L1_out_0_1 core=FIFO_SRL
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7212:9: error: Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=fifo_C_drain_C_drain_IO_L1_out_0_2 core=FIFO_SRL
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7215:9: error: Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=fifo_C_drain_C_drain_IO_L1_out_1_0 core=FIFO_SRL
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7218:9: error: Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=fifo_C_drain_C_drain_IO_L1_out_1_1 core=FIFO_SRL
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7221:9: error: Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=fifo_C_drain_C_drain_IO_L1_out_1_2 core=FIFO_SRL
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7224:9: error: Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=fifo_C_drain_C_drain_IO_L2_out_0 core=FIFO_SRL
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7227:9: error: Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=fifo_C_drain_C_drain_IO_L2_out_1 core=FIFO_SRL
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp:7230:9: error: Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=fifo_C_drain_C_drain_IO_L2_out_2 core=FIFO_SRL
+        ^

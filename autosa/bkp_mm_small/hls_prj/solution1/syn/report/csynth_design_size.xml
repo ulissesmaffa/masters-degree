@@ -1,0 +1,69 @@
+<design_size title="Design Size Report">
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="6" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Performance/Pipeline" col5="Optimizations"/>
+            <rows>
+                <row id="0" col0="kernel0" col1="kernel_kernel.cpp:1180" col2="37334" col3="4116" col4="1878" col5="2702">
+                    <row id="5" col0="A_IO_L3_in_serialize" col1="kernel_kernel.cpp:33" col2="136" col3="15" col4="10" col5="18"/>
+                    <row id="7" col0="A_IO_L3_in" col1="kernel_kernel.cpp:3" col2="491" col3="45" col4="28" col5="49"/>
+                    <row id="21" col0="A_IO_L2_in" col1="kernel_kernel.cpp:156" col2="4440" col3="544" col4="218" col5="307">
+                        <row id="9" col0="A_IO_L2_in_inter_trans" col1="kernel_kernel.cpp:89" col2="830" col2_disp="   830 (2 calls)" col3="80" col3_disp="   80 (2 calls)" col4="46" col4_disp="   46 (2 calls)" col5="86" col5_disp="   86 (2 calls)"/>
+                        <row id="22" col0="A_IO_L2_in_intra_trans" col1="kernel_kernel.cpp:48" col2="3180" col2_disp=" 3,180 (4 calls)" col3="380" col3_disp="  380 (4 calls)" col4="135" col4_disp="  135 (3 calls)" col5="177" col5_disp="  177 (3 calls)"/>
+                    </row>
+                    <row id="3" col0="A_IO_L2_in_boundary" col1="kernel_kernel.cpp:253" col2="4154" col3="522" col4="190" col5="253">
+                        <row id="2" col0="A_IO_L2_in_inter_trans_boundary" col1="kernel_kernel.cpp:129" col2="544" col2_disp="   544 (2 calls)" col3="58" col3_disp="   58 (2 calls)" col4="18" col4_disp="   18 (2 calls)" col5="32" col5_disp="   32 (2 calls)"/>
+                        <row id="22" col0="A_IO_L2_in_intra_trans" col1="kernel_kernel.cpp:48" col2="3180" col2_disp=" 3,180 (4 calls)" col3="380" col3_disp="  380 (4 calls)" col4="135" col4_disp="  135 (3 calls)" col5="177" col5_disp="  177 (3 calls)"/>
+                    </row>
+                    <row id="13" col0="B_IO_L3_in_serialize" col1="kernel_kernel.cpp:378" col2="136" col3="15" col4="10" col5="18"/>
+                    <row id="1" col0="B_IO_L3_in" col1="kernel_kernel.cpp:348" col2="491" col3="45" col4="28" col5="49"/>
+                    <row id="12" col0="B_IO_L2_in" col1="kernel_kernel.cpp:501" col2="4440" col3="544" col4="218" col5="307">
+                        <row id="19" col0="B_IO_L2_in_inter_trans" col1="kernel_kernel.cpp:434" col2="830" col2_disp="   830 (2 calls)" col3="80" col3_disp="   80 (2 calls)" col4="46" col4_disp="   46 (2 calls)" col5="86" col5_disp="   86 (2 calls)"/>
+                        <row id="14" col0="B_IO_L2_in_intra_trans" col1="kernel_kernel.cpp:393" col2="3180" col2_disp=" 3,180 (4 calls)" col3="380" col3_disp="  380 (4 calls)" col4="135" col4_disp="  135 (3 calls)" col5="177" col5_disp="  177 (3 calls)"/>
+                    </row>
+                    <row id="17" col0="B_IO_L2_in_boundary" col1="kernel_kernel.cpp:598" col2="4154" col3="522" col4="190" col5="253">
+                        <row id="23" col0="B_IO_L2_in_inter_trans_boundary" col1="kernel_kernel.cpp:474" col2="544" col2_disp="   544 (2 calls)" col3="58" col3_disp="   58 (2 calls)" col4="18" col4_disp="   18 (2 calls)" col5="32" col5_disp="   32 (2 calls)"/>
+                        <row id="14" col0="B_IO_L2_in_intra_trans" col1="kernel_kernel.cpp:393" col2="3180" col2_disp=" 3,180 (4 calls)" col3="380" col3_disp="  380 (4 calls)" col4="135" col4_disp="  135 (3 calls)" col5="177" col5_disp="  177 (3 calls)"/>
+                    </row>
+                    <row id="10" col0="PE_wrapper" col1="kernel_kernel.cpp:771" col2="6592" col2_disp=" 6,592 (4 calls)" col3="592" col3_disp="  592 (4 calls)" col4="264" col4_disp="  264 (4 calls)" col5="388" col5_disp="  388 (4 calls)">
+                        <row id="25" col0="PE" col1="kernel_kernel.cpp:693" col2="6584" col2_disp=" 6,584 (4 calls)" col3="584" col3_disp="  584 (4 calls)" col4="256" col4_disp="  256 (4 calls)" col5="380" col5_disp="  380 (4 calls)"/>
+                    </row>
+                    <row id="8" col0="A_PE_dummy_in" col1="kernel_kernel.cpp:785" col2="1116" col2_disp=" 1,116 (2 calls)" col3="104" col3_disp="  104 (2 calls)" col4="64" col4_disp="   64 (2 calls)" col5="104" col5_disp="  104 (2 calls)"/>
+                    <row id="6" col0="B_PE_dummy_in" col1="kernel_kernel.cpp:811" col2="1116" col2_disp=" 1,116 (2 calls)" col3="104" col3_disp="  104 (2 calls)" col4="64" col4_disp="   64 (2 calls)" col5="104" col5_disp="  104 (2 calls)"/>
+                    <row id="20" col0="C_drain_IO_L1_out_boundary_wrapper" col1="kernel_kernel.cpp:1026" col2="3182" col2_disp=" 3,182 (2 calls)" col3="264" col3_disp="  264 (2 calls)" col4="142" col4_disp="  142 (2 calls)" col5="180" col5_disp="  180 (2 calls)">
+                        <row id="29" col0="C_drain_IO_L1_out_boundary" col1="kernel_kernel.cpp:992" col2="3178" col2_disp=" 3,178 (2 calls)" col3="" col4="" col5="">
+                            <row id="28" col0="C_drain_IO_L1_out_intra_trans" col1="kernel_kernel.cpp:837" col2="2012" col2_disp=" 2,012 (2 calls)" col3="" col4="" col5=""/>
+                            <row id="27" col0="C_drain_IO_L1_out_inter_trans_boundary" col1="kernel_kernel.cpp:918" col2="686" col2_disp="   686 (2 calls)" col3="" col4="" col5=""/>
+                        </row>
+                    </row>
+                    <row id="11" col0="C_drain_IO_L1_out_wrapper" col1="kernel_kernel.cpp:980" col2="3642" col2_disp=" 3,642 (2 calls)" col3="304" col3_disp="  304 (2 calls)" col4="178" col4_disp="  178 (2 calls)" col5="256" col5_disp="  256 (2 calls)">
+                        <row id="4" col0="C_drain_IO_L1_out" col1="kernel_kernel.cpp:945" col2="3638" col2_disp=" 3,638 (2 calls)" col3="300" col3_disp="  300 (2 calls)" col4="174" col4_disp="  174 (2 calls)" col5="252" col5_disp="  252 (2 calls)">
+                            <row id="28" col0="C_drain_IO_L1_out_intra_trans" col1="kernel_kernel.cpp:837" col2="2012" col2_disp=" 2,012 (2 calls)" col3="" col4="" col5=""/>
+                            <row id="26" col0="C_drain_IO_L1_out_inter_trans" col1="kernel_kernel.cpp:876" col2="1146" col2_disp=" 1,146 (2 calls)" col3="" col4="" col5=""/>
+                        </row>
+                    </row>
+                    <row id="18" col0="C_drain_IO_L2_out_boundary" col1="kernel_kernel.cpp:1090" col2="608" col3="56" col4="28" col5="49"/>
+                    <row id="16" col0="C_drain_IO_L2_out" col1="kernel_kernel.cpp:1037" col2="925" col3="83" col4="52" col5="92"/>
+                    <row id="24" col0="C_drain_IO_L3_out" col1="kernel_kernel.cpp:1125" col2="578" col3="53" col4="33" col5="57"/>
+                    <row id="15" col0="C_drain_IO_L3_out_serialize" col1="kernel_kernel.cpp:1159" col2="614" col3="43" col4="16" col5="31"/>
+                </row>
+            </rows>
+            <notes/>
+        </hiertable>
+    </item>
+    <item name="Description of Compilation Phases">
+        <table>
+            <keys size="2">Compilation Phase, Description</keys>
+            <column name="Compile/Link">All functions are compiled and linked into a single design</column>
+            <column name="Unroll/Inline">After user unroll and inline pragmas are applied</column>
+            <column name="Performance/Pipeline">After performance and pipeline pragmas are applied</column>
+            <column name="Optimizations">After high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+

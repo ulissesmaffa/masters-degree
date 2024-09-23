@@ -1,0 +1,145 @@
+
+
+================================================================
+== Vitis HLS Report for 'B_IO_L2_in_inter_trans_Pipeline_VITIS_LOOP_445_2'
+================================================================
+* Date:           Thu Sep 12 16:26:51 2024
+
+* Version:        2023.1.1 (Build 3869133 on Jun 15 2023)
+* Project:        hls_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcu200-fsgd2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  2.612 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |       10|       10|  50.000 ns|  50.000 ns|   10|   10|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_445_2  |        8|        8|         2|          1|          1|     8|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.09>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%c4 = alloca i32 1"   --->   Operation 5 'alloca' 'c4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i512 %fifo_B_B_IO_L2_in_0, i64 666, i64 10, i64 18446744073709551615"   --->   Operation 6 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i512 %local_B, i64 666, i64 22, i64 18446744073709551615"   --->   Operation 7 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %fifo_B_B_IO_L2_in_0, void @empty_46, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6, i32 4294967295, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.38ns)   --->   "%store_ln0 = store i4 0, i4 %c4"   --->   Operation 9 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc"   --->   Operation 10 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%c4_4 = load i4 %c4" [src/kernel_kernel.cpp:445]   --->   Operation 11 'load' 'c4_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.70ns)   --->   "%icmp_ln445 = icmp_eq  i4 %c4_4, i4 8" [src/kernel_kernel.cpp:445]   --->   Operation 12 'icmp' 'icmp_ln445' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 13 [1/1] (0.70ns)   --->   "%add_ln445 = add i4 %c4_4, i4 1" [src/kernel_kernel.cpp:445]   --->   Operation 13 'add' 'add_ln445' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%br_ln445 = br i1 %icmp_ln445, void %for.inc.split, void %for.inc22.loopexit4.exitStub" [src/kernel_kernel.cpp:445]   --->   Operation 14 'br' 'br_ln445' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.38ns)   --->   "%store_ln445 = store i4 %add_ln445, i4 %c4" [src/kernel_kernel.cpp:445]   --->   Operation 15 'store' 'store_ln445' <Predicate = (!icmp_ln445)> <Delay = 0.38>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 24 'ret' 'ret_ln0' <Predicate = (icmp_ln445)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 2.61>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%zext_ln445 = zext i4 %c4_4" [src/kernel_kernel.cpp:445]   --->   Operation 16 'zext' 'zext_ln445' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%local_B_addr = getelementptr i512 %local_B, i64 0, i64 %zext_ln445" [src/kernel_kernel.cpp:453]   --->   Operation 17 'getelementptr' 'local_B_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%specpipeline_ln446 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_6" [src/kernel_kernel.cpp:446]   --->   Operation 18 'specpipeline' 'specpipeline_ln446' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%speclooptripcount_ln445 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [src/kernel_kernel.cpp:445]   --->   Operation 19 'speclooptripcount' 'speclooptripcount_ln445' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%specloopname_ln445 = specloopname void @_ssdm_op_SpecLoopName, void @empty_2" [src/kernel_kernel.cpp:445]   --->   Operation 20 'specloopname' 'specloopname_ln445' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (1.41ns)   --->   "%fifo_B_B_IO_L2_in_0_read = read i512 @_ssdm_op_Read.ap_fifo.volatile.i512P0A, i512 %fifo_B_B_IO_L2_in_0" [src/kernel_kernel.cpp:451]   --->   Operation 21 'read' 'fifo_B_B_IO_L2_in_0_read' <Predicate = true> <Delay = 1.41> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.41> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 512> <Depth = 2> <FIFO>
+ST_2 : Operation 22 [1/1] (1.20ns)   --->   "%store_ln453 = store i512 %fifo_B_B_IO_L2_in_0_read, i3 %local_B_addr" [src/kernel_kernel.cpp:453]   --->   Operation 22 'store' 'store_ln453' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM_2P_BRAM">   --->   Core 94 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 512> <Depth = 8> <RAM>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%br_ln445 = br void %for.inc" [src/kernel_kernel.cpp:445]   --->   Operation 23 'br' 'br_ln445' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5.000ns, clock uncertainty: 1.350ns.
+
+ <State 1>: 1.095ns
+The critical path consists of the following:
+	'alloca' operation ('c4') [3]  (0.000 ns)
+	'load' operation ('c4', src/kernel_kernel.cpp:445) on local variable 'c4' [10]  (0.000 ns)
+	'add' operation ('add_ln445', src/kernel_kernel.cpp:445) [12]  (0.708 ns)
+	'store' operation ('store_ln445', src/kernel_kernel.cpp:445) of variable 'add_ln445', src/kernel_kernel.cpp:445 on local variable 'c4' [22]  (0.387 ns)
+
+ <State 2>: 2.612ns
+The critical path consists of the following:
+	fifo read operation ('fifo_B_B_IO_L2_in_0_read', src/kernel_kernel.cpp:451) on port 'fifo_B_B_IO_L2_in_0' (src/kernel_kernel.cpp:451) [20]  (1.412 ns)
+	'store' operation ('store_ln453', src/kernel_kernel.cpp:453) of variable 'fifo_B_B_IO_L2_in_0_read', src/kernel_kernel.cpp:451 on array 'local_B' [21]  (1.200 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

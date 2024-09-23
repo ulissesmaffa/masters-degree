@@ -1,0 +1,146 @@
+
+
+================================================================
+== Vitis HLS Report for 'C_drain_IO_L2_out_Pipeline_VITIS_LOOP_1067_7_VITIS'
+================================================================
+* Date:           Thu Sep 12 16:26:56 2024
+
+* Version:        2023.1.1 (Build 3869133 on Jun 15 2023)
+* Project:        hls_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcu200-fsgd2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  2.810 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       34|       34|  0.170 us|  0.170 us|   34|   34|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                                         |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |                        Loop Name                        |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_1067_7_VITIS_LOOP_1069_8_VITIS_LOOP_1071_9  |       32|       32|         2|          1|          1|    32|       yes|
+        +---------------------------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.09>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%indvar_flatten28 = alloca i32 1"   --->   Operation 5 'alloca' 'indvar_flatten28' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i128 %fifo_C_drain_C_drain_IO_L2_out_0, i64 666, i64 10, i64 18446744073709551615"   --->   Operation 6 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i128 %fifo_C_drain_C_drain_IO_L2_out_1, i64 666, i64 10, i64 18446744073709551615"   --->   Operation 7 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %fifo_C_drain_C_drain_IO_L2_out_0, void @empty_46, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6, i32 4294967295, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %fifo_C_drain_C_drain_IO_L2_out_1, void @empty_46, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6, i32 4294967295, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.38ns)   --->   "%store_ln0 = store i6 0, i6 %indvar_flatten28"   --->   Operation 10 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc47"   --->   Operation 11 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%indvar_flatten28_load = load i6 %indvar_flatten28" [src/kernel_kernel.cpp:1067]   --->   Operation 12 'load' 'indvar_flatten28_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.70ns)   --->   "%icmp_ln1067 = icmp_eq  i6 %indvar_flatten28_load, i6 32" [src/kernel_kernel.cpp:1067]   --->   Operation 13 'icmp' 'icmp_ln1067' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 14 [1/1] (0.70ns)   --->   "%add_ln1067 = add i6 %indvar_flatten28_load, i6 1" [src/kernel_kernel.cpp:1067]   --->   Operation 14 'add' 'add_ln1067' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%br_ln1067 = br i1 %icmp_ln1067, void %for.inc53, void %for.inc56.loopexit.exitStub" [src/kernel_kernel.cpp:1067]   --->   Operation 15 'br' 'br_ln1067' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.38ns)   --->   "%store_ln1071 = store i6 %add_ln1067, i6 %indvar_flatten28" [src/kernel_kernel.cpp:1071]   --->   Operation 16 'store' 'store_ln1071' <Predicate = (!icmp_ln1067)> <Delay = 0.38>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 25 'ret' 'ret_ln0' <Predicate = (icmp_ln1067)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 2.81>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @VITIS_LOOP_1067_7_VITIS_LOOP_1069_8_VITIS_LOOP_107"   --->   Operation 17 'specloopname' 'specloopname_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 32, i64 32, i64 32"   --->   Operation 18 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @VITIS_LOOP_1069_8_VITIS_LOOP_1071_9_str"   --->   Operation 19 'specloopname' 'specloopname_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%specpipeline_ln1072 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_6" [src/kernel_kernel.cpp:1072]   --->   Operation 20 'specpipeline' 'specpipeline_ln1072' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%specloopname_ln1071 = specloopname void @_ssdm_op_SpecLoopName, void @empty_26" [src/kernel_kernel.cpp:1071]   --->   Operation 21 'specloopname' 'specloopname_ln1071' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (1.40ns)   --->   "%fifo_C_drain_C_drain_IO_L2_out_1_read = read i128 @_ssdm_op_Read.ap_fifo.volatile.i128P0A, i128 %fifo_C_drain_C_drain_IO_L2_out_1" [src/kernel_kernel.cpp:1076]   --->   Operation 22 'read' 'fifo_C_drain_C_drain_IO_L2_out_1_read' <Predicate = true> <Delay = 1.40> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 128> <Depth = 2> <FIFO>
+ST_2 : Operation 23 [1/1] (1.40ns)   --->   "%write_ln1078 = write void @_ssdm_op_Write.ap_fifo.volatile.i128P0A, i128 %fifo_C_drain_C_drain_IO_L2_out_0, i128 %fifo_C_drain_C_drain_IO_L2_out_1_read" [src/kernel_kernel.cpp:1078]   --->   Operation 23 'write' 'write_ln1078' <Predicate = true> <Delay = 1.40> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 128> <Depth = 2> <FIFO>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%br_ln1071 = br void %for.inc47" [src/kernel_kernel.cpp:1071]   --->   Operation 24 'br' 'br_ln1071' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5.000ns, clock uncertainty: 1.350ns.
+
+ <State 1>: 1.093ns
+The critical path consists of the following:
+	'alloca' operation ('indvar_flatten28') [3]  (0.000 ns)
+	'load' operation ('indvar_flatten28_load', src/kernel_kernel.cpp:1067) on local variable 'indvar_flatten28' [11]  (0.000 ns)
+	'add' operation ('add_ln1067', src/kernel_kernel.cpp:1067) [13]  (0.706 ns)
+	'store' operation ('store_ln1071', src/kernel_kernel.cpp:1071) of variable 'add_ln1067', src/kernel_kernel.cpp:1067 on local variable 'indvar_flatten28' [23]  (0.387 ns)
+
+ <State 2>: 2.810ns
+The critical path consists of the following:
+	fifo read operation ('fifo_C_drain_C_drain_IO_L2_out_1_read', src/kernel_kernel.cpp:1076) on port 'fifo_C_drain_C_drain_IO_L2_out_1' (src/kernel_kernel.cpp:1076) [21]  (1.405 ns)
+	fifo write operation ('write_ln1078', src/kernel_kernel.cpp:1078) on port 'fifo_C_drain_C_drain_IO_L2_out_0' (src/kernel_kernel.cpp:1078) [22]  (1.405 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

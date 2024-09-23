@@ -1,0 +1,70 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'kernel0'" level="0">
+<item name = "Date">Sat Sep 14 23:31:22 2024
+</item>
+<item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
+<item name = "Project">hls_prj</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcu200-fsgd2104-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">5.00 ns, 4.375 ns, 0.62 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">32797, 33589, 0.164 ms, 0.168 ms, 32784, 33581, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_PE_wrapper130_fu_322">PE_wrapper130, 32783, 32783, 0.164 ms, 0.164 ms, 32783, 32783, none</column>
+<column name="grp_PE_wrapper131_fu_331">PE_wrapper131, 32783, 32783, 0.164 ms, 0.164 ms, 32783, 32783, none</column>
+<column name="grp_PE_wrapper132_fu_340">PE_wrapper132, 32783, 32783, 0.164 ms, 0.164 ms, 32783, 32783, none</column>
+<column name="grp_PE_wrapper_fu_349">PE_wrapper, 32783, 32783, 0.164 ms, 0.164 ms, 32783, 32783, none</column>
+<column name="grp_A_IO_L3_in_serialize_fu_358">A_IO_L3_in_serialize, 1034, 1034, 5.170 us, 5.170 us, 1034, 1034, none</column>
+<column name="grp_B_IO_L3_in_serialize_fu_366">B_IO_L3_in_serialize, 1034, 1034, 5.170 us, 5.170 us, 1034, 1034, none</column>
+<column name="grp_C_drain_IO_L3_out_serialize_fu_374">C_drain_IO_L3_out_serialize, 1032, 1032, 5.160 us, 5.160 us, 1032, 1032, none</column>
+<column name="grp_C_drain_IO_L1_out_wrapper136_fu_382">C_drain_IO_L1_out_wrapper136, 1698, 1698, 8.490 us, 8.490 us, 1698, 1698, none</column>
+<column name="grp_C_drain_IO_L1_out_wrapper_fu_389">C_drain_IO_L1_out_wrapper, 1698, 1698, 8.490 us, 8.490 us, 1698, 1698, none</column>
+<column name="grp_B_IO_L2_in_fu_396">B_IO_L2_in, 1643, 33580, 8.215 us, 0.168 ms, 1643, 33580, none</column>
+<column name="grp_A_IO_L2_in_fu_403">A_IO_L2_in, 1643, 33580, 8.215 us, 0.168 ms, 1643, 33580, none</column>
+<column name="grp_C_drain_IO_L1_out_boundary_wrapper135_fu_410">C_drain_IO_L1_out_boundary_wrapper135, 1361, 1361, 6.805 us, 6.805 us, 1361, 1361, none</column>
+<column name="grp_C_drain_IO_L1_out_boundary_wrapper_fu_416">C_drain_IO_L1_out_boundary_wrapper, 1361, 1361, 6.805 us, 6.805 us, 1361, 1361, none</column>
+<column name="grp_B_IO_L2_in_boundary_fu_422">B_IO_L2_in_boundary, 811, 33580, 4.055 us, 0.168 ms, 811, 33580, none</column>
+<column name="grp_A_IO_L2_in_boundary_fu_428">A_IO_L2_in_boundary, 811, 33580, 4.055 us, 0.168 ms, 811, 33580, none</column>
+<column name="grp_C_drain_IO_L2_out_fu_434">C_drain_IO_L2_out, 1121, 1121, 5.605 us, 5.605 us, 1121, 1121, none</column>
+<column name="grp_A_PE_dummy_in133_fu_441">A_PE_dummy_in133, 32770, 32770, 0.164 ms, 0.164 ms, 32770, 32770, none</column>
+<column name="grp_B_PE_dummy_in134_fu_446">B_PE_dummy_in134, 32770, 32770, 0.164 ms, 0.164 ms, 32770, 32770, none</column>
+<column name="grp_A_PE_dummy_in_fu_451">A_PE_dummy_in, 32770, 32770, 0.164 ms, 0.164 ms, 32770, 32770, none</column>
+<column name="grp_B_PE_dummy_in_fu_456">B_PE_dummy_in, 32770, 32770, 0.164 ms, 0.164 ms, 32770, 32770, none</column>
+<column name="grp_A_IO_L3_in_fu_461">A_IO_L3_in, 1026, 1026, 5.130 us, 5.130 us, 1026, 1026, none</column>
+<column name="grp_B_IO_L3_in_fu_467">B_IO_L3_in, 1026, 1026, 5.130 us, 5.130 us, 1026, 1026, none</column>
+<column name="grp_C_drain_IO_L3_out_fu_473">C_drain_IO_L3_out, 1026, 1026, 5.130 us, 5.130 us, 1026, 1026, none</column>
+<column name="grp_C_drain_IO_L2_out_boundary_fu_479">C_drain_IO_L2_out_boundary, 514, 514, 2.570 us, 2.570 us, 514, 514, none</column>
+<column name="call_ln1180_kernel0_entry12_fu_485">kernel0_entry12, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

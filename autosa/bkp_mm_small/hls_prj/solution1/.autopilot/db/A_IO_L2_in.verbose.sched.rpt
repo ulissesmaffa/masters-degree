@@ -1,0 +1,211 @@
+
+
+================================================================
+== Vitis HLS Report for 'A_IO_L2_in'
+================================================================
+* Date:           Thu Sep 12 16:26:50 2024
+
+* Version:        2023.1.1 (Build 3869133 on Jun 15 2023)
+* Project:        hls_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcu200-fsgd2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  3.193 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+------+-------+---------+
+    |  Latency (cycles) |  Latency (absolute) |   Interval   | Pipeline|
+    |   min   |   max   |    min   |    max   |  min |  max  |   Type  |
+    +---------+---------+----------+----------+------+-------+---------+
+    |     1771|    33645|  8.855 us|  0.168 ms|  1771|  33645|       no|
+    +---------+---------+----------+----------+------+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------------+---------+---------+------------+-----------+-----------+------+----------+
+        |                       |  Latency (cycles) |  Iteration |  Initiation Interval  | Trip |          |
+        |       Loop Name       |   min   |   max   |   Latency  |  achieved |   target  | Count| Pipelined|
+        +-----------------------+---------+---------+------------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_173_1     |     1768|    33128|  442 ~ 8282|          -|          -|     4|        no|
+        | + VITIS_LOOP_174_2    |      440|     8280|  110 ~ 2070|          -|          -|     4|        no|
+        |  ++ VITIS_LOOP_175_3  |      108|     2068|    27 ~ 517|          -|          -|     4|        no|
+        +-----------------------+---------+---------+------------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 6 3 
+3 --> 4 2 
+4 --> 5 3 
+5 --> 4 
+6 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.38>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%c0 = alloca i32 1"   --->   Operation 7 'alloca' 'c0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %fifo_A_PE_0_0, i64 666, i64 10, i64 18446744073709551615"   --->   Operation 8 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i512 %fifo_A_A_IO_L2_in_1, i64 666, i64 10, i64 18446744073709551615"   --->   Operation 9 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i512 %fifo_A_A_IO_L2_in_0, i64 666, i64 10, i64 18446744073709551615"   --->   Operation 10 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %fifo_A_PE_0_0, void @empty_46, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6, i32 4294967295, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %fifo_A_A_IO_L2_in_1, void @empty_46, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6, i32 4294967295, i32 0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %fifo_A_A_IO_L2_in_0, void @empty_46, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6, i32 4294967295, i32 0"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%local_A_ping = alloca i64 1" [src/kernel_kernel.cpp:160]   --->   Operation 14 'alloca' 'local_A_ping' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_2P_BRAM">   --->   Core 94 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 512> <Depth = 8> <RAM>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%local_A_pong = alloca i64 1" [src/kernel_kernel.cpp:162]   --->   Operation 15 'alloca' 'local_A_pong' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_2P_BRAM">   --->   Core 94 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 512> <Depth = 8> <RAM>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specmemcore_ln161 = specmemcore void @_ssdm_op_SpecMemCore, i512 %local_A_ping, i64 666, i64 22, i64 18446744073709551615" [src/kernel_kernel.cpp:161]   --->   Operation 16 'specmemcore' 'specmemcore_ln161' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%specmemcore_ln163 = specmemcore void @_ssdm_op_SpecMemCore, i512 %local_A_pong, i64 666, i64 22, i64 18446744073709551615" [src/kernel_kernel.cpp:163]   --->   Operation 17 'specmemcore' 'specmemcore_ln163' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.38ns)   --->   "%store_ln173 = store i3 0, i3 %c0" [src/kernel_kernel.cpp:173]   --->   Operation 18 'store' 'store_ln173' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 19 [1/1] (0.38ns)   --->   "%br_ln173 = br void %VITIS_LOOP_174_2" [src/kernel_kernel.cpp:173]   --->   Operation 19 'br' 'br_ln173' <Predicate = true> <Delay = 0.38>
+
+State 2 <SV = 1> <Delay = 0.57>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%intra_trans_en = phi i1 0, void %entry, i1 1, void %for.inc58"   --->   Operation 20 'phi' 'intra_trans_en' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%c0_7 = load i3 %c0" [src/kernel_kernel.cpp:173]   --->   Operation 21 'load' 'c0_7' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.57ns)   --->   "%icmp_ln173 = icmp_eq  i3 %c0_7, i3 4" [src/kernel_kernel.cpp:173]   --->   Operation 22 'icmp' 'icmp_ln173' <Predicate = true> <Delay = 0.57> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.57> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 23 [1/1] (0.57ns)   --->   "%c0_8 = add i3 %c0_7, i3 1" [src/kernel_kernel.cpp:173]   --->   Operation 23 'add' 'c0_8' <Predicate = true> <Delay = 0.57> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.57> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%br_ln173 = br i1 %icmp_ln173, void %VITIS_LOOP_174_2.split, void %for.end60" [src/kernel_kernel.cpp:173]   --->   Operation 24 'br' 'br_ln173' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%speclooptripcount_ln173 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 4, i64 4, i64 4" [src/kernel_kernel.cpp:173]   --->   Operation 25 'speclooptripcount' 'speclooptripcount_ln173' <Predicate = (!icmp_ln173)> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%specloopname_ln173 = specloopname void @_ssdm_op_SpecLoopName, void @empty_50" [src/kernel_kernel.cpp:173]   --->   Operation 26 'specloopname' 'specloopname_ln173' <Predicate = (!icmp_ln173)> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.38ns)   --->   "%br_ln174 = br void %VITIS_LOOP_175_3" [src/kernel_kernel.cpp:174]   --->   Operation 27 'br' 'br_ln174' <Predicate = (!icmp_ln173)> <Delay = 0.38>
+ST_2 : Operation 28 [2/2] (0.00ns)   --->   "%call_ln228 = call void @A_IO_L2_in_intra_trans, i512 %local_A_ping, i64 %fifo_A_PE_0_0, i1 1" [src/kernel_kernel.cpp:228]   --->   Operation 28 'call' 'call_ln228' <Predicate = (icmp_ln173)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.95>
+ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%intra_trans_en_7 = phi i1 %intra_trans_en, void %VITIS_LOOP_174_2.split, i1 1, void %for.inc55"   --->   Operation 29 'phi' 'intra_trans_en_7' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%c1 = phi i3 0, void %VITIS_LOOP_174_2.split, i3 %c1_4, void %for.inc55"   --->   Operation 30 'phi' 'c1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 31 [1/1] (0.57ns)   --->   "%icmp_ln174 = icmp_eq  i3 %c1, i3 4" [src/kernel_kernel.cpp:174]   --->   Operation 31 'icmp' 'icmp_ln174' <Predicate = true> <Delay = 0.57> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.57> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 32 [1/1] (0.57ns)   --->   "%c1_4 = add i3 %c1, i3 1" [src/kernel_kernel.cpp:174]   --->   Operation 32 'add' 'c1_4' <Predicate = true> <Delay = 0.57> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.57> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%br_ln174 = br i1 %icmp_ln174, void %VITIS_LOOP_175_3.split, void %for.inc58" [src/kernel_kernel.cpp:174]   --->   Operation 33 'br' 'br_ln174' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%speclooptripcount_ln174 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 4, i64 4, i64 4" [src/kernel_kernel.cpp:174]   --->   Operation 34 'speclooptripcount' 'speclooptripcount_ln174' <Predicate = (!icmp_ln174)> <Delay = 0.00>
+ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%specloopname_ln174 = specloopname void @_ssdm_op_SpecLoopName, void @empty_51" [src/kernel_kernel.cpp:174]   --->   Operation 35 'specloopname' 'specloopname_ln174' <Predicate = (!icmp_ln174)> <Delay = 0.00>
+ST_3 : Operation 36 [1/1] (0.38ns)   --->   "%br_ln175 = br void %for.body32" [src/kernel_kernel.cpp:175]   --->   Operation 36 'br' 'br_ln175' <Predicate = (!icmp_ln174)> <Delay = 0.38>
+ST_3 : Operation 37 [1/1] (0.38ns)   --->   "%store_ln173 = store i3 %c0_8, i3 %c0" [src/kernel_kernel.cpp:173]   --->   Operation 37 'store' 'store_ln173' <Predicate = (icmp_ln174)> <Delay = 0.38>
+ST_3 : Operation 38 [1/1] (0.00ns)   --->   "%br_ln173 = br void %VITIS_LOOP_174_2" [src/kernel_kernel.cpp:173]   --->   Operation 38 'br' 'br_ln173' <Predicate = (icmp_ln174)> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 0.57>
+ST_4 : Operation 39 [1/1] (0.00ns)   --->   "%intra_trans_en_8 = phi i1 %intra_trans_en_7, void %VITIS_LOOP_175_3.split, i1 1, void %for.inc"   --->   Operation 39 'phi' 'intra_trans_en_8' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 40 [1/1] (0.00ns)   --->   "%arb_4 = phi i1 0, void %VITIS_LOOP_175_3.split, i1 %arb, void %for.inc"   --->   Operation 40 'phi' 'arb_4' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 41 [1/1] (0.00ns)   --->   "%c2 = phi i3 0, void %VITIS_LOOP_175_3.split, i3 %c2_7, void %for.inc"   --->   Operation 41 'phi' 'c2' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 42 [1/1] (0.57ns)   --->   "%icmp_ln175 = icmp_eq  i3 %c2, i3 4" [src/kernel_kernel.cpp:175]   --->   Operation 42 'icmp' 'icmp_ln175' <Predicate = true> <Delay = 0.57> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.57> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 43 [1/1] (0.57ns)   --->   "%c2_7 = add i3 %c2, i3 1" [src/kernel_kernel.cpp:175]   --->   Operation 43 'add' 'c2_7' <Predicate = true> <Delay = 0.57> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.57> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 44 [1/1] (0.00ns)   --->   "%br_ln175 = br i1 %icmp_ln175, void %for.body32.split, void %for.inc55" [src/kernel_kernel.cpp:175]   --->   Operation 44 'br' 'br_ln175' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 45 [1/1] (0.00ns)   --->   "%speclooptripcount_ln175 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 4, i64 4, i64 4" [src/kernel_kernel.cpp:175]   --->   Operation 45 'speclooptripcount' 'speclooptripcount_ln175' <Predicate = (!icmp_ln175)> <Delay = 0.00>
+ST_4 : Operation 46 [1/1] (0.00ns)   --->   "%specloopname_ln175 = specloopname void @_ssdm_op_SpecLoopName, void @empty_16" [src/kernel_kernel.cpp:175]   --->   Operation 46 'specloopname' 'specloopname_ln175' <Predicate = (!icmp_ln175)> <Delay = 0.00>
+ST_4 : Operation 47 [1/1] (0.00ns)   --->   "%br_ln179 = br i1 %arb_4, void %if.then, void %if.else" [src/kernel_kernel.cpp:179]   --->   Operation 47 'br' 'br_ln179' <Predicate = (!icmp_ln175)> <Delay = 0.00>
+ST_4 : Operation 48 [2/2] (0.00ns)   --->   "%call_ln180 = call void @A_IO_L2_in_inter_trans, i512 %local_A_pong, i512 %fifo_A_A_IO_L2_in_0, i512 %fifo_A_A_IO_L2_in_1" [src/kernel_kernel.cpp:180]   --->   Operation 48 'call' 'call_ln180' <Predicate = (!icmp_ln175 & !arb_4)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 49 [2/2] (0.00ns)   --->   "%call_ln190 = call void @A_IO_L2_in_intra_trans, i512 %local_A_ping, i64 %fifo_A_PE_0_0, i1 %intra_trans_en_8" [src/kernel_kernel.cpp:190]   --->   Operation 49 'call' 'call_ln190' <Predicate = (!icmp_ln175 & !arb_4)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 50 [2/2] (0.00ns)   --->   "%call_ln200 = call void @A_IO_L2_in_inter_trans, i512 %local_A_ping, i512 %fifo_A_A_IO_L2_in_0, i512 %fifo_A_A_IO_L2_in_1" [src/kernel_kernel.cpp:200]   --->   Operation 50 'call' 'call_ln200' <Predicate = (!icmp_ln175 & arb_4)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 51 [2/2] (0.00ns)   --->   "%call_ln210 = call void @A_IO_L2_in_intra_trans, i512 %local_A_pong, i64 %fifo_A_PE_0_0, i1 %intra_trans_en_8" [src/kernel_kernel.cpp:210]   --->   Operation 51 'call' 'call_ln210' <Predicate = (!icmp_ln175 & arb_4)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 52 [1/1] (0.00ns)   --->   "%br_ln174 = br void %VITIS_LOOP_175_3" [src/kernel_kernel.cpp:174]   --->   Operation 52 'br' 'br_ln174' <Predicate = (icmp_ln175)> <Delay = 0.00>
+
+State 5 <SV = 4> <Delay = 0.12>
+ST_5 : Operation 53 [1/2] (0.00ns)   --->   "%call_ln180 = call void @A_IO_L2_in_inter_trans, i512 %local_A_pong, i512 %fifo_A_A_IO_L2_in_0, i512 %fifo_A_A_IO_L2_in_1" [src/kernel_kernel.cpp:180]   --->   Operation 53 'call' 'call_ln180' <Predicate = (!arb_4)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 54 [1/2] (0.00ns)   --->   "%call_ln190 = call void @A_IO_L2_in_intra_trans, i512 %local_A_ping, i64 %fifo_A_PE_0_0, i1 %intra_trans_en_8" [src/kernel_kernel.cpp:190]   --->   Operation 54 'call' 'call_ln190' <Predicate = (!arb_4)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 55 [1/1] (0.00ns)   --->   "%br_ln199 = br void %for.inc" [src/kernel_kernel.cpp:199]   --->   Operation 55 'br' 'br_ln199' <Predicate = (!arb_4)> <Delay = 0.00>
+ST_5 : Operation 56 [1/2] (0.00ns)   --->   "%call_ln200 = call void @A_IO_L2_in_inter_trans, i512 %local_A_ping, i512 %fifo_A_A_IO_L2_in_0, i512 %fifo_A_A_IO_L2_in_1" [src/kernel_kernel.cpp:200]   --->   Operation 56 'call' 'call_ln200' <Predicate = (arb_4)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 57 [1/2] (0.00ns)   --->   "%call_ln210 = call void @A_IO_L2_in_intra_trans, i512 %local_A_pong, i64 %fifo_A_PE_0_0, i1 %intra_trans_en_8" [src/kernel_kernel.cpp:210]   --->   Operation 57 'call' 'call_ln210' <Predicate = (arb_4)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 58 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc"   --->   Operation 58 'br' 'br_ln0' <Predicate = (arb_4)> <Delay = 0.00>
+ST_5 : Operation 59 [1/1] (0.12ns)   --->   "%arb = xor i1 %arb_4, i1 1" [src/kernel_kernel.cpp:221]   --->   Operation 59 'xor' 'arb' <Predicate = true> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 60 [1/1] (0.00ns)   --->   "%br_ln175 = br void %for.body32" [src/kernel_kernel.cpp:175]   --->   Operation 60 'br' 'br_ln175' <Predicate = true> <Delay = 0.00>
+
+State 6 <SV = 2> <Delay = 0.00>
+ST_6 : Operation 61 [1/2] (0.00ns)   --->   "%call_ln228 = call void @A_IO_L2_in_intra_trans, i512 %local_A_ping, i64 %fifo_A_PE_0_0, i1 1" [src/kernel_kernel.cpp:228]   --->   Operation 61 'call' 'call_ln228' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 62 [1/1] (0.00ns)   --->   "%ret_ln249 = ret" [src/kernel_kernel.cpp:249]   --->   Operation 62 'ret' 'ret_ln249' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5.000ns, clock uncertainty: 1.350ns.
+
+ <State 1>: 0.387ns
+The critical path consists of the following:
+	'alloca' operation ('c0') [4]  (0.000 ns)
+	'store' operation ('store_ln173', src/kernel_kernel.cpp:173) of constant 0 on local variable 'c0' [15]  (0.387 ns)
+
+ <State 2>: 0.572ns
+The critical path consists of the following:
+	'load' operation ('c0', src/kernel_kernel.cpp:173) on local variable 'c0' [19]  (0.000 ns)
+	'icmp' operation ('icmp_ln173', src/kernel_kernel.cpp:173) [20]  (0.572 ns)
+
+ <State 3>: 0.959ns
+The critical path consists of the following:
+	'phi' operation ('c1') with incoming values : ('c1', src/kernel_kernel.cpp:174) [29]  (0.000 ns)
+	'icmp' operation ('icmp_ln174', src/kernel_kernel.cpp:174) [30]  (0.572 ns)
+	blocking operation 0.387 ns on control path)
+
+ <State 4>: 0.572ns
+The critical path consists of the following:
+	'phi' operation ('c2') with incoming values : ('c2', src/kernel_kernel.cpp:175) [40]  (0.000 ns)
+	'icmp' operation ('icmp_ln175', src/kernel_kernel.cpp:175) [41]  (0.572 ns)
+
+ <State 5>: 0.122ns
+The critical path consists of the following:
+	'xor' operation ('arb', src/kernel_kernel.cpp:221) [57]  (0.122 ns)
+
+ <State 6>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

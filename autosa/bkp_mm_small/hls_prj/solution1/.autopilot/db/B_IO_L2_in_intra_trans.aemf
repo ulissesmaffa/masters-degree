@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1726169220345">
+  <ports id="1" name="local_B" type="PortType" coreName="RAM_2P_BRAM" coreId="2710401936" bitwidth="512" iftype="IfTypeRegister" arraysize="8">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="2" name="fifo_B_PE_0_1" type="PortType" coreName="FIFO_SRL" coreId="2708868032" bitwidth="64" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="3" name="intra_trans_en" type="PortType" coreId="2710081840" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="18" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="19" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="20" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="21" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="26" source_obj="//@ports.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="27" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@ports.1"/>
+  <edges id="28" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="68" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="69" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.2"/>
+  <edges id="70" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="71" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <blocks id="9" name="entry" type="BlockType">
+    <controlOutputObjs>for.inc.preheader</controlOutputObjs>
+    <controlOutputObjs>cleanup</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="intra_trans_en_read" lineNumber="401" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="1850303858" contextFuncName="B_IO_L2_in_intra_trans" bitwidth="1" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="401" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L2_in_intra_trans"/>
+      <dataInputObjs>intra_trans_en</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="br_ln401" lineNumber="401" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="1717924464" contextFuncName="B_IO_L2_in_intra_trans" opcode="br" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="401" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L2_in_intra_trans"/>
+      <dataInputObjs>read</dataInputObjs>
+      <controlInputObjs>cleanup</controlInputObjs>
+      <controlInputObjs>for.inc.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/kernel_kernel.cpp">
+      <validLinenumbers>401</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="13" name="for.inc.preheader" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>cleanup</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="empty" coreId="48" bitwidth="32" opcode="wait" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="_ln0" rtlName="grp_B_IO_L2_in_intra_trans_Pipeline_VITIS_LOOP_407_1_V_fu_38" coreId="2709308832" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <dataInputObjs>local_B</dataInputObjs>
+      <dataOutputObjs>fifo_B_PE_0_1</dataOutputObjs>
+      <constName>B_IO_L2_in_intra_trans_Pipeline_VITIS_LOOP_407_1_V</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="br_ln0" coreId="2710657968" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <controlInputObjs>cleanup</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="15" name="cleanup" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlInputObjs>for.inc.preheader</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="_ln430" lineNumber="430" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="2711214272" contextFuncName="B_IO_L2_in_intra_trans" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="430" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L2_in_intra_trans"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/kernel_kernel.cpp">
+      <validLinenumbers>430</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <regnodes realName="intra_trans_en_read_reg_46">
+    <nodeIds>7</nodeIds>
+  </regnodes>
+  <moduleNodes realName="grp_B_IO_L2_in_intra_trans_Pipeline_VITIS_LOOP_407_1_V_fu_38">
+    <nodeIds>11</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="intra_trans_en_read_read_fu_32">
+    <nodeIds>7</nodeIds>
+  </ioNodes>
+  <ioPorts name="fifo_B_PE_0_1">
+    <contents name="call">
+      <nodeIds>11</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="intra_trans_en">
+    <contents name="read">
+      <nodeIds>7</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="2" latency="2"/>
+    </states>
+    <states id="2">
+      <operations id="11" stage="1" latency="2"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="B_IO_L2_in_intra_trans" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1" mMaxLatency="517">
+      <basicBlocks>9</basicBlocks>
+      <basicBlocks>13</basicBlocks>
+      <basicBlocks>15</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

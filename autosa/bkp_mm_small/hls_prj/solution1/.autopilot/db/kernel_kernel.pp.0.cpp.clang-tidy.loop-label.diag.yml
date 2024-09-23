@@ -1,0 +1,1330 @@
+---
+MainSourceFile:  /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1213_1:  '
+    FileOffset:      1213
+    FilePath:        /home/ulisses/Tools/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot/etc/ap_int_base.h
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          55838
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1213_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        /home/ulisses/Tools/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          283610
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        /home/ulisses/Tools/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          284074
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        /home/ulisses/Tools/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          284539
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        /home/ulisses/Tools/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot/etc/ap_fixed_base.h
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          567776
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25_1:  '
+    FileOffset:      25
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.h
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          940368
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_26_2:  '
+    FileOffset:      26
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.h
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          940407
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_26_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_27_3:  '
+    FileOffset:      27
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.h
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          940448
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_27_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_30_4:  '
+    FileOffset:      30
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.h
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          940495
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_30_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_32_5:  '
+    FileOffset:      32
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.h
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          940543
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_32_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_33_6:  '
+    FileOffset:      33
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.h
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          940590
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_33_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_46_1:  '
+    FileOffset:      46
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.h
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          940819
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_46_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_47_2:  '
+    FileOffset:      47
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.h
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          940858
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_47_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_48_3:  '
+    FileOffset:      48
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.h
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          940899
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_48_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_51_4:  '
+    FileOffset:      51
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.h
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          940946
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_51_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_53_5:  '
+    FileOffset:      53
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.h
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          940994
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_53_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_54_6:  '
+    FileOffset:      54
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.h
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          941041
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_54_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_67_1:  '
+    FileOffset:      67
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.h
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          941272
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_67_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_68_2:  '
+    FileOffset:      68
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.h
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          941311
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_68_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_71_3:  '
+    FileOffset:      71
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.h
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          941356
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_71_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_73_4:  '
+    FileOffset:      73
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.h
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          941402
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_73_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_76_5:  '
+    FileOffset:      76
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.h
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          941451
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_76_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_77_6:  '
+    FileOffset:      77
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.h
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          941498
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_77_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_8_1:  '
+    FileOffset:      8
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          943720
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_8_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_9_2:  '
+    FileOffset:      9
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          943766
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_9_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_10_3:  '
+    FileOffset:      10
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          943814
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_10_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_13_4:  '
+    FileOffset:      13
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          943868
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_13_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_15_5:  '
+    FileOffset:      15
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          943923
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_15_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_38_1:  '
+    FileOffset:      38
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          944333
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_38_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_62_1:  '
+    FileOffset:      62
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          944787
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_62_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_64_2:  '
+    FileOffset:      64
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          944836
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_64_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_66_3:  '
+    FileOffset:      66
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          944887
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_66_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_73_4:  '
+    FileOffset:      73
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          945067
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_73_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_97_1:  '
+    FileOffset:      97
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          945605
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_97_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_100_2:  '
+    FileOffset:      100
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          945677
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_100_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_112_3:  '
+    FileOffset:      112
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          945944
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_112_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_137_1:  '
+    FileOffset:      137
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          946428
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_137_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_140_2:  '
+    FileOffset:      140
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          946498
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_140_2: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: RAM_2P_BRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      161
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: RAM_2P_BRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      163
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_173_1:  '
+    FileOffset:      173
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          947234
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_173_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_174_2:  '
+    FileOffset:      174
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          947282
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_174_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_175_3:  '
+    FileOffset:      175
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          947332
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_175_3: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: RAM_2P_BRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      258
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: RAM_2P_BRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      260
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_270_1:  '
+    FileOffset:      270
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          950077
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_270_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_271_2:  '
+    FileOffset:      271
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          950125
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_271_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_272_3:  '
+    FileOffset:      272
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          950175
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_272_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_353_1:  '
+    FileOffset:      353
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          952520
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_353_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_354_2:  '
+    FileOffset:      354
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          952566
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_354_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_355_3:  '
+    FileOffset:      355
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          952614
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_355_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_358_4:  '
+    FileOffset:      358
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          952668
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_358_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_360_5:  '
+    FileOffset:      360
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          952723
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_360_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_383_1:  '
+    FileOffset:      383
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          953133
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_383_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_407_1:  '
+    FileOffset:      407
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          953587
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_407_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_409_2:  '
+    FileOffset:      409
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          953636
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_409_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_411_3:  '
+    FileOffset:      411
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          953687
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_411_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_418_4:  '
+    FileOffset:      418
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          953867
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_418_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_442_1:  '
+    FileOffset:      442
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          954405
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_442_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_445_2:  '
+    FileOffset:      445
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          954477
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_445_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_457_3:  '
+    FileOffset:      457
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          954744
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_457_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_482_1:  '
+    FileOffset:      482
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          955228
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_482_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_485_2:  '
+    FileOffset:      485
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          955298
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_485_2: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: RAM_2P_BRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      506
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: RAM_2P_BRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      508
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_518_1:  '
+    FileOffset:      518
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          956034
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_518_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_519_2:  '
+    FileOffset:      519
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          956082
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_519_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_520_3:  '
+    FileOffset:      520
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          956132
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_520_3: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: RAM_2P_BRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      603
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: RAM_2P_BRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      605
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_615_1:  '
+    FileOffset:      615
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          958877
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_615_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_616_2:  '
+    FileOffset:      616
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          958925
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_616_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_617_3:  '
+    FileOffset:      617
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          958975
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_617_3: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: RAM_2P_BRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      702
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_705_1:  '
+    FileOffset:      705
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          961685
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_705_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_706_2:  '
+    FileOffset:      706
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          961731
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_706_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_707_3:  '
+    FileOffset:      707
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          961779
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_707_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_710_4:  '
+    FileOffset:      710
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          961833
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_710_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_712_5:  '
+    FileOffset:      712
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          961888
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_712_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_714_6:  '
+    FileOffset:      714
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          961945
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_714_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_720_7:  '
+    FileOffset:      720
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          962136
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_720_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_731_8:  '
+    FileOffset:      731
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          962537
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_731_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_740_9:  '
+    FileOffset:      740
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          962837
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_740_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_790_1:  '
+    FileOffset:      790
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          964318
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_790_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_791_2:  '
+    FileOffset:      791
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          964364
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_791_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_792_3:  '
+    FileOffset:      792
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          964412
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_792_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_795_4:  '
+    FileOffset:      795
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          964466
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_795_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_797_5:  '
+    FileOffset:      797
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          964521
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_797_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_799_6:  '
+    FileOffset:      799
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          964578
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_799_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_816_1:  '
+    FileOffset:      816
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          964858
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_816_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_817_2:  '
+    FileOffset:      817
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          964904
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_817_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_818_3:  '
+    FileOffset:      818
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          964952
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_818_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_821_4:  '
+    FileOffset:      821
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          965006
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_821_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_823_5:  '
+    FileOffset:      823
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          965061
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_823_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_825_6:  '
+    FileOffset:      825
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          965118
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_825_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_849_1:  '
+    FileOffset:      849
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          965570
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_849_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_851_2:  '
+    FileOffset:      851
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          965619
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_851_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_860_3:  '
+    FileOffset:      860
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          965868
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_860_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_882_1:  '
+    FileOffset:      882
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          966475
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_882_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_885_2:  '
+    FileOffset:      885
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          966547
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_885_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_887_3:  '
+    FileOffset:      887
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          966600
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_887_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_899_4:  '
+    FileOffset:      899
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          966892
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_899_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_901_5:  '
+    FileOffset:      901
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          966945
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_901_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_924_1:  '
+    FileOffset:      924
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          967426
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_924_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_927_2:  '
+    FileOffset:      927
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          967496
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_927_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_929_3:  '
+    FileOffset:      929
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          967549
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_929_3: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: RAM_2P_BRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      950
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_953_1:  '
+    FileOffset:      953
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          968121
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_953_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_954_2:  '
+    FileOffset:      954
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          968167
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_954_2: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: RAM_2P_BRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      997
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1000_1:  '
+    FileOffset:      1000
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          969321
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1000_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1001_2:  '
+    FileOffset:      1001
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          969367
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1001_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1043_1:  '
+    FileOffset:      1043
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          970379
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1043_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1044_2:  '
+    FileOffset:      1044
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          970425
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1044_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1047_3:  '
+    FileOffset:      1047
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          970477
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1047_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1050_4:  '
+    FileOffset:      1050
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          970557
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1050_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1052_5:  '
+    FileOffset:      1052
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          970614
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1052_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1054_6:  '
+    FileOffset:      1054
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          970673
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1054_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1067_7:  '
+    FileOffset:      1067
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          971046
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1067_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1069_8:  '
+    FileOffset:      1069
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          971103
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1069_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1071_9:  '
+    FileOffset:      1071
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          971162
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1071_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1096_1:  '
+    FileOffset:      1096
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          971696
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1096_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1097_2:  '
+    FileOffset:      1097
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          971742
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1097_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1100_3:  '
+    FileOffset:      1100
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          971794
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1100_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1103_4:  '
+    FileOffset:      1103
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          971872
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1103_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1105_5:  '
+    FileOffset:      1105
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          971929
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1105_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1107_6:  '
+    FileOffset:      1107
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          971988
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1107_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1130_1:  '
+    FileOffset:      1130
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          972486
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1130_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1131_2:  '
+    FileOffset:      1131
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          972532
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1131_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1134_3:  '
+    FileOffset:      1134
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          972584
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1134_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1136_4:  '
+    FileOffset:      1136
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          972637
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1136_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1138_5:  '
+    FileOffset:      1138
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          972692
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1138_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1141_6:  '
+    FileOffset:      1141
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          972750
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1141_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1164_1:  '
+    FileOffset:      1164
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          973211
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1164_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1170_2:  '
+    FileOffset:      1170
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+      - FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp
+        Offset:          973403
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1170_2: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1201
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1204
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1207
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1210
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1213
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1216
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1219
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1222
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1225
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1228
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1231
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1234
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1237
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1240
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1243
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1246
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1249
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1252
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1255
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1258
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1261
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1264
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1267
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1270
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1273
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1276
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1279
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1282
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1285
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1288
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_SRL pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1291
+    FilePath:        /home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp
+    Replacements:    
+...

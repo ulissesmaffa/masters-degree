@@ -1,0 +1,4 @@
+42 warnings and 42 errors generated.
+Error while processing /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/.autopilot/db/kernel_kernel.pp.0.cpp.
+clang-tidy applied 124 of 124 suggested fixes.
+Suppressed 42 warnings (42 with check filters).

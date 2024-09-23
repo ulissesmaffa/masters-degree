@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1726169218305">
+  <ports id="1" name="gmem_A" type="PortType" coreId="0" bitwidth="512" iftype="IfTypeFifo">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="2" name="A" type="PortType" originalName="A" coreId="528611360" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="fifo_A_A_IO_L3_in_serialize" type="PortType" originalName="fifo_A_local_out" coreName="FIFO_SRL" coreId="0" bitwidth="512" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="39" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="42" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="43" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="46" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="49" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="50" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="51" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="54" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="57" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="58" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="59" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="62" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="67" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="68" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="69" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="70" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="71" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="72" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="75" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="78" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.1"/>
+  <edges id="81" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.0"/>
+  <edges id="84" source_obj="//@regions.0/@basic_blocks.3/@node_objs.1" sink_obj="//@ports.2"/>
+  <edges id="85" source_obj="//@regions.0/@basic_blocks.3/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.1"/>
+  <edges id="86" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.2"/>
+  <edges id="87" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.2"/>
+  <edges id="88" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.3"/>
+  <edges id="153" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="154" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="155" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="156" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.2"/>
+  <edges id="157" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.3"/>
+  <edges id="158" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.3"/>
+  <edges id="159" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="160" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="161" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.2"/>
+  <edges id="162" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.2"/>
+  <edges id="163" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.2/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.0"/>
+  <blocks id="10" name="entry" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>for.inc</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="4" name="i" originalName="i" coreId="2736" bitwidth="11" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="A_read" lineNumber="33" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="981378144" contextFuncName="A_IO_L3_in_serialize" bitwidth="64" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="33" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="A_IO_L3_in_serialize"/>
+      <dataInputObjs>A</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="i_write_ln38" lineNumber="38" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="981378144" contextFuncName="A_IO_L3_in_serialize" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="38" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="A_IO_L3_in_serialize"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="br_ln38" lineNumber="38" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="544424224" contextFuncName="A_IO_L3_in_serialize" opcode="br" m_display="0" m_delay="0.38" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="38" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="A_IO_L3_in_serialize"/>
+      <controlInputObjs>for.inc</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/kernel_kernel.cpp">
+      <validLinenumbers>33</validLinenumbers>
+      <validLinenumbers>38</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="34" name="for.end" type="BlockType">
+    <controlInputObjs>for.inc</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="_ln44" lineNumber="44" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="2706021424" contextFuncName="A_IO_L3_in_serialize" opcode="ret" nodeLabel="9.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="44" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="A_IO_L3_in_serialize"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/kernel_kernel.cpp">
+      <validLinenumbers>44</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="144" pipe_depth="11" RegionName="VITIS_LOOP_38_1">
+    <basic_blocks id="16" name="for.inc" type="BlockType">
+      <controlInputObjs>entry</controlInputObjs>
+      <controlInputObjs>for.inc.split</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.end</controlOutputObjs>
+      <controlOutputObjs>new.body.for.inc</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="11" name="first_iter_0" coreId="1630347296" bitwidth="1" opcode="phi" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <dataOutputObjs>br</dataOutputObjs>
+        <controlInputObjs>for.inc.split</controlInputObjs>
+        <controlInputObjs>entry</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="i_3" lineNumber="38" originalName="i" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="2705193712" contextFuncName="A_IO_L3_in_serialize" bitwidth="11" opcode="load" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="38" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="A_IO_L3_in_serialize"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="icmp_ln38" lineNumber="38" fileName="src/kernel_kernel.cpp" fileDirectory="../." rtlName="icmp_ln38_fu_111_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="A_IO_L3_in_serialize" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.73" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="38" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="A_IO_L3_in_serialize"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="add_ln38" lineNumber="38" fileName="src/kernel_kernel.cpp" fileDirectory="../." rtlName="add_ln38_fu_117_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="A_IO_L3_in_serialize" bitwidth="11" opcode="add" m_display="0" m_delay="0.73" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="38" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="A_IO_L3_in_serialize"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="br_ln38" lineNumber="38" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="2705465968" contextFuncName="A_IO_L3_in_serialize" opcode="br" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="38" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="A_IO_L3_in_serialize"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>new.body.for.inc</controlInputObjs>
+        <controlInputObjs>for.end</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="src/kernel_kernel.cpp">
+        <validLinenumbers>38</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="21" name="new.body.for.inc" type="BlockType">
+      <controlInputObjs>for.inc</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.first.iter.for.inc</controlOutputObjs>
+      <controlOutputObjs>for.inc.split</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="trunc_ln" lineNumber="38" fileName="src/kernel_kernel.cpp" fileDirectory="../." rtlName="trunc_ln_fu_128_p4" coreId="2705391200" contextFuncName="A_IO_L3_in_serialize" bitwidth="58" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="38" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="A_IO_L3_in_serialize"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="sext_ln38" lineNumber="38" fileName="src/kernel_kernel.cpp" fileDirectory="../." rtlName="sext_ln38_fu_137_p1" coreId="0" contextFuncName="A_IO_L3_in_serialize" bitwidth="64" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="38" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="A_IO_L3_in_serialize"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="gmem_A_addr" lineNumber="38" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="0" contextFuncName="A_IO_L3_in_serialize" bitwidth="512" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="38" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="A_IO_L3_in_serialize"/>
+        <dataInputObjs>gmem_A</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>readreq</dataOutputObjs>
+        <dataOutputObjs>read</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="br_ln38" lineNumber="38" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="0" contextFuncName="A_IO_L3_in_serialize" opcode="br" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="38" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="A_IO_L3_in_serialize"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <controlInputObjs>for.inc.split</controlInputObjs>
+        <controlInputObjs>for.first.iter.for.inc</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="src/kernel_kernel.cpp">
+        <validLinenumbers>38</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="24" name="for.first.iter.for.inc" type="BlockType">
+      <controlInputObjs>new.body.for.inc</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.inc.split</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="empty" lineNumber="38" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="121" contextFuncName="A_IO_L3_in_serialize" bitwidth="1" opcode="readreq" nodeLabel="1.0" nodeLatency="7" m_display="0" m_delay="3.65" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="38" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="A_IO_L3_in_serialize"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="br_ln38" lineNumber="38" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="1869635878" contextFuncName="A_IO_L3_in_serialize" opcode="br" nodeLabel="8.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="38" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="A_IO_L3_in_serialize"/>
+        <controlInputObjs>for.inc.split</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="src/kernel_kernel.cpp">
+        <validLinenumbers>38</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="32" name="for.inc.split" type="BlockType">
+      <controlInputObjs>new.body.for.inc</controlInputObjs>
+      <controlInputObjs>for.first.iter.for.inc</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.inc</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="gmem_A_addr_read" lineNumber="41" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="121" contextFuncName="A_IO_L3_in_serialize" bitwidth="512" opcode="read" nodeLabel="9.0" m_display="0" m_delay="3.65" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="41" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="A_IO_L3_in_serialize"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="fifo_A_A_IO_L3_in_serialize_write_ln42" lineNumber="42" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="A_IO_L3_in_serialize" opcode="write" nodeLabel="10.0" m_display="0" m_delay="1.41" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="42" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="A_IO_L3_in_serialize"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>fifo_A_A_IO_L3_in_serialize</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="i_write_ln38" lineNumber="38" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="2705457024" contextFuncName="A_IO_L3_in_serialize" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="38" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="A_IO_L3_in_serialize"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="br_ln38" lineNumber="38" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="2705132776" contextFuncName="A_IO_L3_in_serialize" opcode="br" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="38" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="A_IO_L3_in_serialize"/>
+        <controlInputObjs>for.inc</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="src/kernel_kernel.cpp">
+        <validLinenumbers>41</validLinenumbers>
+        <validLinenumbers>42</validLinenumbers>
+        <validLinenumbers>38</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <regnodes realName="A_read_reg_155">
+    <nodeIds>7</nodeIds>
+  </regnodes>
+  <regnodes realName="first_iter_0_reg_91">
+    <nodeIds>11</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem_A_addr_read_reg_170">
+    <nodeIds>28</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem_A_addr_reg_164">
+    <nodeIds>19</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln38_reg_160">
+    <nodeIds>13</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_148">
+    <nodeIds>4</nodeIds>
+  </regnodes>
+  <expressionNodes realName="first_iter_0_phi_fu_94">
+    <nodeIds>11</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln38_fu_111">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln_fu_128">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln38_fu_117">
+    <nodeIds>14</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_fu_62">
+    <nodeIds>4</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="gmem_A_addr_fu_141">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln38_fu_137">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="A_read_read_fu_66">
+    <nodeIds>7</nodeIds>
+  </ioNodes>
+  <ioNodes realName="i_3_load_fu_108">
+    <nodeIds>12</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln42_write_fu_84">
+    <nodeIds>29</nodeIds>
+  </ioNodes>
+  <ioNodes realName="gmem_A_addr_read_read_fu_79">
+    <nodeIds>28</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_readreq_fu_72">
+    <nodeIds>22</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln38_store_fu_123">
+    <nodeIds>30</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln38_store_fu_103">
+    <nodeIds>8</nodeIds>
+  </ioNodes>
+  <ioPorts name="A">
+    <contents name="read">
+      <nodeIds>7</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="fifo_A_A_IO_L3_in_serialize">
+    <contents name="write">
+      <nodeIds>29</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="gmem_A">
+    <contents name="read">
+      <nodeIds>28</nodeIds>
+    </contents>
+    <contents name="readreq">
+      <nodeIds>22</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="22" stage="8" latency="8"/>
+    </states>
+    <states id="3">
+      <operations id="22" stage="7" latency="8"/>
+    </states>
+    <states id="4">
+      <operations id="22" stage="6" latency="8"/>
+    </states>
+    <states id="5">
+      <operations id="22" stage="5" latency="8"/>
+    </states>
+    <states id="6">
+      <operations id="22" stage="4" latency="8"/>
+    </states>
+    <states id="7">
+      <operations id="22" stage="3" latency="8"/>
+    </states>
+    <states id="8">
+      <operations id="22" stage="2" latency="8"/>
+    </states>
+    <states id="9">
+      <operations id="22" stage="1" latency="8"/>
+      <operations id="23" stage="1" latency="1"/>
+    </states>
+    <states id="10">
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+    </states>
+    <states id="11">
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+    </states>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="A_IO_L3_in_serialize" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1035" mMaxLatency="1035">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>10</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_38_1" mII="1" mDepth="11" mMinTripCount="1024" mMaxTripCount="1024" mMinLatency="1033" mMaxLatency="1033" mType="1">
+      <basicBlocks>16</basicBlocks>
+      <basicBlocks>21</basicBlocks>
+      <basicBlocks>24</basicBlocks>
+      <basicBlocks>32</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>34</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

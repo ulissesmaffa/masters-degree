@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="kernel_kernel.cpp" path="/home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.cpp"/>
+    <originFiles name="kernel_kernel.h" path="/home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_kernel.h"/>
+  </source>
+  <testbench>
+    <originFiles name="kernel_host.cpp" path="/home/ulisses/Projects/masters-degree/autosa/mm_small/src/kernel_host.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

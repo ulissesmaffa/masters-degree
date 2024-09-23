@@ -1,0 +1,174 @@
+
+
+================================================================
+== Vitis HLS Report for 'C_drain_IO_L1_out_boundary_wrapper_6'
+================================================================
+* Date:           Thu Sep 12 16:26:55 2024
+
+* Version:        2023.1.1 (Build 3869133 on Jun 15 2023)
+* Project:        hls_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcu200-fsgd2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  3.067 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+------+------+---------+
+    |  Latency (cycles) |  Latency (absolute) |   Interval  | Pipeline|
+    |   min   |   max   |    min   |    max   |  min |  max |   Type  |
+    +---------+---------+----------+----------+------+------+---------+
+    |     1441|     1441|  7.205 us|  7.205 us|  1441|  1441|       no|
+    +---------+---------+----------+----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                       |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |               Loop Name               |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_1000_1_VITIS_LOOP_1001_2  |     1440|     1440|        90|          -|          -|    16|        no|
+        +---------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 2 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.38>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%indvar_flatten13 = alloca i32 1"   --->   Operation 7 'alloca' 'indvar_flatten13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i128 %fifo_C_drain_C_drain_IO_L1_out_1_1, i64 666, i64 10, i64 18446744073709551615"   --->   Operation 8 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %fifo_C_drain_PE_1_1, i64 666, i64 10, i64 18446744073709551615"   --->   Operation 9 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %fifo_C_drain_C_drain_IO_L1_out_1_1, void @empty_46, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6, i32 4294967295, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %fifo_C_drain_PE_1_1, void @empty_46, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6, i32 4294967295, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%local_C = alloca i64 1" [src/kernel_kernel.cpp:996->src/kernel_kernel.cpp:1028]   --->   Operation 12 'alloca' 'local_C' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_2P_BRAM">   --->   Core 94 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 128> <Depth = 16> <RAM>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specmemcore_ln997 = specmemcore void @_ssdm_op_SpecMemCore, i128 %local_C, i64 666, i64 22, i64 18446744073709551615" [src/kernel_kernel.cpp:997->src/kernel_kernel.cpp:1028]   --->   Operation 13 'specmemcore' 'specmemcore_ln997' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.38ns)   --->   "%store_ln1000 = store i5 0, i5 %indvar_flatten13" [src/kernel_kernel.cpp:1000->src/kernel_kernel.cpp:1028]   --->   Operation 14 'store' 'store_ln1000' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%br_ln1000 = br void %entry2.i.i" [src/kernel_kernel.cpp:1000->src/kernel_kernel.cpp:1028]   --->   Operation 15 'br' 'br_ln1000' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 1.09>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%indvar_flatten13_load = load i5 %indvar_flatten13" [src/kernel_kernel.cpp:1000->src/kernel_kernel.cpp:1028]   --->   Operation 16 'load' 'indvar_flatten13_load' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.70ns)   --->   "%icmp_ln1000 = icmp_eq  i5 %indvar_flatten13_load, i5 16" [src/kernel_kernel.cpp:1000->src/kernel_kernel.cpp:1028]   --->   Operation 17 'icmp' 'icmp_ln1000' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 18 [1/1] (0.70ns)   --->   "%add_ln1000 = add i5 %indvar_flatten13_load, i5 1" [src/kernel_kernel.cpp:1000->src/kernel_kernel.cpp:1028]   --->   Operation 18 'add' 'add_ln1000' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%br_ln1000 = br i1 %icmp_ln1000, void %for.cond.cleanup11.i, void %_Z26C_drain_IO_L1_out_boundaryiiRN3hls6streamI7ap_uintILi128EELi0EEERNS0_IfLi0EEE.exit" [src/kernel_kernel.cpp:1000->src/kernel_kernel.cpp:1028]   --->   Operation 19 'br' 'br_ln1000' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%empty = wait i32 @_ssdm_op_Wait"   --->   Operation 20 'wait' 'empty' <Predicate = (!icmp_ln1000)> <Delay = 0.00>
+ST_2 : Operation 21 [2/2] (0.00ns)   --->   "%call_ln0 = call void @C_drain_IO_L1_out_boundary_wrapper.6_Pipeline_VITI.1, i128 %local_C, i32 %fifo_C_drain_PE_1_1"   --->   Operation 21 'call' 'call_ln0' <Predicate = (!icmp_ln1000)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 22 [1/1] (0.38ns)   --->   "%store_ln1001 = store i5 %add_ln1000, i5 %indvar_flatten13" [src/kernel_kernel.cpp:1001->src/kernel_kernel.cpp:1028]   --->   Operation 22 'store' 'store_ln1001' <Predicate = (!icmp_ln1000)> <Delay = 0.38>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%ret_ln1033 = ret" [src/kernel_kernel.cpp:1033]   --->   Operation 23 'ret' 'ret_ln1033' <Predicate = (icmp_ln1000)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 24 [1/2] (0.00ns)   --->   "%call_ln0 = call void @C_drain_IO_L1_out_boundary_wrapper.6_Pipeline_VITI.1, i128 %local_C, i32 %fifo_C_drain_PE_1_1"   --->   Operation 24 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 25 [1/1] (0.00ns)   --->   "%empty_134 = wait i32 @_ssdm_op_Wait"   --->   Operation 25 'wait' 'empty_134' <Predicate = true> <Delay = 0.00>
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 26 [1/1] (0.00ns)   --->   "%empty_135 = wait i32 @_ssdm_op_Wait"   --->   Operation 26 'wait' 'empty_135' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 27 [2/2] (0.00ns)   --->   "%call_ln0 = call void @C_drain_IO_L1_out_boundary_wrapper.6_Pipeline_VITI, i128 %local_C, i128 %fifo_C_drain_C_drain_IO_L1_out_1_1"   --->   Operation 27 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 28 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @VITIS_LOOP_1000_1_VITIS_LOOP_1001_2_str"   --->   Operation 28 'specloopname' 'specloopname_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 29 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 16, i64 16, i64 16"   --->   Operation 29 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 30 [1/1] (0.00ns)   --->   "%specloopname_ln1001 = specloopname void @_ssdm_op_SpecLoopName, void @empty_29" [src/kernel_kernel.cpp:1001->src/kernel_kernel.cpp:1028]   --->   Operation 30 'specloopname' 'specloopname_ln1001' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 31 [1/2] (0.00ns)   --->   "%call_ln0 = call void @C_drain_IO_L1_out_boundary_wrapper.6_Pipeline_VITI, i128 %local_C, i128 %fifo_C_drain_C_drain_IO_L1_out_1_1"   --->   Operation 31 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 32 [1/1] (0.00ns)   --->   "%br_ln1001 = br void %entry2.i.i" [src/kernel_kernel.cpp:1001->src/kernel_kernel.cpp:1028]   --->   Operation 32 'br' 'br_ln1001' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5.000ns, clock uncertainty: 1.350ns.
+
+ <State 1>: 0.387ns
+The critical path consists of the following:
+	'alloca' operation ('indvar_flatten13') [3]  (0.000 ns)
+	'store' operation ('store_ln1000', src/kernel_kernel.cpp:1000->src/kernel_kernel.cpp:1028) of constant 0 on local variable 'indvar_flatten13' [10]  (0.387 ns)
+
+ <State 2>: 1.094ns
+The critical path consists of the following:
+	'load' operation ('indvar_flatten13_load', src/kernel_kernel.cpp:1000->src/kernel_kernel.cpp:1028) on local variable 'indvar_flatten13' [13]  (0.000 ns)
+	'add' operation ('add_ln1000', src/kernel_kernel.cpp:1000->src/kernel_kernel.cpp:1028) [15]  (0.707 ns)
+	'store' operation ('store_ln1001', src/kernel_kernel.cpp:1001->src/kernel_kernel.cpp:1028) of variable 'add_ln1000', src/kernel_kernel.cpp:1000->src/kernel_kernel.cpp:1028 on local variable 'indvar_flatten13' [26]  (0.387 ns)
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+ <State 5>: 0.000ns
+The critical path consists of the following:
+
+ <State 6>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

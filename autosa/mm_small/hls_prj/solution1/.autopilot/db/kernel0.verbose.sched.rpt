@@ -1,0 +1,461 @@
+
+
+================================================================
+== Vivado HLS Report for 'kernel0'
+================================================================
+* Date:           Sat Sep 14 23:31:21 2024
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        hls_prj
+* Solution:       solution1
+* Product family: virtexuplus
+* Target device:  xcu200-fsgd2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 5.00 ns | 4.375 ns |   0.62 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-------+-------+----------+
+    |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline |
+    |   min   |   max   |    min   |    max   |  min  |  max  |   Type   |
+    +---------+---------+----------+----------+-------+-------+----------+
+    |    32797|    33589| 0.164 ms | 0.168 ms |  32784|  33581| dataflow |
+    +---------+---------+----------+----------+-------+-------+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 25
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 25, States = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.45>
+ST_1 : Operation 26 [1/1] (1.00ns)   --->   "%C_V_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %C_V)" [src/kernel_kernel.cpp:1180]   --->   Operation 26 'read' 'C_V_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 27 [1/1] (1.00ns)   --->   "%B_V_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %B_V)" [src/kernel_kernel.cpp:1180]   --->   Operation 27 'read' 'B_V_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 28 [1/1] (1.00ns)   --->   "%A_V_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %A_V)" [src/kernel_kernel.cpp:1180]   --->   Operation 28 'read' 'A_V_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%C_V_c = alloca i32, align 4" [src/kernel_kernel.cpp:1180]   --->   Operation 29 'alloca' 'C_V_c' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.53> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 13> <FIFO>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%B_V_c = alloca i32, align 4" [src/kernel_kernel.cpp:1180]   --->   Operation 30 'alloca' 'B_V_c' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.53> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 13> <FIFO>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%A_V_c = alloca i32, align 4" [src/kernel_kernel.cpp:1180]   --->   Operation 31 'alloca' 'A_V_c' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.53> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 13> <FIFO>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%fifo_A_A_IO_L3_in_serialize_V_V = alloca i512, align 8" [src/kernel_kernel.cpp:1193]   --->   Operation 32 'alloca' 'fifo_A_A_IO_L3_in_serialize_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.53> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 13> <FIFO>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%fifo_B_B_IO_L3_in_serialize_V_V = alloca i512, align 8" [src/kernel_kernel.cpp:1195]   --->   Operation 33 'alloca' 'fifo_B_B_IO_L3_in_serialize_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.53> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 13> <FIFO>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%fifo_C_drain_C_drain_IO_L3_out_serialize_V_V = alloca i128, align 8" [src/kernel_kernel.cpp:1197]   --->   Operation 34 'alloca' 'fifo_C_drain_C_drain_IO_L3_out_serialize_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.53> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 13> <FIFO>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%fifo_A_A_IO_L2_in_0_V_V = alloca i512, align 8" [src/kernel_kernel.cpp:1199]   --->   Operation 35 'alloca' 'fifo_A_A_IO_L2_in_0_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%fifo_A_A_IO_L2_in_1_V_V = alloca i512, align 8" [src/kernel_kernel.cpp:1202]   --->   Operation 36 'alloca' 'fifo_A_A_IO_L2_in_1_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%fifo_B_B_IO_L2_in_0_V_V = alloca i512, align 8" [src/kernel_kernel.cpp:1208]   --->   Operation 37 'alloca' 'fifo_B_B_IO_L2_in_0_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%fifo_B_B_IO_L2_in_1_V_V = alloca i512, align 8" [src/kernel_kernel.cpp:1211]   --->   Operation 38 'alloca' 'fifo_B_B_IO_L2_in_1_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%fifo_A_PE_0_0_V_V = alloca i64, align 8" [src/kernel_kernel.cpp:1217]   --->   Operation 39 'alloca' 'fifo_A_PE_0_0_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%fifo_A_PE_0_1_V_V = alloca i64, align 8" [src/kernel_kernel.cpp:1220]   --->   Operation 40 'alloca' 'fifo_A_PE_0_1_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%fifo_A_PE_0_2_V_V = alloca i64, align 8" [src/kernel_kernel.cpp:1223]   --->   Operation 41 'alloca' 'fifo_A_PE_0_2_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%fifo_A_PE_1_0_V_V = alloca i64, align 8" [src/kernel_kernel.cpp:1226]   --->   Operation 42 'alloca' 'fifo_A_PE_1_0_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%fifo_A_PE_1_1_V_V = alloca i64, align 8" [src/kernel_kernel.cpp:1229]   --->   Operation 43 'alloca' 'fifo_A_PE_1_1_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%fifo_A_PE_1_2_V_V = alloca i64, align 8" [src/kernel_kernel.cpp:1232]   --->   Operation 44 'alloca' 'fifo_A_PE_1_2_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%fifo_B_PE_0_0_V_V = alloca i64, align 8" [src/kernel_kernel.cpp:1235]   --->   Operation 45 'alloca' 'fifo_B_PE_0_0_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%fifo_B_PE_1_0_V_V = alloca i64, align 8" [src/kernel_kernel.cpp:1238]   --->   Operation 46 'alloca' 'fifo_B_PE_1_0_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%fifo_B_PE_2_0_V_V = alloca i64, align 8" [src/kernel_kernel.cpp:1241]   --->   Operation 47 'alloca' 'fifo_B_PE_2_0_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%fifo_B_PE_0_1_V_V = alloca i64, align 8" [src/kernel_kernel.cpp:1244]   --->   Operation 48 'alloca' 'fifo_B_PE_0_1_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%fifo_B_PE_1_1_V_V = alloca i64, align 8" [src/kernel_kernel.cpp:1247]   --->   Operation 49 'alloca' 'fifo_B_PE_1_1_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%fifo_B_PE_2_1_V_V = alloca i64, align 8" [src/kernel_kernel.cpp:1250]   --->   Operation 50 'alloca' 'fifo_B_PE_2_1_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%fifo_C_drain_PE_0_0_V = alloca float, align 4" [src/kernel_kernel.cpp:1253]   --->   Operation 51 'alloca' 'fifo_C_drain_PE_0_0_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%fifo_C_drain_PE_1_0_V = alloca float, align 4" [src/kernel_kernel.cpp:1256]   --->   Operation 52 'alloca' 'fifo_C_drain_PE_1_0_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%fifo_C_drain_PE_0_1_V = alloca float, align 4" [src/kernel_kernel.cpp:1259]   --->   Operation 53 'alloca' 'fifo_C_drain_PE_0_1_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%fifo_C_drain_PE_1_1_V = alloca float, align 4" [src/kernel_kernel.cpp:1262]   --->   Operation 54 'alloca' 'fifo_C_drain_PE_1_1_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%fifo_C_drain_C_drain_IO_L1_out_0_0_V_V = alloca i128, align 8" [src/kernel_kernel.cpp:1265]   --->   Operation 55 'alloca' 'fifo_C_drain_C_drain_IO_L1_out_0_0_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%fifo_C_drain_C_drain_IO_L1_out_0_1_V_V = alloca i128, align 8" [src/kernel_kernel.cpp:1268]   --->   Operation 56 'alloca' 'fifo_C_drain_C_drain_IO_L1_out_0_1_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%fifo_C_drain_C_drain_IO_L1_out_1_0_V_V = alloca i128, align 8" [src/kernel_kernel.cpp:1274]   --->   Operation 57 'alloca' 'fifo_C_drain_C_drain_IO_L1_out_1_0_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%fifo_C_drain_C_drain_IO_L1_out_1_1_V_V = alloca i128, align 8" [src/kernel_kernel.cpp:1277]   --->   Operation 58 'alloca' 'fifo_C_drain_C_drain_IO_L1_out_1_1_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%fifo_C_drain_C_drain_IO_L2_out_0_V_V = alloca i128, align 8" [src/kernel_kernel.cpp:1283]   --->   Operation 59 'alloca' 'fifo_C_drain_C_drain_IO_L2_out_0_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%fifo_C_drain_C_drain_IO_L2_out_1_V_V = alloca i128, align 8" [src/kernel_kernel.cpp:1286]   --->   Operation 60 'alloca' 'fifo_C_drain_C_drain_IO_L2_out_1_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_1 : Operation 61 [1/1] (1.45ns)   --->   "call void @kernel0.entry12(i32 %A_V_read, i32 %B_V_read, i32 %C_V_read, i32* %A_V_c, i32* %B_V_c, i32* %C_V_c)" [src/kernel_kernel.cpp:1180]   --->   Operation 61 'call' <Predicate = true> <Delay = 1.45> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 62 [2/2] (0.00ns)   --->   "call fastcc void @A_IO_L3_in_serialize(i512* %gmem_A, i32* nocapture %A_V_c, i512* %fifo_A_A_IO_L3_in_serialize_V_V)" [src/kernel_kernel.cpp:1295]   --->   Operation 62 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 63 [2/2] (0.00ns)   --->   "call fastcc void @B_IO_L3_in_serialize(i512* %gmem_B, i32* nocapture %B_V_c, i512* %fifo_B_B_IO_L3_in_serialize_V_V)" [src/kernel_kernel.cpp:1326]   --->   Operation 63 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 64 [1/2] (0.00ns)   --->   "call fastcc void @A_IO_L3_in_serialize(i512* %gmem_A, i32* nocapture %A_V_c, i512* %fifo_A_A_IO_L3_in_serialize_V_V)" [src/kernel_kernel.cpp:1295]   --->   Operation 64 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 65 [1/2] (0.00ns)   --->   "call fastcc void @B_IO_L3_in_serialize(i512* %gmem_B, i32* nocapture %B_V_c, i512* %fifo_B_B_IO_L3_in_serialize_V_V)" [src/kernel_kernel.cpp:1326]   --->   Operation 65 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 66 [2/2] (0.00ns)   --->   "call fastcc void @A_IO_L3_in(i512* %fifo_A_A_IO_L3_in_serialize_V_V, i512* %fifo_A_A_IO_L2_in_0_V_V)" [src/kernel_kernel.cpp:1302]   --->   Operation 66 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 67 [2/2] (0.00ns)   --->   "call fastcc void @B_IO_L3_in(i512* %fifo_B_B_IO_L3_in_serialize_V_V, i512* %fifo_B_B_IO_L2_in_0_V_V)" [src/kernel_kernel.cpp:1333]   --->   Operation 67 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 68 [1/2] (0.00ns)   --->   "call fastcc void @A_IO_L3_in(i512* %fifo_A_A_IO_L3_in_serialize_V_V, i512* %fifo_A_A_IO_L2_in_0_V_V)" [src/kernel_kernel.cpp:1302]   --->   Operation 68 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 69 [1/2] (0.00ns)   --->   "call fastcc void @B_IO_L3_in(i512* %fifo_B_B_IO_L3_in_serialize_V_V, i512* %fifo_B_B_IO_L2_in_0_V_V)" [src/kernel_kernel.cpp:1333]   --->   Operation 69 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 70 [2/2] (0.00ns)   --->   "call fastcc void @A_IO_L2_in(i512* %fifo_A_A_IO_L2_in_0_V_V, i512* %fifo_A_A_IO_L2_in_1_V_V, i64* %fifo_A_PE_0_0_V_V)" [src/kernel_kernel.cpp:1309]   --->   Operation 70 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 71 [2/2] (0.00ns)   --->   "call fastcc void @B_IO_L2_in(i512* %fifo_B_B_IO_L2_in_0_V_V, i512* %fifo_B_B_IO_L2_in_1_V_V, i64* %fifo_B_PE_0_0_V_V)" [src/kernel_kernel.cpp:1340]   --->   Operation 71 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 72 [1/2] (0.00ns)   --->   "call fastcc void @A_IO_L2_in(i512* %fifo_A_A_IO_L2_in_0_V_V, i512* %fifo_A_A_IO_L2_in_1_V_V, i64* %fifo_A_PE_0_0_V_V)" [src/kernel_kernel.cpp:1309]   --->   Operation 72 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_7 : Operation 73 [1/2] (0.00ns)   --->   "call fastcc void @B_IO_L2_in(i512* %fifo_B_B_IO_L2_in_0_V_V, i512* %fifo_B_B_IO_L2_in_1_V_V, i64* %fifo_B_PE_0_0_V_V)" [src/kernel_kernel.cpp:1340]   --->   Operation 73 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 74 [2/2] (0.00ns)   --->   "call fastcc void @A_IO_L2_in_boundary(i512* %fifo_A_A_IO_L2_in_1_V_V, i64* %fifo_A_PE_1_0_V_V)" [src/kernel_kernel.cpp:1318]   --->   Operation 74 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_8 : Operation 75 [2/2] (0.00ns)   --->   "call fastcc void @B_IO_L2_in_boundary(i512* %fifo_B_B_IO_L2_in_1_V_V, i64* %fifo_B_PE_0_1_V_V)" [src/kernel_kernel.cpp:1349]   --->   Operation 75 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_8 : Operation 76 [2/2] (0.00ns)   --->   "call fastcc void @PE_wrapper130(i64* %fifo_A_PE_0_0_V_V, i64* %fifo_A_PE_0_1_V_V, i64* %fifo_B_PE_0_0_V_V, i64* %fifo_B_PE_1_0_V_V, float* %fifo_C_drain_PE_0_0_V)" [src/kernel_kernel.cpp:1357]   --->   Operation 76 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 9 <SV = 8> <Delay = 0.00>
+ST_9 : Operation 77 [1/2] (0.00ns)   --->   "call fastcc void @A_IO_L2_in_boundary(i512* %fifo_A_A_IO_L2_in_1_V_V, i64* %fifo_A_PE_1_0_V_V)" [src/kernel_kernel.cpp:1318]   --->   Operation 77 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_9 : Operation 78 [1/2] (0.00ns)   --->   "call fastcc void @B_IO_L2_in_boundary(i512* %fifo_B_B_IO_L2_in_1_V_V, i64* %fifo_B_PE_0_1_V_V)" [src/kernel_kernel.cpp:1349]   --->   Operation 78 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_9 : Operation 79 [1/2] (0.00ns)   --->   "call fastcc void @PE_wrapper130(i64* %fifo_A_PE_0_0_V_V, i64* %fifo_A_PE_0_1_V_V, i64* %fifo_B_PE_0_0_V_V, i64* %fifo_B_PE_1_0_V_V, float* %fifo_C_drain_PE_0_0_V)" [src/kernel_kernel.cpp:1357]   --->   Operation 79 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 80 [2/2] (0.00ns)   --->   "call fastcc void @PE_wrapper131(i64* %fifo_A_PE_0_1_V_V, i64* %fifo_A_PE_0_2_V_V, i64* %fifo_B_PE_0_1_V_V, i64* %fifo_B_PE_1_1_V_V, float* %fifo_C_drain_PE_0_1_V)" [src/kernel_kernel.cpp:1369]   --->   Operation 80 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 81 [2/2] (0.00ns)   --->   "call fastcc void @PE_wrapper132(i64* %fifo_A_PE_1_0_V_V, i64* %fifo_A_PE_1_1_V_V, i64* %fifo_B_PE_1_0_V_V, i64* %fifo_B_PE_2_0_V_V, float* %fifo_C_drain_PE_1_0_V)" [src/kernel_kernel.cpp:1381]   --->   Operation 81 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 11 <SV = 10> <Delay = 0.00>
+ST_11 : Operation 82 [1/2] (0.00ns)   --->   "call fastcc void @PE_wrapper131(i64* %fifo_A_PE_0_1_V_V, i64* %fifo_A_PE_0_2_V_V, i64* %fifo_B_PE_0_1_V_V, i64* %fifo_B_PE_1_1_V_V, float* %fifo_C_drain_PE_0_1_V)" [src/kernel_kernel.cpp:1369]   --->   Operation 82 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_11 : Operation 83 [1/2] (0.00ns)   --->   "call fastcc void @PE_wrapper132(i64* %fifo_A_PE_1_0_V_V, i64* %fifo_A_PE_1_1_V_V, i64* %fifo_B_PE_1_0_V_V, i64* %fifo_B_PE_2_0_V_V, float* %fifo_C_drain_PE_1_0_V)" [src/kernel_kernel.cpp:1381]   --->   Operation 83 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 12 <SV = 11> <Delay = 0.00>
+ST_12 : Operation 84 [2/2] (0.00ns)   --->   "call fastcc void @PE_wrapper(i64* %fifo_A_PE_1_1_V_V, i64* %fifo_A_PE_1_2_V_V, i64* %fifo_B_PE_1_1_V_V, i64* %fifo_B_PE_2_1_V_V, float* %fifo_C_drain_PE_1_1_V)" [src/kernel_kernel.cpp:1393]   --->   Operation 84 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_12 : Operation 85 [2/2] (0.00ns)   --->   "call fastcc void @A_PE_dummy_in133(i64* %fifo_A_PE_0_2_V_V)" [src/kernel_kernel.cpp:1405]   --->   Operation 85 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_12 : Operation 86 [2/2] (0.00ns)   --->   "call fastcc void @B_PE_dummy_in134(i64* %fifo_B_PE_2_0_V_V)" [src/kernel_kernel.cpp:1421]   --->   Operation 86 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_12 : Operation 87 [2/2] (0.00ns)   --->   "call fastcc void @C_drain_IO_L1_out_boundary_wrapper135(i128* %fifo_C_drain_C_drain_IO_L1_out_0_1_V_V, float* %fifo_C_drain_PE_1_0_V)" [src/kernel_kernel.cpp:1437]   --->   Operation 87 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 13 <SV = 12> <Delay = 0.00>
+ST_13 : Operation 88 [1/2] (0.00ns)   --->   "call fastcc void @PE_wrapper(i64* %fifo_A_PE_1_1_V_V, i64* %fifo_A_PE_1_2_V_V, i64* %fifo_B_PE_1_1_V_V, i64* %fifo_B_PE_2_1_V_V, float* %fifo_C_drain_PE_1_1_V)" [src/kernel_kernel.cpp:1393]   --->   Operation 88 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_13 : Operation 89 [1/2] (0.00ns)   --->   "call fastcc void @A_PE_dummy_in133(i64* %fifo_A_PE_0_2_V_V)" [src/kernel_kernel.cpp:1405]   --->   Operation 89 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_13 : Operation 90 [1/2] (0.00ns)   --->   "call fastcc void @B_PE_dummy_in134(i64* %fifo_B_PE_2_0_V_V)" [src/kernel_kernel.cpp:1421]   --->   Operation 90 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_13 : Operation 91 [1/2] (0.00ns)   --->   "call fastcc void @C_drain_IO_L1_out_boundary_wrapper135(i128* %fifo_C_drain_C_drain_IO_L1_out_0_1_V_V, float* %fifo_C_drain_PE_1_0_V)" [src/kernel_kernel.cpp:1437]   --->   Operation 91 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 14 <SV = 13> <Delay = 0.00>
+ST_14 : Operation 92 [2/2] (0.00ns)   --->   "call fastcc void @A_PE_dummy_in(i64* %fifo_A_PE_1_2_V_V)" [src/kernel_kernel.cpp:1413]   --->   Operation 92 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_14 : Operation 93 [2/2] (0.00ns)   --->   "call fastcc void @B_PE_dummy_in(i64* %fifo_B_PE_2_1_V_V)" [src/kernel_kernel.cpp:1429]   --->   Operation 93 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_14 : Operation 94 [2/2] (0.00ns)   --->   "call fastcc void @C_drain_IO_L1_out_wrapper136(i128* %fifo_C_drain_C_drain_IO_L1_out_0_1_V_V, i128* %fifo_C_drain_C_drain_IO_L1_out_0_0_V_V, float* %fifo_C_drain_PE_0_0_V)" [src/kernel_kernel.cpp:1446]   --->   Operation 94 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_14 : Operation 95 [2/2] (0.00ns)   --->   "call fastcc void @C_drain_IO_L1_out_boundary_wrapper(i128* %fifo_C_drain_C_drain_IO_L1_out_1_1_V_V, float* %fifo_C_drain_PE_1_1_V)" [src/kernel_kernel.cpp:1456]   --->   Operation 95 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 15 <SV = 14> <Delay = 0.00>
+ST_15 : Operation 96 [1/2] (0.00ns)   --->   "call fastcc void @A_PE_dummy_in(i64* %fifo_A_PE_1_2_V_V)" [src/kernel_kernel.cpp:1413]   --->   Operation 96 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_15 : Operation 97 [1/2] (0.00ns)   --->   "call fastcc void @B_PE_dummy_in(i64* %fifo_B_PE_2_1_V_V)" [src/kernel_kernel.cpp:1429]   --->   Operation 97 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_15 : Operation 98 [1/2] (0.00ns)   --->   "call fastcc void @C_drain_IO_L1_out_wrapper136(i128* %fifo_C_drain_C_drain_IO_L1_out_0_1_V_V, i128* %fifo_C_drain_C_drain_IO_L1_out_0_0_V_V, float* %fifo_C_drain_PE_0_0_V)" [src/kernel_kernel.cpp:1446]   --->   Operation 98 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_15 : Operation 99 [1/2] (0.00ns)   --->   "call fastcc void @C_drain_IO_L1_out_boundary_wrapper(i128* %fifo_C_drain_C_drain_IO_L1_out_1_1_V_V, float* %fifo_C_drain_PE_1_1_V)" [src/kernel_kernel.cpp:1456]   --->   Operation 99 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 16 <SV = 15> <Delay = 0.00>
+ST_16 : Operation 100 [2/2] (0.00ns)   --->   "call fastcc void @C_drain_IO_L1_out_wrapper(i128* %fifo_C_drain_C_drain_IO_L1_out_1_1_V_V, i128* %fifo_C_drain_C_drain_IO_L1_out_1_0_V_V, float* %fifo_C_drain_PE_0_1_V)" [src/kernel_kernel.cpp:1465]   --->   Operation 100 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 17 <SV = 16> <Delay = 0.00>
+ST_17 : Operation 101 [1/2] (0.00ns)   --->   "call fastcc void @C_drain_IO_L1_out_wrapper(i128* %fifo_C_drain_C_drain_IO_L1_out_1_1_V_V, i128* %fifo_C_drain_C_drain_IO_L1_out_1_0_V_V, float* %fifo_C_drain_PE_0_1_V)" [src/kernel_kernel.cpp:1465]   --->   Operation 101 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 18 <SV = 17> <Delay = 0.00>
+ST_18 : Operation 102 [2/2] (0.00ns)   --->   "call fastcc void @C_drain_IO_L2_out_boundary(i128* %fifo_C_drain_C_drain_IO_L2_out_1_V_V, i128* %fifo_C_drain_C_drain_IO_L1_out_1_0_V_V)" [src/kernel_kernel.cpp:1475]   --->   Operation 102 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 19 <SV = 18> <Delay = 0.00>
+ST_19 : Operation 103 [1/2] (0.00ns)   --->   "call fastcc void @C_drain_IO_L2_out_boundary(i128* %fifo_C_drain_C_drain_IO_L2_out_1_V_V, i128* %fifo_C_drain_C_drain_IO_L1_out_1_0_V_V)" [src/kernel_kernel.cpp:1475]   --->   Operation 103 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 20 <SV = 19> <Delay = 0.00>
+ST_20 : Operation 104 [2/2] (0.00ns)   --->   "call fastcc void @C_drain_IO_L2_out(i128* %fifo_C_drain_C_drain_IO_L2_out_1_V_V, i128* %fifo_C_drain_C_drain_IO_L2_out_0_V_V, i128* %fifo_C_drain_C_drain_IO_L1_out_0_0_V_V)" [src/kernel_kernel.cpp:1483]   --->   Operation 104 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 21 <SV = 20> <Delay = 0.00>
+ST_21 : Operation 105 [1/2] (0.00ns)   --->   "call fastcc void @C_drain_IO_L2_out(i128* %fifo_C_drain_C_drain_IO_L2_out_1_V_V, i128* %fifo_C_drain_C_drain_IO_L2_out_0_V_V, i128* %fifo_C_drain_C_drain_IO_L1_out_0_0_V_V)" [src/kernel_kernel.cpp:1483]   --->   Operation 105 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 22 <SV = 21> <Delay = 0.00>
+ST_22 : Operation 106 [2/2] (0.00ns)   --->   "call fastcc void @C_drain_IO_L3_out(i128* %fifo_C_drain_C_drain_IO_L3_out_serialize_V_V, i128* %fifo_C_drain_C_drain_IO_L2_out_0_V_V)" [src/kernel_kernel.cpp:1492]   --->   Operation 106 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 23 <SV = 22> <Delay = 0.00>
+ST_23 : Operation 107 [1/2] (0.00ns)   --->   "call fastcc void @C_drain_IO_L3_out(i128* %fifo_C_drain_C_drain_IO_L3_out_serialize_V_V, i128* %fifo_C_drain_C_drain_IO_L2_out_0_V_V)" [src/kernel_kernel.cpp:1492]   --->   Operation 107 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 24 <SV = 23> <Delay = 0.00>
+ST_24 : Operation 108 [2/2] (0.00ns)   --->   "call fastcc void @C_drain_IO_L3_out_serialize(i512* %gmem_C, i32* nocapture %C_V_c, i128* %fifo_C_drain_C_drain_IO_L3_out_serialize_V_V)" [src/kernel_kernel.cpp:1499]   --->   Operation 108 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 25 <SV = 24> <Delay = 0.00>
+ST_25 : Operation 109 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i512* %gmem_C), !map !256"   --->   Operation 109 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 110 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i512* %gmem_B), !map !262"   --->   Operation 110 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 111 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i512* %gmem_A), !map !266"   --->   Operation 111 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 112 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, i32 0, [1 x i8]* @p_str) nounwind" [src/kernel_kernel.cpp:1190]   --->   Operation 112 'specdataflowpipeline' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 113 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([8 x i8]* @kernel0_str) nounwind"   --->   Operation 113 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 114 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecChannel([32 x i8]* @fifo_A_A_IO_L3_in_serialize_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i512* %fifo_A_A_IO_L3_in_serialize_V_V, i512* %fifo_A_A_IO_L3_in_serialize_V_V)"   --->   Operation 114 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 115 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i512* %fifo_A_A_IO_L3_in_serialize_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 115 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 116 [1/1] (0.00ns)   --->   "%empty_16 = call i32 (...)* @_ssdm_op_SpecChannel([32 x i8]* @fifo_B_B_IO_L3_in_serialize_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i512* %fifo_B_B_IO_L3_in_serialize_V_V, i512* %fifo_B_B_IO_L3_in_serialize_V_V)"   --->   Operation 116 'specchannel' 'empty_16' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 117 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i512* %fifo_B_B_IO_L3_in_serialize_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 117 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 118 [1/1] (0.00ns)   --->   "%empty_17 = call i32 (...)* @_ssdm_op_SpecChannel([45 x i8]* @fifo_C_drain_C_drain_IO_L3_out_serialize_OC_V_OC_V, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i128* %fifo_C_drain_C_drain_IO_L3_out_serialize_V_V, i128* %fifo_C_drain_C_drain_IO_L3_out_serialize_V_V)"   --->   Operation 118 'specchannel' 'empty_17' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 119 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i128* %fifo_C_drain_C_drain_IO_L3_out_serialize_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 119 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 120 [1/1] (0.00ns)   --->   "%empty_18 = call i32 (...)* @_ssdm_op_SpecChannel([24 x i8]* @fifo_A_A_IO_L2_in_0_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i512* %fifo_A_A_IO_L2_in_0_V_V, i512* %fifo_A_A_IO_L2_in_0_V_V)"   --->   Operation 120 'specchannel' 'empty_18' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 121 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i512* %fifo_A_A_IO_L2_in_0_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 121 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 122 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore(i512* %fifo_A_A_IO_L2_in_0_V_V, [1 x i8]* @p_str, [9 x i8]* @p_str40, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)" [src/kernel_kernel.cpp:1201]   --->   Operation 122 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 123 [1/1] (0.00ns)   --->   "%empty_19 = call i32 (...)* @_ssdm_op_SpecChannel([24 x i8]* @fifo_A_A_IO_L2_in_1_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i512* %fifo_A_A_IO_L2_in_1_V_V, i512* %fifo_A_A_IO_L2_in_1_V_V)"   --->   Operation 123 'specchannel' 'empty_19' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 124 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i512* %fifo_A_A_IO_L2_in_1_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 124 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 125 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore(i512* %fifo_A_A_IO_L2_in_1_V_V, [1 x i8]* @p_str, [9 x i8]* @p_str40, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)" [src/kernel_kernel.cpp:1204]   --->   Operation 125 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 126 [1/1] (0.00ns)   --->   "%empty_20 = call i32 (...)* @_ssdm_op_SpecChannel([24 x i8]* @fifo_B_B_IO_L2_in_0_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i512* %fifo_B_B_IO_L2_in_0_V_V, i512* %fifo_B_B_IO_L2_in_0_V_V)"   --->   Operation 126 'specchannel' 'empty_20' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 127 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i512* %fifo_B_B_IO_L2_in_0_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 127 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 128 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore(i512* %fifo_B_B_IO_L2_in_0_V_V, [1 x i8]* @p_str, [9 x i8]* @p_str40, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)" [src/kernel_kernel.cpp:1210]   --->   Operation 128 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 129 [1/1] (0.00ns)   --->   "%empty_21 = call i32 (...)* @_ssdm_op_SpecChannel([24 x i8]* @fifo_B_B_IO_L2_in_1_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i512* %fifo_B_B_IO_L2_in_1_V_V, i512* %fifo_B_B_IO_L2_in_1_V_V)"   --->   Operation 129 'specchannel' 'empty_21' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 130 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i512* %fifo_B_B_IO_L2_in_1_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 130 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 131 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore(i512* %fifo_B_B_IO_L2_in_1_V_V, [1 x i8]* @p_str, [9 x i8]* @p_str40, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)" [src/kernel_kernel.cpp:1213]   --->   Operation 131 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 132 [1/1] (0.00ns)   --->   "%empty_22 = call i32 (...)* @_ssdm_op_SpecChannel([18 x i8]* @fifo_A_PE_0_0_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i64* %fifo_A_PE_0_0_V_V, i64* %fifo_A_PE_0_0_V_V)"   --->   Operation 132 'specchannel' 'empty_22' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 133 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %fifo_A_PE_0_0_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 133 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 134 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore(i64* %fifo_A_PE_0_0_V_V, [1 x i8]* @p_str, [9 x i8]* @p_str40, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)" [src/kernel_kernel.cpp:1219]   --->   Operation 134 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 135 [1/1] (0.00ns)   --->   "%empty_23 = call i32 (...)* @_ssdm_op_SpecChannel([18 x i8]* @fifo_A_PE_0_1_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i64* %fifo_A_PE_0_1_V_V, i64* %fifo_A_PE_0_1_V_V)"   --->   Operation 135 'specchannel' 'empty_23' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 136 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %fifo_A_PE_0_1_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 136 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 137 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore(i64* %fifo_A_PE_0_1_V_V, [1 x i8]* @p_str, [9 x i8]* @p_str40, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)" [src/kernel_kernel.cpp:1222]   --->   Operation 137 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 138 [1/1] (0.00ns)   --->   "%empty_24 = call i32 (...)* @_ssdm_op_SpecChannel([18 x i8]* @fifo_A_PE_0_2_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i64* %fifo_A_PE_0_2_V_V, i64* %fifo_A_PE_0_2_V_V)"   --->   Operation 138 'specchannel' 'empty_24' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 139 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %fifo_A_PE_0_2_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 139 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 140 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore(i64* %fifo_A_PE_0_2_V_V, [1 x i8]* @p_str, [9 x i8]* @p_str40, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)" [src/kernel_kernel.cpp:1225]   --->   Operation 140 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 141 [1/1] (0.00ns)   --->   "%empty_25 = call i32 (...)* @_ssdm_op_SpecChannel([18 x i8]* @fifo_A_PE_1_0_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i64* %fifo_A_PE_1_0_V_V, i64* %fifo_A_PE_1_0_V_V)"   --->   Operation 141 'specchannel' 'empty_25' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 142 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %fifo_A_PE_1_0_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 142 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 143 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore(i64* %fifo_A_PE_1_0_V_V, [1 x i8]* @p_str, [9 x i8]* @p_str40, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)" [src/kernel_kernel.cpp:1228]   --->   Operation 143 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 144 [1/1] (0.00ns)   --->   "%empty_26 = call i32 (...)* @_ssdm_op_SpecChannel([18 x i8]* @fifo_A_PE_1_1_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i64* %fifo_A_PE_1_1_V_V, i64* %fifo_A_PE_1_1_V_V)"   --->   Operation 144 'specchannel' 'empty_26' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 145 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %fifo_A_PE_1_1_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 145 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 146 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore(i64* %fifo_A_PE_1_1_V_V, [1 x i8]* @p_str, [9 x i8]* @p_str40, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)" [src/kernel_kernel.cpp:1231]   --->   Operation 146 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 147 [1/1] (0.00ns)   --->   "%empty_27 = call i32 (...)* @_ssdm_op_SpecChannel([18 x i8]* @fifo_A_PE_1_2_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i64* %fifo_A_PE_1_2_V_V, i64* %fifo_A_PE_1_2_V_V)"   --->   Operation 147 'specchannel' 'empty_27' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 148 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %fifo_A_PE_1_2_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 148 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 149 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore(i64* %fifo_A_PE_1_2_V_V, [1 x i8]* @p_str, [9 x i8]* @p_str40, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)" [src/kernel_kernel.cpp:1234]   --->   Operation 149 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 150 [1/1] (0.00ns)   --->   "%empty_28 = call i32 (...)* @_ssdm_op_SpecChannel([18 x i8]* @fifo_B_PE_0_0_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i64* %fifo_B_PE_0_0_V_V, i64* %fifo_B_PE_0_0_V_V)"   --->   Operation 150 'specchannel' 'empty_28' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 151 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %fifo_B_PE_0_0_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 151 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 152 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore(i64* %fifo_B_PE_0_0_V_V, [1 x i8]* @p_str, [9 x i8]* @p_str40, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)" [src/kernel_kernel.cpp:1237]   --->   Operation 152 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 153 [1/1] (0.00ns)   --->   "%empty_29 = call i32 (...)* @_ssdm_op_SpecChannel([18 x i8]* @fifo_B_PE_1_0_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i64* %fifo_B_PE_1_0_V_V, i64* %fifo_B_PE_1_0_V_V)"   --->   Operation 153 'specchannel' 'empty_29' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 154 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %fifo_B_PE_1_0_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 154 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 155 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore(i64* %fifo_B_PE_1_0_V_V, [1 x i8]* @p_str, [9 x i8]* @p_str40, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)" [src/kernel_kernel.cpp:1240]   --->   Operation 155 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 156 [1/1] (0.00ns)   --->   "%empty_30 = call i32 (...)* @_ssdm_op_SpecChannel([18 x i8]* @fifo_B_PE_2_0_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i64* %fifo_B_PE_2_0_V_V, i64* %fifo_B_PE_2_0_V_V)"   --->   Operation 156 'specchannel' 'empty_30' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 157 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %fifo_B_PE_2_0_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 157 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 158 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore(i64* %fifo_B_PE_2_0_V_V, [1 x i8]* @p_str, [9 x i8]* @p_str40, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)" [src/kernel_kernel.cpp:1243]   --->   Operation 158 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 159 [1/1] (0.00ns)   --->   "%empty_31 = call i32 (...)* @_ssdm_op_SpecChannel([18 x i8]* @fifo_B_PE_0_1_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i64* %fifo_B_PE_0_1_V_V, i64* %fifo_B_PE_0_1_V_V)"   --->   Operation 159 'specchannel' 'empty_31' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 160 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %fifo_B_PE_0_1_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 160 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 161 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore(i64* %fifo_B_PE_0_1_V_V, [1 x i8]* @p_str, [9 x i8]* @p_str40, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)" [src/kernel_kernel.cpp:1246]   --->   Operation 161 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 162 [1/1] (0.00ns)   --->   "%empty_32 = call i32 (...)* @_ssdm_op_SpecChannel([18 x i8]* @fifo_B_PE_1_1_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i64* %fifo_B_PE_1_1_V_V, i64* %fifo_B_PE_1_1_V_V)"   --->   Operation 162 'specchannel' 'empty_32' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 163 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %fifo_B_PE_1_1_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 163 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 164 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore(i64* %fifo_B_PE_1_1_V_V, [1 x i8]* @p_str, [9 x i8]* @p_str40, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)" [src/kernel_kernel.cpp:1249]   --->   Operation 164 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 165 [1/1] (0.00ns)   --->   "%empty_33 = call i32 (...)* @_ssdm_op_SpecChannel([18 x i8]* @fifo_B_PE_2_1_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i64* %fifo_B_PE_2_1_V_V, i64* %fifo_B_PE_2_1_V_V)"   --->   Operation 165 'specchannel' 'empty_33' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 166 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %fifo_B_PE_2_1_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 166 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 167 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore(i64* %fifo_B_PE_2_1_V_V, [1 x i8]* @p_str, [9 x i8]* @p_str40, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)" [src/kernel_kernel.cpp:1252]   --->   Operation 167 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 168 [1/1] (0.00ns)   --->   "%empty_34 = call i32 (...)* @_ssdm_op_SpecChannel([22 x i8]* @fifo_C_drain_PE_0_0_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, float* %fifo_C_drain_PE_0_0_V, float* %fifo_C_drain_PE_0_0_V)"   --->   Operation 168 'specchannel' 'empty_34' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 169 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %fifo_C_drain_PE_0_0_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 169 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 170 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore(float* %fifo_C_drain_PE_0_0_V, [1 x i8]* @p_str, [9 x i8]* @p_str40, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)" [src/kernel_kernel.cpp:1255]   --->   Operation 170 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 171 [1/1] (0.00ns)   --->   "%empty_35 = call i32 (...)* @_ssdm_op_SpecChannel([22 x i8]* @fifo_C_drain_PE_1_0_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, float* %fifo_C_drain_PE_1_0_V, float* %fifo_C_drain_PE_1_0_V)"   --->   Operation 171 'specchannel' 'empty_35' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 172 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %fifo_C_drain_PE_1_0_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 172 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 173 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore(float* %fifo_C_drain_PE_1_0_V, [1 x i8]* @p_str, [9 x i8]* @p_str40, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)" [src/kernel_kernel.cpp:1258]   --->   Operation 173 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 174 [1/1] (0.00ns)   --->   "%empty_36 = call i32 (...)* @_ssdm_op_SpecChannel([22 x i8]* @fifo_C_drain_PE_0_1_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, float* %fifo_C_drain_PE_0_1_V, float* %fifo_C_drain_PE_0_1_V)"   --->   Operation 174 'specchannel' 'empty_36' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 175 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %fifo_C_drain_PE_0_1_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 175 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 176 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore(float* %fifo_C_drain_PE_0_1_V, [1 x i8]* @p_str, [9 x i8]* @p_str40, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)" [src/kernel_kernel.cpp:1261]   --->   Operation 176 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 177 [1/1] (0.00ns)   --->   "%empty_37 = call i32 (...)* @_ssdm_op_SpecChannel([22 x i8]* @fifo_C_drain_PE_1_1_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, float* %fifo_C_drain_PE_1_1_V, float* %fifo_C_drain_PE_1_1_V)"   --->   Operation 177 'specchannel' 'empty_37' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 178 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %fifo_C_drain_PE_1_1_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 178 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 179 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore(float* %fifo_C_drain_PE_1_1_V, [1 x i8]* @p_str, [9 x i8]* @p_str40, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)" [src/kernel_kernel.cpp:1264]   --->   Operation 179 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 180 [1/1] (0.00ns)   --->   "%empty_38 = call i32 (...)* @_ssdm_op_SpecChannel([39 x i8]* @fifo_C_drain_C_drain_IO_L1_out_0_0_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i128* %fifo_C_drain_C_drain_IO_L1_out_0_0_V_V, i128* %fifo_C_drain_C_drain_IO_L1_out_0_0_V_V)"   --->   Operation 180 'specchannel' 'empty_38' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 181 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i128* %fifo_C_drain_C_drain_IO_L1_out_0_0_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 181 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 182 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore(i128* %fifo_C_drain_C_drain_IO_L1_out_0_0_V_V, [1 x i8]* @p_str, [9 x i8]* @p_str40, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)" [src/kernel_kernel.cpp:1267]   --->   Operation 182 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 183 [1/1] (0.00ns)   --->   "%empty_39 = call i32 (...)* @_ssdm_op_SpecChannel([39 x i8]* @fifo_C_drain_C_drain_IO_L1_out_0_1_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i128* %fifo_C_drain_C_drain_IO_L1_out_0_1_V_V, i128* %fifo_C_drain_C_drain_IO_L1_out_0_1_V_V)"   --->   Operation 183 'specchannel' 'empty_39' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 184 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i128* %fifo_C_drain_C_drain_IO_L1_out_0_1_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 184 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 185 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore(i128* %fifo_C_drain_C_drain_IO_L1_out_0_1_V_V, [1 x i8]* @p_str, [9 x i8]* @p_str40, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)" [src/kernel_kernel.cpp:1270]   --->   Operation 185 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 186 [1/1] (0.00ns)   --->   "%empty_40 = call i32 (...)* @_ssdm_op_SpecChannel([39 x i8]* @fifo_C_drain_C_drain_IO_L1_out_1_0_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i128* %fifo_C_drain_C_drain_IO_L1_out_1_0_V_V, i128* %fifo_C_drain_C_drain_IO_L1_out_1_0_V_V)"   --->   Operation 186 'specchannel' 'empty_40' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 187 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i128* %fifo_C_drain_C_drain_IO_L1_out_1_0_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 187 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 188 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore(i128* %fifo_C_drain_C_drain_IO_L1_out_1_0_V_V, [1 x i8]* @p_str, [9 x i8]* @p_str40, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)" [src/kernel_kernel.cpp:1276]   --->   Operation 188 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 189 [1/1] (0.00ns)   --->   "%empty_41 = call i32 (...)* @_ssdm_op_SpecChannel([39 x i8]* @fifo_C_drain_C_drain_IO_L1_out_1_1_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i128* %fifo_C_drain_C_drain_IO_L1_out_1_1_V_V, i128* %fifo_C_drain_C_drain_IO_L1_out_1_1_V_V)"   --->   Operation 189 'specchannel' 'empty_41' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 190 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i128* %fifo_C_drain_C_drain_IO_L1_out_1_1_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 190 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 191 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore(i128* %fifo_C_drain_C_drain_IO_L1_out_1_1_V_V, [1 x i8]* @p_str, [9 x i8]* @p_str40, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)" [src/kernel_kernel.cpp:1279]   --->   Operation 191 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 192 [1/1] (0.00ns)   --->   "%empty_42 = call i32 (...)* @_ssdm_op_SpecChannel([37 x i8]* @fifo_C_drain_C_drain_IO_L2_out_0_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i128* %fifo_C_drain_C_drain_IO_L2_out_0_V_V, i128* %fifo_C_drain_C_drain_IO_L2_out_0_V_V)"   --->   Operation 192 'specchannel' 'empty_42' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 193 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i128* %fifo_C_drain_C_drain_IO_L2_out_0_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 193 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 194 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore(i128* %fifo_C_drain_C_drain_IO_L2_out_0_V_V, [1 x i8]* @p_str, [9 x i8]* @p_str40, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)" [src/kernel_kernel.cpp:1285]   --->   Operation 194 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 195 [1/1] (0.00ns)   --->   "%empty_43 = call i32 (...)* @_ssdm_op_SpecChannel([37 x i8]* @fifo_C_drain_C_drain_IO_L2_out_1_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i128* %fifo_C_drain_C_drain_IO_L2_out_1_V_V, i128* %fifo_C_drain_C_drain_IO_L2_out_1_V_V)"   --->   Operation 195 'specchannel' 'empty_43' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 196 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i128* %fifo_C_drain_C_drain_IO_L2_out_1_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 196 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 197 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore(i128* %fifo_C_drain_C_drain_IO_L2_out_1_V_V, [1 x i8]* @p_str, [9 x i8]* @p_str40, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)" [src/kernel_kernel.cpp:1288]   --->   Operation 197 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 198 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i512* %gmem_A, [6 x i8]* @p_str33, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [7 x i8]* @p_str34, [6 x i8]* @p_str35, [1 x i8]* @p_str, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind" [src/kernel_kernel.cpp:1182]   --->   Operation 198 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 199 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i512* %gmem_B, [6 x i8]* @p_str33, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [7 x i8]* @p_str36, [6 x i8]* @p_str35, [1 x i8]* @p_str, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind" [src/kernel_kernel.cpp:1183]   --->   Operation 199 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 200 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i512* %gmem_C, [6 x i8]* @p_str33, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [7 x i8]* @p_str37, [6 x i8]* @p_str35, [1 x i8]* @p_str, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind" [src/kernel_kernel.cpp:1184]   --->   Operation 200 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 201 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %A_V, [10 x i8]* @p_str38, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [8 x i8]* @p_str39, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind" [src/kernel_kernel.cpp:1185]   --->   Operation 201 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 202 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %B_V, [10 x i8]* @p_str38, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [8 x i8]* @p_str39, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind" [src/kernel_kernel.cpp:1186]   --->   Operation 202 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 203 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %C_V, [10 x i8]* @p_str38, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [8 x i8]* @p_str39, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind" [src/kernel_kernel.cpp:1187]   --->   Operation 203 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 204 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str38, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [8 x i8]* @p_str39, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind" [src/kernel_kernel.cpp:1188]   --->   Operation 204 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 205 [1/1] (0.00ns)   --->   "%empty_44 = call i32 (...)* @_ssdm_op_SpecChannel([6 x i8]* @A_OC_V_c_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %A_V_c, i32* %A_V_c)" [src/kernel_kernel.cpp:1180]   --->   Operation 205 'specchannel' 'empty_44' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 206 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %A_V_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [src/kernel_kernel.cpp:1180]   --->   Operation 206 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 207 [1/1] (0.00ns)   --->   "%empty_45 = call i32 (...)* @_ssdm_op_SpecChannel([6 x i8]* @B_OC_V_c_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %B_V_c, i32* %B_V_c)" [src/kernel_kernel.cpp:1180]   --->   Operation 207 'specchannel' 'empty_45' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 208 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %B_V_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [src/kernel_kernel.cpp:1180]   --->   Operation 208 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 209 [1/1] (0.00ns)   --->   "%empty_46 = call i32 (...)* @_ssdm_op_SpecChannel([6 x i8]* @C_OC_V_c_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 13, i32 0, i32* %C_V_c, i32* %C_V_c)" [src/kernel_kernel.cpp:1180]   --->   Operation 209 'specchannel' 'empty_46' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 210 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %C_V_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [src/kernel_kernel.cpp:1180]   --->   Operation 210 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 211 [1/2] (0.00ns)   --->   "call fastcc void @C_drain_IO_L3_out_serialize(i512* %gmem_C, i32* nocapture %C_V_c, i128* %fifo_C_drain_C_drain_IO_L3_out_serialize_V_V)" [src/kernel_kernel.cpp:1499]   --->   Operation 211 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_25 : Operation 212 [1/1] (0.00ns)   --->   "ret void" [src/kernel_kernel.cpp:1505]   --->   Operation 212 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5ns, clock uncertainty: 0.625ns.
+
+ <State 1>: 2.46ns
+The critical path consists of the following:
+	s_axi read on port 'C_V' (src/kernel_kernel.cpp:1180) [7]  (1 ns)
+	'call' operation ('call_ln1180', src/kernel_kernel.cpp:1180) to 'kernel0.entry12' [144]  (1.46 ns)
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+ <State 6>: 0ns
+The critical path consists of the following:
+
+ <State 7>: 0ns
+The critical path consists of the following:
+
+ <State 8>: 0ns
+The critical path consists of the following:
+
+ <State 9>: 0ns
+The critical path consists of the following:
+
+ <State 10>: 0ns
+The critical path consists of the following:
+
+ <State 11>: 0ns
+The critical path consists of the following:
+
+ <State 12>: 0ns
+The critical path consists of the following:
+
+ <State 13>: 0ns
+The critical path consists of the following:
+
+ <State 14>: 0ns
+The critical path consists of the following:
+
+ <State 15>: 0ns
+The critical path consists of the following:
+
+ <State 16>: 0ns
+The critical path consists of the following:
+
+ <State 17>: 0ns
+The critical path consists of the following:
+
+ <State 18>: 0ns
+The critical path consists of the following:
+
+ <State 19>: 0ns
+The critical path consists of the following:
+
+ <State 20>: 0ns
+The critical path consists of the following:
+
+ <State 21>: 0ns
+The critical path consists of the following:
+
+ <State 22>: 0ns
+The critical path consists of the following:
+
+ <State 23>: 0ns
+The critical path consists of the following:
+
+ <State 24>: 0ns
+The critical path consists of the following:
+
+ <State 25>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

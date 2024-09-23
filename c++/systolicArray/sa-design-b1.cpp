@@ -1,7 +1,20 @@
 /*
-Subject: Implementação de um Array Sistólico simples para entendimento. Design B1
-Author: Ulisses Maffazioli
-Date: 27/08/24
+Implementação de Systolic Array do tipo Design B1.
+
+O algoritmo implementa uma convolução entre o vetor de entrada x e o vetor de pesos w utilizando uma arquitetura sistólica do tipo Design B1.
+Os pesos (w) permanecem fixos nas células ao longo de toda a execução.
+As entradas (x_in) são transmitidas (broadcast) para as células conforme as iterações.
+Os resultados parciais (y_out) são propagados entre as células, sendo acumulados conforme avançam na fila.
+A cada iteração, as células realizam cálculos em paralelo, melhorando a eficiência computacional.
+
+Descrição do algoritmo:
+1) Inicialização
+2) Cálculo do número de iterações
+3) Loop principal: percorre todas as células duas vezes.
+a) Loop 1: atualiza y_out em cada célula e imprime y_out na última
+b) Loop 2: realiza os cálculos em cada célula
+
+4) Cálculo do valor esperado (convolução direta para verificação):
 */
 
 #include <stdio.h>

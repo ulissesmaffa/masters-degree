@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "kernel0",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "kernel0"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/csynth.tcl",
+    "sourceLine": 17,
+    "success": true
+  }
+]

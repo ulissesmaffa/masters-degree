@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="kernel0" xd:componentRef="kernel0" xd:initiationInterval="33590" xd:clockPeriod="5.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="*(A)" xd:originalName="A" xd:direction="inout" xd:interfaceRef="m_axi_gmem_A" xd:busTypeRef="aximm" xd:dataWidth="512" xd:bufferDirection="in"/>
+  <xd:arg xd:name="*(B)" xd:originalName="B" xd:direction="inout" xd:interfaceRef="m_axi_gmem_B" xd:busTypeRef="aximm" xd:dataWidth="512" xd:bufferDirection="in"/>
+  <xd:arg xd:name="*(C)" xd:originalName="C" xd:direction="inout" xd:interfaceRef="m_axi_gmem_C" xd:busTypeRef="aximm" xd:dataWidth="512" xd:bufferDirection="out"/>
+  <xd:arg xd:name="A_V" xd:originalName="A_V" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_gmem_A" xd:dataWidth="32" xd:offset="0x10" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="B_V" xd:originalName="B_V" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_gmem_B" xd:dataWidth="32" xd:offset="0x18" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="C_V" xd:originalName="C_V" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_gmem_C" xd:dataWidth="32" xd:offset="0x20" xd:handshakeRef="ap_none"/>
+  <xd:latencyEstimates xd:best-case="32797" xd:worst-case="33589" xd:average-case="32797"/>
+  <xd:resourceEstimates xd:LUT="21820" xd:FF="13701" xd:BRAM="288" xd:DSP="40"/>
+</xd:acceleratorMap>

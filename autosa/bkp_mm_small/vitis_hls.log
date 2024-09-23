@@ -1,0 +1,60 @@
+INFO: [HLS 200-10] Running '/home/ulisses/Tools/Xilinx/Vitis_HLS/2023.1/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'ulisses' on host 'ulisses-thinkpad' (Linux_x86_64 version 5.15.0-117-generic) on Sat Sep 14 18:37:13 -03 2024
+INFO: [HLS 200-10] On os Ubuntu 20.04.6 LTS
+INFO: [HLS 200-10] In directory '/home/ulisses/Projects/masters-degree/autosa/mm_small'
+Sourcing Tcl script '/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/cosim.tcl'
+INFO: [HLS 200-1510] Running: source /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/cosim.tcl
+INFO: [HLS 200-1510] Running: open_project hls_prj 
+INFO: [HLS 200-10] Opening project '/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj'.
+INFO: [HLS 200-1510] Running: set_top kernel0 
+INFO: [HLS 200-1510] Running: add_files src/kernel_kernel.cpp 
+INFO: [HLS 200-10] Adding design file 'src/kernel_kernel.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files src/kernel_kernel.h 
+INFO: [HLS 200-10] Adding design file 'src/kernel_kernel.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb src/kernel_host.cpp -cflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'src/kernel_host.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1611] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_compile -complex-mul-dsp=0
+INFO: [HLS 200-1464] Running solution command: config_compile -name_max_length=50
+INFO: [XFORM 203-1161] The maximum of name length is set to 50.
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xcu200-fsgd2104-2-e 
+INFO: [XFORM 203-1161] The maximum of name length is set to 50.
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [HLS 200-1510] Running: config_compile -name_max_length 50 
+INFO: [XFORM 203-1161] The maximum of name length is set to 50.
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: cosim_design 
+WARNING: [HLS 200-626] This design is unable to schedule all read ports in the first II cycle. The RTL testbench may treat the design as non-pipelined
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "/home/ulisses/Tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/bin/g++"
+   Compiling apatb_kernel0.cpp
+   Compiling kernel_kernel.cpp_pre.cpp.tb.cpp
+   Compiling kernel_host.cpp_pre.cpp.tb.cpp
+   Compiling apatb_kernel0_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+ERROR: A depth specification is required for MAXI interface port 'gmem_A' for cosimulation.
+ERROR: [COSIM 212-359] Aborting co-simulation: C TB simulation failed, nonzero return value '1'.
+ERROR: [COSIM 212-320] C TB testing failed, stop generating test vectors. Please check C TB or re-run cosim.
+ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 9.1 seconds. CPU system time: 2.35 seconds. Elapsed time: 11.74 seconds; current allocated memory: 14.297 MB.
+command 'ap_source' returned error code
+    while executing
+"source /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/cosim.tcl"
+    invoked from within
+"hls::main /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/cosim.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$newargs"
+    (procedure "hls_proc" line 16)
+    invoked from within
+"hls_proc [info nameofexecutable] $argv"
+INFO: [HLS 200-112] Total CPU user time: 11.88 seconds. Total CPU system time: 3.38 seconds. Total elapsed time: 15.7 seconds; peak allocated memory: 1.500 GB.

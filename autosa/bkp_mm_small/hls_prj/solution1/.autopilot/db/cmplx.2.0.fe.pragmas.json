@@ -1,0 +1,290 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "9 11 15 23 16 25 12 1 20 20 20 20 19 19 10 10 3 14 3 14 8 7 5 21",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 1180,
+    "instructions": 261,
+    "name": "kernel0",
+    "total_instructions": 4116
+  },
+  "1": {
+    "basicblocks": 19,
+    "calls": "22 17 22 17 17 17",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 598,
+    "instructions": 84,
+    "name": "B_IO_L2_in_boundary",
+    "total_instructions": 522
+  },
+  "10": {
+    "basicblocks": 15,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 811,
+    "instructions": 52,
+    "name": "B_PE_dummy_in",
+    "total_instructions": 52
+  },
+  "11": {
+    "basicblocks": 13,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 3,
+    "instructions": 45,
+    "name": "A_IO_L3_in",
+    "total_instructions": 45
+  },
+  "12": {
+    "basicblocks": 19,
+    "calls": "24 17 24 17 17 17",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 501,
+    "instructions": 84,
+    "name": "B_IO_L2_in",
+    "total_instructions": 544
+  },
+  "13": {
+    "basicblocks": 27,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 945,
+    "instructions": 150,
+    "loads": {
+      "L": 6
+    },
+    "name": "C_drain_IO_L1_out",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 150
+  },
+  "14": {
+    "basicblocks": 1,
+    "calls": "13",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 980,
+    "instructions": 2,
+    "name": "C_drain_IO_L1_out_wrapper",
+    "total_instructions": 152
+  },
+  "15": {
+    "basicblocks": 19,
+    "calls": "4 18 4 18 18 18",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 156,
+    "instructions": 84,
+    "name": "A_IO_L2_in",
+    "total_instructions": 544
+  },
+  "16": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 378,
+    "instructions": 15,
+    "loads": {
+      "L": 1
+    },
+    "name": "B_IO_L3_in_serialize",
+    "total_instructions": 15
+  },
+  "17": {
+    "basicblocks": 16,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 393,
+    "instructions": 95,
+    "loads": {
+      "L": 2
+    },
+    "name": "B_IO_L2_in_intra_trans",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 95
+  },
+  "18": {
+    "basicblocks": 16,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 48,
+    "instructions": 95,
+    "loads": {
+      "L": 2
+    },
+    "name": "A_IO_L2_in_intra_trans",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 95
+  },
+  "19": {
+    "basicblocks": 15,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 785,
+    "instructions": 52,
+    "name": "A_PE_dummy_in",
+    "total_instructions": 52
+  },
+  "2": {
+    "basicblocks": 12,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 129,
+    "instructions": 29,
+    "name": "A_IO_L2_in_inter_trans_boundary",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 29
+  },
+  "20": {
+    "basicblocks": 1,
+    "calls": "6",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 771,
+    "instructions": 2,
+    "name": "PE_wrapper",
+    "total_instructions": 148
+  },
+  "21": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 1159,
+    "instructions": 43,
+    "loads": {
+      "L": 4
+    },
+    "name": "C_drain_IO_L3_out_serialize",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 43
+  },
+  "22": {
+    "basicblocks": 12,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 474,
+    "instructions": 29,
+    "name": "B_IO_L2_in_inter_trans_boundary",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 29
+  },
+  "23": {
+    "basicblocks": 19,
+    "calls": "2 18 2 18 18 18",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 253,
+    "instructions": 84,
+    "name": "A_IO_L2_in_boundary",
+    "total_instructions": 522
+  },
+  "24": {
+    "basicblocks": 15,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 434,
+    "instructions": 40,
+    "name": "B_IO_L2_in_inter_trans",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 40
+  },
+  "25": {
+    "basicblocks": 13,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 348,
+    "instructions": 45,
+    "name": "B_IO_L3_in",
+    "total_instructions": 45
+  },
+  "3": {
+    "basicblocks": 19,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 1026,
+    "instructions": 132,
+    "loads": {
+      "L": 6
+    },
+    "name": "C_drain_IO_L1_out_boundary_wrapper",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 132
+  },
+  "4": {
+    "basicblocks": 15,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 89,
+    "instructions": 40,
+    "name": "A_IO_L2_in_inter_trans",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 40
+  },
+  "5": {
+    "basicblocks": 15,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 1125,
+    "instructions": 53,
+    "name": "C_drain_IO_L3_out",
+    "total_instructions": 53
+  },
+  "6": {
+    "basicblocks": 21,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 693,
+    "instructions": 146,
+    "loads": {
+      "L": 13
+    },
+    "name": "PE",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 146
+  },
+  "7": {
+    "basicblocks": 24,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 1037,
+    "instructions": 83,
+    "name": "C_drain_IO_L2_out",
+    "total_instructions": 83
+  },
+  "8": {
+    "basicblocks": 17,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 1090,
+    "instructions": 56,
+    "name": "C_drain_IO_L2_out_boundary",
+    "total_instructions": 56
+  },
+  "9": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 33,
+    "instructions": 15,
+    "loads": {
+      "L": 1
+    },
+    "name": "A_IO_L3_in_serialize",
+    "total_instructions": 15
+  }
+}

@@ -1,0 +1,815 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 1013, Column: 7 }
+Function:        _Z26C_drain_IO_L1_out_boundaryiiRN3hls6streamI7ap_uintILi128EELi0EEERNS0_IfLi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'C_drain_IO_L1_out_inter_trans_boundary(int, int, int, int, ap_uint<128> (*) [2], hls::stream<ap_uint<128>, 0>&)'
+    DebugLoc:        { File: src/kernel_kernel.cpp, Line: 918, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'C_drain_IO_L1_out_boundary(int, int, hls::stream<ap_uint<128>, 0>&, hls::stream<float, 0>&)'
+    DebugLoc:        { File: src/kernel_kernel.cpp, Line: 992, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 1005, Column: 7 }
+Function:        _Z26C_drain_IO_L1_out_boundaryiiRN3hls6streamI7ap_uintILi128EELi0EEERNS0_IfLi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'C_drain_IO_L1_out_intra_trans(int, int, int, int, ap_uint<128> (*) [2], hls::stream<float, 0>&)'
+    DebugLoc:        { File: src/kernel_kernel.cpp, Line: 837, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'C_drain_IO_L1_out_boundary(int, int, hls::stream<ap_uint<128>, 0>&, hls::stream<float, 0>&)'
+    DebugLoc:        { File: src/kernel_kernel.cpp, Line: 992, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 1028, Column: 3 }
+Function:        _Z34C_drain_IO_L1_out_boundary_wrapperiiRN3hls6streamI7ap_uintILi128EELi0EEERNS0_IfLi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'C_drain_IO_L1_out_boundary(int, int, hls::stream<ap_uint<128>, 0>&, hls::stream<float, 0>&)'
+    DebugLoc:        { File: src/kernel_kernel.cpp, Line: 992, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'C_drain_IO_L1_out_boundary_wrapper(int, int, hls::stream<ap_uint<128>, 0>&, hls::stream<float, 0>&)'
+    DebugLoc:        { File: src/kernel_kernel.cpp, Line: 1027, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 966, Column: 7 }
+Function:        _Z17C_drain_IO_L1_outiiRN3hls6streamI7ap_uintILi128EELi0EEES4_RNS0_IfLi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'C_drain_IO_L1_out_inter_trans(int, int, int, int, ap_uint<128> (*) [2], hls::stream<ap_uint<128>, 0>&, hls::stream<ap_uint<128>, 0>&)'
+    DebugLoc:        { File: src/kernel_kernel.cpp, Line: 876, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'C_drain_IO_L1_out(int, int, hls::stream<ap_uint<128>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<float, 0>&)'
+    DebugLoc:        { File: src/kernel_kernel.cpp, Line: 945, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 958, Column: 7 }
+Function:        _Z17C_drain_IO_L1_outiiRN3hls6streamI7ap_uintILi128EELi0EEES4_RNS0_IfLi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'C_drain_IO_L1_out_intra_trans(int, int, int, int, ap_uint<128> (*) [2], hls::stream<float, 0>&)'
+    DebugLoc:        { File: src/kernel_kernel.cpp, Line: 837, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'C_drain_IO_L1_out(int, int, hls::stream<ap_uint<128>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<float, 0>&)'
+    DebugLoc:        { File: src/kernel_kernel.cpp, Line: 945, Column: 0 }
+  - String:          ''''
+...
+--- !Failure
+Pass:            generate-ir-wrapper
+Name:            MAXIDepthUnspecified
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 1181, Column: 0 }
+Function:        _Z7kernel0P7ap_uintILi512EES1_S1_
+Args:            
+  - String:          'A depth specification is required for MAXI interface port '''
+  - Name:            A
+  - String:          ''' for cosimulation.'
+...
+--- !Failure
+Pass:            generate-ir-wrapper
+Name:            MAXIDepthUnspecified
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 1181, Column: 0 }
+Function:        _Z7kernel0P7ap_uintILi512EES1_S1_
+Args:            
+  - String:          'A depth specification is required for MAXI interface port '''
+  - Name:            B
+  - String:          ''' for cosimulation.'
+...
+--- !Failure
+Pass:            generate-ir-wrapper
+Name:            MAXIDepthUnspecified
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 1181, Column: 0 }
+Function:        _Z7kernel0P7ap_uintILi512EES1_S1_
+Args:            
+  - String:          'A depth specification is required for MAXI interface port '''
+  - Name:            C
+  - String:          ''' for cosimulation.'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 1170, Column: 21 }
+Function:        _Z27C_drain_IO_L3_out_serializeP7ap_uintILi512EERN3hls6streamIS_ILi128EELi0EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1170_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 860, Column: 27 }
+Function:        _Z17C_drain_IO_L1_outiiRN3hls6streamI7ap_uintILi128EELi0EEES4_RNS0_IfLi0EEE.37.43.63
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_860_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 860, Column: 27 }
+Function:        _Z34C_drain_IO_L1_out_boundary_wrapperiiRN3hls6streamI7ap_uintILi128EELi0EEERNS0_IfLi0EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_860_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 720, Column: 37 }
+Function:        _Z2PEiiRN3hls6streamI7ap_uintILi64EELi0EEES4_S4_S4_RNS0_IfLi0EEE.57.72.81.98.107
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_720_7
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 731, Column: 37 }
+Function:        _Z2PEiiRN3hls6streamI7ap_uintILi64EELi0EEES4_S4_S4_RNS0_IfLi0EEE.57.72.81.98.107
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_731_8
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 740, Column: 35 }
+Function:        _Z2PEiiRN3hls6streamI7ap_uintILi64EELi0EEES4_S4_S4_RNS0_IfLi0EEE.57.72.81.98.107
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_740_9
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 418, Column: 29 }
+Function:        _Z22B_IO_L2_in_intra_transiiiiPA1_7ap_uintILi512EERN3hls6streamIS_ILi64EELi0EEEb
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_418_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 73, Column: 28 }
+Function:        _Z22A_IO_L2_in_intra_transiiiiPA1_7ap_uintILi512EERN3hls6streamIS_ILi64EELi0EEEb
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_73_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 1159, Column: 0 }
+Function:        _Z27C_drain_IO_L3_out_serializeP7ap_uintILi512EERN3hls6streamIS_ILi128EELi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1170_2
+  - String:          ''' ('
+  - LoopLoc:         'src/kernel_kernel.cpp:1170:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          C_drain_IO_L3_out_serialize
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 945, Column: 0 }
+Function:        _Z17C_drain_IO_L1_outiiRN3hls6streamI7ap_uintILi128EELi0EEES4_RNS0_IfLi0EEE.37.43.63
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_860_3
+  - String:          ''' ('
+  - LoopLoc:         'src/kernel_kernel.cpp:860:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          C_drain_IO_L1_out
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 1027, Column: 0 }
+Function:        _Z34C_drain_IO_L1_out_boundary_wrapperiiRN3hls6streamI7ap_uintILi128EELi0EEERNS0_IfLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_860_3
+  - String:          ''' ('
+  - LoopLoc:         'src/kernel_kernel.cpp:860:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          C_drain_IO_L1_out_boundary_wrapper
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 693, Column: 0 }
+Function:        _Z2PEiiRN3hls6streamI7ap_uintILi64EELi0EEES4_S4_S4_RNS0_IfLi0EEE.57.72.81.98.107
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_720_7
+  - String:          ''' ('
+  - LoopLoc:         'src/kernel_kernel.cpp:720:37'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          PE
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 693, Column: 0 }
+Function:        _Z2PEiiRN3hls6streamI7ap_uintILi64EELi0EEES4_S4_S4_RNS0_IfLi0EEE.57.72.81.98.107
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_731_8
+  - String:          ''' ('
+  - LoopLoc:         'src/kernel_kernel.cpp:731:37'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          PE
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 693, Column: 0 }
+Function:        _Z2PEiiRN3hls6streamI7ap_uintILi64EELi0EEES4_S4_S4_RNS0_IfLi0EEE.57.72.81.98.107
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_740_9
+  - String:          ''' ('
+  - LoopLoc:         'src/kernel_kernel.cpp:740:35'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          PE
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 393, Column: 0 }
+Function:        _Z22B_IO_L2_in_intra_transiiiiPA1_7ap_uintILi512EERN3hls6streamIS_ILi64EELi0EEEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_418_4
+  - String:          ''' ('
+  - LoopLoc:         'src/kernel_kernel.cpp:418:29'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          B_IO_L2_in_intra_trans
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 48, Column: 0 }
+Function:        _Z22A_IO_L2_in_intra_transiiiiPA1_7ap_uintILi512EERN3hls6streamIS_ILi64EELi0EEEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_73_4
+  - String:          ''' ('
+  - LoopLoc:         'src/kernel_kernel.cpp:73:28'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          A_IO_L2_in_intra_trans
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 52, Column: 8 }
+Function:        _Z22A_IO_L2_in_intra_transiiiiPA1_7ap_uintILi512EERN3hls6streamIS_ILi64EELi0EEEb
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          data_split
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 397, Column: 8 }
+Function:        _Z22B_IO_L2_in_intra_transiiiiPA1_7ap_uintILi512EERN3hls6streamIS_ILi64EELi0EEEb
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          data_split
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 841, Column: 15 }
+Function:        _Z34C_drain_IO_L1_out_boundary_wrapperiiRN3hls6streamI7ap_uintILi128EELi0EEERNS0_IfLi0EEE.181
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          data_split.i.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 841, Column: 15 }
+Function:        _Z17C_drain_IO_L1_outiiRN3hls6streamI7ap_uintILi128EELi0EEES4_RNS0_IfLi0EEE.37.43.63
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          data_split.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 841, Column: 15 }
+Function:        _Z34C_drain_IO_L1_out_boundary_wrapperiiRN3hls6streamI7ap_uintILi128EELi0EEERNS0_IfLi0EEE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          data_split.i.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 38, Column: 19 }
+Function:        _Z20A_IO_L3_in_serializeP7ap_uintILi512EERN3hls6streamIS0_Li0EEE
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '1024'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        Aseq
+  - ArrayName:       A
+  - String:          ' '
+  - BundleName:      gmem_A
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_38_1
+  - String:          ' '
+  - LoopLoc:         'src/kernel_kernel.cpp:38:19'
+  - String:          ' '
+  - Function:        'A_IO_L3_in_serialize(ap_uint<512>*, hls::stream<ap_uint<512>, 0>&)'
+    DebugLoc:        { File: src/kernel_kernel.cpp, Line: 33, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/kernel_kernel.cpp, Line: 41, Column: 15 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.4
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 383, Column: 20 }
+Function:        _Z20B_IO_L3_in_serializeP7ap_uintILi512EERN3hls6streamIS0_Li0EEE
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '1024'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        Bseq
+  - ArrayName:       B
+  - String:          ' '
+  - BundleName:      gmem_B
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_383_1
+  - String:          ' '
+  - LoopLoc:         'src/kernel_kernel.cpp:383:20'
+  - String:          ' '
+  - Function:        'B_IO_L3_in_serialize(ap_uint<512>*, hls::stream<ap_uint<512>, 0>&)'
+    DebugLoc:        { File: src/kernel_kernel.cpp, Line: 378, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/kernel_kernel.cpp, Line: 386, Column: 15 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.4
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 1164, Column: 21 }
+Function:        _Z27C_drain_IO_L3_out_serializeP7ap_uintILi512EERN3hls6streamIS_ILi128EELi0EEE
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '256'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        Cseq
+  - ArrayName:       C
+  - String:          ' '
+  - BundleName:      gmem_C
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_1164_1
+  - String:          ' '
+  - LoopLoc:         'src/kernel_kernel.cpp:1164:21'
+  - String:          ' '
+  - Function:        'C_drain_IO_L3_out_serialize(ap_uint<512>*, hls::stream<ap_uint<128>, 0>&)'
+    DebugLoc:        { File: src/kernel_kernel.cpp, Line: 1159, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: src/kernel_kernel.cpp, Line: 1175, Column: 10 }
+  - OrigDirection:   write
+  - OrigID:          for.inc.store.20
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 38, Column: 19 }
+Function:        _Z20A_IO_L3_in_serializeP7ap_uintILi512EERN3hls6streamIS0_Li0EEE
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i512
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src/kernel_kernel.cpp, Line: 38, Column: 19 }
+  - OrigDirection:   read
+  - OrigID:          Aseq
+  - ArrayName:       A
+  - String:          ' '
+  - BundleName:      gmem_A
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_38_1
+  - String:          ' '
+  - LoopLoc:         'src/kernel_kernel.cpp:38:19'
+  - String:          ' '
+  - Function:        'A_IO_L3_in_serialize(ap_uint<512>*, hls::stream<ap_uint<512>, 0>&)'
+    DebugLoc:        { File: src/kernel_kernel.cpp, Line: 33, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 383, Column: 20 }
+Function:        _Z20B_IO_L3_in_serializeP7ap_uintILi512EERN3hls6streamIS0_Li0EEE
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i512
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src/kernel_kernel.cpp, Line: 383, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          Bseq
+  - ArrayName:       B
+  - String:          ' '
+  - BundleName:      gmem_B
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_383_1
+  - String:          ' '
+  - LoopLoc:         'src/kernel_kernel.cpp:383:20'
+  - String:          ' '
+  - Function:        'B_IO_L3_in_serialize(ap_uint<512>*, hls::stream<ap_uint<512>, 0>&)'
+    DebugLoc:        { File: src/kernel_kernel.cpp, Line: 378, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 1164, Column: 21 }
+Function:        _Z27C_drain_IO_L3_out_serializeP7ap_uintILi512EERN3hls6streamIS_ILi128EELi0EEE
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i512
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src/kernel_kernel.cpp, Line: 1164, Column: 21 }
+  - OrigDirection:   write
+  - OrigID:          Cseq
+  - ArrayName:       C
+  - String:          ' '
+  - BundleName:      gmem_C
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_1164_1
+  - String:          ' '
+  - LoopLoc:         'src/kernel_kernel.cpp:1164:21'
+  - String:          ' '
+  - Function:        'C_drain_IO_L3_out_serialize(ap_uint<512>*, hls::stream<ap_uint<128>, 0>&)'
+    DebugLoc:        { File: src/kernel_kernel.cpp, Line: 1159, Column: 0 }
+  - String:          ' '
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 1071, Column: 34 }
+Function:        _Z17C_drain_IO_L2_outiRN3hls6streamI7ap_uintILi128EELi0EEES4_S4_
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_1071_9
+  - String:          '''('
+  - LoopLoc:         'src/kernel_kernel.cpp:1071:34'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 1054, Column: 34 }
+Function:        _Z17C_drain_IO_L2_outiRN3hls6streamI7ap_uintILi128EELi0EEES4_S4_
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_1054_6
+  - String:          '''('
+  - LoopLoc:         'src/kernel_kernel.cpp:1054:34'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 1107, Column: 34 }
+Function:        _Z26C_drain_IO_L2_out_boundaryiRN3hls6streamI7ap_uintILi128EELi0EEES4_
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_1107_6
+  - String:          '''('
+  - LoopLoc:         'src/kernel_kernel.cpp:1107:34'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 1141, Column: 32 }
+Function:        _Z17C_drain_IO_L3_outRN3hls6streamI7ap_uintILi128EELi0EEES4_
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_1141_6
+  - String:          '''('
+  - LoopLoc:         'src/kernel_kernel.cpp:1141:32'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 929, Column: 27 }
+Function:        _Z34C_drain_IO_L1_out_boundary_wrapperiiRN3hls6streamI7ap_uintILi128EELi0EEERNS0_IfLi0EEE
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_929_3
+  - String:          '''('
+  - LoopLoc:         'src/kernel_kernel.cpp:929:27'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 901, Column: 27 }
+Function:        _Z17C_drain_IO_L1_outiiRN3hls6streamI7ap_uintILi128EELi0EEES4_RNS0_IfLi0EEE.37.43.63
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_901_5
+  - String:          '''('
+  - LoopLoc:         'src/kernel_kernel.cpp:901:27'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 887, Column: 27 }
+Function:        _Z17C_drain_IO_L1_outiiRN3hls6streamI7ap_uintILi128EELi0EEES4_RNS0_IfLi0EEE.37.43.63
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_887_3
+  - String:          '''('
+  - LoopLoc:         'src/kernel_kernel.cpp:887:27'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 929, Column: 27 }
+Function:        _Z34C_drain_IO_L1_out_boundary_wrapperiiRN3hls6streamI7ap_uintILi128EELi0EEERNS0_IfLi0EEE.181
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_929_3
+  - String:          '''('
+  - LoopLoc:         'src/kernel_kernel.cpp:929:27'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 38, Column: 19 }
+Function:        _Z20A_IO_L3_in_serializeP7ap_uintILi512EERN3hls6streamIS0_Li0EEE.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '1024'
+  - String:          ' and bit width '
+  - Width:           '512'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem_A
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_38_1
+  - String:          ' '
+  - LoopLoc:         'src/kernel_kernel.cpp:38:19'
+  - String:          ' '
+  - Function:        'A_IO_L3_in_serialize(ap_uint<512>*, hls::stream<ap_uint<512>, 0>&) (.1)'
+    DebugLoc:        { File: src/kernel_kernel.cpp, Line: 33, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 38, Column: 19 }
+Function:        _Z20A_IO_L3_in_serializeP7ap_uintILi512EERN3hls6streamIS0_Li0EEE.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '1024'
+  - String:          ' and bit width '
+  - Width:           '512'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_38_1
+  - String:          '''('
+  - LoopLoc:         'src/kernel_kernel.cpp:38:19'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem_A
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 383, Column: 20 }
+Function:        _Z20B_IO_L3_in_serializeP7ap_uintILi512EERN3hls6streamIS0_Li0EEE.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '1024'
+  - String:          ' and bit width '
+  - Width:           '512'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem_B
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_383_1
+  - String:          ' '
+  - LoopLoc:         'src/kernel_kernel.cpp:383:20'
+  - String:          ' '
+  - Function:        'B_IO_L3_in_serialize(ap_uint<512>*, hls::stream<ap_uint<512>, 0>&) (.1)'
+    DebugLoc:        { File: src/kernel_kernel.cpp, Line: 378, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 383, Column: 20 }
+Function:        _Z20B_IO_L3_in_serializeP7ap_uintILi512EERN3hls6streamIS0_Li0EEE.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '1024'
+  - String:          ' and bit width '
+  - Width:           '512'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_383_1
+  - String:          '''('
+  - LoopLoc:         'src/kernel_kernel.cpp:383:20'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem_B
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 1164, Column: 21 }
+Function:        _Z27C_drain_IO_L3_out_serializeP7ap_uintILi512EERN3hls6streamIS_ILi128EELi0EEE.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '256'
+  - String:          ' and bit width '
+  - Width:           '512'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem_C
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_1164_1
+  - String:          ' '
+  - LoopLoc:         'src/kernel_kernel.cpp:1164:21'
+  - String:          ' '
+  - Function:        'C_drain_IO_L3_out_serialize(ap_uint<512>*, hls::stream<ap_uint<128>, 0>&) (.1)'
+    DebugLoc:        { File: src/kernel_kernel.cpp, Line: 1159, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src/kernel_kernel.cpp, Line: 1164, Column: 21 }
+Function:        _Z27C_drain_IO_L3_out_serializeP7ap_uintILi512EERN3hls6streamIS_ILi128EELi0EEE.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '256'
+  - String:          ' and bit width '
+  - Width:           '512'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_1164_1
+  - String:          '''('
+  - LoopLoc:         'src/kernel_kernel.cpp:1164:21'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem_C
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...

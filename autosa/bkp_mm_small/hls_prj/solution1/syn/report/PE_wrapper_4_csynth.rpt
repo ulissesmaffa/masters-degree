@@ -1,0 +1,176 @@
+
+
+================================================================
+== Vitis HLS Report for 'PE_wrapper_4'
+================================================================
+* Date:           Thu Sep 12 16:27:01 2024
+
+* Version:        2023.1.1 (Build 3869133 on Jun 15 2023)
+* Project:        hls_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcu200-fsgd2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  3.586 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-------+-------+---------+
+    |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline|
+    |   min   |   max   |    min   |    max   |  min  |  max  |   Type  |
+    +---------+---------+----------+----------+-------+-------+---------+
+    |    32786|    32786|  0.164 ms|  0.164 ms|  32786|  32786|       no|
+    +---------+---------+----------+----------+-------+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        +--------------+-------+---------+---------+----------+----------+-------+-------+---------+
+        |              |       |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline|
+        |   Instance   | Module|   min   |   max   |    min   |    max   |  min  |  max  |   Type  |
+        +--------------+-------+---------+---------+----------+----------+-------+-------+---------+
+        |grp_PE_fu_30  |PE     |    32785|    32785|  0.164 ms|  0.164 ms|  32785|  32785|       no|
+        +--------------+-------+---------+---------+----------+----------+-------+-------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        0|        2|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        1|    10|     1364|     1336|    -|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        -|       77|    -|
+|Register             |        -|     -|        5|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        1|    10|     1369|     1415|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1440|  2280|   788160|   394080|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |       ~0|    ~0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4320|  6840|  2364480|  1182240|  960|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |       ~0|    ~0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------+-------+---------+----+------+------+-----+
+    |   Instance   | Module| BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +--------------+-------+---------+----+------+------+-----+
+    |grp_PE_fu_30  |PE     |        1|  10|  1364|  1336|    0|
+    +--------------+-------+---------+----+------+------+-----+
+    |Total         |       |        1|  10|  1364|  1336|    0|
+    +--------------+-------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+----+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |ap_block_state1  |        or|   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |Total            |          |   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------------------+----+-----------+-----+-----------+
+    |            Name           | LUT| Input Size| Bits| Total Bits|
+    +---------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                  |  14|          3|    1|          3|
+    |ap_done                    |   9|          2|    1|          2|
+    |fifo_A_PE_1_0_read         |   9|          2|    1|          2|
+    |fifo_A_PE_1_1_write        |   9|          2|    1|          2|
+    |fifo_B_PE_1_0_read         |   9|          2|    1|          2|
+    |fifo_B_PE_2_0_write        |   9|          2|    1|          2|
+    |fifo_C_drain_PE_1_0_write  |   9|          2|    1|          2|
+    |real_start                 |   9|          2|    1|          2|
+    +---------------------------+----+-----------+-----+-----------+
+    |Total                      |  77|         17|    8|         17|
+    +---------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------+---+----+-----+-----------+
+    |            Name           | FF| LUT| Bits| Const Bits|
+    +---------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                  |  2|   0|    2|          0|
+    |ap_done_reg                |  1|   0|    1|          0|
+    |grp_PE_fu_30_ap_start_reg  |  1|   0|    1|          0|
+    |start_once_reg             |  1|   0|    1|          0|
+    +---------------------------+---+----+-----+-----------+
+    |Total                      |  5|   0|    5|          0|
+    +---------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------------+-----+-----+------------+---------------------+--------------+
+|              RTL Ports             | Dir | Bits|  Protocol  |    Source Object    |    C Type    |
++------------------------------------+-----+-----+------------+---------------------+--------------+
+|ap_clk                              |   in|    1|  ap_ctrl_hs|         PE_wrapper.4|  return value|
+|ap_rst                              |   in|    1|  ap_ctrl_hs|         PE_wrapper.4|  return value|
+|ap_start                            |   in|    1|  ap_ctrl_hs|         PE_wrapper.4|  return value|
+|start_full_n                        |   in|    1|  ap_ctrl_hs|         PE_wrapper.4|  return value|
+|ap_done                             |  out|    1|  ap_ctrl_hs|         PE_wrapper.4|  return value|
+|ap_continue                         |   in|    1|  ap_ctrl_hs|         PE_wrapper.4|  return value|
+|ap_idle                             |  out|    1|  ap_ctrl_hs|         PE_wrapper.4|  return value|
+|ap_ready                            |  out|    1|  ap_ctrl_hs|         PE_wrapper.4|  return value|
+|start_out                           |  out|    1|  ap_ctrl_hs|         PE_wrapper.4|  return value|
+|start_write                         |  out|    1|  ap_ctrl_hs|         PE_wrapper.4|  return value|
+|fifo_A_PE_1_0_dout                  |   in|   64|     ap_fifo|        fifo_A_PE_1_0|       pointer|
+|fifo_A_PE_1_0_num_data_valid        |   in|    2|     ap_fifo|        fifo_A_PE_1_0|       pointer|
+|fifo_A_PE_1_0_fifo_cap              |   in|    2|     ap_fifo|        fifo_A_PE_1_0|       pointer|
+|fifo_A_PE_1_0_empty_n               |   in|    1|     ap_fifo|        fifo_A_PE_1_0|       pointer|
+|fifo_A_PE_1_0_read                  |  out|    1|     ap_fifo|        fifo_A_PE_1_0|       pointer|
+|fifo_A_PE_1_1_din                   |  out|   64|     ap_fifo|        fifo_A_PE_1_1|       pointer|
+|fifo_A_PE_1_1_num_data_valid        |   in|    2|     ap_fifo|        fifo_A_PE_1_1|       pointer|
+|fifo_A_PE_1_1_fifo_cap              |   in|    2|     ap_fifo|        fifo_A_PE_1_1|       pointer|
+|fifo_A_PE_1_1_full_n                |   in|    1|     ap_fifo|        fifo_A_PE_1_1|       pointer|
+|fifo_A_PE_1_1_write                 |  out|    1|     ap_fifo|        fifo_A_PE_1_1|       pointer|
+|fifo_B_PE_1_0_dout                  |   in|   64|     ap_fifo|        fifo_B_PE_1_0|       pointer|
+|fifo_B_PE_1_0_num_data_valid        |   in|    2|     ap_fifo|        fifo_B_PE_1_0|       pointer|
+|fifo_B_PE_1_0_fifo_cap              |   in|    2|     ap_fifo|        fifo_B_PE_1_0|       pointer|
+|fifo_B_PE_1_0_empty_n               |   in|    1|     ap_fifo|        fifo_B_PE_1_0|       pointer|
+|fifo_B_PE_1_0_read                  |  out|    1|     ap_fifo|        fifo_B_PE_1_0|       pointer|
+|fifo_B_PE_2_0_din                   |  out|   64|     ap_fifo|        fifo_B_PE_2_0|       pointer|
+|fifo_B_PE_2_0_num_data_valid        |   in|    2|     ap_fifo|        fifo_B_PE_2_0|       pointer|
+|fifo_B_PE_2_0_fifo_cap              |   in|    2|     ap_fifo|        fifo_B_PE_2_0|       pointer|
+|fifo_B_PE_2_0_full_n                |   in|    1|     ap_fifo|        fifo_B_PE_2_0|       pointer|
+|fifo_B_PE_2_0_write                 |  out|    1|     ap_fifo|        fifo_B_PE_2_0|       pointer|
+|fifo_C_drain_PE_1_0_din             |  out|   32|     ap_fifo|  fifo_C_drain_PE_1_0|       pointer|
+|fifo_C_drain_PE_1_0_num_data_valid  |   in|    2|     ap_fifo|  fifo_C_drain_PE_1_0|       pointer|
+|fifo_C_drain_PE_1_0_fifo_cap        |   in|    2|     ap_fifo|  fifo_C_drain_PE_1_0|       pointer|
+|fifo_C_drain_PE_1_0_full_n          |   in|    1|     ap_fifo|  fifo_C_drain_PE_1_0|       pointer|
+|fifo_C_drain_PE_1_0_write           |  out|    1|     ap_fifo|  fifo_C_drain_PE_1_0|       pointer|
++------------------------------------+-----+-----+------------+---------------------+--------------+
+

@@ -1,0 +1,550 @@
+src/kernel_kernel.cpp:4:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=A_IO_L3_in_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+src/kernel_kernel.cpp:16:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=A_IO_L3_in_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+src/kernel_kernel.cpp:34:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=A_IO_L3_in_serialize_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+src/kernel_kernel.cpp:39:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=A_IO_L3_in_serialize_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+src/kernel_kernel.cpp:49:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=A_IO_L2_in_intra_trans_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+src/kernel_kernel.cpp:53:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=A_IO_L2_in_intra_trans_XLX_SEP_ PragmaOptions=variable=data_split complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=data_split complete
+        ^
+src/kernel_kernel.cpp:67:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=A_IO_L2_in_intra_trans_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+src/kernel_kernel.cpp:74:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=A_IO_L2_in_intra_trans_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+src/kernel_kernel.cpp:48:42: warning: unused parameter 'c0' [-Wunused-parameter]
+void A_IO_L2_in_intra_trans(int idx, int c0, int c1, int c2, A_t16 local_A[8][1], hls::stream<A_t2> &fifo_A_local_out, bool intra_trans_en) {
+                                         ^
+src/kernel_kernel.cpp:48:50: warning: unused parameter 'c1' [-Wunused-parameter]
+void A_IO_L2_in_intra_trans(int idx, int c0, int c1, int c2, A_t16 local_A[8][1], hls::stream<A_t2> &fifo_A_local_out, bool intra_trans_en) {
+                                                 ^
+src/kernel_kernel.cpp:48:58: warning: unused parameter 'c2' [-Wunused-parameter]
+void A_IO_L2_in_intra_trans(int idx, int c0, int c1, int c2, A_t16 local_A[8][1], hls::stream<A_t2> &fifo_A_local_out, bool intra_trans_en) {
+                                                         ^
+src/kernel_kernel.cpp:90:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=A_IO_L2_in_inter_trans_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+src/kernel_kernel.cpp:101:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=A_IO_L2_in_inter_trans_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+src/kernel_kernel.cpp:113:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=A_IO_L2_in_inter_trans_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+src/kernel_kernel.cpp:89:42: warning: unused parameter 'c0' [-Wunused-parameter]
+void A_IO_L2_in_inter_trans(int idx, int c0, int c1, int c2, A_t16 local_A[8][1], hls::stream<A_t16> &fifo_A_in, hls::stream<A_t16> &fifo_A_out, bool inter_trans_en) {
+                                         ^
+src/kernel_kernel.cpp:89:50: warning: unused parameter 'c1' [-Wunused-parameter]
+void A_IO_L2_in_inter_trans(int idx, int c0, int c1, int c2, A_t16 local_A[8][1], hls::stream<A_t16> &fifo_A_in, hls::stream<A_t16> &fifo_A_out, bool inter_trans_en) {
+                                                 ^
+src/kernel_kernel.cpp:89:58: warning: unused parameter 'c2' [-Wunused-parameter]
+void A_IO_L2_in_inter_trans(int idx, int c0, int c1, int c2, A_t16 local_A[8][1], hls::stream<A_t16> &fifo_A_in, hls::stream<A_t16> &fifo_A_out, bool inter_trans_en) {
+                                                         ^
+src/kernel_kernel.cpp:130:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=A_IO_L2_in_inter_trans_boundary_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+src/kernel_kernel.cpp:141:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=A_IO_L2_in_inter_trans_boundary_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+src/kernel_kernel.cpp:129:51: warning: unused parameter 'c0' [-Wunused-parameter]
+void A_IO_L2_in_inter_trans_boundary(int idx, int c0, int c1, int c2, A_t16 local_A[8][1], hls::stream<A_t16> &fifo_A_in, bool inter_trans_en) {
+                                                  ^
+src/kernel_kernel.cpp:129:59: warning: unused parameter 'c1' [-Wunused-parameter]
+void A_IO_L2_in_inter_trans_boundary(int idx, int c0, int c1, int c2, A_t16 local_A[8][1], hls::stream<A_t16> &fifo_A_in, bool inter_trans_en) {
+                                                          ^
+src/kernel_kernel.cpp:129:67: warning: unused parameter 'c2' [-Wunused-parameter]
+void A_IO_L2_in_inter_trans_boundary(int idx, int c0, int c1, int c2, A_t16 local_A[8][1], hls::stream<A_t16> &fifo_A_in, bool inter_trans_en) {
+                                                                  ^
+src/kernel_kernel.cpp:157:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=A_IO_L2_in_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+src/kernel_kernel.cpp:161:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=local_A_ping core=RAM_2P_BRAM
+        ^
+src/kernel_kernel.cpp:161:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=A_IO_L2_in_XLX_SEP_ PragmaOptions=variable=local_A_ping core=RAM_2P_BRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:163:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=local_A_pong core=RAM_2P_BRAM
+        ^
+src/kernel_kernel.cpp:163:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=A_IO_L2_in_XLX_SEP_ PragmaOptions=variable=local_A_pong core=RAM_2P_BRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:254:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=A_IO_L2_in_boundary_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+src/kernel_kernel.cpp:258:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=local_A_ping core=RAM_2P_BRAM
+        ^
+src/kernel_kernel.cpp:258:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=A_IO_L2_in_boundary_XLX_SEP_ PragmaOptions=variable=local_A_ping core=RAM_2P_BRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:260:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=local_A_pong core=RAM_2P_BRAM
+        ^
+src/kernel_kernel.cpp:260:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=A_IO_L2_in_boundary_XLX_SEP_ PragmaOptions=variable=local_A_pong core=RAM_2P_BRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:349:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=B_IO_L3_in_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+src/kernel_kernel.cpp:361:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=B_IO_L3_in_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+src/kernel_kernel.cpp:379:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=B_IO_L3_in_serialize_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+src/kernel_kernel.cpp:384:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=B_IO_L3_in_serialize_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+src/kernel_kernel.cpp:394:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=B_IO_L2_in_intra_trans_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+src/kernel_kernel.cpp:398:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=B_IO_L2_in_intra_trans_XLX_SEP_ PragmaOptions=variable=data_split complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=data_split complete
+        ^
+src/kernel_kernel.cpp:412:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=B_IO_L2_in_intra_trans_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+src/kernel_kernel.cpp:419:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=B_IO_L2_in_intra_trans_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+src/kernel_kernel.cpp:393:42: warning: unused parameter 'c0' [-Wunused-parameter]
+void B_IO_L2_in_intra_trans(int idx, int c0, int c1, int c2, B_t16 local_B[8][1], hls::stream<B_t2> &fifo_B_local_out, bool intra_trans_en) {
+                                         ^
+src/kernel_kernel.cpp:393:50: warning: unused parameter 'c1' [-Wunused-parameter]
+void B_IO_L2_in_intra_trans(int idx, int c0, int c1, int c2, B_t16 local_B[8][1], hls::stream<B_t2> &fifo_B_local_out, bool intra_trans_en) {
+                                                 ^
+src/kernel_kernel.cpp:393:58: warning: unused parameter 'c2' [-Wunused-parameter]
+void B_IO_L2_in_intra_trans(int idx, int c0, int c1, int c2, B_t16 local_B[8][1], hls::stream<B_t2> &fifo_B_local_out, bool intra_trans_en) {
+                                                         ^
+src/kernel_kernel.cpp:435:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=B_IO_L2_in_inter_trans_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+src/kernel_kernel.cpp:446:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=B_IO_L2_in_inter_trans_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+src/kernel_kernel.cpp:458:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=B_IO_L2_in_inter_trans_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+src/kernel_kernel.cpp:434:42: warning: unused parameter 'c0' [-Wunused-parameter]
+void B_IO_L2_in_inter_trans(int idx, int c0, int c1, int c2, B_t16 local_B[8][1], hls::stream<B_t16> &fifo_B_in, hls::stream<B_t16> &fifo_B_out, bool inter_trans_en) {
+                                         ^
+src/kernel_kernel.cpp:434:50: warning: unused parameter 'c1' [-Wunused-parameter]
+void B_IO_L2_in_inter_trans(int idx, int c0, int c1, int c2, B_t16 local_B[8][1], hls::stream<B_t16> &fifo_B_in, hls::stream<B_t16> &fifo_B_out, bool inter_trans_en) {
+                                                 ^
+src/kernel_kernel.cpp:434:58: warning: unused parameter 'c2' [-Wunused-parameter]
+void B_IO_L2_in_inter_trans(int idx, int c0, int c1, int c2, B_t16 local_B[8][1], hls::stream<B_t16> &fifo_B_in, hls::stream<B_t16> &fifo_B_out, bool inter_trans_en) {
+                                                         ^
+src/kernel_kernel.cpp:475:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=B_IO_L2_in_inter_trans_boundary_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+src/kernel_kernel.cpp:486:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=B_IO_L2_in_inter_trans_boundary_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+src/kernel_kernel.cpp:474:51: warning: unused parameter 'c0' [-Wunused-parameter]
+void B_IO_L2_in_inter_trans_boundary(int idx, int c0, int c1, int c2, B_t16 local_B[8][1], hls::stream<B_t16> &fifo_B_in, bool inter_trans_en) {
+                                                  ^
+src/kernel_kernel.cpp:474:59: warning: unused parameter 'c1' [-Wunused-parameter]
+void B_IO_L2_in_inter_trans_boundary(int idx, int c0, int c1, int c2, B_t16 local_B[8][1], hls::stream<B_t16> &fifo_B_in, bool inter_trans_en) {
+                                                          ^
+src/kernel_kernel.cpp:474:67: warning: unused parameter 'c2' [-Wunused-parameter]
+void B_IO_L2_in_inter_trans_boundary(int idx, int c0, int c1, int c2, B_t16 local_B[8][1], hls::stream<B_t16> &fifo_B_in, bool inter_trans_en) {
+                                                                  ^
+src/kernel_kernel.cpp:502:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=B_IO_L2_in_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+src/kernel_kernel.cpp:506:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=local_B_ping core=RAM_2P_BRAM
+        ^
+src/kernel_kernel.cpp:506:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=B_IO_L2_in_XLX_SEP_ PragmaOptions=variable=local_B_ping core=RAM_2P_BRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:508:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=local_B_pong core=RAM_2P_BRAM
+        ^
+src/kernel_kernel.cpp:508:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=B_IO_L2_in_XLX_SEP_ PragmaOptions=variable=local_B_pong core=RAM_2P_BRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:599:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=B_IO_L2_in_boundary_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+src/kernel_kernel.cpp:603:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=local_B_ping core=RAM_2P_BRAM
+        ^
+src/kernel_kernel.cpp:603:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=B_IO_L2_in_boundary_XLX_SEP_ PragmaOptions=variable=local_B_ping core=RAM_2P_BRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:605:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=local_B_pong core=RAM_2P_BRAM
+        ^
+src/kernel_kernel.cpp:605:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=B_IO_L2_in_boundary_XLX_SEP_ PragmaOptions=variable=local_B_pong core=RAM_2P_BRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:694:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=PE_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+src/kernel_kernel.cpp:698:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=PE_XLX_SEP_ PragmaOptions=variable=local_A dim=0 complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=local_A dim=0 complete
+        ^
+src/kernel_kernel.cpp:700:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=PE_XLX_SEP_ PragmaOptions=variable=local_B dim=0 complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=local_B dim=0 complete
+        ^
+src/kernel_kernel.cpp:702:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=local_C core=RAM_2P_BRAM
+        ^
+src/kernel_kernel.cpp:702:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=PE_XLX_SEP_ PragmaOptions=variable=local_C core=RAM_2P_BRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:715:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=PE_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+src/kernel_kernel.cpp:721:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=PE_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+src/kernel_kernel.cpp:732:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=PE_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+src/kernel_kernel.cpp:741:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=PE_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+src/kernel_kernel.cpp:800:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=A_PE_dummy_in_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+src/kernel_kernel.cpp:826:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=B_PE_dummy_in_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+src/kernel_kernel.cpp:838:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=C_drain_IO_L1_out_intra_trans_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+src/kernel_kernel.cpp:842:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=C_drain_IO_L1_out_intra_trans_XLX_SEP_ PragmaOptions=variable=data_split complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=data_split complete
+        ^
+src/kernel_kernel.cpp:852:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=C_drain_IO_L1_out_intra_trans_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+src/kernel_kernel.cpp:861:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=C_drain_IO_L1_out_intra_trans_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+src/kernel_kernel.cpp:837:58: warning: unused parameter 'c0' [-Wunused-parameter]
+void C_drain_IO_L1_out_intra_trans(int idx, int idy, int c0, int c1, C_t4 local_C[8][2], hls::stream<float> &fifo_C_drain_local_in) {
+                                                         ^
+src/kernel_kernel.cpp:837:66: warning: unused parameter 'c1' [-Wunused-parameter]
+void C_drain_IO_L1_out_intra_trans(int idx, int idy, int c0, int c1, C_t4 local_C[8][2], hls::stream<float> &fifo_C_drain_local_in) {
+                                                                 ^
+src/kernel_kernel.cpp:877:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=C_drain_IO_L1_out_inter_trans_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+src/kernel_kernel.cpp:888:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=C_drain_IO_L1_out_inter_trans_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+src/kernel_kernel.cpp:902:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=C_drain_IO_L1_out_inter_trans_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+src/kernel_kernel.cpp:876:58: warning: unused parameter 'c0' [-Wunused-parameter]
+void C_drain_IO_L1_out_inter_trans(int idx, int idy, int c0, int c1, C_t4 local_C[8][2], hls::stream<C_t4> &fifo_C_drain_in, hls::stream<C_t4> &fifo_C_drain_out) {
+                                                         ^
+src/kernel_kernel.cpp:876:66: warning: unused parameter 'c1' [-Wunused-parameter]
+void C_drain_IO_L1_out_inter_trans(int idx, int idy, int c0, int c1, C_t4 local_C[8][2], hls::stream<C_t4> &fifo_C_drain_in, hls::stream<C_t4> &fifo_C_drain_out) {
+                                                                 ^
+src/kernel_kernel.cpp:919:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=C_drain_IO_L1_out_inter_trans_boundary_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+src/kernel_kernel.cpp:930:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=C_drain_IO_L1_out_inter_trans_boundary_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+src/kernel_kernel.cpp:918:67: warning: unused parameter 'c0' [-Wunused-parameter]
+void C_drain_IO_L1_out_inter_trans_boundary(int idx, int idy, int c0, int c1, C_t4 local_C[8][2], hls::stream<C_t4> &fifo_C_drain_out) {
+                                                                  ^
+src/kernel_kernel.cpp:918:75: warning: unused parameter 'c1' [-Wunused-parameter]
+void C_drain_IO_L1_out_inter_trans_boundary(int idx, int idy, int c0, int c1, C_t4 local_C[8][2], hls::stream<C_t4> &fifo_C_drain_out) {
+                                                                          ^
+src/kernel_kernel.cpp:946:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=C_drain_IO_L1_out_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+src/kernel_kernel.cpp:950:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=local_C core=RAM_2P_BRAM
+        ^
+src/kernel_kernel.cpp:950:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=C_drain_IO_L1_out_XLX_SEP_ PragmaOptions=variable=local_C core=RAM_2P_BRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:993:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=C_drain_IO_L1_out_boundary_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+src/kernel_kernel.cpp:997:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=local_C core=RAM_2P_BRAM
+        ^
+src/kernel_kernel.cpp:997:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=C_drain_IO_L1_out_boundary_XLX_SEP_ PragmaOptions=variable=local_C core=RAM_2P_BRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:1038:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=C_drain_IO_L2_out_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+src/kernel_kernel.cpp:1055:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=C_drain_IO_L2_out_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+src/kernel_kernel.cpp:1072:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=C_drain_IO_L2_out_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+src/kernel_kernel.cpp:1091:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=C_drain_IO_L2_out_boundary_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+src/kernel_kernel.cpp:1108:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=C_drain_IO_L2_out_boundary_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+src/kernel_kernel.cpp:1126:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=C_drain_IO_L3_out_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+src/kernel_kernel.cpp:1142:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=C_drain_IO_L3_out_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+src/kernel_kernel.cpp:1160:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=C_drain_IO_L3_out_serialize_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+src/kernel_kernel.cpp:1165:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=C_drain_IO_L3_out_serialize_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+src/kernel_kernel.cpp:1169:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=C_drain_IO_L3_out_serialize_XLX_SEP_ PragmaOptions=variable=mem_data_split complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=mem_data_split complete
+        ^
+/home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/csynth.tcl:17:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=name=kernel0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=kernel0
+        ^
+src/kernel_kernel.cpp:1182:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=m_axi port=A offset=slave bundle=gmem_A_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=A offset=slave bundle=gmem_A
+        ^
+src/kernel_kernel.cpp:1183:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=m_axi port=B offset=slave bundle=gmem_B_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=B offset=slave bundle=gmem_B
+        ^
+src/kernel_kernel.cpp:1184:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=m_axi port=C offset=slave bundle=gmem_C_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=C offset=slave bundle=gmem_C
+        ^
+src/kernel_kernel.cpp:1185:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=s_axilite port=A bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=A bundle=control
+        ^
+src/kernel_kernel.cpp:1186:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=s_axilite port=B bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=B bundle=control
+        ^
+src/kernel_kernel.cpp:1187:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=s_axilite port=C bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=C bundle=control
+        ^
+src/kernel_kernel.cpp:1188:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=s_axilite port=return bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=return bundle=control
+        ^
+src/kernel_kernel.cpp:1190:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DATAFLOW
+        ^
+src/kernel_kernel.cpp:1194:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_A_A_IO_L3_in_serialize depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_A_A_IO_L3_in_serialize depth=2
+        ^
+src/kernel_kernel.cpp:1196:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_B_B_IO_L3_in_serialize depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_B_B_IO_L3_in_serialize depth=2
+        ^
+src/kernel_kernel.cpp:1198:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_C_drain_C_drain_IO_L3_out_serialize depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_C_drain_C_drain_IO_L3_out_serialize depth=2
+        ^
+src/kernel_kernel.cpp:1200:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_A_A_IO_L2_in_0 depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_A_A_IO_L2_in_0 depth=2
+        ^
+src/kernel_kernel.cpp:1201:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_A_A_IO_L2_in_0 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1201:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_A_A_IO_L2_in_0 core=FIFO_SRL_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:1203:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_A_A_IO_L2_in_1 depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_A_A_IO_L2_in_1 depth=2
+        ^
+src/kernel_kernel.cpp:1204:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_A_A_IO_L2_in_1 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1204:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_A_A_IO_L2_in_1 core=FIFO_SRL_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:1206:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_A_A_IO_L2_in_2 depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_A_A_IO_L2_in_2 depth=2
+        ^
+src/kernel_kernel.cpp:1207:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_A_A_IO_L2_in_2 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1207:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_A_A_IO_L2_in_2 core=FIFO_SRL_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:1209:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_B_B_IO_L2_in_0 depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_B_B_IO_L2_in_0 depth=2
+        ^
+src/kernel_kernel.cpp:1210:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_B_B_IO_L2_in_0 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1210:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_B_B_IO_L2_in_0 core=FIFO_SRL_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:1212:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_B_B_IO_L2_in_1 depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_B_B_IO_L2_in_1 depth=2
+        ^
+src/kernel_kernel.cpp:1213:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_B_B_IO_L2_in_1 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1213:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_B_B_IO_L2_in_1 core=FIFO_SRL_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:1215:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_B_B_IO_L2_in_2 depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_B_B_IO_L2_in_2 depth=2
+        ^
+src/kernel_kernel.cpp:1216:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_B_B_IO_L2_in_2 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1216:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_B_B_IO_L2_in_2 core=FIFO_SRL_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:1218:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_A_PE_0_0 depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_A_PE_0_0 depth=2
+        ^
+src/kernel_kernel.cpp:1219:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_A_PE_0_0 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1219:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_A_PE_0_0 core=FIFO_SRL_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:1221:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_A_PE_0_1 depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_A_PE_0_1 depth=2
+        ^
+src/kernel_kernel.cpp:1222:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_A_PE_0_1 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1222:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_A_PE_0_1 core=FIFO_SRL_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:1224:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_A_PE_0_2 depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_A_PE_0_2 depth=2
+        ^
+src/kernel_kernel.cpp:1225:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_A_PE_0_2 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1225:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_A_PE_0_2 core=FIFO_SRL_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:1227:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_A_PE_1_0 depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_A_PE_1_0 depth=2
+        ^
+src/kernel_kernel.cpp:1228:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_A_PE_1_0 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1228:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_A_PE_1_0 core=FIFO_SRL_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:1230:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_A_PE_1_1 depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_A_PE_1_1 depth=2
+        ^
+src/kernel_kernel.cpp:1231:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_A_PE_1_1 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1231:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_A_PE_1_1 core=FIFO_SRL_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:1233:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_A_PE_1_2 depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_A_PE_1_2 depth=2
+        ^
+src/kernel_kernel.cpp:1234:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_A_PE_1_2 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1234:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_A_PE_1_2 core=FIFO_SRL_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:1236:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_B_PE_0_0 depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_B_PE_0_0 depth=2
+        ^
+src/kernel_kernel.cpp:1237:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_B_PE_0_0 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1237:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_B_PE_0_0 core=FIFO_SRL_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:1239:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_B_PE_1_0 depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_B_PE_1_0 depth=2
+        ^
+src/kernel_kernel.cpp:1240:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_B_PE_1_0 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1240:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_B_PE_1_0 core=FIFO_SRL_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:1242:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_B_PE_2_0 depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_B_PE_2_0 depth=2
+        ^
+src/kernel_kernel.cpp:1243:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_B_PE_2_0 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1243:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_B_PE_2_0 core=FIFO_SRL_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:1245:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_B_PE_0_1 depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_B_PE_0_1 depth=2
+        ^
+src/kernel_kernel.cpp:1246:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_B_PE_0_1 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1246:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_B_PE_0_1 core=FIFO_SRL_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:1248:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_B_PE_1_1 depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_B_PE_1_1 depth=2
+        ^
+src/kernel_kernel.cpp:1249:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_B_PE_1_1 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1249:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_B_PE_1_1 core=FIFO_SRL_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:1251:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_B_PE_2_1 depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_B_PE_2_1 depth=2
+        ^
+src/kernel_kernel.cpp:1252:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_B_PE_2_1 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1252:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_B_PE_2_1 core=FIFO_SRL_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:1254:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_C_drain_PE_0_0 depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_C_drain_PE_0_0 depth=2
+        ^
+src/kernel_kernel.cpp:1255:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_C_drain_PE_0_0 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1255:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_C_drain_PE_0_0 core=FIFO_SRL_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:1257:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_C_drain_PE_1_0 depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_C_drain_PE_1_0 depth=2
+        ^
+src/kernel_kernel.cpp:1258:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_C_drain_PE_1_0 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1258:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_C_drain_PE_1_0 core=FIFO_SRL_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:1260:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_C_drain_PE_0_1 depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_C_drain_PE_0_1 depth=2
+        ^
+src/kernel_kernel.cpp:1261:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_C_drain_PE_0_1 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1261:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_C_drain_PE_0_1 core=FIFO_SRL_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:1263:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_C_drain_PE_1_1 depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_C_drain_PE_1_1 depth=2
+        ^
+src/kernel_kernel.cpp:1264:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_C_drain_PE_1_1 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1264:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_C_drain_PE_1_1 core=FIFO_SRL_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:1266:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_C_drain_C_drain_IO_L1_out_0_0 depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_C_drain_C_drain_IO_L1_out_0_0 depth=2
+        ^
+src/kernel_kernel.cpp:1267:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_C_drain_C_drain_IO_L1_out_0_0 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1267:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_C_drain_C_drain_IO_L1_out_0_0 core=FIFO_SRL_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:1269:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_C_drain_C_drain_IO_L1_out_0_1 depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_C_drain_C_drain_IO_L1_out_0_1 depth=2
+        ^
+src/kernel_kernel.cpp:1270:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_C_drain_C_drain_IO_L1_out_0_1 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1270:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_C_drain_C_drain_IO_L1_out_0_1 core=FIFO_SRL_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:1272:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_C_drain_C_drain_IO_L1_out_0_2 depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_C_drain_C_drain_IO_L1_out_0_2 depth=2
+        ^
+src/kernel_kernel.cpp:1273:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_C_drain_C_drain_IO_L1_out_0_2 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1273:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_C_drain_C_drain_IO_L1_out_0_2 core=FIFO_SRL_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:1275:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_C_drain_C_drain_IO_L1_out_1_0 depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_C_drain_C_drain_IO_L1_out_1_0 depth=2
+        ^
+src/kernel_kernel.cpp:1276:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_C_drain_C_drain_IO_L1_out_1_0 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1276:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_C_drain_C_drain_IO_L1_out_1_0 core=FIFO_SRL_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:1278:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_C_drain_C_drain_IO_L1_out_1_1 depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_C_drain_C_drain_IO_L1_out_1_1 depth=2
+        ^
+src/kernel_kernel.cpp:1279:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_C_drain_C_drain_IO_L1_out_1_1 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1279:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_C_drain_C_drain_IO_L1_out_1_1 core=FIFO_SRL_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:1281:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_C_drain_C_drain_IO_L1_out_1_2 depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_C_drain_C_drain_IO_L1_out_1_2 depth=2
+        ^
+src/kernel_kernel.cpp:1282:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_C_drain_C_drain_IO_L1_out_1_2 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1282:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_C_drain_C_drain_IO_L1_out_1_2 core=FIFO_SRL_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:1284:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_C_drain_C_drain_IO_L2_out_0 depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_C_drain_C_drain_IO_L2_out_0 depth=2
+        ^
+src/kernel_kernel.cpp:1285:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_C_drain_C_drain_IO_L2_out_0 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1285:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_C_drain_C_drain_IO_L2_out_0 core=FIFO_SRL_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:1287:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_C_drain_C_drain_IO_L2_out_1 depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_C_drain_C_drain_IO_L2_out_1 depth=2
+        ^
+src/kernel_kernel.cpp:1288:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_C_drain_C_drain_IO_L2_out_1 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1288:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_C_drain_C_drain_IO_L2_out_1 core=FIFO_SRL_XLX_SEP_ [-Wdump-hls-pragmas]
+src/kernel_kernel.cpp:1290:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_C_drain_C_drain_IO_L2_out_2 depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=fifo_C_drain_C_drain_IO_L2_out_2 depth=2
+        ^
+src/kernel_kernel.cpp:1291:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=fifo_C_drain_C_drain_IO_L2_out_2 core=FIFO_SRL
+        ^
+src/kernel_kernel.cpp:1291:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel0_XLX_SEP_ PragmaOptions=variable=fifo_C_drain_C_drain_IO_L2_out_2 core=FIFO_SRL_XLX_SEP_ [-Wdump-hls-pragmas]
+211 warnings generated.

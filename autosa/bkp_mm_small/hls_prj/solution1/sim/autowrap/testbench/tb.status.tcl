@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/./sim/autowrap/testbench/kernel_kernel.cpp_pre.cpp.tb.cpp

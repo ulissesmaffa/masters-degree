@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Sep 14 23:33:28 2024
+# Process ID: 519709
+# Current directory: /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/impl/ip/vivado.log
+# Journal file: /home/ulisses/Projects/masters-degree/autosa/mm_small/hls_prj/solution1/impl/ip/vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/ulisses/Tools/Xilinx/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'kernel0_ap_fadd_2_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+create_ip: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1566.906 ; gain = 94.207 ; free physical = 181 ; free virtual = 9791
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'kernel0_ap_fadd_2_full_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'kernel0_ap_fadd_2_full_dsp_32'...
+WARNING: [IP_Flow 19-4832] The IP name 'kernel0_ap_fmul_1_max_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'kernel0_ap_fmul_1_max_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'kernel0_ap_fmul_1_max_dsp_32'...
+bad lexical cast: source type value could not be interpreted as target
+    while executing
+"rdi::set_property core_revision 2409142333 {component component_1}"
+    invoked from within
+"set_property core_revision $Revision $core"
+    (file "run_ippack.tcl" line 1659)
+INFO: [Common 17-206] Exiting Vivado at Sat Sep 14 23:33:43 2024...

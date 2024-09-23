@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1726169220749">
+  <ports id="1" name="fifo_B_B_IO_L2_in_1" type="PortType" coreName="FIFO_SRL" coreId="0" bitwidth="512" iftype="IfTypeRom">
+    <dataOutputObjs>call</dataOutputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="2" name="fifo_B_PE_0_1" type="PortType" coreName="FIFO_SRL" coreId="0" bitwidth="64" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>call</dataInputObjs>
+    <dataInputObjs>call</dataInputObjs>
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <edges id="72" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="73" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="76" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="79" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.1/@node_objs.0" is_back_edge="1"/>
+  <edges id="80" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="81" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="84" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="87" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="88" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="89" edge_type="CtrlEdge" source_obj="//@blocks.12" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="90" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="91" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="92" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="94" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.3/@node_objs.0" is_back_edge="1"/>
+  <edges id="96" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="97" source_obj="//@blocks.3/@node_objs.3" sink_obj="//@blocks.3/@node_objs.1" is_back_edge="1"/>
+  <edges id="98" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.3/@node_objs.1" is_back_edge="1"/>
+  <edges id="99" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="101" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="103" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@blocks.3/@node_objs.4"/>
+  <edges id="104" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.4"/>
+  <edges id="105" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.3/@node_objs.4"/>
+  <edges id="106" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="108" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="109" source_obj="//@blocks.9/@node_objs.0" sink_obj="//@blocks.5/@node_objs.0" is_back_edge="1"/>
+  <edges id="110" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.5/@node_objs.0" is_back_edge="1"/>
+  <edges id="111" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="112" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="114" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.5/@node_objs.1" is_back_edge="1"/>
+  <edges id="116" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5/@node_objs.2"/>
+  <edges id="117" source_obj="//@blocks.5/@node_objs.4" sink_obj="//@blocks.5/@node_objs.2" is_back_edge="1"/>
+  <edges id="118" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.5/@node_objs.2" is_back_edge="1"/>
+  <edges id="119" source_obj="//@blocks.5/@node_objs.2" sink_obj="//@blocks.5/@node_objs.3"/>
+  <edges id="121" source_obj="//@blocks.5/@node_objs.2" sink_obj="//@blocks.5/@node_objs.4"/>
+  <edges id="123" source_obj="//@blocks.5/@node_objs.3" sink_obj="//@blocks.5/@node_objs.5"/>
+  <edges id="124" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.5/@node_objs.5"/>
+  <edges id="125" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.5/@node_objs.5"/>
+  <edges id="126" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="127" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="128" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="131" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="132" source_obj="//@ports.0" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="135" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.7/@node_objs.1"/>
+  <edges id="136" source_obj="//@blocks.7/@node_objs.1" sink_obj="//@ports.1"/>
+  <edges id="137" source_obj="//@blocks.5/@node_objs.1" sink_obj="//@blocks.7/@node_objs.1"/>
+  <edges id="138" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.7/@node_objs.2"/>
+  <edges id="140" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.8/@node_objs.0"/>
+  <edges id="141" source_obj="//@ports.0" sink_obj="//@blocks.8/@node_objs.0"/>
+  <edges id="143" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.8/@node_objs.1"/>
+  <edges id="144" source_obj="//@blocks.8/@node_objs.1" sink_obj="//@ports.1"/>
+  <edges id="145" source_obj="//@blocks.5/@node_objs.1" sink_obj="//@blocks.8/@node_objs.1"/>
+  <edges id="146" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.8/@node_objs.2"/>
+  <edges id="147" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.9/@node_objs.0"/>
+  <edges id="149" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.9/@node_objs.1"/>
+  <edges id="150" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.10/@node_objs.0"/>
+  <edges id="151" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.11/@node_objs.0"/>
+  <edges id="152" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.11/@node_objs.0"/>
+  <edges id="153" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.11/@node_objs.1"/>
+  <edges id="155" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.12/@node_objs.0"/>
+  <edges id="156" source_obj="//@blocks.12/@node_objs.0" sink_obj="//@ports.1"/>
+  <edges id="250" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="251" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.12"/>
+  <edges id="252" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="253" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
+  <edges id="254" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.11"/>
+  <edges id="255" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4"/>
+  <edges id="256" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5"/>
+  <edges id="257" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.10"/>
+  <edges id="258" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.6"/>
+  <edges id="259" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.8"/>
+  <edges id="260" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.7"/>
+  <edges id="261" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.9"/>
+  <edges id="262" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.9"/>
+  <edges id="263" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.5" is_back_edge="1"/>
+  <edges id="264" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.3" is_back_edge="1"/>
+  <edges id="265" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.1" is_back_edge="1"/>
+  <edges id="266" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="267" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.11/@node_objs.0"/>
+  <edges id="268" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.11/@node_objs.0"/>
+  <blocks id="14" name="entry" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>VITIS_LOOP_616_2</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="3" name="c0" originalName="c0" coreId="2711076912" bitwidth="3" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="local_B_ping" lineNumber="602" originalName="local_B_ping" fileName="src/kernel_kernel.cpp" fileDirectory="../." rtlName="local_B_ping_U" coreName="RAM_2P_BRAM" implIndex="bram" control="yes" opType="ram_2p" coreId="94" contextFuncName="B_IO_L2_in_boundary" bitwidth="512" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="602" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L2_in_boundary"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="local_B_pong" lineNumber="604" originalName="local_B_pong" fileName="src/kernel_kernel.cpp" fileDirectory="../." rtlName="local_B_pong_U" coreName="RAM_2P_BRAM" implIndex="bram" control="yes" opType="ram_2p" coreId="94" contextFuncName="B_IO_L2_in_boundary" bitwidth="512" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="604" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L2_in_boundary"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="c0_write_ln615" lineNumber="615" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="611283968" contextFuncName="B_IO_L2_in_boundary" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="615" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L2_in_boundary"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="br_ln615" lineNumber="615" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="2712750416" contextFuncName="B_IO_L2_in_boundary" opcode="br" m_display="0" m_delay="0.38" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="615" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L2_in_boundary"/>
+      <controlInputObjs>VITIS_LOOP_616_2</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/kernel_kernel.cpp">
+      <validLinenumbers>602</validLinenumbers>
+      <validLinenumbers>604</validLinenumbers>
+      <validLinenumbers>615</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="20" name="VITIS_LOOP_616_2" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlInputObjs>for.inc58</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>for.end60</controlOutputObjs>
+    <controlOutputObjs>VITIS_LOOP_616_2.split</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="intra_trans_en" originalName="intra_trans_en" coreId="611284528" bitwidth="1" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <dataOutputObjs>phi</dataOutputObjs>
+      <controlInputObjs>entry</controlInputObjs>
+      <controlInputObjs>for.inc58</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="c0_1" lineNumber="615" originalName="c0" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="2711637328" contextFuncName="B_IO_L2_in_boundary" bitwidth="3" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="615" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L2_in_boundary"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="icmp_ln615" lineNumber="615" fileName="src/kernel_kernel.cpp" fileDirectory="../." rtlName="icmp_ln615_fu_165_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="B_IO_L2_in_boundary" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.57" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="615" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L2_in_boundary"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="c0_2" lineNumber="615" originalName="c0" fileName="src/kernel_kernel.cpp" fileDirectory="../." rtlName="c0_2_fu_171_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="B_IO_L2_in_boundary" bitwidth="3" opcode="add" nodeLabel="1.0" m_display="0" m_delay="0.57" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="615" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L2_in_boundary"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="br_ln615" lineNumber="615" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="2709206432" contextFuncName="B_IO_L2_in_boundary" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="615" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L2_in_boundary"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>VITIS_LOOP_616_2.split</controlInputObjs>
+      <controlInputObjs>for.end60</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/kernel_kernel.cpp">
+      <validLinenumbers>615</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="24" name="VITIS_LOOP_616_2.split" type="BlockType">
+    <controlInputObjs>VITIS_LOOP_616_2</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>VITIS_LOOP_617_3</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="br_ln616" lineNumber="616" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="2711684768" contextFuncName="B_IO_L2_in_boundary" opcode="br" nodeLabel="1.0" m_display="0" m_delay="0.38" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="616" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L2_in_boundary"/>
+      <controlInputObjs>VITIS_LOOP_617_3</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/kernel_kernel.cpp">
+      <validLinenumbers>616</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="30" name="VITIS_LOOP_617_3" type="BlockType">
+    <controlInputObjs>VITIS_LOOP_616_2.split</controlInputObjs>
+    <controlInputObjs>for.inc55</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>for.inc58</controlOutputObjs>
+    <controlOutputObjs>VITIS_LOOP_617_3.split</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="intra_trans_en_1" originalName="intra_trans_en" coreId="2712782608" bitwidth="1" opcode="phi" nodeLabel="2.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <controlInputObjs>VITIS_LOOP_616_2.split</controlInputObjs>
+      <controlInputObjs>for.inc55</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="c1" originalName="c1" coreId="144" bitwidth="3" opcode="phi" nodeLabel="2.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <controlInputObjs>VITIS_LOOP_616_2.split</controlInputObjs>
+      <controlInputObjs>for.inc55</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="icmp_ln616" lineNumber="616" fileName="src/kernel_kernel.cpp" fileDirectory="../." rtlName="icmp_ln616_fu_177_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="B_IO_L2_in_boundary" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="0.57" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="616" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L2_in_boundary"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="c1_1" lineNumber="616" originalName="c1" fileName="src/kernel_kernel.cpp" fileDirectory="../." rtlName="c1_1_fu_183_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="B_IO_L2_in_boundary" bitwidth="3" opcode="add" nodeLabel="2.0" m_display="0" m_delay="0.57" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="616" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L2_in_boundary"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="br_ln616" lineNumber="616" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="2712014624" contextFuncName="B_IO_L2_in_boundary" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="616" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L2_in_boundary"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>VITIS_LOOP_617_3.split</controlInputObjs>
+      <controlInputObjs>for.inc58</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/kernel_kernel.cpp">
+      <validLinenumbers>616</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="34" name="VITIS_LOOP_617_3.split" type="BlockType">
+    <controlInputObjs>VITIS_LOOP_617_3</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>for.body32</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="br_ln617" lineNumber="617" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="2712353344" contextFuncName="B_IO_L2_in_boundary" opcode="br" nodeLabel="2.0" m_display="0" m_delay="0.38" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="617" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L2_in_boundary"/>
+      <controlInputObjs>for.body32</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/kernel_kernel.cpp">
+      <validLinenumbers>617</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="41" name="for.body32" type="BlockType">
+    <controlInputObjs>VITIS_LOOP_617_3.split</controlInputObjs>
+    <controlInputObjs>for.inc</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>for.inc55</controlOutputObjs>
+    <controlOutputObjs>for.body32.split</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="arb_1" originalName="arb" coreId="0" bitwidth="1" opcode="phi" nodeLabel="3.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <dataInputObjs>xor</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <dataOutputObjs>xor</dataOutputObjs>
+      <controlInputObjs>VITIS_LOOP_617_3.split</controlInputObjs>
+      <controlInputObjs>for.inc</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="intra_trans_en_2" originalName="intra_trans_en" coreId="2712092160" bitwidth="1" opcode="phi" nodeLabel="3.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <controlInputObjs>VITIS_LOOP_617_3.split</controlInputObjs>
+      <controlInputObjs>for.inc</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="c2" originalName="c2" coreId="2712014624" bitwidth="3" opcode="phi" nodeLabel="3.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <controlInputObjs>VITIS_LOOP_617_3.split</controlInputObjs>
+      <controlInputObjs>for.inc</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="icmp_ln617" lineNumber="617" fileName="src/kernel_kernel.cpp" fileDirectory="../." rtlName="icmp_ln617_fu_193_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="B_IO_L2_in_boundary" bitwidth="1" opcode="icmp" nodeLabel="3.0" m_display="0" m_delay="0.57" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="617" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L2_in_boundary"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="c2_4" lineNumber="617" originalName="c2" fileName="src/kernel_kernel.cpp" fileDirectory="../." rtlName="c2_4_fu_199_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="B_IO_L2_in_boundary" bitwidth="3" opcode="add" nodeLabel="3.0" m_display="0" m_delay="0.57" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="617" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L2_in_boundary"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="br_ln617" lineNumber="617" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="2712014624" contextFuncName="B_IO_L2_in_boundary" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="617" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L2_in_boundary"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>for.body32.split</controlInputObjs>
+      <controlInputObjs>for.inc55</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/kernel_kernel.cpp">
+      <validLinenumbers>617</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="45" name="for.body32.split" type="BlockType">
+    <controlInputObjs>for.body32</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>if.else</controlOutputObjs>
+    <controlOutputObjs>if.then</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="br_ln621" lineNumber="621" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="105" contextFuncName="B_IO_L2_in_boundary" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="621" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L2_in_boundary"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <controlInputObjs>if.then</controlInputObjs>
+      <controlInputObjs>if.else</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/kernel_kernel.cpp">
+      <validLinenumbers>621</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="49" name="if.then" type="BlockType">
+    <controlInputObjs>for.body32.split</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>for.inc</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="_ln622" lineNumber="622" fileName="src/kernel_kernel.cpp" fileDirectory="../." rtlName="grp_B_IO_L2_in_inter_trans_boundary_fu_150" coreId="2711260208" contextFuncName="B_IO_L2_in_boundary" opcode="call" nodeLabel="3.0" nodeLatency="1" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="622" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L2_in_boundary"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>fifo_B_B_IO_L2_in_1</dataInputObjs>
+      <constName>B_IO_L2_in_inter_trans_boundary</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="_ln631" lineNumber="631" fileName="src/kernel_kernel.cpp" fileDirectory="../." rtlName="grp_B_IO_L2_in_intra_trans_fu_140" coreId="2712556432" contextFuncName="B_IO_L2_in_boundary" opcode="call" nodeLabel="3.0" nodeLatency="1" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="631" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L2_in_boundary"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>fifo_B_PE_0_1</dataOutputObjs>
+      <constName>B_IO_L2_in_intra_trans</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="br_ln640" lineNumber="640" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="2711219200" contextFuncName="B_IO_L2_in_boundary" opcode="br" nodeLabel="4.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="640" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L2_in_boundary"/>
+      <controlInputObjs>for.inc</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/kernel_kernel.cpp">
+      <validLinenumbers>622</validLinenumbers>
+      <validLinenumbers>631</validLinenumbers>
+      <validLinenumbers>640</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="53" name="if.else" type="BlockType">
+    <controlInputObjs>for.body32.split</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>for.inc</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="_ln641" lineNumber="641" fileName="src/kernel_kernel.cpp" fileDirectory="../." rtlName="grp_B_IO_L2_in_inter_trans_boundary_fu_150" coreId="2710611776" contextFuncName="B_IO_L2_in_boundary" opcode="call" nodeLabel="3.0" nodeLatency="1" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="641" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L2_in_boundary"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>fifo_B_B_IO_L2_in_1</dataInputObjs>
+      <constName>B_IO_L2_in_inter_trans_boundary</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="_ln650" lineNumber="650" fileName="src/kernel_kernel.cpp" fileDirectory="../." rtlName="grp_B_IO_L2_in_intra_trans_fu_140" coreId="2711034176" contextFuncName="B_IO_L2_in_boundary" opcode="call" nodeLabel="3.0" nodeLatency="1" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="650" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L2_in_boundary"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>fifo_B_PE_0_1</dataOutputObjs>
+      <constName>B_IO_L2_in_intra_trans</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="br_ln0" coreId="2711218672" opcode="br" nodeLabel="4.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <controlInputObjs>for.inc</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/kernel_kernel.cpp">
+      <validLinenumbers>641</validLinenumbers>
+      <validLinenumbers>650</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="56" name="for.inc" type="BlockType">
+    <controlInputObjs>if.then</controlInputObjs>
+    <controlInputObjs>if.else</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>for.body32</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="arb" lineNumber="661" originalName="arb" fileName="src/kernel_kernel.cpp" fileDirectory="../." rtlName="arb_fu_205_p2" coreName="LogicGate" implIndex="auto" control="no" opType="xor" coreId="74" contextFuncName="B_IO_L2_in_boundary" bitwidth="1" opcode="xor" nodeLabel="4.0" m_display="0" m_delay="0.12" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="661" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L2_in_boundary"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="br_ln617" lineNumber="617" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="2711219056" contextFuncName="B_IO_L2_in_boundary" opcode="br" nodeLabel="4.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="617" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L2_in_boundary"/>
+      <controlInputObjs>for.body32</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/kernel_kernel.cpp">
+      <validLinenumbers>661</validLinenumbers>
+      <validLinenumbers>617</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="58" name="for.inc55" type="BlockType">
+    <controlInputObjs>for.body32</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>VITIS_LOOP_617_3</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="57" name="br_ln616" lineNumber="616" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="2712014624" contextFuncName="B_IO_L2_in_boundary" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="616" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L2_in_boundary"/>
+      <controlInputObjs>VITIS_LOOP_617_3</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/kernel_kernel.cpp">
+      <validLinenumbers>616</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="61" name="for.inc58" type="BlockType">
+    <controlInputObjs>VITIS_LOOP_617_3</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>VITIS_LOOP_616_2</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="59" name="c0_write_ln615" lineNumber="615" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="2712014624" contextFuncName="B_IO_L2_in_boundary" opcode="store" nodeLabel="2.0" m_display="0" m_delay="0.38" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="615" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L2_in_boundary"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="br_ln615" lineNumber="615" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="2711159296" contextFuncName="B_IO_L2_in_boundary" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="615" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L2_in_boundary"/>
+      <controlInputObjs>VITIS_LOOP_616_2</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/kernel_kernel.cpp">
+      <validLinenumbers>615</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="64" name="for.end60" type="BlockType">
+    <controlInputObjs>VITIS_LOOP_616_2</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="_ln668" lineNumber="668" fileName="src/kernel_kernel.cpp" fileDirectory="../." rtlName="grp_B_IO_L2_in_intra_trans_fu_140" coreId="2710772112" contextFuncName="B_IO_L2_in_boundary" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="668" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L2_in_boundary"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>fifo_B_PE_0_1</dataOutputObjs>
+      <constName>B_IO_L2_in_intra_trans</constName>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="63" name="_ln689" lineNumber="689" fileName="src/kernel_kernel.cpp" fileDirectory="../." coreId="2712091552" contextFuncName="B_IO_L2_in_boundary" opcode="ret" nodeLabel="5.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/kernel_kernel.cpp" linenumber="689" fileDirectory="/home/ulisses/Projects/masters-degree/autosa/mm_small" functionName="B_IO_L2_in_boundary"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/kernel_kernel.cpp">
+      <validLinenumbers>668</validLinenumbers>
+      <validLinenumbers>689</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <regnodes realName="arb_1_reg_104">
+    <nodeIds>35</nodeIds>
+  </regnodes>
+  <regnodes realName="arb_reg_242">
+    <nodeIds>54</nodeIds>
+  </regnodes>
+  <regnodes realName="intra_trans_en_2_reg_116">
+    <nodeIds>36</nodeIds>
+  </regnodes>
+  <regnodes realName="c1_1_reg_229">
+    <nodeIds>28</nodeIds>
+  </regnodes>
+  <regnodes realName="c2_reg_129">
+    <nodeIds>37</nodeIds>
+  </regnodes>
+  <regnodes realName="c0_reg_211">
+    <nodeIds>3</nodeIds>
+  </regnodes>
+  <regnodes realName="intra_trans_en_reg_66">
+    <nodeIds>15</nodeIds>
+  </regnodes>
+  <regnodes realName="intra_trans_en_1_reg_80">
+    <nodeIds>25</nodeIds>
+  </regnodes>
+  <regnodes realName="c2_4_reg_237">
+    <nodeIds>39</nodeIds>
+  </regnodes>
+  <regnodes realName="c0_2_reg_221">
+    <nodeIds>18</nodeIds>
+  </regnodes>
+  <regnodes realName="c1_reg_93">
+    <nodeIds>26</nodeIds>
+  </regnodes>
+  <expressionNodes realName="c1_1_fu_183">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln615_fu_165">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="intra_trans_en_1_phi_fu_84">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="c0_2_fu_171">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="c1_phi_fu_97">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="arb_fu_205">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln617_fu_193">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="c0_fu_54">
+    <nodeIds>3</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="intra_trans_en_phi_fu_71">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="local_B_ping_alloca_fu_58">
+    <nodeIds>8</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="arb_1_phi_fu_108">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln616_fu_177">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="c2_4_fu_199">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="intra_trans_en_2_phi_fu_120">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="local_B_pong_alloca_fu_62">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="c2_phi_fu_133">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_B_IO_L2_in_intra_trans_fu_140">
+    <nodeIds>62</nodeIds>
+    <nodeIds>47</nodeIds>
+    <nodeIds>51</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_B_IO_L2_in_inter_trans_boundary_fu_150">
+    <nodeIds>46</nodeIds>
+    <nodeIds>50</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="store_ln615_store_fu_157">
+    <nodeIds>12</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln615_store_fu_189">
+    <nodeIds>59</nodeIds>
+  </ioNodes>
+  <ioNodes realName="c0_1_load_fu_162">
+    <nodeIds>16</nodeIds>
+  </ioNodes>
+  <ioPorts name="fifo_B_B_IO_L2_in_1">
+    <contents name="call">
+      <nodeIds>46</nodeIds>
+      <nodeIds>50</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="fifo_B_PE_0_1">
+    <contents name="call">
+      <nodeIds>47</nodeIds>
+      <nodeIds>51</nodeIds>
+      <nodeIds>62</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="3" stage="1" latency="1"/>
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="62" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="46" stage="2" latency="2"/>
+      <operations id="47" stage="2" latency="2"/>
+      <operations id="50" stage="2" latency="2"/>
+      <operations id="51" stage="2" latency="2"/>
+      <operations id="57" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="46" stage="1" latency="2"/>
+      <operations id="47" stage="1" latency="2"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="2"/>
+      <operations id="51" stage="1" latency="2"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+    </states>
+    <states id="6">
+      <operations id="62" stage="1" latency="2"/>
+      <operations id="63" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="B_IO_L2_in_boundary" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="811" mMaxLatency="33775">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>10</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>14</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_615_1" mII="-1" mDepth="-1" mMinTripCount="4" mMaxTripCount="4" mMinLatency="808" mMaxLatency="33256" mType="1">
+      <subRegions>4</subRegions>
+      <subRegions>5</subRegions>
+      <subRegions>9</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>20</basicBlocks>
+      <basicBlocks>24</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="5" mTag="VITIS_LOOP_616_2" mII="-1" mDepth="-1" mMinTripCount="4" mMaxTripCount="4" mMinLatency="200" mMaxLatency="8312" mType="1">
+      <subRegions>6</subRegions>
+      <subRegions>7</subRegions>
+      <subRegions>8</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="6" mTag="Region 2" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>30</basicBlocks>
+      <basicBlocks>34</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="7" mTag="VITIS_LOOP_617_3" mII="-1" mDepth="-1" mMinTripCount="4" mMaxTripCount="4" mMinLatency="48" mMaxLatency="2076" mType="1">
+      <basicBlocks>41</basicBlocks>
+      <basicBlocks>45</basicBlocks>
+      <basicBlocks>49</basicBlocks>
+      <basicBlocks>53</basicBlocks>
+      <basicBlocks>56</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="8" mTag="Region 3" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>58</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="9" mTag="Region 4" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>61</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="10" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="2" mMaxLatency="518">
+      <basicBlocks>64</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

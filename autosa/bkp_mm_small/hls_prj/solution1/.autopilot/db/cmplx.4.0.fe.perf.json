@@ -1,0 +1,398 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "22 4 1 10 2 12 7 19 6 11 17 8 9 14 28 27 25 30 5 15 26 13 31 21",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 1180,
+    "instructions": 187,
+    "name": "kernel0",
+    "total_instructions": 2702
+  },
+  "1": {
+    "basicblocks": 13,
+    "calls": "16 24 16 24 24",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 156,
+    "instructions": 44,
+    "name": "A_IO_L2_in",
+    "total_instructions": 307
+  },
+  "10": {
+    "basicblocks": 13,
+    "calls": "29 24 29 24 24",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 253,
+    "instructions": 44,
+    "name": "A_IO_L2_in_boundary",
+    "total_instructions": 253
+  },
+  "11": {
+    "basicblocks": 1,
+    "calls": "32",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 771,
+    "instructions": 2,
+    "name": "PE_wrapper",
+    "total_instructions": 97
+  },
+  "12": {
+    "basicblocks": 16,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 348,
+    "instructions": 49,
+    "loads": {
+      "L": 1
+    },
+    "name": "B_IO_L3_in",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 49
+  },
+  "13": {
+    "basicblocks": 31,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 1037,
+    "instructions": 92,
+    "loads": {
+      "L": 2
+    },
+    "name": "C_drain_IO_L2_out",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 92
+  },
+  "14": {
+    "basicblocks": 19,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 785,
+    "instructions": 52,
+    "name": "A_PE_dummy_in",
+    "total_instructions": 52
+  },
+  "15": {
+    "basicblocks": 1,
+    "calls": "23",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 980,
+    "instructions": 2,
+    "name": "C_drain_IO_L1_out_wrapper",
+    "total_instructions": 128
+  },
+  "16": {
+    "basicblocks": 13,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 89,
+    "instructions": 43,
+    "loads": {
+      "L": 2
+    },
+    "name": "A_IO_L2_in_inter_trans",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 43
+  },
+  "17": {
+    "basicblocks": 1,
+    "calls": "32",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 771,
+    "instructions": 2,
+    "name": "PE_wrapper",
+    "total_instructions": 97
+  },
+  "18": {
+    "basicblocks": 12,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 393,
+    "instructions": 59,
+    "loads": {
+      "L": 1
+    },
+    "name": "B_IO_L2_in_intra_trans",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 59
+  },
+  "19": {
+    "basicblocks": 13,
+    "calls": "20 18 20 18 18",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 598,
+    "instructions": 44,
+    "name": "B_IO_L2_in_boundary",
+    "total_instructions": 253
+  },
+  "2": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 378,
+    "instructions": 18,
+    "name": "B_IO_L3_in_serialize",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 18
+  },
+  "20": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 474,
+    "instructions": 16,
+    "loads": {
+      "L": 1
+    },
+    "name": "B_IO_L2_in_inter_trans_boundary",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 16
+  },
+  "21": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 1159,
+    "instructions": 31,
+    "loads": {
+      "L": 4
+    },
+    "name": "C_drain_IO_L3_out_serialize",
+    "total_instructions": 31
+  },
+  "22": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 33,
+    "instructions": 18,
+    "name": "A_IO_L3_in_serialize",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 18
+  },
+  "23": {
+    "basicblocks": 35,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 945,
+    "instructions": 126,
+    "loads": {
+      "L": 4
+    },
+    "name": "C_drain_IO_L1_out",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 126
+  },
+  "24": {
+    "basicblocks": 12,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 48,
+    "instructions": 59,
+    "loads": {
+      "L": 1
+    },
+    "name": "A_IO_L2_in_intra_trans",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 59
+  },
+  "25": {
+    "basicblocks": 23,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 1026,
+    "instructions": 90,
+    "loads": {
+      "L": 3
+    },
+    "name": "C_drain_IO_L1_out_boundary_wrapper",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 90
+  },
+  "26": {
+    "basicblocks": 16,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 1090,
+    "instructions": 49,
+    "loads": {
+      "L": 1
+    },
+    "name": "C_drain_IO_L2_out_boundary",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 49
+  },
+  "27": {
+    "basicblocks": 19,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 811,
+    "instructions": 52,
+    "name": "B_PE_dummy_in",
+    "total_instructions": 52
+  },
+  "28": {
+    "basicblocks": 19,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 811,
+    "instructions": 52,
+    "name": "B_PE_dummy_in",
+    "total_instructions": 52
+  },
+  "29": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 129,
+    "instructions": 16,
+    "loads": {
+      "L": 1
+    },
+    "name": "A_IO_L2_in_inter_trans_boundary",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 16
+  },
+  "3": {
+    "basicblocks": 13,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 434,
+    "instructions": 43,
+    "loads": {
+      "L": 2
+    },
+    "name": "B_IO_L2_in_inter_trans",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 43
+  },
+  "30": {
+    "basicblocks": 1,
+    "calls": "23",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 980,
+    "instructions": 2,
+    "name": "C_drain_IO_L1_out_wrapper",
+    "total_instructions": 128
+  },
+  "31": {
+    "basicblocks": 19,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 1125,
+    "instructions": 57,
+    "loads": {
+      "L": 1
+    },
+    "name": "C_drain_IO_L3_out",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 57
+  },
+  "32": {
+    "basicblocks": 21,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 693,
+    "instructions": 95,
+    "loads": {
+      "L": 3
+    },
+    "name": "PE",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 95
+  },
+  "4": {
+    "basicblocks": 16,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 3,
+    "instructions": 49,
+    "loads": {
+      "L": 1
+    },
+    "name": "A_IO_L3_in",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 49
+  },
+  "5": {
+    "basicblocks": 23,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 1026,
+    "instructions": 90,
+    "loads": {
+      "L": 3
+    },
+    "name": "C_drain_IO_L1_out_boundary_wrapper",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 90
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "32",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 771,
+    "instructions": 2,
+    "name": "PE_wrapper",
+    "total_instructions": 97
+  },
+  "7": {
+    "basicblocks": 13,
+    "calls": "3 18 3 18 18",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 501,
+    "instructions": 44,
+    "name": "B_IO_L2_in",
+    "total_instructions": 307
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "32",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 771,
+    "instructions": 2,
+    "name": "PE_wrapper",
+    "total_instructions": 97
+  },
+  "9": {
+    "basicblocks": 19,
+    "calls": "",
+    "file": "kernel_kernel.cpp",
+    "fileloc": 785,
+    "instructions": 52,
+    "name": "A_PE_dummy_in",
+    "total_instructions": 52
+  }
+}

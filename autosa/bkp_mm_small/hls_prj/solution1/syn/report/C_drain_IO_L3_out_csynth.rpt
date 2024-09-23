@@ -1,0 +1,155 @@
+
+
+================================================================
+== Vitis HLS Report for 'C_drain_IO_L3_out'
+================================================================
+* Date:           Thu Sep 12 16:27:04 2024
+
+* Version:        2023.1.1 (Build 3869133 on Jun 15 2023)
+* Project:        hls_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcu200-fsgd2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  2.810 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+------+------+---------+
+    |  Latency (cycles) |  Latency (absolute) |   Interval  | Pipeline|
+    |   min   |   max   |    min   |    max   |  min |  max |   Type  |
+    +---------+---------+----------+----------+------+------+---------+
+    |     1026|     1026|  5.130 us|  5.130 us|  1026|  1026|       no|
+    +---------+---------+----------+----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------------------------------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                                                           |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |                                 Loop Name                                 |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------------------------------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_1130_1_VITIS_LOOP_1134_3_VITIS_LOOP_1138_5_VITIS_LOOP_1141_6  |     1024|     1024|         2|          1|          1|  1024|       yes|
+        +---------------------------------------------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        0|       45|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        -|     -|        -|        -|    -|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        -|       54|    -|
+|Register             |        -|     -|       14|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        0|     0|       14|       99|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1440|  2280|   788160|   394080|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4320|  6840|  2364480|  1182240|  960|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |add_ln1130_fu_86_p2               |         +|   0|  0|  18|          11|           1|
+    |ap_condition_87                   |       and|   0|  0|   2|           1|           1|
+    |icmp_ln1130_fu_80_p2              |      icmp|   0|  0|  19|          11|          12|
+    |ap_block_pp0_stage0_01001         |        or|   0|  0|   2|           1|           1|
+    |ap_block_state2_pp0_stage0_iter1  |        or|   0|  0|   2|           1|           1|
+    |ap_enable_pp0                     |       xor|   0|  0|   2|           1|           2|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0|  45|          26|          18|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------------------------------------+----+-----------+-----+-----------+
+    |                      Name                      | LUT| Input Size| Bits| Total Bits|
+    +------------------------------------------------+----+-----------+-----+-----------+
+    |ap_done_int                                     |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1                         |   9|          2|    1|          2|
+    |ap_sig_allocacmp_indvar_flatten91_load          |   9|          2|   11|         22|
+    |fifo_C_drain_C_drain_IO_L2_out_0_blk_n          |   9|          2|    1|          2|
+    |fifo_C_drain_C_drain_IO_L3_out_serialize_blk_n  |   9|          2|    1|          2|
+    |indvar_flatten91_fu_54                          |   9|          2|   11|         22|
+    +------------------------------------------------+----+-----------+-----+-----------+
+    |Total                                           |  54|         12|   26|         52|
+    +------------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                |   1|   0|    1|          0|
+    |ap_done_reg              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
+    |indvar_flatten91_fu_54   |  11|   0|   11|          0|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    |  14|   0|   14|          0|
+    +-------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------------------------------------+-----+-----+------------+------------------------------------------+--------------+
+|                        RTL Ports                        | Dir | Bits|  Protocol  |               Source Object              |    C Type    |
++---------------------------------------------------------+-----+-----+------------+------------------------------------------+--------------+
+|ap_clk                                                   |   in|    1|  ap_ctrl_hs|                         C_drain_IO_L3_out|  return value|
+|ap_rst                                                   |   in|    1|  ap_ctrl_hs|                         C_drain_IO_L3_out|  return value|
+|ap_start                                                 |   in|    1|  ap_ctrl_hs|                         C_drain_IO_L3_out|  return value|
+|ap_done                                                  |  out|    1|  ap_ctrl_hs|                         C_drain_IO_L3_out|  return value|
+|ap_continue                                              |   in|    1|  ap_ctrl_hs|                         C_drain_IO_L3_out|  return value|
+|ap_idle                                                  |  out|    1|  ap_ctrl_hs|                         C_drain_IO_L3_out|  return value|
+|ap_ready                                                 |  out|    1|  ap_ctrl_hs|                         C_drain_IO_L3_out|  return value|
+|fifo_C_drain_C_drain_IO_L2_out_0_dout                    |   in|  128|     ap_fifo|          fifo_C_drain_C_drain_IO_L2_out_0|       pointer|
+|fifo_C_drain_C_drain_IO_L2_out_0_num_data_valid          |   in|    2|     ap_fifo|          fifo_C_drain_C_drain_IO_L2_out_0|       pointer|
+|fifo_C_drain_C_drain_IO_L2_out_0_fifo_cap                |   in|    2|     ap_fifo|          fifo_C_drain_C_drain_IO_L2_out_0|       pointer|
+|fifo_C_drain_C_drain_IO_L2_out_0_empty_n                 |   in|    1|     ap_fifo|          fifo_C_drain_C_drain_IO_L2_out_0|       pointer|
+|fifo_C_drain_C_drain_IO_L2_out_0_read                    |  out|    1|     ap_fifo|          fifo_C_drain_C_drain_IO_L2_out_0|       pointer|
+|fifo_C_drain_C_drain_IO_L3_out_serialize_din             |  out|  128|     ap_fifo|  fifo_C_drain_C_drain_IO_L3_out_serialize|       pointer|
+|fifo_C_drain_C_drain_IO_L3_out_serialize_num_data_valid  |   in|    2|     ap_fifo|  fifo_C_drain_C_drain_IO_L3_out_serialize|       pointer|
+|fifo_C_drain_C_drain_IO_L3_out_serialize_fifo_cap        |   in|    2|     ap_fifo|  fifo_C_drain_C_drain_IO_L3_out_serialize|       pointer|
+|fifo_C_drain_C_drain_IO_L3_out_serialize_full_n          |   in|    1|     ap_fifo|  fifo_C_drain_C_drain_IO_L3_out_serialize|       pointer|
+|fifo_C_drain_C_drain_IO_L3_out_serialize_write           |  out|    1|     ap_fifo|  fifo_C_drain_C_drain_IO_L3_out_serialize|       pointer|
++---------------------------------------------------------+-----+-----+------------+------------------------------------------+--------------+
+
