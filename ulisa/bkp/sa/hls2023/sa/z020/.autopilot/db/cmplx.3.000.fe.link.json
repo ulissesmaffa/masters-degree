@@ -1,0 +1,17 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "sa.cpp",
+    "fileloc": 11,
+    "instructions": 317,
+    "loads": {
+      "L": 27
+    },
+    "name": "pe",
+    "stores": {
+      "L": 27
+    },
+    "total_instructions": 1031
+  }
+}

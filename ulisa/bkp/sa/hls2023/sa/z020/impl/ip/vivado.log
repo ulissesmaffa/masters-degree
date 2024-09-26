@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Sep 25 19:23:53 2024
+# Process ID: 10458
+# Current directory: /home/fabiob/sa/hls2023/sa/z020/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /home/fabiob/sa/hls2023/sa/z020/impl/ip/vivado.log
+# Journal file: /home/fabiob/sa/hls2023/sa/z020/impl/ip/vivado.jou
+# Running On: pc2ofods5, OS: Linux, CPU Frequency: 2195.348 MHz, CPU Physical cores: 12, Host memory: 16775 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+ipx::create_core: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1332.359 ; gain = 11.922 ; free physical = 159 ; free virtual = 17559
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 25 19:24:02 2024...

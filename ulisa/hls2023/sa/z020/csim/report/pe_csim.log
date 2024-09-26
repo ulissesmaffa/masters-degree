@@ -1,0 +1,14 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../sa/sa_test.cpp in debug mode
+   Compiling ../../../../../sa/sa.cpp in debug mode
+   Generating csim.exe
+RI00 37
+RI10 -6
+BW10 -25
+BA10 -775
+WARNING [HLS SIM]: hls::stream 'hls::stream<hls::axis<ap_uint<16>, 4ul, 5ul, 5ul, (unsigned char)56, false>, 0>0' contains leftover data, which may result in RTL simulation hanging.
+WARNING [HLS SIM]: hls::stream 'hls::stream<hls::axis<ap_uint<8>, 4ul, 5ul, 5ul, (unsigned char)56, false>, 0>4' contains leftover data, which may result in RTL simulation hanging.
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 2
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

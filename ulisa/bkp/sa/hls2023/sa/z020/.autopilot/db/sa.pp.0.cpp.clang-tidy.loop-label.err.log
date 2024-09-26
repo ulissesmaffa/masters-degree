@@ -1,0 +1,5 @@
+2 warnings and 2 errors generated.
+Error while processing /home/fabiob/sa/hls2023/sa/z020/.autopilot/db/sa.pp.0.cpp.
+clang-tidy applied 5 of 5 suggested fixes.
+Suppressed 89 warnings (87 in non-user code, 2 with check filters).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.

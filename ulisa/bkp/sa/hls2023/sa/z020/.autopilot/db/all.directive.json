@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "pe",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "pe"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/fabiob/sa/hls2023/sa/z020/csynth.tcl",
+    "sourceLine": 16,
+    "success": true
+  }
+]

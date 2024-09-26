@@ -73,5 +73,11 @@ Funções
 
 g++ -std=c++11 -I$SYSTEMC_HOME/include -L$SYSTEMC_HOME/lib-linux64 -o sim -lsystemc *.cpp  && echo "Compile done. Starting run..." && ./sim 
 
+Variáveis de ambiente:
+export SYSTEMC_HOME=/usr/local/systemc-2.3.1
+export LD_LIBRARY_PATH=$SYSTEMC_HOME/lib-linux64:$LD_LIBRARY_PATH
+
+nano ~/.bashrc
+source ~/.bashrc
 
 Fonte: https://fpgatutorial.com/systemc-hieararchical-channels/

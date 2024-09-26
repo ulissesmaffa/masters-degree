@@ -1,0 +1,12 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../sa/sa.cpp in debug mode
+   Generating csim.exe
+RI00 37
+RI10 -6
+BW10 -25
+BA10 -775
+WARNING: Hls::stream 'hls::stream<ap_axiu<16, 4, 5, 5> >.1' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_axiu<8, 4, 5, 5> >.5' contains leftover data, which may result in RTL simulation hanging.
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

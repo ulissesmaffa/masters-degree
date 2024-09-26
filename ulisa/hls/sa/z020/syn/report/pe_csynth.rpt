@@ -1,0 +1,326 @@
+
+
+================================================================
+== Vivado HLS Report for 'pe'
+================================================================
+* Date:           Wed Sep 25 19:10:39 2024
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        sa
+* Solution:       z020
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     8.503|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    1|    1|    1|    1|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|    101|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        0|      0|      36|    102|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|    528|
+|Register         |        -|      -|     214|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|     250|    731|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|   ~0   |      1|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +------------------------+---------------------+---------+-------+----+----+
+    |        Instance        |        Module       | BRAM_18K| DSP48E| FF | LUT|
+    +------------------------+---------------------+---------+-------+----+----+
+    |pe_CONTROL_s_axi_U      |pe_CONTROL_s_axi     |        0|      0|  36|  40|
+    |pe_mul_8s_8s_16_1_1_U1  |pe_mul_8s_8s_16_1_1  |        0|      0|   0|  62|
+    +------------------------+---------------------+---------+-------+----+----+
+    |Total                   |                     |        0|      0|  36| 102|
+    +------------------------+---------------------+---------+-------+----+----+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +------------------------------------+----------+-------+---+----+------------+------------+
+    |            Variable Name           | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------------------+----------+-------+---+----+------------+------------+
+    |res_ba_fu_325_p2                    |     +    |      0|  0|  23|          16|          16|
+    |MBA_AXIS_V_data_V_1_load_A          |    and   |      0|  0|   2|           1|           1|
+    |MBA_AXIS_V_data_V_1_load_B          |    and   |      0|  0|   2|           1|           1|
+    |MBW_AXIS_V_data_V_1_load_A          |    and   |      0|  0|   2|           1|           1|
+    |MBW_AXIS_V_data_V_1_load_B          |    and   |      0|  0|   2|           1|           1|
+    |MRI_AXIS_V_data_V_1_load_A          |    and   |      0|  0|   2|           1|           1|
+    |MRI_AXIS_V_data_V_1_load_B          |    and   |      0|  0|   2|           1|           1|
+    |SLI_AXIS_V_data_V_0_load_A          |    and   |      0|  0|   2|           1|           1|
+    |SLI_AXIS_V_data_V_0_load_B          |    and   |      0|  0|   2|           1|           1|
+    |STA_AXIS_V_data_V_0_load_A          |    and   |      0|  0|   2|           1|           1|
+    |STA_AXIS_V_data_V_0_load_B          |    and   |      0|  0|   2|           1|           1|
+    |STW_AXIS_V_data_V_0_load_A          |    and   |      0|  0|   2|           1|           1|
+    |STW_AXIS_V_data_V_0_load_B          |    and   |      0|  0|   2|           1|           1|
+    |MBA_AXIS_V_data_V_1_state_cmp_full  |   icmp   |      0|  0|   8|           2|           1|
+    |MBW_AXIS_V_data_V_1_state_cmp_full  |   icmp   |      0|  0|   8|           2|           1|
+    |MRI_AXIS_V_data_V_1_state_cmp_full  |   icmp   |      0|  0|   8|           2|           1|
+    |SLI_AXIS_V_data_V_0_state_cmp_full  |   icmp   |      0|  0|   8|           2|           1|
+    |STA_AXIS_V_data_V_0_state_cmp_full  |   icmp   |      0|  0|   8|           2|           1|
+    |STW_AXIS_V_data_V_0_state_cmp_full  |   icmp   |      0|  0|   8|           2|           1|
+    |ap_block_state1                     |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state1_io                  |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state2                     |    or    |      0|  0|   2|           1|           1|
+    +------------------------------------+----------+-------+---+----+------------+------------+
+    |Total                               |          |      0|  0| 101|          43|          37|
+    +------------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------------------+----+-----------+-----+-----------+
+    |             Name             | LUT| Input Size| Bits| Total Bits|
+    +------------------------------+----+-----------+-----+-----------+
+    |MBA_AXIS_TDATA_blk_n          |   9|          2|    1|          2|
+    |MBA_AXIS_V_data_V_1_data_out  |   9|          2|   16|         32|
+    |MBA_AXIS_V_data_V_1_state     |  15|          3|    2|          6|
+    |MBA_AXIS_V_dest_V_1_state     |  15|          3|    2|          6|
+    |MBA_AXIS_V_id_V_1_state       |  15|          3|    2|          6|
+    |MBA_AXIS_V_keep_V_1_state     |  15|          3|    2|          6|
+    |MBA_AXIS_V_last_V_1_state     |  15|          3|    2|          6|
+    |MBA_AXIS_V_strb_V_1_state     |  15|          3|    2|          6|
+    |MBA_AXIS_V_user_V_1_state     |  15|          3|    2|          6|
+    |MBW_AXIS_TDATA_blk_n          |   9|          2|    1|          2|
+    |MBW_AXIS_V_data_V_1_data_out  |   9|          2|    8|         16|
+    |MBW_AXIS_V_data_V_1_state     |  15|          3|    2|          6|
+    |MBW_AXIS_V_dest_V_1_state     |  15|          3|    2|          6|
+    |MBW_AXIS_V_id_V_1_state       |  15|          3|    2|          6|
+    |MBW_AXIS_V_keep_V_1_state     |  15|          3|    2|          6|
+    |MBW_AXIS_V_last_V_1_state     |  15|          3|    2|          6|
+    |MBW_AXIS_V_strb_V_1_state     |  15|          3|    2|          6|
+    |MBW_AXIS_V_user_V_1_state     |  15|          3|    2|          6|
+    |MRI_AXIS_TDATA_blk_n          |   9|          2|    1|          2|
+    |MRI_AXIS_V_data_V_1_data_out  |   9|          2|    8|         16|
+    |MRI_AXIS_V_data_V_1_state     |  15|          3|    2|          6|
+    |MRI_AXIS_V_dest_V_1_state     |  15|          3|    2|          6|
+    |MRI_AXIS_V_id_V_1_state       |  15|          3|    2|          6|
+    |MRI_AXIS_V_keep_V_1_state     |  15|          3|    2|          6|
+    |MRI_AXIS_V_last_V_1_state     |  15|          3|    2|          6|
+    |MRI_AXIS_V_strb_V_1_state     |  15|          3|    2|          6|
+    |MRI_AXIS_V_user_V_1_state     |  15|          3|    2|          6|
+    |SLI_AXIS_TDATA_blk_n          |   9|          2|    1|          2|
+    |SLI_AXIS_V_data_V_0_data_out  |   9|          2|    8|         16|
+    |SLI_AXIS_V_data_V_0_state     |  15|          3|    2|          6|
+    |SLI_AXIS_V_dest_V_0_state     |  15|          3|    2|          6|
+    |STA_AXIS_TDATA_blk_n          |   9|          2|    1|          2|
+    |STA_AXIS_V_data_V_0_data_out  |   9|          2|   16|         32|
+    |STA_AXIS_V_data_V_0_state     |  15|          3|    2|          6|
+    |STA_AXIS_V_dest_V_0_state     |  15|          3|    2|          6|
+    |STW_AXIS_TDATA_blk_n          |   9|          2|    1|          2|
+    |STW_AXIS_V_data_V_0_data_out  |   9|          2|    8|         16|
+    |STW_AXIS_V_data_V_0_state     |  15|          3|    2|          6|
+    |STW_AXIS_V_dest_V_0_state     |  15|          3|    2|          6|
+    |ap_NS_fsm                     |  15|          3|    1|          3|
+    +------------------------------+----+-----------+-----+-----------+
+    |Total                         | 528|        108|  125|        305|
+    +------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------+----+----+-----+-----------+
+    |              Name             | FF | LUT| Bits| Const Bits|
+    +-------------------------------+----+----+-----+-----------+
+    |MBA_AXIS_V_data_V_1_payload_A  |  16|   0|   16|          0|
+    |MBA_AXIS_V_data_V_1_payload_B  |  16|   0|   16|          0|
+    |MBA_AXIS_V_data_V_1_sel_rd     |   1|   0|    1|          0|
+    |MBA_AXIS_V_data_V_1_sel_wr     |   1|   0|    1|          0|
+    |MBA_AXIS_V_data_V_1_state      |   2|   0|    2|          0|
+    |MBA_AXIS_V_dest_V_1_sel_rd     |   1|   0|    1|          0|
+    |MBA_AXIS_V_dest_V_1_state      |   2|   0|    2|          0|
+    |MBA_AXIS_V_id_V_1_sel_rd       |   1|   0|    1|          0|
+    |MBA_AXIS_V_id_V_1_state        |   2|   0|    2|          0|
+    |MBA_AXIS_V_keep_V_1_sel_rd     |   1|   0|    1|          0|
+    |MBA_AXIS_V_keep_V_1_state      |   2|   0|    2|          0|
+    |MBA_AXIS_V_last_V_1_sel_rd     |   1|   0|    1|          0|
+    |MBA_AXIS_V_last_V_1_state      |   2|   0|    2|          0|
+    |MBA_AXIS_V_strb_V_1_sel_rd     |   1|   0|    1|          0|
+    |MBA_AXIS_V_strb_V_1_state      |   2|   0|    2|          0|
+    |MBA_AXIS_V_user_V_1_sel_rd     |   1|   0|    1|          0|
+    |MBA_AXIS_V_user_V_1_state      |   2|   0|    2|          0|
+    |MBW_AXIS_V_data_V_1_payload_A  |   8|   0|    8|          0|
+    |MBW_AXIS_V_data_V_1_payload_B  |   8|   0|    8|          0|
+    |MBW_AXIS_V_data_V_1_sel_rd     |   1|   0|    1|          0|
+    |MBW_AXIS_V_data_V_1_sel_wr     |   1|   0|    1|          0|
+    |MBW_AXIS_V_data_V_1_state      |   2|   0|    2|          0|
+    |MBW_AXIS_V_dest_V_1_sel_rd     |   1|   0|    1|          0|
+    |MBW_AXIS_V_dest_V_1_state      |   2|   0|    2|          0|
+    |MBW_AXIS_V_id_V_1_sel_rd       |   1|   0|    1|          0|
+    |MBW_AXIS_V_id_V_1_state        |   2|   0|    2|          0|
+    |MBW_AXIS_V_keep_V_1_sel_rd     |   1|   0|    1|          0|
+    |MBW_AXIS_V_keep_V_1_state      |   2|   0|    2|          0|
+    |MBW_AXIS_V_last_V_1_sel_rd     |   1|   0|    1|          0|
+    |MBW_AXIS_V_last_V_1_state      |   2|   0|    2|          0|
+    |MBW_AXIS_V_strb_V_1_sel_rd     |   1|   0|    1|          0|
+    |MBW_AXIS_V_strb_V_1_state      |   2|   0|    2|          0|
+    |MBW_AXIS_V_user_V_1_sel_rd     |   1|   0|    1|          0|
+    |MBW_AXIS_V_user_V_1_state      |   2|   0|    2|          0|
+    |MRI_AXIS_V_data_V_1_payload_A  |   8|   0|    8|          0|
+    |MRI_AXIS_V_data_V_1_payload_B  |   8|   0|    8|          0|
+    |MRI_AXIS_V_data_V_1_sel_rd     |   1|   0|    1|          0|
+    |MRI_AXIS_V_data_V_1_sel_wr     |   1|   0|    1|          0|
+    |MRI_AXIS_V_data_V_1_state      |   2|   0|    2|          0|
+    |MRI_AXIS_V_dest_V_1_sel_rd     |   1|   0|    1|          0|
+    |MRI_AXIS_V_dest_V_1_state      |   2|   0|    2|          0|
+    |MRI_AXIS_V_id_V_1_sel_rd       |   1|   0|    1|          0|
+    |MRI_AXIS_V_id_V_1_state        |   2|   0|    2|          0|
+    |MRI_AXIS_V_keep_V_1_sel_rd     |   1|   0|    1|          0|
+    |MRI_AXIS_V_keep_V_1_state      |   2|   0|    2|          0|
+    |MRI_AXIS_V_last_V_1_sel_rd     |   1|   0|    1|          0|
+    |MRI_AXIS_V_last_V_1_state      |   2|   0|    2|          0|
+    |MRI_AXIS_V_strb_V_1_sel_rd     |   1|   0|    1|          0|
+    |MRI_AXIS_V_strb_V_1_state      |   2|   0|    2|          0|
+    |MRI_AXIS_V_user_V_1_sel_rd     |   1|   0|    1|          0|
+    |MRI_AXIS_V_user_V_1_state      |   2|   0|    2|          0|
+    |SLI_AXIS_V_data_V_0_payload_A  |   8|   0|    8|          0|
+    |SLI_AXIS_V_data_V_0_payload_B  |   8|   0|    8|          0|
+    |SLI_AXIS_V_data_V_0_sel_rd     |   1|   0|    1|          0|
+    |SLI_AXIS_V_data_V_0_sel_wr     |   1|   0|    1|          0|
+    |SLI_AXIS_V_data_V_0_state      |   2|   0|    2|          0|
+    |SLI_AXIS_V_dest_V_0_state      |   2|   0|    2|          0|
+    |STA_AXIS_V_data_V_0_payload_A  |  16|   0|   16|          0|
+    |STA_AXIS_V_data_V_0_payload_B  |  16|   0|   16|          0|
+    |STA_AXIS_V_data_V_0_sel_rd     |   1|   0|    1|          0|
+    |STA_AXIS_V_data_V_0_sel_wr     |   1|   0|    1|          0|
+    |STA_AXIS_V_data_V_0_state      |   2|   0|    2|          0|
+    |STA_AXIS_V_dest_V_0_state      |   2|   0|    2|          0|
+    |STW_AXIS_V_data_V_0_payload_A  |   8|   0|    8|          0|
+    |STW_AXIS_V_data_V_0_payload_B  |   8|   0|    8|          0|
+    |STW_AXIS_V_data_V_0_sel_rd     |   1|   0|    1|          0|
+    |STW_AXIS_V_data_V_0_sel_wr     |   1|   0|    1|          0|
+    |STW_AXIS_V_data_V_0_state      |   2|   0|    2|          0|
+    |STW_AXIS_V_dest_V_0_state      |   2|   0|    2|          0|
+    |ap_CS_fsm                      |   2|   0|    2|          0|
+    +-------------------------------+----+----+-----+-----------+
+    |Total                          | 214|   0|  214|          0|
+    +-------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------+-----+-----+------------+-------------------+--------------+
+|       RTL Ports       | Dir | Bits|  Protocol  |   Source Object   |    C Type    |
++-----------------------+-----+-----+------------+-------------------+--------------+
+|s_axi_CONTROL_AWVALID  |  in |    1|    s_axi   |      CONTROL      |  return void |
+|s_axi_CONTROL_AWREADY  | out |    1|    s_axi   |      CONTROL      |  return void |
+|s_axi_CONTROL_AWADDR   |  in |    4|    s_axi   |      CONTROL      |  return void |
+|s_axi_CONTROL_WVALID   |  in |    1|    s_axi   |      CONTROL      |  return void |
+|s_axi_CONTROL_WREADY   | out |    1|    s_axi   |      CONTROL      |  return void |
+|s_axi_CONTROL_WDATA    |  in |   32|    s_axi   |      CONTROL      |  return void |
+|s_axi_CONTROL_WSTRB    |  in |    4|    s_axi   |      CONTROL      |  return void |
+|s_axi_CONTROL_ARVALID  |  in |    1|    s_axi   |      CONTROL      |  return void |
+|s_axi_CONTROL_ARREADY  | out |    1|    s_axi   |      CONTROL      |  return void |
+|s_axi_CONTROL_ARADDR   |  in |    4|    s_axi   |      CONTROL      |  return void |
+|s_axi_CONTROL_RVALID   | out |    1|    s_axi   |      CONTROL      |  return void |
+|s_axi_CONTROL_RREADY   |  in |    1|    s_axi   |      CONTROL      |  return void |
+|s_axi_CONTROL_RDATA    | out |   32|    s_axi   |      CONTROL      |  return void |
+|s_axi_CONTROL_RRESP    | out |    2|    s_axi   |      CONTROL      |  return void |
+|s_axi_CONTROL_BVALID   | out |    1|    s_axi   |      CONTROL      |  return void |
+|s_axi_CONTROL_BREADY   |  in |    1|    s_axi   |      CONTROL      |  return void |
+|s_axi_CONTROL_BRESP    | out |    2|    s_axi   |      CONTROL      |  return void |
+|ap_clk                 |  in |    1| ap_ctrl_hs |         pe        | return value |
+|ap_rst_n               |  in |    1| ap_ctrl_hs |         pe        | return value |
+|interrupt              | out |    1| ap_ctrl_hs |         pe        | return value |
+|SLI_AXIS_TDATA         |  in |    8|    axis    | SLI_AXIS_V_data_V |    pointer   |
+|SLI_AXIS_TVALID        |  in |    1|    axis    | SLI_AXIS_V_dest_V |    pointer   |
+|SLI_AXIS_TREADY        | out |    1|    axis    | SLI_AXIS_V_dest_V |    pointer   |
+|SLI_AXIS_TDEST         |  in |    5|    axis    | SLI_AXIS_V_dest_V |    pointer   |
+|SLI_AXIS_TKEEP         |  in |    1|    axis    | SLI_AXIS_V_keep_V |    pointer   |
+|SLI_AXIS_TSTRB         |  in |    1|    axis    | SLI_AXIS_V_strb_V |    pointer   |
+|SLI_AXIS_TUSER         |  in |    4|    axis    | SLI_AXIS_V_user_V |    pointer   |
+|SLI_AXIS_TLAST         |  in |    1|    axis    | SLI_AXIS_V_last_V |    pointer   |
+|SLI_AXIS_TID           |  in |    5|    axis    |  SLI_AXIS_V_id_V  |    pointer   |
+|MRI_AXIS_TDATA         | out |    8|    axis    | MRI_AXIS_V_data_V |    pointer   |
+|MRI_AXIS_TREADY        |  in |    1|    axis    | MRI_AXIS_V_data_V |    pointer   |
+|MRI_AXIS_TVALID        | out |    1|    axis    | MRI_AXIS_V_dest_V |    pointer   |
+|MRI_AXIS_TDEST         | out |    5|    axis    | MRI_AXIS_V_dest_V |    pointer   |
+|MRI_AXIS_TKEEP         | out |    1|    axis    | MRI_AXIS_V_keep_V |    pointer   |
+|MRI_AXIS_TSTRB         | out |    1|    axis    | MRI_AXIS_V_strb_V |    pointer   |
+|MRI_AXIS_TUSER         | out |    4|    axis    | MRI_AXIS_V_user_V |    pointer   |
+|MRI_AXIS_TLAST         | out |    1|    axis    | MRI_AXIS_V_last_V |    pointer   |
+|MRI_AXIS_TID           | out |    5|    axis    |  MRI_AXIS_V_id_V  |    pointer   |
+|STW_AXIS_TDATA         |  in |    8|    axis    | STW_AXIS_V_data_V |    pointer   |
+|STW_AXIS_TVALID        |  in |    1|    axis    | STW_AXIS_V_dest_V |    pointer   |
+|STW_AXIS_TREADY        | out |    1|    axis    | STW_AXIS_V_dest_V |    pointer   |
+|STW_AXIS_TDEST         |  in |    5|    axis    | STW_AXIS_V_dest_V |    pointer   |
+|STW_AXIS_TKEEP         |  in |    1|    axis    | STW_AXIS_V_keep_V |    pointer   |
+|STW_AXIS_TSTRB         |  in |    1|    axis    | STW_AXIS_V_strb_V |    pointer   |
+|STW_AXIS_TUSER         |  in |    4|    axis    | STW_AXIS_V_user_V |    pointer   |
+|STW_AXIS_TLAST         |  in |    1|    axis    | STW_AXIS_V_last_V |    pointer   |
+|STW_AXIS_TID           |  in |    5|    axis    |  STW_AXIS_V_id_V  |    pointer   |
+|MBW_AXIS_TDATA         | out |    8|    axis    | MBW_AXIS_V_data_V |    pointer   |
+|MBW_AXIS_TREADY        |  in |    1|    axis    | MBW_AXIS_V_data_V |    pointer   |
+|MBW_AXIS_TVALID        | out |    1|    axis    | MBW_AXIS_V_dest_V |    pointer   |
+|MBW_AXIS_TDEST         | out |    5|    axis    | MBW_AXIS_V_dest_V |    pointer   |
+|MBW_AXIS_TKEEP         | out |    1|    axis    | MBW_AXIS_V_keep_V |    pointer   |
+|MBW_AXIS_TSTRB         | out |    1|    axis    | MBW_AXIS_V_strb_V |    pointer   |
+|MBW_AXIS_TUSER         | out |    4|    axis    | MBW_AXIS_V_user_V |    pointer   |
+|MBW_AXIS_TLAST         | out |    1|    axis    | MBW_AXIS_V_last_V |    pointer   |
+|MBW_AXIS_TID           | out |    5|    axis    |  MBW_AXIS_V_id_V  |    pointer   |
+|STA_AXIS_TDATA         |  in |   16|    axis    | STA_AXIS_V_data_V |    pointer   |
+|STA_AXIS_TVALID        |  in |    1|    axis    | STA_AXIS_V_dest_V |    pointer   |
+|STA_AXIS_TREADY        | out |    1|    axis    | STA_AXIS_V_dest_V |    pointer   |
+|STA_AXIS_TDEST         |  in |    5|    axis    | STA_AXIS_V_dest_V |    pointer   |
+|STA_AXIS_TKEEP         |  in |    2|    axis    | STA_AXIS_V_keep_V |    pointer   |
+|STA_AXIS_TSTRB         |  in |    2|    axis    | STA_AXIS_V_strb_V |    pointer   |
+|STA_AXIS_TUSER         |  in |    4|    axis    | STA_AXIS_V_user_V |    pointer   |
+|STA_AXIS_TLAST         |  in |    1|    axis    | STA_AXIS_V_last_V |    pointer   |
+|STA_AXIS_TID           |  in |    5|    axis    |  STA_AXIS_V_id_V  |    pointer   |
+|MBA_AXIS_TDATA         | out |   16|    axis    | MBA_AXIS_V_data_V |    pointer   |
+|MBA_AXIS_TREADY        |  in |    1|    axis    | MBA_AXIS_V_data_V |    pointer   |
+|MBA_AXIS_TVALID        | out |    1|    axis    | MBA_AXIS_V_dest_V |    pointer   |
+|MBA_AXIS_TDEST         | out |    5|    axis    | MBA_AXIS_V_dest_V |    pointer   |
+|MBA_AXIS_TKEEP         | out |    2|    axis    | MBA_AXIS_V_keep_V |    pointer   |
+|MBA_AXIS_TSTRB         | out |    2|    axis    | MBA_AXIS_V_strb_V |    pointer   |
+|MBA_AXIS_TUSER         | out |    4|    axis    | MBA_AXIS_V_user_V |    pointer   |
+|MBA_AXIS_TLAST         | out |    1|    axis    | MBA_AXIS_V_last_V |    pointer   |
+|MBA_AXIS_TID           | out |    5|    axis    |  MBA_AXIS_V_id_V  |    pointer   |
++-----------------------+-----+-----+------------+-------------------+--------------+
+

@@ -1,0 +1,33 @@
+/home/fabiob/sa/hls2023/sa/z020/csynth.tcl:16:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=pe_XLX_SEP_ PragmaOptions=name=pe_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=pe
+        ^
+../sa/sa.cpp:20:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pe_XLX_SEP_ PragmaOptions=axis port=li_stream name=SLI_AXIS_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port=li_stream name=SLI_AXIS
+        ^
+../sa/sa.cpp:21:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pe_XLX_SEP_ PragmaOptions=axis port=ri_stream name=MRI_AXIS_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port=ri_stream name=MRI_AXIS
+        ^
+../sa/sa.cpp:22:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pe_XLX_SEP_ PragmaOptions=axis port=tw_stream name=STW_AXIS_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port=tw_stream name=STW_AXIS
+        ^
+../sa/sa.cpp:23:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pe_XLX_SEP_ PragmaOptions=axis port=bw_stream name=MBW_AXIS_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port=bw_stream name=MBW_AXIS
+        ^
+../sa/sa.cpp:24:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pe_XLX_SEP_ PragmaOptions=axis port=ta_stream name=STA_AXIS_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port=ta_stream name=STA_AXIS
+        ^
+../sa/sa.cpp:25:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pe_XLX_SEP_ PragmaOptions=axis port=ba_stream name=MBA_AXIS_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port=ba_stream name=MBA_AXIS
+        ^
+../sa/sa.cpp:27:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pe_XLX_SEP_ PragmaOptions=s_axilite port=return bundle=CONTROL_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=return bundle=CONTROL
+        ^
+../sa/sa.cpp:39:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=res_ba core=Mul_LUT
+        ^
+../sa/sa.cpp:39:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pe_XLX_SEP_ PragmaOptions=variable=res_ba core=Mul_LUT_XLX_SEP_ [-Wdump-hls-pragmas]
+../sa/sa.cpp:40:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=prod_iw core=Mul_LUT
+        ^
+../sa/sa.cpp:40:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pe_XLX_SEP_ PragmaOptions=variable=prod_iw core=Mul_LUT_XLX_SEP_ [-Wdump-hls-pragmas]
+12 warnings generated.

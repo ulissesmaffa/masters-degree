@@ -1,0 +1,210 @@
+
+
+================================================================
+== Vitis HLS Report for 'pe'
+================================================================
+* Date:           Wed Sep 25 19:23:15 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        sa
+* Solution:       z020 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.426 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        3|        3|  30.000 ns|  30.000 ns|    4|    4|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     29|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        0|    0|      36|    102|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     79|    -|
+|Register         |        -|    -|      52|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|      88|    210|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------+------------------+---------+----+----+----+-----+
+    |       Instance      |      Module      | BRAM_18K| DSP| FF | LUT| URAM|
+    +---------------------+------------------+---------+----+----+----+-----+
+    |CONTROL_s_axi_U      |CONTROL_s_axi     |        0|   0|  36|  40|    0|
+    |mul_8s_8s_16_1_1_U1  |mul_8s_8s_16_1_1  |        0|   0|   0|  62|    0|
+    +---------------------+------------------+---------+----+----+----+-----+
+    |Total                |                  |        0|   0|  36| 102|    0|
+    +---------------------+------------------+---------+----+----+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------------+----------+----+---+----+------------+------------+
+    |        Variable Name        | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------------+----------+----+---+----+------------+------------+
+    |MBA_AXIS_TDATA_int_regslice  |         +|   0|  0|  23|          16|          16|
+    |ap_block_state1              |        or|   0|  0|   2|           1|           1|
+    |ap_block_state3              |        or|   0|  0|   2|           1|           1|
+    |ap_block_state4              |        or|   0|  0|   2|           1|           1|
+    +-----------------------------+----------+----+---+----+------------+------------+
+    |Total                        |          |   0|  0|  29|          19|          19|
+    +-----------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------+----+-----------+-----+-----------+
+    |         Name         | LUT| Input Size| Bits| Total Bits|
+    +----------------------+----+-----------+-----+-----------+
+    |MBA_AXIS_TDATA_blk_n  |   9|          2|    1|          2|
+    |MBW_AXIS_TDATA_blk_n  |   9|          2|    1|          2|
+    |MRI_AXIS_TDATA_blk_n  |   9|          2|    1|          2|
+    |SLI_AXIS_TDATA_blk_n  |   9|          2|    1|          2|
+    |STA_AXIS_TDATA_blk_n  |   9|          2|    1|          2|
+    |STW_AXIS_TDATA_blk_n  |   9|          2|    1|          2|
+    |ap_NS_fsm             |  25|          5|    1|          5|
+    +----------------------+----+-----------+-----+-----------+
+    |Total                 |  79|         17|    7|         17|
+    +----------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------+----+----+-----+-----------+
+    |            Name           | FF | LUT| Bits| Const Bits|
+    +---------------------------+----+----+-----+-----------+
+    |aValue_mat_data_1_reg_336  |   8|   0|    8|          0|
+    |aValue_mat_data_reg_330    |   8|   0|    8|          0|
+    |ap_CS_fsm                  |   4|   0|    4|          0|
+    |empty_15_reg_342_0         |  16|   0|   16|          0|
+    |prod_iw_reg_347            |  16|   0|   16|          0|
+    +---------------------------+----+----+-----+-----------+
+    |Total                      |  52|   0|   52|          0|
+    +---------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------+-----+-----+------------+-------------------+--------------+
+|       RTL Ports       | Dir | Bits|  Protocol  |   Source Object   |    C Type    |
++-----------------------+-----+-----+------------+-------------------+--------------+
+|s_axi_CONTROL_AWVALID  |   in|    1|       s_axi|            CONTROL|   return void|
+|s_axi_CONTROL_AWREADY  |  out|    1|       s_axi|            CONTROL|   return void|
+|s_axi_CONTROL_AWADDR   |   in|    4|       s_axi|            CONTROL|   return void|
+|s_axi_CONTROL_WVALID   |   in|    1|       s_axi|            CONTROL|   return void|
+|s_axi_CONTROL_WREADY   |  out|    1|       s_axi|            CONTROL|   return void|
+|s_axi_CONTROL_WDATA    |   in|   32|       s_axi|            CONTROL|   return void|
+|s_axi_CONTROL_WSTRB    |   in|    4|       s_axi|            CONTROL|   return void|
+|s_axi_CONTROL_ARVALID  |   in|    1|       s_axi|            CONTROL|   return void|
+|s_axi_CONTROL_ARREADY  |  out|    1|       s_axi|            CONTROL|   return void|
+|s_axi_CONTROL_ARADDR   |   in|    4|       s_axi|            CONTROL|   return void|
+|s_axi_CONTROL_RVALID   |  out|    1|       s_axi|            CONTROL|   return void|
+|s_axi_CONTROL_RREADY   |   in|    1|       s_axi|            CONTROL|   return void|
+|s_axi_CONTROL_RDATA    |  out|   32|       s_axi|            CONTROL|   return void|
+|s_axi_CONTROL_RRESP    |  out|    2|       s_axi|            CONTROL|   return void|
+|s_axi_CONTROL_BVALID   |  out|    1|       s_axi|            CONTROL|   return void|
+|s_axi_CONTROL_BREADY   |   in|    1|       s_axi|            CONTROL|   return void|
+|s_axi_CONTROL_BRESP    |  out|    2|       s_axi|            CONTROL|   return void|
+|ap_clk                 |   in|    1|  ap_ctrl_hs|                 pe|  return value|
+|ap_rst_n               |   in|    1|  ap_ctrl_hs|                 pe|  return value|
+|interrupt              |  out|    1|  ap_ctrl_hs|                 pe|  return value|
+|SLI_AXIS_TDATA         |   in|    8|        axis|  SLI_AXIS_V_data_V|       pointer|
+|SLI_AXIS_TVALID        |   in|    1|        axis|  SLI_AXIS_V_dest_V|       pointer|
+|SLI_AXIS_TREADY        |  out|    1|        axis|  SLI_AXIS_V_dest_V|       pointer|
+|SLI_AXIS_TDEST         |   in|    5|        axis|  SLI_AXIS_V_dest_V|       pointer|
+|SLI_AXIS_TKEEP         |   in|    1|        axis|  SLI_AXIS_V_keep_V|       pointer|
+|SLI_AXIS_TSTRB         |   in|    1|        axis|  SLI_AXIS_V_strb_V|       pointer|
+|SLI_AXIS_TUSER         |   in|    4|        axis|  SLI_AXIS_V_user_V|       pointer|
+|SLI_AXIS_TLAST         |   in|    1|        axis|  SLI_AXIS_V_last_V|       pointer|
+|SLI_AXIS_TID           |   in|    5|        axis|    SLI_AXIS_V_id_V|       pointer|
+|MRI_AXIS_TDATA         |  out|    8|        axis|  MRI_AXIS_V_data_V|       pointer|
+|MRI_AXIS_TVALID        |  out|    1|        axis|  MRI_AXIS_V_dest_V|       pointer|
+|MRI_AXIS_TREADY        |   in|    1|        axis|  MRI_AXIS_V_dest_V|       pointer|
+|MRI_AXIS_TDEST         |  out|    5|        axis|  MRI_AXIS_V_dest_V|       pointer|
+|MRI_AXIS_TKEEP         |  out|    1|        axis|  MRI_AXIS_V_keep_V|       pointer|
+|MRI_AXIS_TSTRB         |  out|    1|        axis|  MRI_AXIS_V_strb_V|       pointer|
+|MRI_AXIS_TUSER         |  out|    4|        axis|  MRI_AXIS_V_user_V|       pointer|
+|MRI_AXIS_TLAST         |  out|    1|        axis|  MRI_AXIS_V_last_V|       pointer|
+|MRI_AXIS_TID           |  out|    5|        axis|    MRI_AXIS_V_id_V|       pointer|
+|STW_AXIS_TDATA         |   in|    8|        axis|  STW_AXIS_V_data_V|       pointer|
+|STW_AXIS_TVALID        |   in|    1|        axis|  STW_AXIS_V_dest_V|       pointer|
+|STW_AXIS_TREADY        |  out|    1|        axis|  STW_AXIS_V_dest_V|       pointer|
+|STW_AXIS_TDEST         |   in|    5|        axis|  STW_AXIS_V_dest_V|       pointer|
+|STW_AXIS_TKEEP         |   in|    1|        axis|  STW_AXIS_V_keep_V|       pointer|
+|STW_AXIS_TSTRB         |   in|    1|        axis|  STW_AXIS_V_strb_V|       pointer|
+|STW_AXIS_TUSER         |   in|    4|        axis|  STW_AXIS_V_user_V|       pointer|
+|STW_AXIS_TLAST         |   in|    1|        axis|  STW_AXIS_V_last_V|       pointer|
+|STW_AXIS_TID           |   in|    5|        axis|    STW_AXIS_V_id_V|       pointer|
+|MBW_AXIS_TDATA         |  out|    8|        axis|  MBW_AXIS_V_data_V|       pointer|
+|MBW_AXIS_TVALID        |  out|    1|        axis|  MBW_AXIS_V_dest_V|       pointer|
+|MBW_AXIS_TREADY        |   in|    1|        axis|  MBW_AXIS_V_dest_V|       pointer|
+|MBW_AXIS_TDEST         |  out|    5|        axis|  MBW_AXIS_V_dest_V|       pointer|
+|MBW_AXIS_TKEEP         |  out|    1|        axis|  MBW_AXIS_V_keep_V|       pointer|
+|MBW_AXIS_TSTRB         |  out|    1|        axis|  MBW_AXIS_V_strb_V|       pointer|
+|MBW_AXIS_TUSER         |  out|    4|        axis|  MBW_AXIS_V_user_V|       pointer|
+|MBW_AXIS_TLAST         |  out|    1|        axis|  MBW_AXIS_V_last_V|       pointer|
+|MBW_AXIS_TID           |  out|    5|        axis|    MBW_AXIS_V_id_V|       pointer|
+|STA_AXIS_TDATA         |   in|   16|        axis|  STA_AXIS_V_data_V|       pointer|
+|STA_AXIS_TVALID        |   in|    1|        axis|  STA_AXIS_V_dest_V|       pointer|
+|STA_AXIS_TREADY        |  out|    1|        axis|  STA_AXIS_V_dest_V|       pointer|
+|STA_AXIS_TDEST         |   in|    5|        axis|  STA_AXIS_V_dest_V|       pointer|
+|STA_AXIS_TKEEP         |   in|    2|        axis|  STA_AXIS_V_keep_V|       pointer|
+|STA_AXIS_TSTRB         |   in|    2|        axis|  STA_AXIS_V_strb_V|       pointer|
+|STA_AXIS_TUSER         |   in|    4|        axis|  STA_AXIS_V_user_V|       pointer|
+|STA_AXIS_TLAST         |   in|    1|        axis|  STA_AXIS_V_last_V|       pointer|
+|STA_AXIS_TID           |   in|    5|        axis|    STA_AXIS_V_id_V|       pointer|
+|MBA_AXIS_TDATA         |  out|   16|        axis|  MBA_AXIS_V_data_V|       pointer|
+|MBA_AXIS_TVALID        |  out|    1|        axis|  MBA_AXIS_V_dest_V|       pointer|
+|MBA_AXIS_TREADY        |   in|    1|        axis|  MBA_AXIS_V_dest_V|       pointer|
+|MBA_AXIS_TDEST         |  out|    5|        axis|  MBA_AXIS_V_dest_V|       pointer|
+|MBA_AXIS_TKEEP         |  out|    2|        axis|  MBA_AXIS_V_keep_V|       pointer|
+|MBA_AXIS_TSTRB         |  out|    2|        axis|  MBA_AXIS_V_strb_V|       pointer|
+|MBA_AXIS_TUSER         |  out|    4|        axis|  MBA_AXIS_V_user_V|       pointer|
+|MBA_AXIS_TLAST         |  out|    1|        axis|  MBA_AXIS_V_last_V|       pointer|
+|MBA_AXIS_TID           |  out|    5|        axis|    MBA_AXIS_V_id_V|       pointer|
++-----------------------+-----+-----+------------+-------------------+--------------+
+

@@ -1,0 +1,7 @@
+../sa/sa.cpp:39:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=res_ba core=Mul_LUT
+        ^
+../sa/sa.cpp:40:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=prod_iw core=Mul_LUT
+        ^
+2 warnings generated.

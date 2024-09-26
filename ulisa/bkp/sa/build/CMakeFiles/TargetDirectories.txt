@@ -1,0 +1,3 @@
+/home/fabiob/sa/build/CMakeFiles/sa_tb.dir
+/home/fabiob/sa/build/CMakeFiles/edit_cache.dir
+/home/fabiob/sa/build/CMakeFiles/rebuild_cache.dir

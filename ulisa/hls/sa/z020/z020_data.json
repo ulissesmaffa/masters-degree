@@ -1,0 +1,1140 @@
+{
+  "Top": "pe",
+  "RtlTop": "pe",
+  "RtlPrefix": "",
+  "SourceLanguage": "cpp",
+  "ResetStyle": "control",
+  "GenerateBdFiles": "1",
+  "HostMachineBits": "64",
+  "Target": {
+    "Family": "zynq",
+    "Device": "xc7z020",
+    "Package": "clg484",
+    "Speed": "-1"
+  },
+  "HlsSolution": {"Config": [
+      "config_compile -no_signed_zeros=0",
+      "config_compile -unsafe_math_optimizations=0",
+      "config_export -description=PE",
+      "config_export -display_name=PE",
+      "config_export -format=ip_catalog",
+      "config_export -library=ufrgs",
+      "config_export -rtl=vhdl",
+      "config_export -taxonomy=\/unk",
+      "config_export -vendor=x",
+      "config_export -version=1.0",
+      "config_export -vivado_phys_opt=place",
+      "config_export -vivado_report_level=0"
+    ]},
+  "ClockInfo": {
+    "ClockName": "ap_clk",
+    "ClockPeriod": "10",
+    "IsCombLogic": "0",
+    "II": "x",
+    "Latency": "1",
+    "Uncertainty": "1.25"
+  },
+  "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
+  "Ipx": {
+    "Vendor": "x",
+    "Library": "ufrgs",
+    "Name": "pe",
+    "Version": "1.0",
+    "DisplayName": "PE",
+    "Revision": "",
+    "Description": "PE",
+    "Taxonomy": "\/unk",
+    "AutoFamilySupport": ""
+  },
+  "Files": {
+    "CSource": ["..\/..\/..\/sa\/sa.cpp"],
+    "Vhdl": [
+      "impl\/vhdl\/pe_CONTROL_s_axi.vhd",
+      "impl\/vhdl\/pe_mul_8s_8s_16_1_1.vhd",
+      "impl\/vhdl\/pe.vhd"
+    ],
+    "Verilog": [
+      "impl\/verilog\/pe_CONTROL_s_axi.v",
+      "impl\/verilog\/pe_mul_8s_8s_16_1_1.v",
+      "impl\/verilog\/pe.v"
+    ],
+    "SwDriver": [
+      "impl\/misc\/drivers\/pe_v1_0\/data\/pe.mdd",
+      "impl\/misc\/drivers\/pe_v1_0\/data\/pe.tcl",
+      "impl\/misc\/drivers\/pe_v1_0\/src\/Makefile",
+      "impl\/misc\/drivers\/pe_v1_0\/src\/xpe.c",
+      "impl\/misc\/drivers\/pe_v1_0\/src\/xpe.h",
+      "impl\/misc\/drivers\/pe_v1_0\/src\/xpe_hw.h",
+      "impl\/misc\/drivers\/pe_v1_0\/src\/xpe_linux.c",
+      "impl\/misc\/drivers\/pe_v1_0\/src\/xpe_sinit.c"
+    ],
+    "Misc": ["impl\/misc\/logo.png"],
+    "DesignXml": "\/home\/fabiob\/sa\/hls\/sa\/z020\/.autopilot\/db\/pe.design.xml"
+  },
+  "SubcoreInfo": {
+    "HasXpmMemory": false,
+    "HasClockedDsp": false,
+    "IP": []
+  },
+  "Interfaces": {
+    "MBA_AXIS": {
+      "type": "axi4stream",
+      "mode": "master",
+      "port_prefix": "MBA_AXIS",
+      "has_tready": "1",
+      "ctype": {
+        "TDATA": {
+          "Type": "integer unsigned",
+          "Width": "16"
+        },
+        "TREADY": {"Type": "bool"},
+        "TVALID": {"Type": "bool"},
+        "TDEST": {
+          "Type": "integer unsigned",
+          "Width": "5"
+        },
+        "TKEEP": {
+          "Type": "integer unsigned",
+          "Width": "2"
+        },
+        "TSTRB": {
+          "Type": "integer unsigned",
+          "Width": "2"
+        },
+        "TUSER": {
+          "Type": "integer unsigned",
+          "Width": "4"
+        },
+        "TLAST": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        },
+        "TID": {
+          "Type": "integer unsigned",
+          "Width": "5"
+        }
+      },
+      "port_width": {
+        "TDATA": "16",
+        "TDEST": "5",
+        "TID": "5",
+        "TKEEP": "2",
+        "TLAST": "1",
+        "TSTRB": "2",
+        "TUSER": "4"
+      }
+    },
+    "MBW_AXIS": {
+      "type": "axi4stream",
+      "mode": "master",
+      "port_prefix": "MBW_AXIS",
+      "has_tready": "1",
+      "ctype": {
+        "TDATA": {
+          "Type": "integer unsigned",
+          "Width": "8"
+        },
+        "TREADY": {"Type": "bool"},
+        "TVALID": {"Type": "bool"},
+        "TDEST": {
+          "Type": "integer unsigned",
+          "Width": "5"
+        },
+        "TKEEP": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        },
+        "TSTRB": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        },
+        "TUSER": {
+          "Type": "integer unsigned",
+          "Width": "4"
+        },
+        "TLAST": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        },
+        "TID": {
+          "Type": "integer unsigned",
+          "Width": "5"
+        }
+      },
+      "port_width": {
+        "TDATA": "8",
+        "TDEST": "5",
+        "TID": "5",
+        "TKEEP": "1",
+        "TLAST": "1",
+        "TSTRB": "1",
+        "TUSER": "4"
+      }
+    },
+    "MRI_AXIS": {
+      "type": "axi4stream",
+      "mode": "master",
+      "port_prefix": "MRI_AXIS",
+      "has_tready": "1",
+      "ctype": {
+        "TDATA": {
+          "Type": "integer unsigned",
+          "Width": "8"
+        },
+        "TREADY": {"Type": "bool"},
+        "TVALID": {"Type": "bool"},
+        "TDEST": {
+          "Type": "integer unsigned",
+          "Width": "5"
+        },
+        "TKEEP": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        },
+        "TSTRB": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        },
+        "TUSER": {
+          "Type": "integer unsigned",
+          "Width": "4"
+        },
+        "TLAST": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        },
+        "TID": {
+          "Type": "integer unsigned",
+          "Width": "5"
+        }
+      },
+      "port_width": {
+        "TDATA": "8",
+        "TDEST": "5",
+        "TID": "5",
+        "TKEEP": "1",
+        "TLAST": "1",
+        "TSTRB": "1",
+        "TUSER": "4"
+      }
+    },
+    "SLI_AXIS": {
+      "type": "axi4stream",
+      "mode": "slave",
+      "port_prefix": "SLI_AXIS",
+      "has_tready": "1",
+      "ctype": {
+        "TDATA": {
+          "Type": "integer unsigned",
+          "Width": "8"
+        },
+        "TVALID": {"Type": "bool"},
+        "TREADY": {"Type": "bool"},
+        "TDEST": {
+          "Type": "integer unsigned",
+          "Width": "5"
+        },
+        "TKEEP": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        },
+        "TSTRB": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        },
+        "TUSER": {
+          "Type": "integer unsigned",
+          "Width": "4"
+        },
+        "TLAST": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        },
+        "TID": {
+          "Type": "integer unsigned",
+          "Width": "5"
+        }
+      },
+      "port_width": {
+        "TDATA": "8",
+        "TDEST": "5",
+        "TID": "5",
+        "TKEEP": "1",
+        "TLAST": "1",
+        "TSTRB": "1",
+        "TUSER": "4"
+      }
+    },
+    "STA_AXIS": {
+      "type": "axi4stream",
+      "mode": "slave",
+      "port_prefix": "STA_AXIS",
+      "has_tready": "1",
+      "ctype": {
+        "TDATA": {
+          "Type": "integer unsigned",
+          "Width": "16"
+        },
+        "TVALID": {"Type": "bool"},
+        "TREADY": {"Type": "bool"},
+        "TDEST": {
+          "Type": "integer unsigned",
+          "Width": "5"
+        },
+        "TKEEP": {
+          "Type": "integer unsigned",
+          "Width": "2"
+        },
+        "TSTRB": {
+          "Type": "integer unsigned",
+          "Width": "2"
+        },
+        "TUSER": {
+          "Type": "integer unsigned",
+          "Width": "4"
+        },
+        "TLAST": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        },
+        "TID": {
+          "Type": "integer unsigned",
+          "Width": "5"
+        }
+      },
+      "port_width": {
+        "TDATA": "16",
+        "TDEST": "5",
+        "TID": "5",
+        "TKEEP": "2",
+        "TLAST": "1",
+        "TSTRB": "2",
+        "TUSER": "4"
+      }
+    },
+    "STW_AXIS": {
+      "type": "axi4stream",
+      "mode": "slave",
+      "port_prefix": "STW_AXIS",
+      "has_tready": "1",
+      "ctype": {
+        "TDATA": {
+          "Type": "integer unsigned",
+          "Width": "8"
+        },
+        "TVALID": {"Type": "bool"},
+        "TREADY": {"Type": "bool"},
+        "TDEST": {
+          "Type": "integer unsigned",
+          "Width": "5"
+        },
+        "TKEEP": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        },
+        "TSTRB": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        },
+        "TUSER": {
+          "Type": "integer unsigned",
+          "Width": "4"
+        },
+        "TLAST": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        },
+        "TID": {
+          "Type": "integer unsigned",
+          "Width": "5"
+        }
+      },
+      "port_width": {
+        "TDATA": "8",
+        "TDEST": "5",
+        "TID": "5",
+        "TKEEP": "1",
+        "TLAST": "1",
+        "TSTRB": "1",
+        "TUSER": "4"
+      }
+    },
+    "ap_clk": {
+      "type": "clock",
+      "ctype": {"CLK": {"Type": "bool"}},
+      "buses": "s_axi_CONTROL SLI_AXIS MRI_AXIS STW_AXIS MBW_AXIS STA_AXIS MBA_AXIS",
+      "reset": "ap_rst_n"
+    },
+    "ap_rst_n": {
+      "type": "reset",
+      "polarity": "ACTIVE_LOW",
+      "ctype": {"RST": {"Type": "bool"}}
+    },
+    "interrupt": {
+      "type": "interrupt",
+      "ctype": {"INTERRUPT": {"Type": "bool"}}
+    },
+    "s_axi_CONTROL": {
+      "type": "axi4lite",
+      "is_adaptor": "true",
+      "mode": "slave",
+      "port_prefix": "s_axi_CONTROL",
+      "param_prefix": "C_S_AXI_CONTROL",
+      "addr_bits": "4",
+      "registers": [
+        {
+          "offset": "0x00",
+          "name": "CTRL",
+          "access": "RW",
+          "reset_value": "0x0",
+          "description": "Control signals",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "AP_START",
+              "access": "RW",
+              "reset_value": "0",
+              "description": "Control signal Register for 'ap_start'."
+            },
+            {
+              "offset": "1",
+              "width": "1",
+              "name": "AP_DONE",
+              "access": "R",
+              "reset_value": "0",
+              "description": "Control signal Register for 'ap_done'."
+            },
+            {
+              "offset": "2",
+              "width": "1",
+              "name": "AP_IDLE",
+              "access": "R",
+              "reset_value": "0",
+              "description": "Control signal Register for 'ap_idle'."
+            },
+            {
+              "offset": "3",
+              "width": "1",
+              "name": "AP_READY",
+              "access": "R",
+              "reset_value": "0",
+              "description": "Control signal Register for 'ap_ready'."
+            },
+            {
+              "offset": "4",
+              "width": "3",
+              "name": "RESERVED_1",
+              "access": "R",
+              "reset_value": "0",
+              "description": "Reserved.  0s on read."
+            },
+            {
+              "offset": "7",
+              "width": "1",
+              "name": "AUTO_RESTART",
+              "access": "RW",
+              "reset_value": "0",
+              "description": "Control signal Register for 'auto_restart'."
+            },
+            {
+              "offset": "8",
+              "width": "24",
+              "name": "RESERVED_2",
+              "access": "R",
+              "reset_value": "0",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x04",
+          "name": "GIER",
+          "access": "RW",
+          "reset_value": "0x0",
+          "description": "Global Interrupt Enable Register",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "Enable",
+              "access": "RW",
+              "reset_value": "0",
+              "description": "Master enable for the device interrupt output to the system interrupt controller: 0 = Disabled, 1 = Enabled"
+            },
+            {
+              "offset": "1",
+              "width": "31",
+              "name": "RESERVED",
+              "access": "R",
+              "reset_value": "0",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x08",
+          "name": "IP_IER",
+          "access": "RW",
+          "reset_value": "0x0",
+          "description": "IP Interrupt Enable Register",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "CHAN0_INT_EN",
+              "access": "RW",
+              "reset_value": "0",
+              "description": "Enable Channel 0 (ap_done) Interrupt.  0 = Disabled, 1 = Enabled."
+            },
+            {
+              "offset": "1",
+              "width": "1",
+              "name": "CHAN1_INT_EN",
+              "access": "RW",
+              "reset_value": "0",
+              "description": "Enable Channel 1 (ap_ready) Interrupt.  0 = Disabled, 1 = Enabled."
+            },
+            {
+              "offset": "2",
+              "width": "30",
+              "name": "RESERVED",
+              "access": "R",
+              "reset_value": "0",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x0c",
+          "name": "IP_ISR",
+          "access": "RW",
+          "reset_value": "0x0",
+          "description": "IP Interrupt Status Register",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "CHAN0_INT_ST",
+              "access": "RTOW",
+              "reset_value": "0",
+              "description": "Channel 0 (ap_done) Interrupt Status. 0 = No Channel 0 input interrupt, 1 = Channel 0 input interrup"
+            },
+            {
+              "offset": "1",
+              "width": "1",
+              "name": "CHAN1_INT_ST",
+              "access": "RTOW",
+              "reset_value": "0",
+              "description": "Channel 1 (ap_ready) Interrupt Status. 0 = No Channel 1 input interrupt, 1 = Channel 1 input interrup"
+            },
+            {
+              "offset": "2",
+              "width": "30",
+              "name": "RESERVED",
+              "access": "R",
+              "reset_value": "0",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        }
+      ],
+      "memories": "",
+      "ctype": {
+        "AWVALID": {"Type": "bool"},
+        "AWREADY": {"Type": "bool"},
+        "WVALID": {"Type": "bool"},
+        "WREADY": {"Type": "bool"},
+        "BVALID": {"Type": "bool"},
+        "BREADY": {"Type": "bool"},
+        "BRESP": {
+          "Type": "integer unsigned",
+          "Width": "2"
+        },
+        "ARVALID": {"Type": "bool"},
+        "ARREADY": {"Type": "bool"},
+        "RVALID": {"Type": "bool"},
+        "RREADY": {"Type": "bool"},
+        "RRESP": {
+          "Type": "integer unsigned",
+          "Width": "2"
+        },
+        "AWADDR": {
+          "Type": "integer unsigned",
+          "Width": "4"
+        },
+        "WDATA": {
+          "Type": "null",
+          "Width": "32"
+        },
+        "WSTRB": {
+          "Type": "integer unsigned",
+          "Width": "4"
+        },
+        "ARADDR": {
+          "Type": "integer unsigned",
+          "Width": "4"
+        },
+        "RDATA": {
+          "Type": "null",
+          "Width": "32"
+        }
+      },
+      "data_width": "32",
+      "port_width": {
+        "ARADDR": "4",
+        "AWADDR": "4",
+        "RDATA": "32",
+        "WDATA": "32",
+        "WSTRB": "4"
+      }
+    }
+  },
+  "RtlPorts": {
+    "s_axi_CONTROL_AWVALID": {
+      "dir": "in",
+      "width": "1"
+    },
+    "s_axi_CONTROL_AWREADY": {
+      "dir": "out",
+      "width": "1"
+    },
+    "s_axi_CONTROL_AWADDR": {
+      "dir": "in",
+      "width": "4"
+    },
+    "s_axi_CONTROL_WVALID": {
+      "dir": "in",
+      "width": "1"
+    },
+    "s_axi_CONTROL_WREADY": {
+      "dir": "out",
+      "width": "1"
+    },
+    "s_axi_CONTROL_WDATA": {
+      "dir": "in",
+      "width": "32"
+    },
+    "s_axi_CONTROL_WSTRB": {
+      "dir": "in",
+      "width": "4"
+    },
+    "s_axi_CONTROL_ARVALID": {
+      "dir": "in",
+      "width": "1"
+    },
+    "s_axi_CONTROL_ARREADY": {
+      "dir": "out",
+      "width": "1"
+    },
+    "s_axi_CONTROL_ARADDR": {
+      "dir": "in",
+      "width": "4"
+    },
+    "s_axi_CONTROL_RVALID": {
+      "dir": "out",
+      "width": "1"
+    },
+    "s_axi_CONTROL_RREADY": {
+      "dir": "in",
+      "width": "1"
+    },
+    "s_axi_CONTROL_RDATA": {
+      "dir": "out",
+      "width": "32"
+    },
+    "s_axi_CONTROL_RRESP": {
+      "dir": "out",
+      "width": "2"
+    },
+    "s_axi_CONTROL_BVALID": {
+      "dir": "out",
+      "width": "1"
+    },
+    "s_axi_CONTROL_BREADY": {
+      "dir": "in",
+      "width": "1"
+    },
+    "s_axi_CONTROL_BRESP": {
+      "dir": "out",
+      "width": "2"
+    },
+    "ap_clk": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_rst_n": {
+      "dir": "in",
+      "width": "1"
+    },
+    "interrupt": {
+      "dir": "out",
+      "width": "1",
+      "isVector": "true"
+    },
+    "SLI_AXIS_TDATA": {
+      "dir": "in",
+      "width": "8"
+    },
+    "SLI_AXIS_TVALID": {
+      "dir": "in",
+      "width": "1"
+    },
+    "SLI_AXIS_TREADY": {
+      "dir": "out",
+      "width": "1"
+    },
+    "SLI_AXIS_TDEST": {
+      "dir": "in",
+      "width": "5"
+    },
+    "SLI_AXIS_TKEEP": {
+      "dir": "in",
+      "width": "1",
+      "isVector": "true"
+    },
+    "SLI_AXIS_TSTRB": {
+      "dir": "in",
+      "width": "1",
+      "isVector": "true"
+    },
+    "SLI_AXIS_TUSER": {
+      "dir": "in",
+      "width": "4"
+    },
+    "SLI_AXIS_TLAST": {
+      "dir": "in",
+      "width": "1",
+      "isVector": "true"
+    },
+    "SLI_AXIS_TID": {
+      "dir": "in",
+      "width": "5"
+    },
+    "MRI_AXIS_TDATA": {
+      "dir": "out",
+      "width": "8"
+    },
+    "MRI_AXIS_TREADY": {
+      "dir": "in",
+      "width": "1"
+    },
+    "MRI_AXIS_TVALID": {
+      "dir": "out",
+      "width": "1"
+    },
+    "MRI_AXIS_TDEST": {
+      "dir": "out",
+      "width": "5"
+    },
+    "MRI_AXIS_TKEEP": {
+      "dir": "out",
+      "width": "1",
+      "isVector": "true"
+    },
+    "MRI_AXIS_TSTRB": {
+      "dir": "out",
+      "width": "1",
+      "isVector": "true"
+    },
+    "MRI_AXIS_TUSER": {
+      "dir": "out",
+      "width": "4"
+    },
+    "MRI_AXIS_TLAST": {
+      "dir": "out",
+      "width": "1",
+      "isVector": "true"
+    },
+    "MRI_AXIS_TID": {
+      "dir": "out",
+      "width": "5"
+    },
+    "STW_AXIS_TDATA": {
+      "dir": "in",
+      "width": "8"
+    },
+    "STW_AXIS_TVALID": {
+      "dir": "in",
+      "width": "1"
+    },
+    "STW_AXIS_TREADY": {
+      "dir": "out",
+      "width": "1"
+    },
+    "STW_AXIS_TDEST": {
+      "dir": "in",
+      "width": "5"
+    },
+    "STW_AXIS_TKEEP": {
+      "dir": "in",
+      "width": "1",
+      "isVector": "true"
+    },
+    "STW_AXIS_TSTRB": {
+      "dir": "in",
+      "width": "1",
+      "isVector": "true"
+    },
+    "STW_AXIS_TUSER": {
+      "dir": "in",
+      "width": "4"
+    },
+    "STW_AXIS_TLAST": {
+      "dir": "in",
+      "width": "1",
+      "isVector": "true"
+    },
+    "STW_AXIS_TID": {
+      "dir": "in",
+      "width": "5"
+    },
+    "MBW_AXIS_TDATA": {
+      "dir": "out",
+      "width": "8"
+    },
+    "MBW_AXIS_TREADY": {
+      "dir": "in",
+      "width": "1"
+    },
+    "MBW_AXIS_TVALID": {
+      "dir": "out",
+      "width": "1"
+    },
+    "MBW_AXIS_TDEST": {
+      "dir": "out",
+      "width": "5"
+    },
+    "MBW_AXIS_TKEEP": {
+      "dir": "out",
+      "width": "1",
+      "isVector": "true"
+    },
+    "MBW_AXIS_TSTRB": {
+      "dir": "out",
+      "width": "1",
+      "isVector": "true"
+    },
+    "MBW_AXIS_TUSER": {
+      "dir": "out",
+      "width": "4"
+    },
+    "MBW_AXIS_TLAST": {
+      "dir": "out",
+      "width": "1",
+      "isVector": "true"
+    },
+    "MBW_AXIS_TID": {
+      "dir": "out",
+      "width": "5"
+    },
+    "STA_AXIS_TDATA": {
+      "dir": "in",
+      "width": "16"
+    },
+    "STA_AXIS_TVALID": {
+      "dir": "in",
+      "width": "1"
+    },
+    "STA_AXIS_TREADY": {
+      "dir": "out",
+      "width": "1"
+    },
+    "STA_AXIS_TDEST": {
+      "dir": "in",
+      "width": "5"
+    },
+    "STA_AXIS_TKEEP": {
+      "dir": "in",
+      "width": "2"
+    },
+    "STA_AXIS_TSTRB": {
+      "dir": "in",
+      "width": "2"
+    },
+    "STA_AXIS_TUSER": {
+      "dir": "in",
+      "width": "4"
+    },
+    "STA_AXIS_TLAST": {
+      "dir": "in",
+      "width": "1",
+      "isVector": "true"
+    },
+    "STA_AXIS_TID": {
+      "dir": "in",
+      "width": "5"
+    },
+    "MBA_AXIS_TDATA": {
+      "dir": "out",
+      "width": "16"
+    },
+    "MBA_AXIS_TREADY": {
+      "dir": "in",
+      "width": "1"
+    },
+    "MBA_AXIS_TVALID": {
+      "dir": "out",
+      "width": "1"
+    },
+    "MBA_AXIS_TDEST": {
+      "dir": "out",
+      "width": "5"
+    },
+    "MBA_AXIS_TKEEP": {
+      "dir": "out",
+      "width": "2"
+    },
+    "MBA_AXIS_TSTRB": {
+      "dir": "out",
+      "width": "2"
+    },
+    "MBA_AXIS_TUSER": {
+      "dir": "out",
+      "width": "4"
+    },
+    "MBA_AXIS_TLAST": {
+      "dir": "out",
+      "width": "1",
+      "isVector": "true"
+    },
+    "MBA_AXIS_TID": {
+      "dir": "out",
+      "width": "5"
+    }
+  },
+  "CPorts": {
+    "ap_ctrl": {
+      "interfaceRef": "s_axi_CONTROL",
+      "dir": "in",
+      "offset": "0"
+    },
+    "SLI_AXIS_V_data_V": {
+      "interfaceRef": "SLI_AXIS",
+      "dir": "in"
+    },
+    "SLI_AXIS_V_dest_V": {
+      "interfaceRef": "SLI_AXIS",
+      "dir": "in"
+    },
+    "SLI_AXIS_V_keep_V": {
+      "interfaceRef": "SLI_AXIS",
+      "dir": "in"
+    },
+    "SLI_AXIS_V_strb_V": {
+      "interfaceRef": "SLI_AXIS",
+      "dir": "in"
+    },
+    "SLI_AXIS_V_user_V": {
+      "interfaceRef": "SLI_AXIS",
+      "dir": "in"
+    },
+    "SLI_AXIS_V_last_V": {
+      "interfaceRef": "SLI_AXIS",
+      "dir": "in"
+    },
+    "SLI_AXIS_V_id_V": {
+      "interfaceRef": "SLI_AXIS",
+      "dir": "in"
+    },
+    "MRI_AXIS_V_data_V": {
+      "interfaceRef": "MRI_AXIS",
+      "dir": "out",
+      "firstOutLatency": "0"
+    },
+    "MRI_AXIS_V_dest_V": {
+      "interfaceRef": "MRI_AXIS",
+      "dir": "out",
+      "firstOutLatency": "0"
+    },
+    "MRI_AXIS_V_keep_V": {
+      "interfaceRef": "MRI_AXIS",
+      "dir": "out",
+      "firstOutLatency": "0"
+    },
+    "MRI_AXIS_V_strb_V": {
+      "interfaceRef": "MRI_AXIS",
+      "dir": "out",
+      "firstOutLatency": "0"
+    },
+    "MRI_AXIS_V_user_V": {
+      "interfaceRef": "MRI_AXIS",
+      "dir": "out",
+      "firstOutLatency": "0"
+    },
+    "MRI_AXIS_V_last_V": {
+      "interfaceRef": "MRI_AXIS",
+      "dir": "out",
+      "firstOutLatency": "0"
+    },
+    "MRI_AXIS_V_id_V": {
+      "interfaceRef": "MRI_AXIS",
+      "dir": "out",
+      "firstOutLatency": "0"
+    },
+    "STW_AXIS_V_data_V": {
+      "interfaceRef": "STW_AXIS",
+      "dir": "in"
+    },
+    "STW_AXIS_V_dest_V": {
+      "interfaceRef": "STW_AXIS",
+      "dir": "in"
+    },
+    "STW_AXIS_V_keep_V": {
+      "interfaceRef": "STW_AXIS",
+      "dir": "in"
+    },
+    "STW_AXIS_V_strb_V": {
+      "interfaceRef": "STW_AXIS",
+      "dir": "in"
+    },
+    "STW_AXIS_V_user_V": {
+      "interfaceRef": "STW_AXIS",
+      "dir": "in"
+    },
+    "STW_AXIS_V_last_V": {
+      "interfaceRef": "STW_AXIS",
+      "dir": "in"
+    },
+    "STW_AXIS_V_id_V": {
+      "interfaceRef": "STW_AXIS",
+      "dir": "in"
+    },
+    "MBW_AXIS_V_data_V": {
+      "interfaceRef": "MBW_AXIS",
+      "dir": "out",
+      "firstOutLatency": "0"
+    },
+    "MBW_AXIS_V_dest_V": {
+      "interfaceRef": "MBW_AXIS",
+      "dir": "out",
+      "firstOutLatency": "0"
+    },
+    "MBW_AXIS_V_keep_V": {
+      "interfaceRef": "MBW_AXIS",
+      "dir": "out",
+      "firstOutLatency": "0"
+    },
+    "MBW_AXIS_V_strb_V": {
+      "interfaceRef": "MBW_AXIS",
+      "dir": "out",
+      "firstOutLatency": "0"
+    },
+    "MBW_AXIS_V_user_V": {
+      "interfaceRef": "MBW_AXIS",
+      "dir": "out",
+      "firstOutLatency": "0"
+    },
+    "MBW_AXIS_V_last_V": {
+      "interfaceRef": "MBW_AXIS",
+      "dir": "out",
+      "firstOutLatency": "0"
+    },
+    "MBW_AXIS_V_id_V": {
+      "interfaceRef": "MBW_AXIS",
+      "dir": "out",
+      "firstOutLatency": "0"
+    },
+    "STA_AXIS_V_data_V": {
+      "interfaceRef": "STA_AXIS",
+      "dir": "in"
+    },
+    "STA_AXIS_V_dest_V": {
+      "interfaceRef": "STA_AXIS",
+      "dir": "in"
+    },
+    "STA_AXIS_V_keep_V": {
+      "interfaceRef": "STA_AXIS",
+      "dir": "in"
+    },
+    "STA_AXIS_V_strb_V": {
+      "interfaceRef": "STA_AXIS",
+      "dir": "in"
+    },
+    "STA_AXIS_V_user_V": {
+      "interfaceRef": "STA_AXIS",
+      "dir": "in"
+    },
+    "STA_AXIS_V_last_V": {
+      "interfaceRef": "STA_AXIS",
+      "dir": "in"
+    },
+    "STA_AXIS_V_id_V": {
+      "interfaceRef": "STA_AXIS",
+      "dir": "in"
+    },
+    "MBA_AXIS_V_data_V": {
+      "interfaceRef": "MBA_AXIS",
+      "dir": "out",
+      "firstOutLatency": "0"
+    },
+    "MBA_AXIS_V_dest_V": {
+      "interfaceRef": "MBA_AXIS",
+      "dir": "out",
+      "firstOutLatency": "0"
+    },
+    "MBA_AXIS_V_keep_V": {
+      "interfaceRef": "MBA_AXIS",
+      "dir": "out",
+      "firstOutLatency": "0"
+    },
+    "MBA_AXIS_V_strb_V": {
+      "interfaceRef": "MBA_AXIS",
+      "dir": "out",
+      "firstOutLatency": "0"
+    },
+    "MBA_AXIS_V_user_V": {
+      "interfaceRef": "MBA_AXIS",
+      "dir": "out",
+      "firstOutLatency": "0"
+    },
+    "MBA_AXIS_V_last_V": {
+      "interfaceRef": "MBA_AXIS",
+      "dir": "out",
+      "firstOutLatency": "0"
+    },
+    "MBA_AXIS_V_id_V": {
+      "interfaceRef": "MBA_AXIS",
+      "dir": "out",
+      "firstOutLatency": "0"
+    }
+  },
+  "ModuleInfo": {
+    "Hierarchy": {"ModuleName": "pe"},
+    "Metrics": {"pe": {
+        "Latency": {
+          "LatencyBest": "1",
+          "LatencyAvg": "1",
+          "LatencyWorst": "1",
+          "PipelineII": "2",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "8.503"
+        },
+        "Area": {
+          "BRAM_18K": "0",
+          "DSP48E": "0",
+          "FF": "250",
+          "LUT": "731"
+        }
+      }}
+  },
+  "Sdx": {
+    "Target": "none",
+    "ProfileOption": "0",
+    "ProfileType": "none",
+    "XO": "",
+    "KernelName": "pe",
+    "EnableXoSwEmu": "1"
+  },
+  "GenData": {
+    "DataVersion": "0.1",
+    "Time": "2024-09-25 19:16:17 -03",
+    "ToolName": "vivado_hls",
+    "ToolVersion": "2018.3"
+  }
+}

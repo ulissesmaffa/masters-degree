@@ -1,0 +1,39 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5536" msg_severity="WARNING" msg_loc="../sa/sa.cpp:39:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5536" msg_severity="WARNING" msg_loc="../sa/sa.cpp:40:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/fabiob/sa/hls2023/sa/z020/csynth.tcl:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="pe" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=pe" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../sa/sa.cpp:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pe" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=li_stream name=SLI_AXIS" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../sa/sa.cpp:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pe" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=ri_stream name=MRI_AXIS" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../sa/sa.cpp:22:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pe" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=tw_stream name=STW_AXIS" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../sa/sa.cpp:23:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pe" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=bw_stream name=MBW_AXIS" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../sa/sa.cpp:24:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pe" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=ta_stream name=STA_AXIS" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../sa/sa.cpp:25:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pe" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=ba_stream name=MBA_AXIS" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../sa/sa.cpp:27:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pe" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=CONTROL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../sa/sa.cpp:39:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pe" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=res_ba core=Mul_LUT" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../sa/sa.cpp:40:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pe" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=prod_iw core=Mul_LUT" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

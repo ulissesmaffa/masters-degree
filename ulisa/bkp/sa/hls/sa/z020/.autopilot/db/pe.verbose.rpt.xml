@@ -1,0 +1,308 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'pe'" level="0">
+<item name = "Date">Wed Sep 25 19:10:39 2024
+</item>
+<item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
+<item name = "Project">sa</item>
+<item name = "Solution">z020</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 8.503, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">1, 1, 1, 1, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, -, -, -</column>
+<column name="Expression">-, -, 0, 101</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">0, 0, 36, 102</column>
+<column name="Memory">-, -, -, -</column>
+<column name="Multiplexer">-, -, -, 528</column>
+<column name="Register">-, -, 214, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, 1</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="pe_CONTROL_s_axi_U">pe_CONTROL_s_axi, 0, 0, 36, 40</column>
+<column name="pe_mul_8s_8s_16_1_1_U1">pe_mul_8s_8s_16_1_1, 0, 0, 0, 62</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="res_ba_fu_325_p2">+, 0, 0, 23, 16, 16</column>
+<column name="MBA_AXIS_V_data_V_1_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="MBA_AXIS_V_data_V_1_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="MBW_AXIS_V_data_V_1_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="MBW_AXIS_V_data_V_1_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="MRI_AXIS_V_data_V_1_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="MRI_AXIS_V_data_V_1_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="SLI_AXIS_V_data_V_0_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="SLI_AXIS_V_data_V_0_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="STA_AXIS_V_data_V_0_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="STA_AXIS_V_data_V_0_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="STW_AXIS_V_data_V_0_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="STW_AXIS_V_data_V_0_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="MBA_AXIS_V_data_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="MBW_AXIS_V_data_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="MRI_AXIS_V_data_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="SLI_AXIS_V_data_V_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="STA_AXIS_V_data_V_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="STW_AXIS_V_data_V_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state1_io">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state2">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="MBA_AXIS_TDATA_blk_n">9, 2, 1, 2</column>
+<column name="MBA_AXIS_V_data_V_1_data_out">9, 2, 16, 32</column>
+<column name="MBA_AXIS_V_data_V_1_state">15, 3, 2, 6</column>
+<column name="MBA_AXIS_V_dest_V_1_state">15, 3, 2, 6</column>
+<column name="MBA_AXIS_V_id_V_1_state">15, 3, 2, 6</column>
+<column name="MBA_AXIS_V_keep_V_1_state">15, 3, 2, 6</column>
+<column name="MBA_AXIS_V_last_V_1_state">15, 3, 2, 6</column>
+<column name="MBA_AXIS_V_strb_V_1_state">15, 3, 2, 6</column>
+<column name="MBA_AXIS_V_user_V_1_state">15, 3, 2, 6</column>
+<column name="MBW_AXIS_TDATA_blk_n">9, 2, 1, 2</column>
+<column name="MBW_AXIS_V_data_V_1_data_out">9, 2, 8, 16</column>
+<column name="MBW_AXIS_V_data_V_1_state">15, 3, 2, 6</column>
+<column name="MBW_AXIS_V_dest_V_1_state">15, 3, 2, 6</column>
+<column name="MBW_AXIS_V_id_V_1_state">15, 3, 2, 6</column>
+<column name="MBW_AXIS_V_keep_V_1_state">15, 3, 2, 6</column>
+<column name="MBW_AXIS_V_last_V_1_state">15, 3, 2, 6</column>
+<column name="MBW_AXIS_V_strb_V_1_state">15, 3, 2, 6</column>
+<column name="MBW_AXIS_V_user_V_1_state">15, 3, 2, 6</column>
+<column name="MRI_AXIS_TDATA_blk_n">9, 2, 1, 2</column>
+<column name="MRI_AXIS_V_data_V_1_data_out">9, 2, 8, 16</column>
+<column name="MRI_AXIS_V_data_V_1_state">15, 3, 2, 6</column>
+<column name="MRI_AXIS_V_dest_V_1_state">15, 3, 2, 6</column>
+<column name="MRI_AXIS_V_id_V_1_state">15, 3, 2, 6</column>
+<column name="MRI_AXIS_V_keep_V_1_state">15, 3, 2, 6</column>
+<column name="MRI_AXIS_V_last_V_1_state">15, 3, 2, 6</column>
+<column name="MRI_AXIS_V_strb_V_1_state">15, 3, 2, 6</column>
+<column name="MRI_AXIS_V_user_V_1_state">15, 3, 2, 6</column>
+<column name="SLI_AXIS_TDATA_blk_n">9, 2, 1, 2</column>
+<column name="SLI_AXIS_V_data_V_0_data_out">9, 2, 8, 16</column>
+<column name="SLI_AXIS_V_data_V_0_state">15, 3, 2, 6</column>
+<column name="SLI_AXIS_V_dest_V_0_state">15, 3, 2, 6</column>
+<column name="STA_AXIS_TDATA_blk_n">9, 2, 1, 2</column>
+<column name="STA_AXIS_V_data_V_0_data_out">9, 2, 16, 32</column>
+<column name="STA_AXIS_V_data_V_0_state">15, 3, 2, 6</column>
+<column name="STA_AXIS_V_dest_V_0_state">15, 3, 2, 6</column>
+<column name="STW_AXIS_TDATA_blk_n">9, 2, 1, 2</column>
+<column name="STW_AXIS_V_data_V_0_data_out">9, 2, 8, 16</column>
+<column name="STW_AXIS_V_data_V_0_state">15, 3, 2, 6</column>
+<column name="STW_AXIS_V_dest_V_0_state">15, 3, 2, 6</column>
+<column name="ap_NS_fsm">15, 3, 1, 3</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="MBA_AXIS_V_data_V_1_payload_A">16, 0, 16, 0</column>
+<column name="MBA_AXIS_V_data_V_1_payload_B">16, 0, 16, 0</column>
+<column name="MBA_AXIS_V_data_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="MBA_AXIS_V_data_V_1_sel_wr">1, 0, 1, 0</column>
+<column name="MBA_AXIS_V_data_V_1_state">2, 0, 2, 0</column>
+<column name="MBA_AXIS_V_dest_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="MBA_AXIS_V_dest_V_1_state">2, 0, 2, 0</column>
+<column name="MBA_AXIS_V_id_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="MBA_AXIS_V_id_V_1_state">2, 0, 2, 0</column>
+<column name="MBA_AXIS_V_keep_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="MBA_AXIS_V_keep_V_1_state">2, 0, 2, 0</column>
+<column name="MBA_AXIS_V_last_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="MBA_AXIS_V_last_V_1_state">2, 0, 2, 0</column>
+<column name="MBA_AXIS_V_strb_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="MBA_AXIS_V_strb_V_1_state">2, 0, 2, 0</column>
+<column name="MBA_AXIS_V_user_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="MBA_AXIS_V_user_V_1_state">2, 0, 2, 0</column>
+<column name="MBW_AXIS_V_data_V_1_payload_A">8, 0, 8, 0</column>
+<column name="MBW_AXIS_V_data_V_1_payload_B">8, 0, 8, 0</column>
+<column name="MBW_AXIS_V_data_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="MBW_AXIS_V_data_V_1_sel_wr">1, 0, 1, 0</column>
+<column name="MBW_AXIS_V_data_V_1_state">2, 0, 2, 0</column>
+<column name="MBW_AXIS_V_dest_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="MBW_AXIS_V_dest_V_1_state">2, 0, 2, 0</column>
+<column name="MBW_AXIS_V_id_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="MBW_AXIS_V_id_V_1_state">2, 0, 2, 0</column>
+<column name="MBW_AXIS_V_keep_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="MBW_AXIS_V_keep_V_1_state">2, 0, 2, 0</column>
+<column name="MBW_AXIS_V_last_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="MBW_AXIS_V_last_V_1_state">2, 0, 2, 0</column>
+<column name="MBW_AXIS_V_strb_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="MBW_AXIS_V_strb_V_1_state">2, 0, 2, 0</column>
+<column name="MBW_AXIS_V_user_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="MBW_AXIS_V_user_V_1_state">2, 0, 2, 0</column>
+<column name="MRI_AXIS_V_data_V_1_payload_A">8, 0, 8, 0</column>
+<column name="MRI_AXIS_V_data_V_1_payload_B">8, 0, 8, 0</column>
+<column name="MRI_AXIS_V_data_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="MRI_AXIS_V_data_V_1_sel_wr">1, 0, 1, 0</column>
+<column name="MRI_AXIS_V_data_V_1_state">2, 0, 2, 0</column>
+<column name="MRI_AXIS_V_dest_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="MRI_AXIS_V_dest_V_1_state">2, 0, 2, 0</column>
+<column name="MRI_AXIS_V_id_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="MRI_AXIS_V_id_V_1_state">2, 0, 2, 0</column>
+<column name="MRI_AXIS_V_keep_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="MRI_AXIS_V_keep_V_1_state">2, 0, 2, 0</column>
+<column name="MRI_AXIS_V_last_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="MRI_AXIS_V_last_V_1_state">2, 0, 2, 0</column>
+<column name="MRI_AXIS_V_strb_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="MRI_AXIS_V_strb_V_1_state">2, 0, 2, 0</column>
+<column name="MRI_AXIS_V_user_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="MRI_AXIS_V_user_V_1_state">2, 0, 2, 0</column>
+<column name="SLI_AXIS_V_data_V_0_payload_A">8, 0, 8, 0</column>
+<column name="SLI_AXIS_V_data_V_0_payload_B">8, 0, 8, 0</column>
+<column name="SLI_AXIS_V_data_V_0_sel_rd">1, 0, 1, 0</column>
+<column name="SLI_AXIS_V_data_V_0_sel_wr">1, 0, 1, 0</column>
+<column name="SLI_AXIS_V_data_V_0_state">2, 0, 2, 0</column>
+<column name="SLI_AXIS_V_dest_V_0_state">2, 0, 2, 0</column>
+<column name="STA_AXIS_V_data_V_0_payload_A">16, 0, 16, 0</column>
+<column name="STA_AXIS_V_data_V_0_payload_B">16, 0, 16, 0</column>
+<column name="STA_AXIS_V_data_V_0_sel_rd">1, 0, 1, 0</column>
+<column name="STA_AXIS_V_data_V_0_sel_wr">1, 0, 1, 0</column>
+<column name="STA_AXIS_V_data_V_0_state">2, 0, 2, 0</column>
+<column name="STA_AXIS_V_dest_V_0_state">2, 0, 2, 0</column>
+<column name="STW_AXIS_V_data_V_0_payload_A">8, 0, 8, 0</column>
+<column name="STW_AXIS_V_data_V_0_payload_B">8, 0, 8, 0</column>
+<column name="STW_AXIS_V_data_V_0_sel_rd">1, 0, 1, 0</column>
+<column name="STW_AXIS_V_data_V_0_sel_wr">1, 0, 1, 0</column>
+<column name="STW_AXIS_V_data_V_0_state">2, 0, 2, 0</column>
+<column name="STW_AXIS_V_dest_V_0_state">2, 0, 2, 0</column>
+<column name="ap_CS_fsm">2, 0, 2, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_CONTROL_AWVALID">in, 1, s_axi, CONTROL, return void</column>
+<column name="s_axi_CONTROL_AWREADY">out, 1, s_axi, CONTROL, return void</column>
+<column name="s_axi_CONTROL_AWADDR">in, 4, s_axi, CONTROL, return void</column>
+<column name="s_axi_CONTROL_WVALID">in, 1, s_axi, CONTROL, return void</column>
+<column name="s_axi_CONTROL_WREADY">out, 1, s_axi, CONTROL, return void</column>
+<column name="s_axi_CONTROL_WDATA">in, 32, s_axi, CONTROL, return void</column>
+<column name="s_axi_CONTROL_WSTRB">in, 4, s_axi, CONTROL, return void</column>
+<column name="s_axi_CONTROL_ARVALID">in, 1, s_axi, CONTROL, return void</column>
+<column name="s_axi_CONTROL_ARREADY">out, 1, s_axi, CONTROL, return void</column>
+<column name="s_axi_CONTROL_ARADDR">in, 4, s_axi, CONTROL, return void</column>
+<column name="s_axi_CONTROL_RVALID">out, 1, s_axi, CONTROL, return void</column>
+<column name="s_axi_CONTROL_RREADY">in, 1, s_axi, CONTROL, return void</column>
+<column name="s_axi_CONTROL_RDATA">out, 32, s_axi, CONTROL, return void</column>
+<column name="s_axi_CONTROL_RRESP">out, 2, s_axi, CONTROL, return void</column>
+<column name="s_axi_CONTROL_BVALID">out, 1, s_axi, CONTROL, return void</column>
+<column name="s_axi_CONTROL_BREADY">in, 1, s_axi, CONTROL, return void</column>
+<column name="s_axi_CONTROL_BRESP">out, 2, s_axi, CONTROL, return void</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, pe, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, pe, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_hs, pe, return value</column>
+<column name="SLI_AXIS_TDATA">in, 8, axis, SLI_AXIS_V_data_V, pointer</column>
+<column name="SLI_AXIS_TVALID">in, 1, axis, SLI_AXIS_V_dest_V, pointer</column>
+<column name="SLI_AXIS_TREADY">out, 1, axis, SLI_AXIS_V_dest_V, pointer</column>
+<column name="SLI_AXIS_TDEST">in, 5, axis, SLI_AXIS_V_dest_V, pointer</column>
+<column name="SLI_AXIS_TKEEP">in, 1, axis, SLI_AXIS_V_keep_V, pointer</column>
+<column name="SLI_AXIS_TSTRB">in, 1, axis, SLI_AXIS_V_strb_V, pointer</column>
+<column name="SLI_AXIS_TUSER">in, 4, axis, SLI_AXIS_V_user_V, pointer</column>
+<column name="SLI_AXIS_TLAST">in, 1, axis, SLI_AXIS_V_last_V, pointer</column>
+<column name="SLI_AXIS_TID">in, 5, axis, SLI_AXIS_V_id_V, pointer</column>
+<column name="MRI_AXIS_TDATA">out, 8, axis, MRI_AXIS_V_data_V, pointer</column>
+<column name="MRI_AXIS_TREADY">in, 1, axis, MRI_AXIS_V_data_V, pointer</column>
+<column name="MRI_AXIS_TVALID">out, 1, axis, MRI_AXIS_V_dest_V, pointer</column>
+<column name="MRI_AXIS_TDEST">out, 5, axis, MRI_AXIS_V_dest_V, pointer</column>
+<column name="MRI_AXIS_TKEEP">out, 1, axis, MRI_AXIS_V_keep_V, pointer</column>
+<column name="MRI_AXIS_TSTRB">out, 1, axis, MRI_AXIS_V_strb_V, pointer</column>
+<column name="MRI_AXIS_TUSER">out, 4, axis, MRI_AXIS_V_user_V, pointer</column>
+<column name="MRI_AXIS_TLAST">out, 1, axis, MRI_AXIS_V_last_V, pointer</column>
+<column name="MRI_AXIS_TID">out, 5, axis, MRI_AXIS_V_id_V, pointer</column>
+<column name="STW_AXIS_TDATA">in, 8, axis, STW_AXIS_V_data_V, pointer</column>
+<column name="STW_AXIS_TVALID">in, 1, axis, STW_AXIS_V_dest_V, pointer</column>
+<column name="STW_AXIS_TREADY">out, 1, axis, STW_AXIS_V_dest_V, pointer</column>
+<column name="STW_AXIS_TDEST">in, 5, axis, STW_AXIS_V_dest_V, pointer</column>
+<column name="STW_AXIS_TKEEP">in, 1, axis, STW_AXIS_V_keep_V, pointer</column>
+<column name="STW_AXIS_TSTRB">in, 1, axis, STW_AXIS_V_strb_V, pointer</column>
+<column name="STW_AXIS_TUSER">in, 4, axis, STW_AXIS_V_user_V, pointer</column>
+<column name="STW_AXIS_TLAST">in, 1, axis, STW_AXIS_V_last_V, pointer</column>
+<column name="STW_AXIS_TID">in, 5, axis, STW_AXIS_V_id_V, pointer</column>
+<column name="MBW_AXIS_TDATA">out, 8, axis, MBW_AXIS_V_data_V, pointer</column>
+<column name="MBW_AXIS_TREADY">in, 1, axis, MBW_AXIS_V_data_V, pointer</column>
+<column name="MBW_AXIS_TVALID">out, 1, axis, MBW_AXIS_V_dest_V, pointer</column>
+<column name="MBW_AXIS_TDEST">out, 5, axis, MBW_AXIS_V_dest_V, pointer</column>
+<column name="MBW_AXIS_TKEEP">out, 1, axis, MBW_AXIS_V_keep_V, pointer</column>
+<column name="MBW_AXIS_TSTRB">out, 1, axis, MBW_AXIS_V_strb_V, pointer</column>
+<column name="MBW_AXIS_TUSER">out, 4, axis, MBW_AXIS_V_user_V, pointer</column>
+<column name="MBW_AXIS_TLAST">out, 1, axis, MBW_AXIS_V_last_V, pointer</column>
+<column name="MBW_AXIS_TID">out, 5, axis, MBW_AXIS_V_id_V, pointer</column>
+<column name="STA_AXIS_TDATA">in, 16, axis, STA_AXIS_V_data_V, pointer</column>
+<column name="STA_AXIS_TVALID">in, 1, axis, STA_AXIS_V_dest_V, pointer</column>
+<column name="STA_AXIS_TREADY">out, 1, axis, STA_AXIS_V_dest_V, pointer</column>
+<column name="STA_AXIS_TDEST">in, 5, axis, STA_AXIS_V_dest_V, pointer</column>
+<column name="STA_AXIS_TKEEP">in, 2, axis, STA_AXIS_V_keep_V, pointer</column>
+<column name="STA_AXIS_TSTRB">in, 2, axis, STA_AXIS_V_strb_V, pointer</column>
+<column name="STA_AXIS_TUSER">in, 4, axis, STA_AXIS_V_user_V, pointer</column>
+<column name="STA_AXIS_TLAST">in, 1, axis, STA_AXIS_V_last_V, pointer</column>
+<column name="STA_AXIS_TID">in, 5, axis, STA_AXIS_V_id_V, pointer</column>
+<column name="MBA_AXIS_TDATA">out, 16, axis, MBA_AXIS_V_data_V, pointer</column>
+<column name="MBA_AXIS_TREADY">in, 1, axis, MBA_AXIS_V_data_V, pointer</column>
+<column name="MBA_AXIS_TVALID">out, 1, axis, MBA_AXIS_V_dest_V, pointer</column>
+<column name="MBA_AXIS_TDEST">out, 5, axis, MBA_AXIS_V_dest_V, pointer</column>
+<column name="MBA_AXIS_TKEEP">out, 2, axis, MBA_AXIS_V_keep_V, pointer</column>
+<column name="MBA_AXIS_TSTRB">out, 2, axis, MBA_AXIS_V_strb_V, pointer</column>
+<column name="MBA_AXIS_TUSER">out, 4, axis, MBA_AXIS_V_user_V, pointer</column>
+<column name="MBA_AXIS_TLAST">out, 1, axis, MBA_AXIS_V_last_V, pointer</column>
+<column name="MBA_AXIS_TID">out, 5, axis, MBA_AXIS_V_id_V, pointer</column>
+</table>
+</item>
+</section>
+</profile>

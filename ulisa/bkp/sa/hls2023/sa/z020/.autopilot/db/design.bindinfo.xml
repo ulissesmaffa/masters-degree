@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mul" ID="" IMPL="fabric" LATENCY="0" OPTYPE="mul" PRAGMA="yes" RTLNAME="mul_8s_8s_16_1_1_U1" SOURCE="../sa/sa.cpp:69" VARIABLE="prod_iw" MODULE="pe" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="MBA_AXIS_TDATA_int_regslice" SOURCE="../sa/sa.cpp:70" VARIABLE="res_ba" MODULE="pe" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="adapter" DISPLAY="bind_adapter axilite" ID="" IMPL="" LATENCY="" OPTYPE="" PRAGMA="" RTLNAME="CONTROL_s_axi_U" SOURCE="" VARIABLE="" MODULE="pe" LOOP="" BUNDLEDNAME="CONTROL" DSP="0" BRAM="0" URAM="0" USAGE="interface" STORAGESUBTYPE="s_axilite" STORAGESIZE=""/>
+</BindInfo>

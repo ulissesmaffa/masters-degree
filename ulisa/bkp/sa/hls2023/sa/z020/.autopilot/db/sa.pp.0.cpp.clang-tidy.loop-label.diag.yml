@@ -1,0 +1,59 @@
+---
+MainSourceFile:  /home/fabiob/sa/hls2023/sa/z020/.autopilot/db/sa.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1207_1:  '
+    FileOffset:      1207
+    FilePath:        /opt/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_base.h
+    Replacements:    
+      - FilePath:        /home/fabiob/sa/hls2023/sa/z020/.autopilot/db/sa.pp.0.cpp
+        Offset:          215843
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1207_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        /opt/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/fabiob/sa/hls2023/sa/z020/.autopilot/db/sa.pp.0.cpp
+        Offset:          443195
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        /opt/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/fabiob/sa/hls2023/sa/z020/.autopilot/db/sa.pp.0.cpp
+        Offset:          443659
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        /opt/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/fabiob/sa/hls2023/sa/z020/.autopilot/db/sa.pp.0.cpp
+        Offset:          444124
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        /opt/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h
+    Replacements:    
+      - FilePath:        /home/fabiob/sa/hls2023/sa/z020/.autopilot/db/sa.pp.0.cpp
+        Offset:          727441
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: Mul_LUT pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      39
+    FilePath:        /home/fabiob/sa/sa/sa.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: Mul_LUT pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      40
+    FilePath:        /home/fabiob/sa/sa/sa.cpp
+    Replacements:    
+...

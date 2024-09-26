@@ -1,0 +1,4 @@
+<annotationInfo>
+<item  id="102" filename="../sa/sa.cpp" linenumber="69" name="prod_iw" contextFuncName="pe" moduleName="pe" rtlName="pe_mul_8s_8s_16_1_1_U1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/home/fabiob/sa/hls"><\/item>
+<item  id="106" filename="../sa/sa.cpp" linenumber="70" name="res_ba" contextFuncName="pe" moduleName="pe" rtlName="res_ba_fu_325_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="23" fileDirectory="/home/fabiob/sa/hls"><\/item>
+</annotationInfo>

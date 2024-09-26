@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="sa.cpp" path="/home/fabiob/sa/sa/sa.cpp"/>
+    <originFiles name="sa.h" path="/home/fabiob/sa/sa/sa.h"/>
+  </source>
+  <testbench>
+    <originFiles name="sa_test.cpp" path="/home/fabiob/sa/sa/sa_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,145 @@
+
+
+================================================================
+== Synthesis Summary Report of 'pe'
+================================================================
++ General Information: 
+    * Date:           Wed Sep 25 19:23:15 2024
+    * Version:        2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:        sa
+    * Solution:       z020 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg484-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------+------+------+---------+--------+----------+---------+------+----------+------+----+----------+-----------+-----+
+    | Modules| Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |          |           |     |
+    | & Loops| Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|    FF    |    LUT    | URAM|
+    +--------+------+------+---------+--------+----------+---------+------+----------+------+----+----------+-----------+-----+
+    |+ pe    |     -|  0.87|        3|  30.000|         -|        4|     -|        no|     -|   -|  88 (~0%)|  210 (~0%)|    -|
+    +--------+------+------+---------+--------+----------+---------+------+----------+------+----+----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++---------------+------------+---------------+
+| Interface     | Data Width | Address Width |
++---------------+------------+---------------+
+| s_axi_CONTROL | 32         | 4             |
++---------------+------------+---------------+
+
+* S_AXILITE Registers
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_CONTROL | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_CONTROL | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_CONTROL | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_CONTROL | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* AXIS
++-----------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| Interface | Direction | Register Mode | TDATA | TDEST | TID | TKEEP | TLAST | TREADY | TSTRB | TUSER | TVALID |
++-----------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| MBA_AXIS  | out       | both          | 16    | 5     | 5   | 2     | 1     | 1      | 2     | 4     | 1      |
+| MBW_AXIS  | out       | both          | 8     | 5     | 5   | 1     | 1     | 1      | 1     | 4     | 1      |
+| MRI_AXIS  | out       | both          | 8     | 5     | 5   | 1     | 1     | 1      | 1     | 4     | 1      |
+| SLI_AXIS  | in        | both          | 8     | 5     | 5   | 1     | 1     | 1      | 1     | 4     | 1      |
+| STA_AXIS  | in        | both          | 16    | 5     | 5   | 2     | 1     | 1      | 2     | 4     | 1      |
+| STW_AXIS  | in        | both          | 8     | 5     | 5   | 1     | 1     | 1      | 1     | 4     | 1      |
++-----------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-----------+-----------+---------------------------------------------------------+
+| Argument  | Direction | Datatype                                                |
++-----------+-----------+---------------------------------------------------------+
+| li_stream | in        | stream<hls::axis<ap_uint<8>, 4, 5, 5, '8', false>, 0>&  |
+| ri_stream | out       | stream<hls::axis<ap_uint<8>, 4, 5, 5, '8', false>, 0>&  |
+| tw_stream | in        | stream<hls::axis<ap_uint<8>, 4, 5, 5, '8', false>, 0>&  |
+| bw_stream | out       | stream<hls::axis<ap_uint<8>, 4, 5, 5, '8', false>, 0>&  |
+| ta_stream | in        | stream<hls::axis<ap_uint<16>, 4, 5, 5, '8', false>, 0>& |
+| ba_stream | out       | stream<hls::axis<ap_uint<16>, 4, 5, 5, '8', false>, 0>& |
++-----------+-----------+---------------------------------------------------------+
+
+* SW-to-HW Mapping
++-----------+--------------+-----------+
+| Argument  | HW Interface | HW Type   |
++-----------+--------------+-----------+
+| li_stream | SLI_AXIS     | interface |
+| ri_stream | MRI_AXIS     | interface |
+| tw_stream | STW_AXIS     | interface |
+| bw_stream | MBW_AXIS     | interface |
+| ta_stream | STA_AXIS     | interface |
+| ba_stream | MBA_AXIS     | interface |
++-----------+--------------+-----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------------+-----+--------+----------+-----+--------+---------+
+| Name                          | DSP | Pragma | Variable | Op  | Impl   | Latency |
++-------------------------------+-----+--------+----------+-----+--------+---------+
+| + pe                          | 0   |        |          |     |        |         |
+|   mul_8s_8s_16_1_1_U1         |     | yes    | prod_iw  | mul | fabric | 0       |
+|   MBA_AXIS_TDATA_int_regslice |     |        | res_ba   | add | fabric | 0       |
++-------------------------------+-----+--------+----------+-----+--------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| Name              | Usage     | Type      | BRAM | URAM | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|                   |           |           |      |      |        |          |      |         | Banks            |
++-------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| + pe              |           |           | 0    | 0    |        |          |      |         |                  |
+|   CONTROL_s_axi_U | interface | s_axilite |      |      |        |          |      |         |                  |
++-------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Pragmas with Warnings
++----------+-------------------------------+--------------------------------+----------------------------------------------------------------------------+
+| Type     | Options                       | Location                       | Messages                                                                   |
++----------+-------------------------------+--------------------------------+----------------------------------------------------------------------------+
+| resource | variable=res_ba core=Mul_LUT  | ../sa/sa.cpp:39 in pe, res_ba  | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=prod_iw core=Mul_LUT | ../sa/sa.cpp:40 in pe, prod_iw | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
++----------+-------------------------------+--------------------------------+----------------------------------------------------------------------------+
+
+* Valid Pragma Syntax
++-----------+--------------------------------------+----------------------------------+
+| Type      | Options                              | Location                         |
++-----------+--------------------------------------+----------------------------------+
+| interface | axis port=li_stream name=SLI_AXIS    | ../sa/sa.cpp:20 in pe, li_stream |
+| interface | axis port=ri_stream name=MRI_AXIS    | ../sa/sa.cpp:21 in pe, ri_stream |
+| interface | axis port=tw_stream name=STW_AXIS    | ../sa/sa.cpp:22 in pe, tw_stream |
+| interface | axis port=bw_stream name=MBW_AXIS    | ../sa/sa.cpp:23 in pe, bw_stream |
+| interface | axis port=ta_stream name=STA_AXIS    | ../sa/sa.cpp:24 in pe, ta_stream |
+| interface | axis port=ba_stream name=MBA_AXIS    | ../sa/sa.cpp:25 in pe, ba_stream |
+| interface | s_axilite port=return bundle=CONTROL | ../sa/sa.cpp:27 in pe, return    |
++-----------+--------------------------------------+----------------------------------+
+
+

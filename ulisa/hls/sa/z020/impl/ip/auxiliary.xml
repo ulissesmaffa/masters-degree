@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="pe" xd:componentRef="pe" xd:initiationInterval="2" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_CONTROL" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="SLI_AXIS.data" xd:originalName="SLI_AXIS" xd:direction="in" xd:interfaceRef="SLI_AXIS" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="SLI_AXIS.keep" xd:originalName="SLI_AXIS" xd:direction="in" xd:interfaceRef="SLI_AXIS" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="SLI_AXIS.strb" xd:originalName="SLI_AXIS" xd:direction="in" xd:interfaceRef="SLI_AXIS" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="SLI_AXIS.user" xd:originalName="SLI_AXIS" xd:direction="in" xd:interfaceRef="SLI_AXIS" xd:busTypeRef="axis" xd:dataWidth="4"/>
+  <xd:arg xd:name="SLI_AXIS.last" xd:originalName="SLI_AXIS" xd:direction="in" xd:interfaceRef="SLI_AXIS" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="SLI_AXIS.id" xd:originalName="SLI_AXIS" xd:direction="in" xd:interfaceRef="SLI_AXIS" xd:busTypeRef="axis" xd:dataWidth="5"/>
+  <xd:arg xd:name="SLI_AXIS.dest" xd:originalName="SLI_AXIS" xd:direction="in" xd:interfaceRef="SLI_AXIS" xd:busTypeRef="axis" xd:dataWidth="5"/>
+  <xd:arg xd:name="MRI_AXIS.data" xd:originalName="MRI_AXIS" xd:direction="out" xd:interfaceRef="MRI_AXIS" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="MRI_AXIS.keep" xd:originalName="MRI_AXIS" xd:direction="out" xd:interfaceRef="MRI_AXIS" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="MRI_AXIS.strb" xd:originalName="MRI_AXIS" xd:direction="out" xd:interfaceRef="MRI_AXIS" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="MRI_AXIS.user" xd:originalName="MRI_AXIS" xd:direction="out" xd:interfaceRef="MRI_AXIS" xd:busTypeRef="axis" xd:dataWidth="4"/>
+  <xd:arg xd:name="MRI_AXIS.last" xd:originalName="MRI_AXIS" xd:direction="out" xd:interfaceRef="MRI_AXIS" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="MRI_AXIS.id" xd:originalName="MRI_AXIS" xd:direction="out" xd:interfaceRef="MRI_AXIS" xd:busTypeRef="axis" xd:dataWidth="5"/>
+  <xd:arg xd:name="MRI_AXIS.dest" xd:originalName="MRI_AXIS" xd:direction="out" xd:interfaceRef="MRI_AXIS" xd:busTypeRef="axis" xd:dataWidth="5"/>
+  <xd:arg xd:name="STW_AXIS.data" xd:originalName="STW_AXIS" xd:direction="in" xd:interfaceRef="STW_AXIS" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="STW_AXIS.keep" xd:originalName="STW_AXIS" xd:direction="in" xd:interfaceRef="STW_AXIS" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="STW_AXIS.strb" xd:originalName="STW_AXIS" xd:direction="in" xd:interfaceRef="STW_AXIS" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="STW_AXIS.user" xd:originalName="STW_AXIS" xd:direction="in" xd:interfaceRef="STW_AXIS" xd:busTypeRef="axis" xd:dataWidth="4"/>
+  <xd:arg xd:name="STW_AXIS.last" xd:originalName="STW_AXIS" xd:direction="in" xd:interfaceRef="STW_AXIS" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="STW_AXIS.id" xd:originalName="STW_AXIS" xd:direction="in" xd:interfaceRef="STW_AXIS" xd:busTypeRef="axis" xd:dataWidth="5"/>
+  <xd:arg xd:name="STW_AXIS.dest" xd:originalName="STW_AXIS" xd:direction="in" xd:interfaceRef="STW_AXIS" xd:busTypeRef="axis" xd:dataWidth="5"/>
+  <xd:arg xd:name="MBW_AXIS.data" xd:originalName="MBW_AXIS" xd:direction="out" xd:interfaceRef="MBW_AXIS" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="MBW_AXIS.keep" xd:originalName="MBW_AXIS" xd:direction="out" xd:interfaceRef="MBW_AXIS" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="MBW_AXIS.strb" xd:originalName="MBW_AXIS" xd:direction="out" xd:interfaceRef="MBW_AXIS" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="MBW_AXIS.user" xd:originalName="MBW_AXIS" xd:direction="out" xd:interfaceRef="MBW_AXIS" xd:busTypeRef="axis" xd:dataWidth="4"/>
+  <xd:arg xd:name="MBW_AXIS.last" xd:originalName="MBW_AXIS" xd:direction="out" xd:interfaceRef="MBW_AXIS" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="MBW_AXIS.id" xd:originalName="MBW_AXIS" xd:direction="out" xd:interfaceRef="MBW_AXIS" xd:busTypeRef="axis" xd:dataWidth="5"/>
+  <xd:arg xd:name="MBW_AXIS.dest" xd:originalName="MBW_AXIS" xd:direction="out" xd:interfaceRef="MBW_AXIS" xd:busTypeRef="axis" xd:dataWidth="5"/>
+  <xd:arg xd:name="STA_AXIS.data" xd:originalName="STA_AXIS" xd:direction="in" xd:interfaceRef="STA_AXIS" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:arg xd:name="STA_AXIS.keep" xd:originalName="STA_AXIS" xd:direction="in" xd:interfaceRef="STA_AXIS" xd:busTypeRef="axis" xd:dataWidth="2"/>
+  <xd:arg xd:name="STA_AXIS.strb" xd:originalName="STA_AXIS" xd:direction="in" xd:interfaceRef="STA_AXIS" xd:busTypeRef="axis" xd:dataWidth="2"/>
+  <xd:arg xd:name="STA_AXIS.user" xd:originalName="STA_AXIS" xd:direction="in" xd:interfaceRef="STA_AXIS" xd:busTypeRef="axis" xd:dataWidth="4"/>
+  <xd:arg xd:name="STA_AXIS.last" xd:originalName="STA_AXIS" xd:direction="in" xd:interfaceRef="STA_AXIS" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="STA_AXIS.id" xd:originalName="STA_AXIS" xd:direction="in" xd:interfaceRef="STA_AXIS" xd:busTypeRef="axis" xd:dataWidth="5"/>
+  <xd:arg xd:name="STA_AXIS.dest" xd:originalName="STA_AXIS" xd:direction="in" xd:interfaceRef="STA_AXIS" xd:busTypeRef="axis" xd:dataWidth="5"/>
+  <xd:arg xd:name="MBA_AXIS.data" xd:originalName="MBA_AXIS" xd:direction="out" xd:interfaceRef="MBA_AXIS" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:arg xd:name="MBA_AXIS.keep" xd:originalName="MBA_AXIS" xd:direction="out" xd:interfaceRef="MBA_AXIS" xd:busTypeRef="axis" xd:dataWidth="2"/>
+  <xd:arg xd:name="MBA_AXIS.strb" xd:originalName="MBA_AXIS" xd:direction="out" xd:interfaceRef="MBA_AXIS" xd:busTypeRef="axis" xd:dataWidth="2"/>
+  <xd:arg xd:name="MBA_AXIS.user" xd:originalName="MBA_AXIS" xd:direction="out" xd:interfaceRef="MBA_AXIS" xd:busTypeRef="axis" xd:dataWidth="4"/>
+  <xd:arg xd:name="MBA_AXIS.last" xd:originalName="MBA_AXIS" xd:direction="out" xd:interfaceRef="MBA_AXIS" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="MBA_AXIS.id" xd:originalName="MBA_AXIS" xd:direction="out" xd:interfaceRef="MBA_AXIS" xd:busTypeRef="axis" xd:dataWidth="5"/>
+  <xd:arg xd:name="MBA_AXIS.dest" xd:originalName="MBA_AXIS" xd:direction="out" xd:interfaceRef="MBA_AXIS" xd:busTypeRef="axis" xd:dataWidth="5"/>
+  <xd:latencyEstimates xd:best-case="1" xd:worst-case="1" xd:average-case="1"/>
+  <xd:resourceEstimates xd:LUT="731" xd:FF="250" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>
