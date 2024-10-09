@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 GENERATOR="Unix Makefiles"
 
 cmake -G "${GENERATOR}" \

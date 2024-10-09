@@ -1,5 +1,3 @@
-
-
 #include "sa.h"
 #include <iostream>
 
@@ -27,19 +25,20 @@ void pe(
 #pragma HLS INTERFACE s_axilite port=return       bundle=CONTROL
 //#pragma HLS ALLOCATION instances=DSP48 core
 
-	char mat_li;
-	char mat_ri;
-	char mat_tw;
-	char mat_bw;
+	char mat_li; //left inputs(8)
+	char mat_ri; //right inputs(8)
+	char mat_tw; //top weights(8)
+	char mat_bw; //bottom weights (16)
 
-	short res_ta;
-	short res_ba;
-	short prod_iw;
+	short res_ta; //top accumulator (16)
+	short res_ba; //bottom accumulator (16)
+	short prod_iw; //gambi
 
+    //Para não usar DSP quando sintetizar
 	#pragma HLS RESOURCE variable=res_ba core=Mul_LUT
-	#pragma HLS RESOURCE variable=prod_iw core=Mul_LUT
+	#pragma HLS RESOURCE variable=prod_iw core=Mul_LUT //gambi
 
-
+    //Entradas PE
     {
     	AXI_VALUE_mat aValue_mat;
         li_stream.read(aValue_mat);
@@ -64,11 +63,14 @@ void pe(
         res_ta = converter_bus_to_res.oval;
     }
 
+    //Saídas PE
     mat_ri = mat_li;
     mat_bw = mat_tw;
+    //primeiro multiplica
     prod_iw = (mat_li * mat_tw);
+    //depois soma
     res_ba = res_ta + prod_iw;
-
+    
     {
         AXI_VALUE_mat aValue_mat;
         union { unsigned char oval; char ival; } converter_mat_to_bus;
