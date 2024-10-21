@@ -24,4 +24,3 @@ include_directories("/home/ulisses/Tools/Xilinx/Vivado/2019.2/include")
 
 #add_executable(sa_tb ${SA_SOURCES} ${TB_SOURCES})
 add_executable(sa_tb ${SA_SOURCES})
-

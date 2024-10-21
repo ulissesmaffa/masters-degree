@@ -19,8 +19,7 @@ void pe(
     hls::stream<AXI_VALUE_mat> &tw_stream,
     hls::stream<AXI_VALUE_mat> &bw_stream,
     hls::stream<AXI_VALUE_res> &ta_stream,
-    hls::stream<AXI_VALUE_res> &ba_stream,
-    hls::stream<AXI_VALUE_mat> &w_stream);
+    hls::stream<AXI_VALUE_res> &ba_stream);
 
 
 #endif /* __SA_PE_H__ */

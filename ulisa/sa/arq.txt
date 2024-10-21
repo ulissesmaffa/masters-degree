@@ -1,0 +1,226 @@
+    /* INICIO INSERIR LATERAL */
+
+    /*============= Ciclo Zero ==================*/
+    {
+        AXI_VALUE_mat aValue_mat;
+        union {
+            unsigned char oval;
+            char ival;
+        } converter_mat_to_bus;
+        
+        converter_mat_to_bus.ival = 0;
+        aValue_mat.data = converter_mat_to_bus.oval;
+        li00_stream.write(aValue_mat);
+
+        converter_mat_to_bus.ival = 0;
+        aValue_mat.data = converter_mat_to_bus.oval;
+        li10_stream.write(aValue_mat);  
+    }
+    /*============= Primeiro Ciclo ==================*/
+    {
+        AXI_VALUE_mat aValue_mat;
+        union {
+            unsigned char oval;
+            char ival;
+        } converter_mat_to_bus;
+        
+        converter_mat_to_bus.ival = 1;
+        aValue_mat.data = converter_mat_to_bus.oval;
+        li00_stream.write(aValue_mat);
+
+        converter_mat_to_bus.ival = 0;
+        aValue_mat.data = converter_mat_to_bus.oval;
+        li10_stream.write(aValue_mat);  
+    }
+    /*============= Segundo Ciclo ==================*/
+    {
+        AXI_VALUE_mat aValue_mat;
+        union {
+            unsigned char oval;
+            char ival;
+        } converter_mat_to_bus;
+        
+        converter_mat_to_bus.ival = 3;
+        aValue_mat.data = converter_mat_to_bus.oval;
+        li00_stream.write(aValue_mat);
+
+        converter_mat_to_bus.ival = 2;
+        aValue_mat.data = converter_mat_to_bus.oval;
+        li10_stream.write(aValue_mat);
+    }
+    /*============= Terceiro Ciclo ==================*/
+    {
+        AXI_VALUE_mat aValue_mat;
+        union {
+            unsigned char oval;
+            char ival;
+        } converter_mat_to_bus;
+        
+        converter_mat_to_bus.ival = 0;
+        aValue_mat.data = converter_mat_to_bus.oval;
+        li00_stream.write(aValue_mat);
+
+        converter_mat_to_bus.ival = 4;
+        aValue_mat.data = converter_mat_to_bus.oval;
+        li10_stream.write(aValue_mat);
+    }
+    /*============= Quarto Ciclo ==================*/
+    {
+        AXI_VALUE_mat aValue_mat;
+        union {
+            unsigned char oval;
+            char ival;
+        } converter_mat_to_bus;
+        
+        converter_mat_to_bus.ival = 0;
+        aValue_mat.data = converter_mat_to_bus.oval;
+        li00_stream.write(aValue_mat);
+
+        converter_mat_to_bus.ival = 0;
+        aValue_mat.data = converter_mat_to_bus.oval;
+        li10_stream.write(aValue_mat);
+    }
+    /* FIM INSERIR LATERAL */
+
+    /* INICIO INSERIR TOP ACC*/
+
+    /*============= Ciclo Zero ==================*/
+    {
+        AXI_VALUE_res aValue_res;
+        union {
+            unsigned short oval;
+            short ival;
+        } converter_res_to_bus;
+
+        converter_res_to_bus.ival = 0;
+        aValue_res.data = converter_res_to_bus.oval;
+        ta00_stream.write(aValue_res);
+
+        converter_res_to_bus.ival = 0;
+        aValue_res.data = converter_res_to_bus.oval;
+        ta01_stream.write(aValue_res);
+    }
+
+    /*============== Primeiro Ciclo ===================*/
+    {
+        AXI_VALUE_res aValue_res;
+        union {
+            unsigned short oval;
+            short ival;
+        } converter_res_to_bus;
+
+        converter_res_to_bus.ival = 0;
+        aValue_res.data = converter_res_to_bus.oval;
+        ta00_stream.write(aValue_res);
+
+        converter_res_to_bus.ival = 0;
+        aValue_res.data = converter_res_to_bus.oval;
+        ta01_stream.write(aValue_res);
+    }
+    /*============== Segundo Ciclo ===================*/
+    {
+        AXI_VALUE_res aValue_res;
+        union {
+            unsigned short oval;
+            short ival;
+        } converter_res_to_bus;
+
+        converter_res_to_bus.ival = 0;
+        aValue_res.data = converter_res_to_bus.oval;
+        ta00_stream.write(aValue_res);
+
+        converter_res_to_bus.ival = 0;
+        aValue_res.data = converter_res_to_bus.oval;
+        ta01_stream.write(aValue_res);
+    }
+    /*============== Terceiro Ciclo ===================*/
+    {
+        AXI_VALUE_res aValue_res;
+        union {
+            unsigned short oval;
+            short ival;
+        } converter_res_to_bus;
+
+        converter_res_to_bus.ival = 0;
+        aValue_res.data = converter_res_to_bus.oval;
+        ta00_stream.write(aValue_res);
+
+        converter_res_to_bus.ival = 0;
+        aValue_res.data = converter_res_to_bus.oval;
+        ta01_stream.write(aValue_res);
+    }
+    /*============== Quarto Ciclo ===================*/
+    {
+        AXI_VALUE_res aValue_res;
+        union {
+            unsigned short oval;
+            short ival;
+        } converter_res_to_bus;
+
+        converter_res_to_bus.ival = 0;
+        aValue_res.data = converter_res_to_bus.oval;
+        ta00_stream.write(aValue_res);
+
+        converter_res_to_bus.ival = 0;
+        aValue_res.data = converter_res_to_bus.oval;
+        ta01_stream.write(aValue_res);
+    }
+    /* FIM INSERIR TOP ACC*/
+
+
+
+
+
+        /* LEITURA SAÍDA ARRAY BOTTOM 
+    {//Leitura BW10
+        AXI_VALUE_mat aValue_mat;
+
+        union {
+            unsigned char ival;
+            char oval;
+        } converter_bus_to_mat;
+
+        bw10_stream.read(aValue_mat);
+        converter_bus_to_mat.ival = aValue_mat.data;    
+        printf("BW10 %d\r\n", converter_bus_to_mat.oval);
+    }
+
+    {//Leitura BW11
+        AXI_VALUE_mat aValue_mat;
+
+        union {
+            unsigned char ival;
+            char oval;
+        } converter_bus_to_mat;
+
+        bw11_stream.read(aValue_mat);
+        converter_bus_to_mat.ival = aValue_mat.data;    
+        printf("BW11 %d\r\n", converter_bus_to_mat.oval);
+    }
+
+    {//Leitura BA10
+        AXI_VALUE_res aValue_res;
+
+        union {
+            unsigned short ival;
+            short oval;
+        } converter_bus_to_res;
+
+        ba10_stream.read(aValue_res);
+        converter_bus_to_res.ival = aValue_res.data;    
+        printf("BA10 %d\r\n", converter_bus_to_res.oval);
+    }
+
+    {//Leitura BA11
+        AXI_VALUE_res aValue_res;
+
+        union {
+            unsigned short ival;
+            short oval;
+        } converter_bus_to_res;
+
+        ba11_stream.read(aValue_res);
+        converter_bus_to_res.ival = aValue_res.data;    
+        printf("BA11 %d\r\n", converter_bus_to_res.oval);
+    }
+    */
