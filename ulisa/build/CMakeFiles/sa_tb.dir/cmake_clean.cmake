@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sa_tb.dir/sa/sa.cpp.o"
-  "CMakeFiles/sa_tb.dir/sa/sa.cpp.o.d"
   "CMakeFiles/sa_tb.dir/sa/sa_test.cpp.o"
-  "CMakeFiles/sa_tb.dir/sa/sa_test.cpp.o.d"
   "sa_tb"
   "sa_tb.pdb"
 )

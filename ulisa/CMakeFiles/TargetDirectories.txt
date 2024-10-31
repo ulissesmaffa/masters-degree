@@ -1,3 +1,0 @@
-/home/ulisses/Projects/masters-degree/ulisa/CMakeFiles/rebuild_cache.dir
-/home/ulisses/Projects/masters-degree/ulisa/CMakeFiles/edit_cache.dir
-/home/ulisses/Projects/masters-degree/ulisa/CMakeFiles/sa_tb.dir

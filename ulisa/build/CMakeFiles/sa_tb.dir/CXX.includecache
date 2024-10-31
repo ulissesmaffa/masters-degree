@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ulisses/Projects/masters-degree/ulisa/sa/sa.h
+cstdint
+-
+
+/home/ulisses/Projects/masters-degree/ulisa/sa/sa_test.cpp
+stdio.h
+-
+iostream
+-
+sa.h
+/home/ulisses/Projects/masters-degree/ulisa/sa/sa.h
+

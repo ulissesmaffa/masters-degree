@@ -1,1 +1,0 @@
-/usr/bin/c++  -O3 -DNDEBUG  -rdynamic CMakeFiles/sa_tb.dir/sa/sa.cpp.o CMakeFiles/sa_tb.dir/sa/sa_test.cpp.o  -o sa_tb 

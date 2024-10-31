@@ -1,0 +1,1 @@
+Tentativa de melhorar a v1 colocando 4 PE, a v3 será uma outra abordagem, recomeçando o processo.

@@ -1,130 +1,67 @@
 #include <stdio.h>
 #include <iostream>
-
-#include <hls_stream.h>
-
 #include "sa.h"
 
+int main() {
+    PE pe[2][2];
+    int length=4;
+    int array_tw_00[length]={1,2,0,0};
+    int array_tw_01[length]={0,3,4,0};
+    int array_li_00[length]={5,7,0,0};
+    int array_li_10[length]={0,6,8,0};
 
-using namespace std;
+    for(int i=0;i<length;i++){
+        printf("Inserindo dados no topo PE00 e PE01\n");
+        //printf("tw00.[%i] %i\n",i,array_tw_00[i]);
+        //printf("tw01.[%i] %i\n",i,array_tw_01[i]);
+        pe[0][0].tw = array_tw_00[i];
+        pe[0][1].tw = array_tw_01[i];
 
-int main(int argc, char **argv)
-{
-    int err_cnt = 0;
-/*=================  PE 00  ================================ */
-    hls::stream<AXI_VALUE_mat> tw00_stream;
-    hls::stream<AXI_VALUE_res> ta00_stream;
-    hls::stream<AXI_VALUE_mat> li00_stream;
-    hls::stream<AXI_VALUE_mat> ri00_stream;
-    hls::stream<AXI_VALUE_mat> bw00_stream;
-    hls::stream<AXI_VALUE_res> ba00_stream; 
-    //PESO
-    hls::stream<AXI_VALUE_mat> w00_stream;
-/*=================  PE 01  ================================ */
-    hls::stream<AXI_VALUE_mat> tw01_stream;
-    hls::stream<AXI_VALUE_res> ta01_stream;
-    hls::stream<AXI_VALUE_mat> ri01_stream;
-    hls::stream<AXI_VALUE_mat> bw01_stream;
-    hls::stream<AXI_VALUE_res> ba01_stream; 
-    //PESO
-    hls::stream<AXI_VALUE_mat> w01_stream;
-/*=================  PE 10  ================================ */
-    hls::stream<AXI_VALUE_mat> li10_stream;
-    hls::stream<AXI_VALUE_mat> ri10_stream;
-    hls::stream<AXI_VALUE_mat> bw10_stream;
-    hls::stream<AXI_VALUE_res> ba10_stream; 
-    //PESO
-    hls::stream<AXI_VALUE_mat> w10_stream;
-/*=================  PE 11  ================================ */
-    hls::stream<AXI_VALUE_mat> ri11_stream;
-    hls::stream<AXI_VALUE_mat> bw11_stream;
-    hls::stream<AXI_VALUE_res> ba11_stream; 
-    //PESO
-    hls::stream<AXI_VALUE_mat> w11_stream;
+        printf("Inserindo dados na lateral PE00 e PE10\n");
+        //printf("li00.[%i] %i\n",i,array_li_00[i]);
+        //printf("li10.[%i] %i\n",i,array_li_10[i]);
+        pe[0][0].li = array_li_00[i];
+        pe[1][0].li = array_li_10[i];
 
-    AXI_VALUE_res aValue_res;
+        printf("Passando os dados entre PEs\n");
+        pe[0][1].li = pe[0][0].ri;
+        pe[1][0].tw = pe[0][0].bw;
+        pe[1][1].tw = pe[0][1].bw;
+        pe[1][1].li = pe[1][0].ri;
 
-/*=================  INICIO INSERIR PESOS ================= */
-    {
-        AXI_VALUE_mat aValue_mat;
-        union {
-            unsigned char oval;
-            char ival;
-        } converter_mat_to_bus;
+        printf("Computando [%i]...\n",i);
 
-        converter_mat_to_bus.ival = 5;
-        aValue_mat.data = converter_mat_to_bus.oval;
-        w00_stream.write(aValue_mat);
-/*
-        converter_mat_to_bus.ival = 6; 
-        aValue_mat.data = converter_mat_to_bus.oval;
-        w01_stream.write(aValue_mat);
+        printf("PE[00].ba = %d + %d * %d\n",static_cast<int>(pe[0][0].ba),static_cast<int>(pe[0][0].li),static_cast<int>(pe[0][0].tw));
+        pe[0][0].compute();
+        printf("PE[00].ba = %d\n",static_cast<int>(pe[0][0].ba));
 
-        converter_mat_to_bus.ival = 7;
-        aValue_mat.data = converter_mat_to_bus.oval;
-        w10_stream.write(aValue_mat);
+        printf("PE[01].ba = %d + %d * %d\n",static_cast<int>(pe[0][1].ba),static_cast<int>(pe[0][1].li),static_cast<int>(pe[0][1].tw));
+        pe[0][1].compute();
+        printf("PE[01].ba = %d\n",static_cast<int>(pe[0][1].ba));
 
-        converter_mat_to_bus.ival = 8; 
-        aValue_mat.data = converter_mat_to_bus.oval;
-        w11_stream.write(aValue_mat);
-*/
+        printf("PE[10].ba = %d + %d * %d\n",static_cast<int>(pe[1][0].ba),static_cast<int>(pe[1][0].li),static_cast<int>(pe[1][0].tw));
+        pe[1][0].compute();
+        printf("PE[10].ba = %d\n",static_cast<int>(pe[1][0].ba));
+
+        printf("PE[11].ba = %d + %d * %d\n",static_cast<int>(pe[1][1].ba),static_cast<int>(pe[1][1].li),static_cast<int>(pe[1][1].tw));
+        pe[1][1].compute();
+        printf("PE[11].ba = %d\n",static_cast<int>(pe[1][1].ba));
+        printf("\n");
     }
-/*================= FIM FIM INSERIR PESOS =================*/
-
-    //PE 01
-    pe(
-        li00_stream,
-        ri00_stream,
-        tw00_stream,
-        bw00_stream,
-        ta00_stream,
-        ba00_stream,
-        w00_stream);
     
-    //PE 10
-    pe(
-        li10_stream,
-        ri10_stream,
-        bw00_stream,
-        bw10_stream,
-        ba00_stream,
-        ba10_stream,
-        w10_stream);
-    
-    //PE 01
-    pe(
-        ri00_stream,
-        ri01_stream,
-        tw01_stream,
-        bw01_stream,
-        ta01_stream,
-        ba01_stream,
-        w01_stream);
+    printf("PE[00] = %d\n",static_cast<int>(pe[0][0].ba));
+    printf("PE[01] = %d\n",static_cast<int>(pe[0][1].ba));
+    printf("PE[10] = %d\n",static_cast<int>(pe[1][0].ba));
+    printf("PE[11] = %d\n",static_cast<int>(pe[1][1].ba));
+            /*
+        pe[i].li = B[i][0];
+        pe[i].tw = A[i][0];
+        pe[i].compute();
+        printf("PE[%i]: li=%d\n",i,static_cast<int>(pe[i].ri));
+        printf("PE[%i]: tw=%d\n",i,static_cast<int>(pe[i].tw));
+        printf("PE[%i]: ba=%d\n",i,static_cast<int>(pe[i].ba));
+        printf("\n");*/
+    //}
 
-    //PE 11
-    pe(
-        ri10_stream,
-        ri11_stream,
-        bw01_stream,
-        bw11_stream,
-        ba01_stream,
-        ba11_stream,
-        w11_stream);
-
-/*================== LEITURA ======================*/
-    {
-        AXI_VALUE_mat aValue_mat;
-
-        union {
-            unsigned char ival;
-            char oval;
-        } converter_bus_to_mat;
-
-        w00_stream.read(aValue_mat);
-        converter_bus_to_mat.ival = aValue_mat.data;    
-        printf("W00 %d\r\n", converter_bus_to_mat.oval);
-
-    }
-
-    return err_cnt;
+    return 0;
 }
