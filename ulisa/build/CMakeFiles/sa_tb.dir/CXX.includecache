@@ -6,9 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/ulisses/Projects/masters-degree/ulisa/sa/sa.h
+/home/ulisses/Projects/masters-degree/ulisa/sa/pe.h
 cstdint
 -
+
+/home/ulisses/Projects/masters-degree/ulisa/sa/sa.h
+pe.h
+/home/ulisses/Projects/masters-degree/ulisa/sa/pe.h
 
 /home/ulisses/Projects/masters-degree/ulisa/sa/sa_test.cpp
 stdio.h

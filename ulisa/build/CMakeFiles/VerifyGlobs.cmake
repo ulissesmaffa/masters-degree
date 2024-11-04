@@ -4,6 +4,7 @@
 # SA_SOURCES at CMakeLists.txt:10 (file)
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/ulisses/Projects/masters-degree/ulisa/sa/*.cpp")
 set(OLD_GLOB
+  "/home/ulisses/Projects/masters-degree/ulisa/sa/pe.cpp"
   "/home/ulisses/Projects/masters-degree/ulisa/sa/sa.cpp"
   "/home/ulisses/Projects/masters-degree/ulisa/sa/sa_test.cpp"
   )

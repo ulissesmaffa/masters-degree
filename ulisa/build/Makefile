@@ -124,6 +124,33 @@ sa_tb/fast:
 	$(MAKE) -f CMakeFiles/sa_tb.dir/build.make CMakeFiles/sa_tb.dir/build
 .PHONY : sa_tb/fast
 
+sa/pe.o: sa/pe.cpp.o
+
+.PHONY : sa/pe.o
+
+# target to build an object file
+sa/pe.cpp.o:
+	$(MAKE) -f CMakeFiles/sa_tb.dir/build.make CMakeFiles/sa_tb.dir/sa/pe.cpp.o
+.PHONY : sa/pe.cpp.o
+
+sa/pe.i: sa/pe.cpp.i
+
+.PHONY : sa/pe.i
+
+# target to preprocess a source file
+sa/pe.cpp.i:
+	$(MAKE) -f CMakeFiles/sa_tb.dir/build.make CMakeFiles/sa_tb.dir/sa/pe.cpp.i
+.PHONY : sa/pe.cpp.i
+
+sa/pe.s: sa/pe.cpp.s
+
+.PHONY : sa/pe.s
+
+# target to generate assembly for a file
+sa/pe.cpp.s:
+	$(MAKE) -f CMakeFiles/sa_tb.dir/build.make CMakeFiles/sa_tb.dir/sa/pe.cpp.s
+.PHONY : sa/pe.cpp.s
+
 sa/sa.o: sa/sa.cpp.o
 
 .PHONY : sa/sa.o
@@ -187,6 +214,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... sa_tb"
+	@echo "... sa/pe.o"
+	@echo "... sa/pe.i"
+	@echo "... sa/pe.s"
 	@echo "... sa/sa.o"
 	@echo "... sa/sa.i"
 	@echo "... sa/sa.s"

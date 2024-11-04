@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/sa_tb.dir/sa/pe.cpp.o"
   "CMakeFiles/sa_tb.dir/sa/sa.cpp.o"
   "CMakeFiles/sa_tb.dir/sa/sa_test.cpp.o"
   "sa_tb"

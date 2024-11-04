@@ -3,7 +3,8 @@
 #include "sa.h"
 
 int main() {
-    PE pe[2][2];
+    SA sa;
+
     int length=4;
     int array_tw_00[length]={7,5,0,0};
     int array_tw_01[length]={0,8,6,0};
@@ -11,57 +12,48 @@ int main() {
     int array_li_10[length]={0,4,3,0};
 
     for(int i=0;i<length;i++){
-        printf("Inserindo dados no topo PE00 e PE01\n");
-        //printf("tw00.[%i] %i\n",i,array_tw_00[i]);
-        //printf("tw01.[%i] %i\n",i,array_tw_01[i]);
-        pe[0][0].tw = array_tw_00[i];
-        pe[0][1].tw = array_tw_01[i];
+        printf("Inserindo dados na topo do SA\n");
+        sa.tw_sa_00 = array_tw_00[i];
+        sa.tw_sa_01 = array_tw_01[i];
 
-        printf("Inserindo dados na lateral PE00 e PE10\n");
-        //printf("li00.[%i] %i\n",i,array_li_00[i]);
-        //printf("li10.[%i] %i\n",i,array_li_10[i]);
-        pe[0][0].li = array_li_00[i];
-        pe[1][0].li = array_li_10[i];
-
-        printf("Passando os dados entre PEs\n");
-        pe[0][1].li = pe[0][0].ri;
-        pe[1][0].tw = pe[0][0].bw;
-        pe[1][1].tw = pe[0][1].bw;
-        pe[1][1].li = pe[1][0].ri;
+        printf("Inserindo dados na lateral do SA\n");
+        sa.li_sa_00 = array_li_00[i];
+        sa.li_sa_10 = array_li_10[i];
 
         printf("Computando [%i]...\n",i);
-
-        //printf("PE[00].ba = %d + %d * %d\n",static_cast<int>(pe[0][0].ba),static_cast<int>(pe[0][0].li),static_cast<int>(pe[0][0].tw));
-        pe[0][0].compute();
-        //printf("PE[00].ba = %d\n",static_cast<int>(pe[0][0].ba));
-
-        //printf("PE[01].ba = %d + %d * %d\n",static_cast<int>(pe[0][1].ba),static_cast<int>(pe[0][1].li),static_cast<int>(pe[0][1].tw));
-        pe[0][1].compute();
-        //printf("PE[01].ba = %d\n",static_cast<int>(pe[0][1].ba));
-
-        //printf("PE[10].ba = %d + %d * %d\n",static_cast<int>(pe[1][0].ba),static_cast<int>(pe[1][0].li),static_cast<int>(pe[1][0].tw));
-        pe[1][0].compute();
-        //printf("PE[10].ba = %d\n",static_cast<int>(pe[1][0].ba));
-
-        //printf("PE[11].ba = %d + %d * %d\n",static_cast<int>(pe[1][1].ba),static_cast<int>(pe[1][1].li),static_cast<int>(pe[1][1].tw));
-        pe[1][1].compute();
-        //printf("PE[11].ba = %d\n",static_cast<int>(pe[1][1].ba));
-        //printf("\n");
+        sa.compute();
     }
     
-    printf("PE[00] = %d\n",static_cast<int>(pe[0][0].ba));
-    printf("PE[01] = %d\n",static_cast<int>(pe[0][1].ba));
-    printf("PE[10] = %d\n",static_cast<int>(pe[1][0].ba));
-    printf("PE[11] = %d\n",static_cast<int>(pe[1][1].ba));
-            /*
-        pe[i].li = B[i][0];
-        pe[i].tw = A[i][0];
-        pe[i].compute();
-        printf("PE[%i]: li=%d\n",i,static_cast<int>(pe[i].ri));
-        printf("PE[%i]: tw=%d\n",i,static_cast<int>(pe[i].tw));
-        printf("PE[%i]: ba=%d\n",i,static_cast<int>(pe[i].ba));
-        printf("\n");*/
-    //}
+    printf("BA_SA[00] = %d\n",static_cast<int>(sa.ba_sa_00));
+    printf("BA_SA[01] = %d\n",static_cast<int>(sa.ba_sa_01));
+    printf("BA_SA[10] = %d\n",static_cast<int>(sa.ba_sa_10));  
+    printf("BA_SA[11] = %d\n",static_cast<int>(sa.ba_sa_11));
+
+    sa.reset();
+
+    length=4;
+    int array_tw_00_2[length]={132,89,0,0};
+    int array_tw_01_2[length]={0,1,12,0};
+    int array_li_00_2[length]={45,3,0,0};
+    int array_li_10_2[length]={0,4,32,0};
+
+    for(int i=0;i<length;i++){
+        printf("Inserindo dados na topo do SA\n");
+        sa.tw_sa_00 = array_tw_00_2[i];
+        sa.tw_sa_01 = array_tw_01_2[i];
+
+        printf("Inserindo dados na lateral do SA\n");
+        sa.li_sa_00 = array_li_00_2[i];
+        sa.li_sa_10 = array_li_10_2[i];
+
+        printf("Computando [%i]...\n",i);
+        sa.compute();
+    }
+    
+    printf("BA_SA[00] = %d\n",static_cast<int>(sa.ba_sa_00));
+    printf("BA_SA[01] = %d\n",static_cast<int>(sa.ba_sa_01));
+    printf("BA_SA[10] = %d\n",static_cast<int>(sa.ba_sa_10));  
+    printf("BA_SA[11] = %d\n",static_cast<int>(sa.ba_sa_11));
 
     return 0;
 }

@@ -1,19 +1,30 @@
-#ifndef __SA_PE_H__
-#define __SA_PE_H__
+#ifndef __SA_H__
+#define __SA_H__
 
-#include <cstdint>
+#include "pe.h"
 
-class PE {
-public:
-    uint8_t li;   // Left input (8 bits)
-    uint8_t tw;   // Top weight input (8 bits)
-    uint8_t ri;   // Right output (8 bits)
-    uint8_t bw;   // Bottom weight output (8 bits)
-    uint16_t ba;  // Accumulator (16 bits)
+class SA {
 
-    PE();
+   public:
+      uint8_t tw_sa_00;
+      uint8_t tw_sa_01;
 
-    void compute();
+      uint8_t li_sa_00; 
+      uint8_t li_sa_10;
+
+      uint16_t ba_sa_00;
+      uint16_t ba_sa_10;
+      uint16_t ba_sa_01;
+      uint16_t ba_sa_11;
+
+      SA();
+
+      void compute();
+      void reset();
+
+   private:
+      PE pe[2][2]; // Array 2x2 de PEs
+
 };
 
-#endif 
+#endif
