@@ -5,10 +5,10 @@
 int main() {
     PE pe[2][2];
     int length=4;
-    int array_tw_00[length]={1,2,0,0};
-    int array_tw_01[length]={0,3,4,0};
-    int array_li_00[length]={5,7,0,0};
-    int array_li_10[length]={0,6,8,0};
+    int array_tw_00[length]={7,5,0,0};
+    int array_tw_01[length]={0,8,6,0};
+    int array_li_00[length]={2,1,0,0};
+    int array_li_10[length]={0,4,3,0};
 
     for(int i=0;i<length;i++){
         printf("Inserindo dados no topo PE00 e PE01\n");
@@ -31,22 +31,22 @@ int main() {
 
         printf("Computando [%i]...\n",i);
 
-        printf("PE[00].ba = %d + %d * %d\n",static_cast<int>(pe[0][0].ba),static_cast<int>(pe[0][0].li),static_cast<int>(pe[0][0].tw));
+        //printf("PE[00].ba = %d + %d * %d\n",static_cast<int>(pe[0][0].ba),static_cast<int>(pe[0][0].li),static_cast<int>(pe[0][0].tw));
         pe[0][0].compute();
-        printf("PE[00].ba = %d\n",static_cast<int>(pe[0][0].ba));
+        //printf("PE[00].ba = %d\n",static_cast<int>(pe[0][0].ba));
 
-        printf("PE[01].ba = %d + %d * %d\n",static_cast<int>(pe[0][1].ba),static_cast<int>(pe[0][1].li),static_cast<int>(pe[0][1].tw));
+        //printf("PE[01].ba = %d + %d * %d\n",static_cast<int>(pe[0][1].ba),static_cast<int>(pe[0][1].li),static_cast<int>(pe[0][1].tw));
         pe[0][1].compute();
-        printf("PE[01].ba = %d\n",static_cast<int>(pe[0][1].ba));
+        //printf("PE[01].ba = %d\n",static_cast<int>(pe[0][1].ba));
 
-        printf("PE[10].ba = %d + %d * %d\n",static_cast<int>(pe[1][0].ba),static_cast<int>(pe[1][0].li),static_cast<int>(pe[1][0].tw));
+        //printf("PE[10].ba = %d + %d * %d\n",static_cast<int>(pe[1][0].ba),static_cast<int>(pe[1][0].li),static_cast<int>(pe[1][0].tw));
         pe[1][0].compute();
-        printf("PE[10].ba = %d\n",static_cast<int>(pe[1][0].ba));
+        //printf("PE[10].ba = %d\n",static_cast<int>(pe[1][0].ba));
 
-        printf("PE[11].ba = %d + %d * %d\n",static_cast<int>(pe[1][1].ba),static_cast<int>(pe[1][1].li),static_cast<int>(pe[1][1].tw));
+        //printf("PE[11].ba = %d + %d * %d\n",static_cast<int>(pe[1][1].ba),static_cast<int>(pe[1][1].li),static_cast<int>(pe[1][1].tw));
         pe[1][1].compute();
-        printf("PE[11].ba = %d\n",static_cast<int>(pe[1][1].ba));
-        printf("\n");
+        //printf("PE[11].ba = %d\n",static_cast<int>(pe[1][1].ba));
+        //printf("\n");
     }
     
     printf("PE[00] = %d\n",static_cast<int>(pe[0][0].ba));
