@@ -1,115 +1,115 @@
 #include <stdio.h>
 #include <iostream>
 #include <vector>
+#include <queue> 
 #include "sa.h"
 
-typedef struct{
-    int array_tw_00[6]={0,0,0,0};
-    int array_tw_01[6]={0,0,0,0};
-    int array_li_00[6]={0,0,0,0};
-    int array_li_10[6]={0,0,0,0};
-}sa_input;
+using namespace std;
 
-void format_sa_input(
-    int row_1, int col_1, const std::vector<std::vector<int>>& m_1, int length_1,
-    int row_2, int col_2, const std::vector<std::vector<int>>& m_2, int length_2,
-    sa_input *input, int size_inputs
-){
-    int i,j,k,l=0;
-
-    //Organização matriz A entrada lateral
-    int offset=0;
-    for(i=0;i<row_1;i++){
-        if(offset>0){
-            for(k=0;k<offset;k++){
+void feed_buffer_A(int row, int col, const vector<vector<int>>& m, SA& sa){
+    int i,j,k,l,offset_start;
+    int new_col=row-1+col;
+    int offset_end=new_col-col;
+    
+    //feed buffer A (Lateral)
+    printf("FEED BUFFER A\n");
+    offset_start=0;
+    for(i=0;i<row;i++){
+        //inserir zeros no inicio caso necessário
+        if(offset_start>0){
+            for(k=0;k<offset_start;k++){
                 printf("0 ");
-                input->array_li_00[l]=0;
-                l++;
+                if(i==0){
+                    sa.addToBufferA_li00(0);
+                    //printf("i=%i addToBufferA_li00(0)\n",i);
+                }else{
+                    sa.addToBufferA_li10(0);
+                    //printf("i=%i addToBufferA_li10(0)\n",i);
+                }
             }
         }
-        for(j=col_1-1;j>=0;j--){
-            printf("%i ",m_1[i][j]);
-            input->array_li_00[l]=m_1[i][j];
-            l++;
-        }
-        for(k=0;k<length_1-offset;k++){
-            printf("0 ");
-            input->array_li_00[l]=0;
-            l++;
-        }
-        offset++;
-        printf("\n");
-    }
-
-    printf("array_li_00: ");
-    for(i=0;i<4;i++){
-        printf("%i ",input->array_li_00[i]);
-    }
-    printf("\n");
-    printf("array_li_10: ");
-    for(i=0;i<4;i++){
-        printf("%i ",input->array_li_10[i]);
-    }
-    printf("\n");
-
-    //Organização matriz B entrada superior
-    /*int i,j;
-    for(i=0;i<row_2;i++){
-        for(j=col_2-1;j>=0;j--){
-            printf("[%i][%i]:%i ",j,i,B[j][i]);
-        }
-        printf("\n");
-    }*/
-    offset=0;
-    l=0;
-    for(i=0;i<row_2;i++){
-        if(offset>0){
-            for(k=0;k<offset;k++){
-                printf("0 ");
-                input->array_tw_00[l]=0;
-                l++;
+        //inserir matriz invertida
+        for(j=col-1;j>=0;j--){
+            printf("%i ",m[i][j]);
+            if(i==0){
+                sa.addToBufferA_li00(m[i][j]);
+                //printf("i=%i addToBufferA_li00(%i)\n",i,m[i][j]);
+            }else{
+                sa.addToBufferA_li10(m[i][j]);
+                //printf("i=%i addToBufferA_li10(%i)\n",i,m[i][j]);
             }
         }
-        for(j=col_2-1;j>=0;j--){
-            printf("%i ",m_2[j][i]);
-            input->array_tw_00[l]=m_2[j][i];
-            l++;
+        //inserir zeros no final caso necessário
+        for(l=0;l<offset_end-offset_start+2;l++){
+            printf("0 ");          
+            if(i==0){
+                sa.addToBufferA_li00(0);
+                //printf("i=%i addToBufferA_li00(0)\n",i);
+            }else{
+                sa.addToBufferA_li10(0);
+                //printf("i=%i addToBufferA_li10(0)\n",i);
+            }
         }
-        for(k=0;k<length_2-offset;k++){
-            printf("0 ");
-            input->array_tw_00[l]=0;
-            l++;
-        }
-        offset++;
+        offset_start++;
         printf("\n");
     }
-
-
-    printf("array_tw_00: ");
-    for(i=0;i<size_inputs;i++){
-        printf("%i ",input->array_tw_00[i]);
-    }
-    printf("\n");
-    printf("array_tw_01: ");
-    for(i=0;i<size_inputs;i++){
-        printf("%i ",input->array_tw_01[i]);
-    }
-    printf("\n");
+    //sa.showBuffers();
 }
 
-void run_test(int length, sa_input *inputs, SA sa){
+void feed_buffer_B(int row, int col, const vector<vector<int>>& m, SA& sa){
+    int i,j,k,l,offset_start;
+    int new_col=row-1+col;
+    int offset_end=new_col-row;
+
+    printf("FEED BUFFER B\n");
+    offset_start=0;
+    for(j=0;j<col;j++){
+        //inserir zeros no inicio caso necessário
+        if(offset_start>0){
+            for(k=0;k<offset_start;k++){
+                printf("0 ");
+                if(j==0){
+                    sa.addToBufferB_tw00(0);
+                    //printf("j=%i addToBufferB_tw00(0)\n",j);
+                }else{
+                    sa.addToBufferB_tw01(0);
+                    //printf("j=%i addToBufferB_tw01(0)\n",j);
+                }
+            }
+        }
+        //inserir matriz invertida
+        for(i=row-1;i>=0;i--){
+            printf("%i ",m[i][j]);
+            if(j==0){
+                sa.addToBufferB_tw00(m[i][j]);
+                //printf("j=%i addToBufferB_tw00(%i)\n",j,m[i][j]);
+            }else{
+                sa.addToBufferB_tw01(m[i][j]);
+                //printf("j=%i addToBufferB_tw01(%i)\n",j,m[i][j]);
+            }
+        }
+        //inserir zeros no final caso necessário
+        for(l=0;l<offset_end-offset_start+2;l++){
+            printf("0 ");
+            if(j==0){
+                sa.addToBufferB_tw00(0);
+                //printf("j=%i addToBufferB_tw00(0)\n",j);
+            }else{
+                sa.addToBufferB_tw01(0);
+                //printf("j=%i addToBufferB_tw01(0)\n",j);
+            }
+        }
+        offset_start++;
+        printf("\n");
+    }
+    //sa.showBuffers();
+}
+
+void run_test(int length, SA& sa){
 
     int i;
 
     for(int i=0;i<length;i++){
-        printf("Inserindo dados na topo do SA\n");
-        sa.tw_sa_00 = inputs->array_tw_00[i];
-        sa.tw_sa_01 = inputs->array_tw_01[i];
-
-        printf("Inserindo dados na lateral do SA\n");
-        sa.li_sa_00 = inputs->array_li_00[i];
-        sa.li_sa_10 = inputs->array_li_10[i];
-
         printf("Computando [%i]...\n",i);
         sa.compute();
     }
@@ -120,41 +120,48 @@ void run_test(int length, sa_input *inputs, SA sa){
     printf("BA_SA[11] = %d\n",static_cast<int>(sa.ba_sa_11));
 
     sa.reset();
-
-
 }
 
 int main() {
     SA sa;
-    sa_input sa_inputs;
+    int row,col;
+    sa.reset();
 
     //EXEMPLO 1 - matrix_1 e matrix_2 = 2x2
-    int row_1=2, col_1=2, row_2=2, col_2=2;
-    int lenght_1=2, lenght_2=2;
-    int size_inputs = 4;
-/*    std::vector<std::vector<int>> A={{1,2},{3,4}};
-    std::vector<std::vector<int>> B={{5,6},{7,8}};
-    format_sa_input(row_1,col_1,A,lenght_1,row_2,col_2,B,lenght_2,&sa_inputs,size_inputs);
-    int length=4;
-    run_test(length,&sa_inputs,sa);
-    
+    vector<vector<int>> A={{1,2},{3,4}};
+    row=2;
+    col=2;
+    feed_buffer_A(row,col,A,sa);
+
+    vector<vector<int>> B={{5,6},{7,8}};
+    row=2;
+    col=2;
+    feed_buffer_B(row,col,B,sa);
+    run_test(4,sa);
+
     //EXEMPLO 2 - matrix_1 e matrix_2 = 2x2
-    row_1=2, col_1=2, row_2=2, col_2=2;
-    lenght_1=2, lenght_2=2;
-    std::vector<std::vector<int>> D={{3,45},{32,4}};
-    std::vector<std::vector<int>> E={{89,12},{132,1}};
-    format_sa_input(row_1,col_1,D,lenght_1,row_2,col_2,E,lenght_2,&sa_inputs,size_inputs);
-    length=4;
-    run_test(length,&sa_inputs,sa);
-*/
+    row=2;
+    col=2;
+    vector<vector<int>> C={{3,45},{32,4}};
+    feed_buffer_A(row,col,C,sa);
+
+    row=2;
+    col=2;
+    vector<vector<int>> D={{89,12},{132,1}};
+    feed_buffer_B(row,col,D,sa);
+    run_test(4,sa);
+
     //EXEMPLO 3 - matrix_1 (2x4) e matrix_2 (4x2)
-    row_1=2, col_1=4, row_2=2, col_2=4;
-    lenght_1=2, lenght_2=2;
-    std::vector<std::vector<int>> F={{5,30,21,7},{4,82,71,2}};
-    std::vector<std::vector<int>> G={{3,5},{7,9},{10,21},{32,1}};
-    size_inputs=6;
-    format_sa_input(row_1,col_1,F,lenght_1,row_2,col_2,G,lenght_2,&sa_inputs,size_inputs);
-    run_test(size_inputs,&sa_inputs,sa);
+    row=2;
+    col=4;
+    vector<vector<int>> E={{5,30,21,7},{4,82,71,2}};
+    feed_buffer_A(row,col,E,sa);
+
+    row=4;
+    col=2;
+    vector<vector<int>> F={{3,5},{7,9},{10,21},{32,1}};
+    feed_buffer_B(row,col,F,sa);
+    run_test(6,sa);
 
     return 0;
 }
