@@ -90,57 +90,67 @@ int main() {
     SA sa;
     int row,col;
     sa.reset();
-/*
-    //EXEMPLO 1 - matrix_1 e matrix_2 = 2x2
-    vector<vector<int>> A={{1,2},{3,4}};
-    row=2;
-    col=2;
-    feed_buffer_A(row,col,A,sa);
 
-    vector<vector<int>> B={{5,6},{7,8}};
-    row=2;
-    col=2;
-    feed_buffer_B(row,col,B,sa);
-    run_test(4,sa);
+    switch(ARRAY_SIZE){
+        case 2:{ //ARRAY 2X2
+            //EXEMPLO 1 - matrix_1 e matrix_2 = 2x2
+                vector<vector<int>> A={{1,2},{3,4}};
+                row=2;
+                col=2;
+                feed_buffer_A(row,col,A,sa);
 
+                vector<vector<int>> B={{5,6},{7,8}};
+                row=2;
+                col=2;
+                feed_buffer_B(row,col,B,sa);
+                run_test(4,sa);
 
-    //EXEMPLO 2 - matrix_1 e matrix_2 = 2x2
-    row=2;
-    col=2;
-    vector<vector<int>> C={{3,45},{32,4}};
-    feed_buffer_A(row,col,C,sa);
+            //EXEMPLO 2 - matrix_1 e matrix_2 = 2x2
+                row=2;
+                col=2;
+                vector<vector<int>> C={{3,45},{32,4}};
+                feed_buffer_A(row,col,C,sa);
 
-    row=2;
-    col=2;
-    vector<vector<int>> D={{89,12},{132,1}};
-    feed_buffer_B(row,col,D,sa);
-    run_test(4,sa);
+                row=2;
+                col=2;
+                vector<vector<int>> D={{89,12},{132,1}};
+                feed_buffer_B(row,col,D,sa);
+                run_test(4,sa);
 
-    //EXEMPLO 3 - matrix_1 (2x4) e matrix_2 (4x2)
-    row=2;
-    col=4;
-    vector<vector<int>> E={{5,30,21,7},{4,82,71,2}};
-    feed_buffer_A(row,col,E,sa);
+            //EXEMPLO 3 - matrix_1 (2x4) e matrix_2 (4x2)
+                row=2;
+                col=4;
+                vector<vector<int>> E={{5,30,21,7},{4,82,71,2}};
+                feed_buffer_A(row,col,E,sa);
 
-    row=4;
-    col=2;
-    vector<vector<int>> F={{3,5},{7,9},{10,21},{32,1}};
-    feed_buffer_B(row,col,F,sa);
-    run_test(6,sa);
-*/
+                row=4;
+                col=2;
+                vector<vector<int>> F={{3,5},{7,9},{10,21},{32,1}};
+                feed_buffer_B(row,col,F,sa);
+                run_test(6,sa);
 
-    //EXEMPLO 4 - ARRAY DEVE SER 4X4 
-    row=4;
-    col=4;
-    vector<vector<int>> A={{1,2,3,4},{5,6,7,8},{9,1,2,3},{4,5,6,7}};
-    feed_buffer_A(row,col,A,sa);
+            break;           
+        }
+        case 4:{ //ARRAY 4X4
+            //EXEMPLO 4 - ARRAY DEVE SER 4X4 
+                row=4;
+                col=4;
+                vector<vector<int>> A={{1,2,3,4},{5,6,7,8},{9,1,2,3},{4,5,6,7}};
+                feed_buffer_A(row,col,A,sa);
 
-    row=4;
-    col=4;
-    vector<vector<int>> B={{1,2,3,4},{5,6,7,8},{9,1,2,3},{4,5,6,7}};
-    feed_buffer_B(row,col,B,sa);
-    //sa.showBuffers();
-    run_test(12,sa);
+                row=4;
+                col=4;
+                vector<vector<int>> B={{1,2,3,4},{5,6,7,8},{9,1,2,3},{4,5,6,7}};
+                feed_buffer_B(row,col,B,sa);
+                //sa.showBuffers();
+                run_test(12,sa); //ARRUMAR O NÚMERO 12 DEVE SER IDENTIFICAVEL
+
+            break;
+        }
+            
+        default:
+            break;
+    }
 
     return 0;
 }
