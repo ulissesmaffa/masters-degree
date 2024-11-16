@@ -3,6 +3,8 @@
 #include <iostream>
 #include <queue>
 
+#define ARRAY_SIZE 3
+
 using namespace std;
 
 // Print the queue
@@ -18,7 +20,23 @@ void print_queue(queue<int> q)
 
 // Driver Code
 int main(){
+    int i,j;
 
+    //modelo para conexoes horizontais
+    for(i=0;i<ARRAY_SIZE;i++){
+        for(j=1;j<ARRAY_SIZE;j++){
+            printf("pe[%i][%i].li = pe[%i][%i].ri\n",i,j,i,j-1);
+        }
+    }
+
+    //modelo para conexoes horizontais
+    for(i=1;i<ARRAY_SIZE;i++){
+        for(j=0;j<ARRAY_SIZE;j++){
+            printf("pe[%i][%i].tw = pe[%i][%i].bw\n",i,j,i-1,j);
+        }
+    }
+
+/*
    queue<int> q1;
    q1.push(1);
    q1.push(2);
@@ -54,7 +72,9 @@ int main(){
    printf("\n");
    cout<<q2.front();
    printf("\n");
+*/
 
+    
    return 0;
 }
 

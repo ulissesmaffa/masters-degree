@@ -4,42 +4,32 @@
 #include "pe.h"
 #include <queue> 
 
+#define ARRAY_SIZE 4
+
 using namespace std;
 class SA {
 
    public:
-      uint8_t tw_sa_00;
-      uint8_t tw_sa_01;
+      uint16_t ba_sa[ARRAY_SIZE][ARRAY_SIZE];
 
-      uint8_t li_sa_00; 
-      uint8_t li_sa_10;
-
-      uint16_t ba_sa_00;
-      uint16_t ba_sa_10;
-      uint16_t ba_sa_01;
-      uint16_t ba_sa_11;
-
+      //Construtor
       SA();
 
       void compute();
       void reset();
 
-      void addToBufferA_li00(uint8_t li_00);
-      void addToBufferA_li10(uint8_t li_10);
-      void addToBufferB_tw00(uint8_t tw_00);
-      void addToBufferB_tw01(uint8_t tw_01);
-
+      //Métodos para Buffers
+      void addToBufferA(int row, uint8_t value);
+      void addToBufferB(int col, uint8_t value);
       void showBuffers();
+      void showBufferB();
 
    private:
-      PE pe[2][2]; // Array 2x2 de PEs
+      PE pe[ARRAY_SIZE][ARRAY_SIZE];
 
-      // Buffers FIFO
-      queue<uint8_t> bufferA_li_00; // Para li_sa_00
-      queue<uint8_t> bufferA_li_10; // Para li_sa_10
-
-      queue<uint8_t> bufferB_tw_00; // Para tw_sa_00
-      queue<uint8_t> bufferB_tw_01; // Para tw_sa_01
+      //Buffers FIFO
+      queue<uint8_t> bufferA_li[ARRAY_SIZE];
+      queue<uint8_t> bufferB_tw[ARRAY_SIZE];
 };
 
 #endif

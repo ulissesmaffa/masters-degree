@@ -1,0 +1,2 @@
+Versão funcional de um array 2x2 porém fixo. A versão 5 deve tornar o array parametrizavel.
+essa versão ,resolve o problema de receber duas matrizes e organizar elas para ingressar em filas para o array.
