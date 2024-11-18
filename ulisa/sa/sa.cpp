@@ -26,7 +26,7 @@ void SA::showBuffers() {
 
    printf("bufferA_li:\n");
    for(i=0;i<ARRAY_SIZE;i++){
-      queue<uint8_t> tempA = bufferA_li[i];
+      queue<int8_t> tempA = bufferA_li[i];
       printf("[%li]bufferA_li[%i]: ",tempA.size(),i);
       while (!tempA.empty()){
          printf("%i ",tempA.front());
@@ -37,7 +37,7 @@ void SA::showBuffers() {
 
    printf("bufferB_tw:\n");
    for(j=0;j<ARRAY_SIZE;j++){
-      queue<uint8_t> tempB = bufferB_tw[j];
+      queue<int8_t> tempB = bufferB_tw[j];
       printf("[%li]bufferB_tw[%i]: ",tempB.size(),j);
       while (!tempB.empty()){
          printf("%i ",tempB.front());
@@ -52,7 +52,7 @@ void SA::showBufferB() {
    
    printf("bufferB_tw:\n");
    for(j=0;j<ARRAY_SIZE;j++){
-      queue<uint8_t> temp = bufferB_tw[j];
+      queue<int8_t> temp = bufferB_tw[j];
       printf("[%li]bufferB_tw[%i]: ",temp.size(),j);
       while (!temp.empty()){
          printf("%i ",temp.front());
@@ -62,13 +62,13 @@ void SA::showBufferB() {
    }
 }
 
-void SA::addToBufferA(int row, uint8_t value){
+void SA::addToBufferA(int row, int8_t value){
    if(row<ARRAY_SIZE){
       bufferA_li[row].push(value);
    }
 }
 
-void SA::addToBufferB(int col, uint8_t value){
+void SA::addToBufferB(int col, int8_t value){
    if(col<ARRAY_SIZE){
       bufferB_tw[col].push(value);
    }

@@ -6,11 +6,11 @@
 class PE {
     
     public:
-        uint8_t li;   // Left input (8 bits)
-        uint8_t tw;   // Top weight input (8 bits)
-        uint8_t ri;   // Right output (8 bits)
-        uint8_t bw;   // Bottom weight output (8 bits)
-        uint16_t ba;  // Accumulator (16 bits)
+        int8_t li;   // Left input (8 bits)
+        int8_t tw;   // Top weight input (8 bits)
+        int8_t ri;   // Right output (8 bits)
+        int8_t bw;   // Bottom weight output (8 bits)
+        int16_t ba;  // Accumulator (16 bits)
 
         PE();
 
