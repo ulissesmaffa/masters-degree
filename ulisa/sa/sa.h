@@ -4,7 +4,7 @@
 #include "pe.h"
 #include <queue> 
 
-#define ARRAY_SIZE 4
+#define ARRAY_SIZE 2
 
 using namespace std;
 class SA {
