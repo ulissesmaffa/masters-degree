@@ -1,0 +1,100 @@
+#-----------------------------------------------------------
+# xsim v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Dec 11 15:36:27 2024
+# Process ID: 969153
+# Current directory: /home/ulisses/Projects/masters-degree/courses/HLS/ug871-design-files/Introduction/lab4_ulisses/addsub/solution1/sim/verilog
+# Command line: xsim -source {xsim.dir/addsub/xsim_script.tcl}
+# Log file: /home/ulisses/Projects/masters-degree/courses/HLS/ug871-design-files/Introduction/lab4_ulisses/addsub/solution1/sim/verilog/xsim.log
+# Journal file: /home/ulisses/Projects/masters-degree/courses/HLS/ug871-design-files/Introduction/lab4_ulisses/addsub/solution1/sim/verilog/xsim.jou
+#-----------------------------------------------------------
+start_gui
+source xsim.dir/addsub/xsim_script.tcl
+# set_param project.enableReportConfiguration 0
+# load_feature core
+# current_fileset
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/ulisses/Tools/Xilinx/Vivado/2019.2/data/ip'.
+# xsim {addsub} -view {{addsub_dataflow_ana.wcfg}} -tclbatch {addsub.tcl} -protoinst {addsub.protoinst}
+Vivado Simulator 2019.2
+INFO: [Wavedata 42-565] Reading protoinst file addsub.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_addsub_top/AESL_inst_addsub//AESL_inst_addsub_activity
+WARNING: [Wavedata 42-559] Protocol instance "/apatb_addsub_top/AESL_inst_addsub//AESL_inst_addsub_activity" was created but is non-functional for the following reason(s):
+Couldn't find port object "ap_clk" for protocol analyzer port "AP_CLK".
+Couldn't find port object "ap_rst" for protocol analyzer port "AP_RESET".
+Protocol instance has no valid analyzer.  Please configure the protocol instance again.
+
+Time resolution is 1 ps
+open_wave_config addsub_dataflow_ana.wcfg
+WARNING: [Wavedata 42-572] Protocol instance "/apatb_addsub_top/AESL_inst_addsub/AESL_inst_addsub_activity" is non-functional for the following reason(s):
+Protocol instance has no valid analyzer.  Please configure the protocol instance again.
+
+WARNING: [Wavedata 42-572] Protocol instance "/apatb_addsub_top/AESL_inst_addsub/AESL_inst_addsub_activity" is non-functional for the following reason(s):
+Protocol instance has no valid analyzer.  Please configure the protocol instance again.
+
+source addsub.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set c_group [add_wave_group c(wire) -into $coutputgroup]
+## add_wave /apatb_addsub_top/AESL_inst_addsub/c_ap_vld -into $c_group -color #ffff00 -radix hex
+## add_wave /apatb_addsub_top/AESL_inst_addsub/c -into $c_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set b_group [add_wave_group b(wire) -into $cinputgroup]
+## add_wave /apatb_addsub_top/AESL_inst_addsub/b -into $b_group -radix hex
+## set a_group [add_wave_group a(wire) -into $cinputgroup]
+## add_wave /apatb_addsub_top/AESL_inst_addsub/a -into $a_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_addsub_top/AESL_inst_addsub/ap_start -into $blocksiggroup
+## add_wave /apatb_addsub_top/AESL_inst_addsub/ap_done -into $blocksiggroup
+## add_wave /apatb_addsub_top/AESL_inst_addsub/ap_idle -into $blocksiggroup
+## add_wave /apatb_addsub_top/AESL_inst_addsub/ap_ready -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_addsub_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_addsub_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_addsub_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_addsub_top/LENGTH_a -into $tb_portdepth_group -radix hex
+## add_wave /apatb_addsub_top/LENGTH_b -into $tb_portdepth_group -radix hex
+## add_wave /apatb_addsub_top/LENGTH_c -into $tb_portdepth_group -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_c_group [add_wave_group c(wire) -into $tbcoutputgroup]
+## add_wave /apatb_addsub_top/c_ap_vld -into $tb_c_group -color #ffff00 -radix hex
+## add_wave /apatb_addsub_top/c -into $tb_c_group -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_b_group [add_wave_group b(wire) -into $tbcinputgroup]
+## add_wave /apatb_addsub_top/b -into $tb_b_group -radix hex
+## set tb_a_group [add_wave_group a(wire) -into $tbcinputgroup]
+## add_wave /apatb_addsub_top/a -into $tb_a_group -radix hex
+## save_wave_config addsub.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 11 [n/a] @ "125000"
+// RTL Simulation : 1 / 11 [n/a] @ "145000"
+// RTL Simulation : 2 / 11 [n/a] @ "155000"
+// RTL Simulation : 3 / 11 [n/a] @ "165000"
+// RTL Simulation : 4 / 11 [n/a] @ "175000"
+// RTL Simulation : 5 / 11 [n/a] @ "185000"
+// RTL Simulation : 6 / 11 [n/a] @ "195000"
+// RTL Simulation : 7 / 11 [n/a] @ "205000"
+// RTL Simulation : 8 / 11 [n/a] @ "215000"
+// RTL Simulation : 9 / 11 [n/a] @ "225000"
+// RTL Simulation : 10 / 11 [n/a] @ "235000"
+// RTL Simulation : 11 / 11 [n/a] @ "245000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 285 ns : File "/home/ulisses/Projects/masters-degree/courses/HLS/ug871-design-files/Introduction/lab4_ulisses/addsub/solution1/sim/verilog/addsub.autotb.v" Line 333
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit

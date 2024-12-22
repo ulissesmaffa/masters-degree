@@ -1,0 +1,35 @@
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/home/ulisses/Tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'ulisses' on host 'ulisses-thinkpad' (Linux_x86_64 version 5.15.0-124-generic) on Wed Dec 11 17:09:52 -03 2024
+INFO: [HLS 200-10] On os Ubuntu 20.04.6 LTS
+INFO: [HLS 200-10] In directory '/home/ulisses/Projects/masters-degree/courses/HLS/ug871-design-files/Introduction/lab5_ulisses_buffer'
+Sourcing Tcl script '/home/ulisses/Projects/masters-degree/courses/HLS/ug871-design-files/Introduction/lab5_ulisses_buffer/sbuffer/solution1/csim.tcl'
+INFO: [HLS 200-10] Opening project '/home/ulisses/Projects/masters-degree/courses/HLS/ug871-design-files/Introduction/lab5_ulisses_buffer/sbuffer'.
+INFO: [HLS 200-10] Opening solution '/home/ulisses/Projects/masters-degree/courses/HLS/ug871-design-files/Introduction/lab5_ulisses_buffer/sbuffer/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flgb2104-1-i'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../../sbuffer_test.c in debug mode
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/home/ulisses/Tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'ulisses' on host 'ulisses-thinkpad' (Linux_x86_64 version 5.15.0-124-generic) on Wed Dec 11 17:09:55 -03 2024
+INFO: [HLS 200-10] On os Ubuntu 20.04.6 LTS
+INFO: [HLS 200-10] In directory '/home/ulisses/Projects/masters-degree/courses/HLS/ug871-design-files/Introduction/lab5_ulisses_buffer/sbuffer/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_ulisses/9808721733947795511266
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../sbuffer.c in debug mode
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/home/ulisses/Tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'ulisses' on host 'ulisses-thinkpad' (Linux_x86_64 version 5.15.0-124-generic) on Wed Dec 11 17:09:59 -03 2024
+INFO: [HLS 200-10] On os Ubuntu 20.04.6 LTS
+INFO: [HLS 200-10] In directory '/home/ulisses/Projects/masters-degree/courses/HLS/ug871-design-files/Introduction/lab5_ulisses_buffer/sbuffer/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_ulisses/9809301733947800030107
+INFO: [APCC 202-1] APCC is done.
+   Generating csim.exe
+Comparando contra o arquivo de saída esperado (out.gold.dat)
+*******************************************
+PASS: A saída corresponde ao esperado!
+*******************************************
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************

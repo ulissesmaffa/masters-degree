@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -DNDEBUG  -rdynamic CMakeFiles/queue_tb.dir/src/buffer.cpp.o CMakeFiles/queue_tb.dir/src/buffer_test.cpp.o  -o queue_tb 

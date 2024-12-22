@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="sbuffer" solutionName="solution1" date="2024-12-11T17:36:21.651-0200"/>
+        <logs message="ERROR: [APCC 202-1] APCC failed.&#xA;make: *** [csim.mk:84: obj/sbuffer.o] Error 1" projectName="sbuffer" solutionName="solution1" date="2024-12-11T17:36:21.648-0200"/>
+        <logs message="ERROR: [APCC 202-1] ProcessSources failed" projectName="sbuffer" solutionName="solution1" date="2024-12-11T17:36:21.638-0200"/>
+        <logs message="ERROR: [APCC 202-10] clang compile failed: child process exited abnormally" projectName="sbuffer" solutionName="solution1" date="2024-12-11T17:36:21.631-0200"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="sbuffer" solutionName="solution1" date="2024-12-11T17:33:49.266-0200"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '1'." projectName="sbuffer" solutionName="solution1" date="2024-12-11T17:33:49.259-0200"/>
+      </csimLog>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

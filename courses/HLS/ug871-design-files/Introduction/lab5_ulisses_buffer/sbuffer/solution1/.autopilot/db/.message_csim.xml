@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[SIM 211-2]" key="SIM_2_1569" tag="" content="*************** CSIM start ***************"/>
+	<Message severity="INFO" prefix="[SIM 211-4]" key="SIM_4_1577" tag="" content="CSIM will launch GCC as the compiler."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1427" tag="" content="Running &apos;/home/ulisses/Tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1428" tag="" content="For user &apos;ulisses&apos; on host &apos;ulisses-thinkpad&apos; (Linux_x86_64 version 5.15.0-124-generic) on Wed Dec 11 17:09:55 -03 2024"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1429" tag="" content="On os Ubuntu 20.04.6 LTS"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1430" tag="" content="In directory &apos;/home/ulisses/Projects/masters-degree/courses/HLS/ug871-design-files/Introduction/lab5_ulisses_buffer/sbuffer/solution1/csim/build&apos;"/>
+	<Message severity="INFO" prefix="[APCC 202-3]" key="APCC_3_1610" tag="" content="Tmp directory is /tmp/apcc_db_ulisses/9808721733947795511266"/>
+	<Message severity="INFO" prefix="[APCC 202-1]" key="APCC_1_1611" tag="" content="APCC is done."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1427" tag="" content="Running &apos;/home/ulisses/Tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1428" tag="" content="For user &apos;ulisses&apos; on host &apos;ulisses-thinkpad&apos; (Linux_x86_64 version 5.15.0-124-generic) on Wed Dec 11 17:09:59 -03 2024"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1429" tag="" content="On os Ubuntu 20.04.6 LTS"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1430" tag="" content="In directory &apos;/home/ulisses/Projects/masters-degree/courses/HLS/ug871-design-files/Introduction/lab5_ulisses_buffer/sbuffer/solution1/csim/build&apos;"/>
+	<Message severity="INFO" prefix="[APCC 202-3]" key="APCC_3_1610" tag="" content="Tmp directory is /tmp/apcc_db_ulisses/9809301733947800030107"/>
+	<Message severity="INFO" prefix="[APCC 202-1]" key="APCC_1_1611" tag="" content="APCC is done."/>
+	<Message severity="INFO" prefix="[SIM 211-1]" key="SIM_1_1586" tag="" content="CSim done with 0 errors."/>
+	<Message severity="INFO" prefix="[SIM 211-3]" key="SIM_3_1588" tag="" content="*************** CSIM finish ***************"/>
+</Messages>

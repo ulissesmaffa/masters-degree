@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ulisses/Projects/masters-degree/courses/HLS/queue/src/buffer.cpp
+buffer.h
+/home/ulisses/Projects/masters-degree/courses/HLS/queue/src/buffer.h
+iostream
+-
+
+/home/ulisses/Projects/masters-degree/courses/HLS/queue/src/buffer.h
+
