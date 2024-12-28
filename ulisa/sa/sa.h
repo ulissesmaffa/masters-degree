@@ -2,34 +2,32 @@
 #define __SA_H__
 
 #include "pe.h"
-#include <queue> 
 
-#define ARRAY_SIZE 2
+#define N 2 //Systolic Array Size
 
-using namespace std;
+typedef struct{
+    bool ready;
+    int value;
+} Buffer;
+
 class SA {
 
    public:
-      int16_t ba_sa[ARRAY_SIZE][ARRAY_SIZE];
+      int ba_sa[N][N];
 
-      //Construtor
       SA();
 
       void compute();
       void reset();
 
-      //Métodos para Buffers
-      void addToBufferA(int row, int8_t value);
-      void addToBufferB(int col, int8_t value);
-      void showBuffers();
-      void showBufferB();
+      void addToBufferA(int i, int value);
+      void addToBufferB(int j, int value);
 
    private:
-      PE pe[ARRAY_SIZE][ARRAY_SIZE];
+      PE pe[N][N];
 
-      //Buffers FIFO
-      queue<int8_t> bufferA_li[ARRAY_SIZE];
-      queue<int8_t> bufferB_tw[ARRAY_SIZE];
+      Buffer buffer_a_li[N];
+      Buffer buffer_b_tw[N];
 };
 
 #endif

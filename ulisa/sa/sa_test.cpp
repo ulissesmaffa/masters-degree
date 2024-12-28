@@ -1,70 +1,9 @@
 #include <stdio.h>
-#include <iostream>
-#include <vector>
-#include <queue> 
 #include "sa.h"
 
-using namespace std;
-
-void feed_buffer_A(int row, int col, const vector<vector<int>>& m, SA& sa){
-    int i,j,k,l,offset_start;
-    int new_col=row-1+col;
-    int offset_end=new_col-col;
-    
-    //feed buffer A (Lateral)
-    printf("FEED BUFFER A\n");
-    offset_start=0;
-    for(i=0;i<row;i++){
-        //inserir zeros no inicio caso necessário
-        if(offset_start>0){
-            for(k=0;k<offset_start;k++){
-                printf("0 ");
-                sa.addToBufferA(i,0);
-            }
-        }
-        //inserir matriz invertida
-        for(j=col-1;j>=0;j--){
-            printf("%i ",m[i][j]);
-            sa.addToBufferA(i,m[i][j]);
-        }
-        //inserir zeros no final caso necessário
-        for(l=0;l<offset_end-offset_start+ARRAY_SIZE;l++){
-            printf("0 ");
-            sa.addToBufferA(i,0);          
-        }
-        offset_start++;
-        printf("\n");
-    }
-}
-
-void feed_buffer_B(int row, int col, const vector<vector<int>>& m, SA& sa){
-    int i,j,k,l,offset_start;
-    int new_col=row-1+col;
-    int offset_end=new_col-row;
-
-    printf("FEED BUFFER B\n");
-    offset_start=0;
-    for(j=0;j<col;j++){
-        //inserir zeros no inicio caso necessário
-        if(offset_start>0){
-            for(k=0;k<offset_start;k++){
-                printf("0 ");
-                sa.addToBufferB(j,0);
-            }
-        }
-        //inserir matriz invertida
-        for(i=row-1;i>=0;i--){
-            printf("%i ",m[i][j]);
-            sa.addToBufferB(j,m[i][j]);
-        }
-        //inserir zeros no final caso necessário
-        for(l=0;l<offset_end-offset_start+ARRAY_SIZE;l++){
-            printf("0 ");
-            sa.addToBufferB(j,0);
-        }
-        offset_start++;
-        printf("\n");
-    }
+int size_new_col(int col){
+   int offset = N-1;
+   return col+offset;
 }
 
 void run_test(int length, SA& sa){
@@ -76,8 +15,8 @@ void run_test(int length, SA& sa){
         sa.compute();
     }
 
-    for(i=0;i<ARRAY_SIZE;i++){
-        for(j=0;j<ARRAY_SIZE;j++){
+    for(i=0;i<N;i++){
+        for(j=0;j<N;j++){
             printf("BA_SA[%i][%i] = %d\n",i,j,static_cast<int>(sa.ba_sa[i][j]));
         }
     }
@@ -85,102 +24,133 @@ void run_test(int length, SA& sa){
     sa.reset();
 }
 
-void new_feed_buffer_A(int row, int col, int *addr, int stride, SA& sa){
-    int i,j;
-    int k,l,offset_start;
-    int new_col=row-1+col;
-    int offset_end=new_col-col;
-    
-    stride=stride+col;
+//Função é responsável por buscar lateral, superior e depois computar
+void compute_sa_waves(
+      int row_a, 
+      int col_a, 
+      int *addr_a, 
+      int stride_a,
+      int row_b, 
+      int col_b, 
+      int *addr_b, 
+      int stride_b,
+      SA& sa
+   ){
 
-    //feed buffer A (Lateral)
-    printf("NEW FEED BUFFER A\n");
-    offset_start=0;
+   stride_a=stride_a+col_a; //ajuste do stride
+   stride_b=stride_b+col_b; //ajuste do stride
+   int offset=N-1;
+   //int new_col=col+offset;
+   int new_col_a = size_new_col(col_a);
+   int i,j,a,b,c,w,value_a,value_b;
 
-    for(i=0;i<row;i++){
-        //inserir zeros no inicio caso necessário
-        if(offset_start>0){
-            for(k=0;k<offset_start;k++){
-                printf("0 ");
-                sa.addToBufferA(i,0);
+   //ITERAÇÃO POR ONDAS, CADA ONDA, IMPRIME UM ELEMENTO DE CADA ENTRADA
+    for(w=0;w<new_col_a;w++){
+        //ITERAÇÃO INTERFACE LATERAL
+        printf("\nInsert Buffer A: ");
+        for(i=0;i<N;i++){
+            int *line_base_a = addr_a + i * stride_a; 
+            if(w<i){
+                //REGIÃO QUE INICIA COM ZEROS
+                value_a=0;
+            }else if(w<i+col_a){
+                //LATERAL REGIÃO DE BUSCA DA MATRIZ 
+                value_a=*(line_base_a + col_a - 1 - (w - i)); 
+            }else{
+                //REGIÃO QUE TERMINA COM ZEROS
+                value_a=0;
             }
+            //INSERT BUFFER A
+            sa.addToBufferA(i,value_a);
+            printf("li_%i[%i]=%d ",i,w,value_a);
         }
-        //inserir matriz invertida
-        for(j=col-1;j>=0;j--){
-            printf("%i ",*(addr+j));
-            sa.addToBufferA(i,*(addr+j));
-        }
-        //inserir zeros no final caso necessário
-        for(l=0;l<offset_end-offset_start+ARRAY_SIZE;l++){
-            printf("0 ");
-            sa.addToBufferA(i,0);          
-        }
-        offset_start++;
-        addr=addr+stride;
-        printf("\n");
-    }
-}
 
-void new_feed_buffer_B(int row, int col, int *addr, int stride, SA& sa){
-    int i,j,k,l,offset_start;
-    int new_col=row-1+col;
-    int offset_end=new_col-row;
-    
-    stride=stride+col;
-
-    int m_aux[row][col];
-
-    printf("NEW FEED BUFFER B\n");
-
-    //transformar em matriz
-    for(i=0;i<row;i++){
-        for(j=0;j<col;j++){
-            m_aux[i][j]=*(addr+j);
-        }
-        addr=addr+stride;
-    }
-
-    //feed b antigo
-    offset_start=0;
-    for(j=0;j<col;j++){
-        //inserir zeros no inicio caso necessário
-        if(offset_start>0){
-            for(k=0;k<offset_start;k++){
-                printf("0 ");
-                sa.addToBufferB(j,0);
+        //ITERAÇÃO INTERFACE SUPERIOR
+        printf("Insert Buffer B: ");
+        for(j=0;j<N;j++){
+            int *line_base_b = addr_b + (stride_b*(row_b-1)) - (stride_b*(w-j)); 
+            if(w<j){
+                //REGIÃO QUE INICIA COM ZEROS
+                value_b=0;
+            }else if(w<j+row_b){
+                //LATERAL REGIÃO DE BUSCA DA MATRIZ 
+                value_b=*(line_base_b + j); 
+            }else{
+                //REGIÃO QUE TERMINA COM ZEROS
+                value_b=0;
             }
+            //INSERT BUFFER B
+            sa.addToBufferB(j,value_b);
+            printf("tw_%i[%i]=%d ",j,w,value_b);
         }
-        //inserir matriz invertida
-        for(i=row-1;i>=0;i--){
-            printf("%i ",m_aux[i][j]);
-            sa.addToBufferB(j,m_aux[i][j]);
-        }
-        //inserir zeros no final caso necessário
-        for(l=0;l<offset_end-offset_start+ARRAY_SIZE;l++){
-            printf("0 ");
-            sa.addToBufferB(j,0);
-        }
-        offset_start++;
+
         printf("\n");
+        //COMPUTE SA  
+        printf("Computing SA wave [%i]\n",w);  
+        sa.compute();
+    } 
+    
+    //É NECESSÁRIO UMA REVISÃO NESTA PARTE, PODE SER MELHORADO AINDA...
+    //Ciclos extras para finalizar computação SA
+    //calcular quantos ciclos extras
+    int extra=row_b-1+col_b+N;
+    //preencher com zero buffers e computa
+    for(i=0;i<extra-w;i++){
+        sa.addToBufferA(i,0);
+        sa.addToBufferB(i,0);
+        sa.compute();
+    }
+
+    //SHOW RESULT   
+    printf("\nShowing result:\n"); 
+    for(i=0;i<N;i++){
+        for(j=0;j<N;j++){
+            printf("BA_SA[%i][%i] = %d\n",i,j,sa.ba_sa[i][j]);
+        }
     }
 }
 
 int main() {
+    int row_a, col_a, *addr_a, stride_a;
+    int row_b, col_b, *addr_b, stride_b;
+    int new_col_a;
+    int new_col_b;
+    int w;
     SA sa;
-    int row,col,cycles,stride,*addr;
+
     sa.reset();
 
     int memory[] = 
-    {
-        0, 0, 5,  30, 21,  7, 0, 0,  0,  0,  0,  4, 82, 71,  2,  0,  0,  0,  0, 0, //matriz A stride 5 - inicio [2]
-        3, 5, 0, 0, 0, 0, 7, 9, 0, 0, 0, 0, 10, 21, 0, 0, 0, 0, 32, 1, //matriz B stride 4 - inicio [20]
-        1, 2, 0, 0, 0, 3, 4, 0, 0, 0, 5, 6, 7, 0, 0, 0, 8, 9, 10, 0, 0 //Matrizes A e B com strides de 3 - inicio A [40] B[50]
+   {
+      1, 2, 3, 4, 0, 5, 6, 7, 8, 0, 9, 10, 11, 12, 0, 13, 14, 15, 16,
+      0, 0, 1, 2, 3, 0, 0, 4, 5, 6, //matriz A com stride=2
+      0, 7, 8, 0, 9, 10, 0, 11, 12, 0, //matriz B com stride=1
+      1, 2, 3, 99, 99, 4, 5, 6, 99, 99, 7, 8, 9, 99, 99, 10, 11, 12 
+   };
 
-    };
 
-    switch(ARRAY_SIZE){
+    switch(N){
         case 2:{ //ARRAY 2X2
-            //EXEMPLO COM MEMÓRIA E MATRIZES DIFERENTES
+            printf("COMPUTE SA WAVES FUNCTION: SA %iX%i\n",N,N);
+            row_a = 2;
+            col_a = 3;
+            addr_a = &memory[21];
+            stride_a = 2;
+            new_col_a = size_new_col(col_a);
+
+            row_b = 3;
+            col_b = 2;
+            addr_b = &memory[30];
+            stride_b = 1;
+            new_col_b = size_new_col(row_b);
+
+            compute_sa_waves(
+                row_a,col_a,addr_a,stride_a,
+                row_b,col_b,addr_b,stride_b,
+                sa
+            );
+
+            /*
                 row=2;
                 col=4;
                 stride=5;
@@ -194,7 +164,7 @@ int main() {
                 addr=&memory[20];
                 new_feed_buffer_B(row,col,addr,stride,sa);
 
-                cycles=row-1+col+ARRAY_SIZE;
+                cycles=row-1+col+N;
                 run_test(cycles,sa);
 
             //EXEMPLO COM MEMÓRIA E MATRIZ QUADRADA
@@ -212,94 +182,13 @@ int main() {
 
                 cycles=row-1+col+ARRAY_SIZE;
                 run_test(cycles,sa);
-            /*MÉTODO ANTIGO
-            //EXEMPLO 1 - matrix_1 e matrix_2 = 2x2
-                vector<vector<int>> A={{1,2},{3,4}};
-                row=2;
-                col=2;
-                feed_buffer_A(row,col,A,sa);
-
-                vector<vector<int>> B={{5,6},{7,8}};
-                row=2;
-                col=2;
-                feed_buffer_B(row,col,B,sa);
-                cycles=row-1+col+ARRAY_SIZE;
-                run_test(cycles,sa);
-
-            //EXEMPLO 2 - matrix_1 e matrix_2 = 2x2
-                row=2;
-                col=2;
-                vector<vector<int>> C={{3,45},{32,4}};
-                feed_buffer_A(row,col,C,sa);
-
-                row=2;
-                col=2;
-                vector<vector<int>> D={{89,12},{132,1}};
-                feed_buffer_B(row,col,D,sa);
-                cycles=row-1+col+ARRAY_SIZE;
-                run_test(cycles,sa);
-
-
-            //EXEMPLO 3 - matrix_1 (2x4) e matrix_2 (4x2)
-                row=2;
-                col=4;
-                vector<vector<int>> E={{5,30,21,7},{4,82,71,2}};
-                feed_buffer_A(row,col,E,sa);
-
-                row=4;
-                col=2;
-                vector<vector<int>> F={{3,5},{7,9},{10,21},{32,1}};
-                feed_buffer_B(row,col,F,sa);
-                cycles=row-1+col+ARRAY_SIZE;
-                run_test(cycles,sa);
             */
             break;           
         }
-        case 3:{ //ARRAY 3X3
-            printf("EXEMPLO: ARRAY 3X3 COM DUAS MATRIZES 3X3\n");
-            row=3;
-            col=3;
-            vector<vector<int>> X={{1,2,3},{4,5,6},{7,8,9}};
-            feed_buffer_A(row,col,X,sa);
-
-            row=3;
-            col=3;
-            vector<vector<int>> Y={{1,2,3},{4,5,6},{7,-8,9}};
-            feed_buffer_B(row,col,Y,sa);
-            cycles=row-1+col+ARRAY_SIZE;
-            run_test(cycles,sa);
-            
+        case 3:{ //ARRAY 3X3         
             break;
         }
         case 4:{ //ARRAY 4X4
-                //EXEMPLO 4 
-                printf("EXEMPLO 4: ARRAY 4X4 COM DUAS MATRIZES 4X4\n");
-                row=4;
-                col=4;
-                vector<vector<int>> A={{1,2,3,4},{5,6,7,8},{9,1,2,3},{4,5,6,7}};
-                feed_buffer_A(row,col,A,sa);
-
-                row=4;
-                col=4;
-                vector<vector<int>> B={{1,2,3,4},{5,6,7,8},{9,1,2,3},{4,5,6,7}};
-                feed_buffer_B(row,col,B,sa);
-                cycles=row-1+col+ARRAY_SIZE;
-                run_test(cycles,sa);
-
-                //EXEMPLO 5
-                printf("EXEMPLO 5: ARRAY 4X4 COM DUAS MATRIZES 4X4\n");
-                row=4;
-                col=4;
-                vector<vector<int>> C={{1,2,3,4},{5,6,7,8},{9,32,2,3},{4,5,-9,7}};
-                feed_buffer_A(row,col,C,sa);
-
-                row=4;
-                col=4;
-                vector<vector<int>> D={{1,2,3,31},{5,6,7,8},{9,1,12,3},{4,5,6,7}};
-                feed_buffer_B(row,col,D,sa);
-                cycles=row-1+col+ARRAY_SIZE;
-                run_test(cycles,sa);
-
             break;
         }
             

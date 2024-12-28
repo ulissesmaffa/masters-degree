@@ -205,12 +205,8 @@ int main(){
    }
 
    /*============ BOTH INTERFACES COMPUTE ==============*/
-
-
    printf("COMPUTE SA WAVES FUNCTION:\n");
    compute_sa_waves(row_a,col_a,addr_a,stride_a,row_b,col_b,addr_b,stride_b);
-
-
 
    return 0;
 }
