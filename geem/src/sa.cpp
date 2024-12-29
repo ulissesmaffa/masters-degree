@@ -30,14 +30,6 @@ void SA::addToBufferB(int j, int value){
 void SA::compute(){
    int i,j;
 
-   /*
-   // 1. Verifica se há dados suficientes em ambos os buffers
-   //Verificar controles dos buffers
-   if(bufferA_li[0].empty() || bufferB_tw[0].empty() ){
-      printf("Buffers incompletos. Aguarde dados suficientes para o processamento.\n");
-      return;
-   }
-   */
    // 1. Verifica se todos os buffers da interface estão prontos
    //Verifica li
    for(i=0;i<N;i++){ //possivel melhoria é verificar todos e apontar exatamente quais não estão prontos ainda
@@ -53,25 +45,16 @@ void SA::compute(){
          return;
       }
    }
-
       
    // 2. Carrega entradas laterais BUFFER A
    // carrega valor e atualiza controle para noready
    for(i=0;i<N;i++){
-      /*
-      pe[i][0].li = bufferA_li[i].front();
-      bufferA_li[i].pop();
-      */
       pe[i][0].li = buffer_a_li[i].value;
       buffer_a_li[i].ready=false;
    }
 
    // 3. Carrega entradas superiores BUFFER B
    for(j=0;j<N;j++){
-      /*
-      pe[0][j].tw = bufferB_tw[j].front();
-      bufferB_tw[j].pop();
-      */
       pe[0][j].tw = buffer_b_tw[j].value;
       buffer_b_tw[j].ready = false;
    }
@@ -103,6 +86,7 @@ void SA::compute(){
          ba_sa[i][j]=pe[i][j].ba;
       }
    }
+
 }
 
 void SA::reset(){
@@ -114,7 +98,7 @@ void SA::reset(){
       buffer_b_tw[i].ready=false;
       for(j=0;j<N;j++){
          pe[i][j].reset(); //apaga PE
-         ba_sa[i][j]=0; //apaga registradores SA
+         //ba_sa[i][j]=0; //apaga registradores SA
       }
    }
 }

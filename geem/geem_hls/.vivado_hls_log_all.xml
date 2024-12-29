@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog>
+        <logs message="ERROR: [HLS 214-122] '#pragma HLS' is only allowed in function scope: /home/ulisses/Projects/masters-degree/geem/src/pe.h:9&#xA;Wrong pragma usage.&#xA;    while executing&#xA;&quot;source /home/ulisses/Projects/masters-degree/geem/geem_hls/solution1/csynth.tcl&quot;&#xA;    invoked from within&#xA;&quot;hls::main /home/ulisses/Projects/masters-degree/geem/geem_hls/solution1/csynth.tcl&quot;&#xA;    (&quot;uplevel&quot; body line 1)&#xA;    invoked from within&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xA;    invoked from within&#xA;&quot;hls_proc $argv&quot;&#xA;" projectName="geem_hls" solutionName="solution1" date="2024-12-29T20:09:29.028-0200"/>
+        <logs message="ERROR: [HLS 214-122] '#pragma HLS' is only allowed in function scope: /home/ulisses/Projects/masters-degree/geem/src/pe.h:8" projectName="geem_hls" solutionName="solution1" date="2024-12-29T20:09:28.968-0200"/>
+        <logs message="ERROR: [HLS 214-122] '#pragma HLS' is only allowed in function scope: /home/ulisses/Projects/masters-degree/geem/src/pe.h:7" projectName="geem_hls" solutionName="solution1" date="2024-12-29T20:09:28.965-0200"/>
+        <logs message="ERROR: [HLS 214-122] '#pragma HLS' is only allowed in function scope: /home/ulisses/Projects/masters-degree/geem/src/pe.h:6" projectName="geem_hls" solutionName="solution1" date="2024-12-29T20:09:28.962-0200"/>
+        <logs message="ERROR: [HLS 214-122] '#pragma HLS' is only allowed in function scope: /home/ulisses/Projects/masters-degree/geem/src/pe.h:5" projectName="geem_hls" solutionName="solution1" date="2024-12-29T20:09:28.956-0200"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -24,7 +24,7 @@ void compute_sa_waves(
    int offset=N-1;
    //int new_col=col+offset;
    int new_col_a = size_new_col(col_a);
-   int i,j,k,w,value_a,value_b;
+   int i,j,k,a,b,c,w,value_a,value_b;
 
    //ITERAÇÃO POR ONDAS, CADA ONDA, IMPRIME UM ELEMENTO DE CADA ENTRADA
     for(w=0;w<new_col_a;w++){
@@ -78,13 +78,13 @@ void compute_sa_waves(
     int extra=row_b-1+col_b+N;
     //preencher com zero buffers e computa
     for(k=0;k<extra-w;k++){
-        printf("\nInsert EXTRA Buffer A: ");
+        printf("\nInsert Buffer A: ");
         for(i=0;i<N;i++){
             sa.addToBufferA(i,0);
             printf("li_%i[%i]=%d ",i,w,0);
         }
 
-        printf("\nInsert EXTRA Buffer B: ");
+        printf("\nInsert Buffer B: ");
         for(j=0;j<N;j++){
             sa.addToBufferB(j,0);
             printf("tw_%i[%i]=%d ",j,w,0);
@@ -118,45 +118,12 @@ int main() {
       -1, 3, 15, 0, 0, 0, 0, 7, 2, 22, 0, 0, 0, 0, 21, -30, 55, 0, 0, 0, 0, 7, 1, 0, 99, 99 //matriz B2 4x3 - inicio:end(57) com stride=4
    };
 
-
-    switch(N){
-        case 2:{ //ARRAY 2X2
-            printf("COMPUTE SA WAVES FUNCTION: SA %iX%i\n",N,N);
-            row_a = 2;
-            col_a = 3;
-            addr_a = &memory[21];
-            stride_a = 2;
-            new_col_a = size_new_col(col_a);
-
-            row_b = 3;
-            col_b = 2;
-            addr_b = &memory[30];
-            stride_b = 1;
-            new_col_b = size_new_col(row_b);
-
-            compute_sa_waves(
-                row_a,col_a,addr_a,stride_a,
-                row_b,col_b,addr_b,stride_b,
-                sa
-            );
-            break;           
-        }
-        case 3:{ //ARRAY 3X3      
-            printf("COMPUTE SA WAVES FUNCTION: SA %iX%i\n",N,N);
-            compute_sa_waves(
-                3,4,&memory[39],3,
-                4,3,&memory[57],4,
-                sa
-            );
-            break;
-        }
-        case 4:{ //ARRAY 4X4
-            break;
-        }
-            
-        default:
-            break;
-    }
+    printf("COMPUTE SA WAVES FUNCTION: SA %iX%i\n",N,N);
+    compute_sa_waves(
+        2,3,&memory[21],2,
+        3,2,&memory[30],1,
+        sa
+    );
 
     return 0;
 }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="pe.cpp" path="/home/ulisses/Projects/masters-degree/geem/src/pe.cpp"/>
+    <originFiles name="sa.cpp" path="/home/ulisses/Projects/masters-degree/geem/src/sa.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="sa_test.cpp" path="/home/ulisses/Projects/masters-degree/geem/src/sa_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

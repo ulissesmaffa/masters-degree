@@ -1,0 +1,32 @@
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/home/ulisses/Tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'ulisses' on host 'ulisses-thinkpad' (Linux_x86_64 version 5.15.0-124-generic) on Sun Dec 29 19:09:25 -03 2024
+INFO: [HLS 200-10] On os Ubuntu 20.04.6 LTS
+INFO: [HLS 200-10] In directory '/home/ulisses/Projects/masters-degree/geem'
+Sourcing Tcl script '/home/ulisses/Projects/masters-degree/geem/geem_hls/solution1/csynth.tcl'
+INFO: [HLS 200-10] Opening project '/home/ulisses/Projects/masters-degree/geem/geem_hls'.
+INFO: [HLS 200-10] Adding design file 'src/pe.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'src/sa.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'src/sa_test.cpp' to the project
+INFO: [HLS 200-10] Opening solution '/home/ulisses/Projects/masters-degree/geem/geem_hls/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7a35t-cpg236-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'src/sa.cpp' ... 
+ERROR: [HLS 214-122] '#pragma HLS' is only allowed in function scope: /home/ulisses/Projects/masters-degree/geem/src/pe.h:5
+ERROR: [HLS 214-122] '#pragma HLS' is only allowed in function scope: /home/ulisses/Projects/masters-degree/geem/src/pe.h:6
+ERROR: [HLS 214-122] '#pragma HLS' is only allowed in function scope: /home/ulisses/Projects/masters-degree/geem/src/pe.h:7
+ERROR: [HLS 214-122] '#pragma HLS' is only allowed in function scope: /home/ulisses/Projects/masters-degree/geem/src/pe.h:8
+ERROR: [HLS 214-122] '#pragma HLS' is only allowed in function scope: /home/ulisses/Projects/masters-degree/geem/src/pe.h:9
+Wrong pragma usage.
+    while executing
+"source /home/ulisses/Projects/masters-degree/geem/geem_hls/solution1/csynth.tcl"
+    invoked from within
+"hls::main /home/ulisses/Projects/masters-degree/geem/geem_hls/solution1/csynth.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$args"
+    (procedure "hls_proc" line 5)
+    invoked from within
+"hls_proc $argv"

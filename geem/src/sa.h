@@ -3,7 +3,7 @@
 
 #include "pe.h"
 
-#define N 3 //Systolic Array Size
+#define N 2 //Systolic Array Size
 
 typedef struct{
     bool ready;
@@ -24,7 +24,7 @@ class SA {
       void addToBufferB(int j, int value);
 
       void showResult();
-      
+
       void top(int i, int value_a, int j, int value_b);
 
    private:

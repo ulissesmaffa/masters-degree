@@ -1,0 +1,35 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../src/sa_test.cpp in debug mode
+   Compiling ../../../../src/pe.cpp in debug mode
+   Compiling ../../../../src/sa.cpp in debug mode
+   Generating csim.exe
+COMPUTE SA WAVES FUNCTION: SA 2X2
+
+Insert Buffer A: li_0[0]=3 li_1[0]=0 
+Insert Buffer B: tw_0[0]=11 tw_1[0]=0 
+Computing SA wave [0]
+
+Insert Buffer A: li_0[1]=2 li_1[1]=6 
+Insert Buffer B: tw_0[1]=9 tw_1[1]=12 
+Computing SA wave [1]
+
+Insert Buffer A: li_0[2]=1 li_1[2]=5 
+Insert Buffer B: tw_0[2]=7 tw_1[2]=10 
+Computing SA wave [2]
+
+Insert Buffer A: li_0[3]=0 li_1[3]=4 
+Insert Buffer B: tw_0[3]=0 tw_1[3]=8 
+Computing SA wave [3]
+
+Insert Buffer A: li_0[4]=0 li_1[4]=0 
+Insert Buffer B: tw_0[4]=0 tw_1[4]=0 
+Computing SA wave [4]
+
+Showing result:
+BA_SA[0][0] = 58
+BA_SA[0][1] = 64
+BA_SA[1][0] = 139
+BA_SA[1][1] = 154
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************
