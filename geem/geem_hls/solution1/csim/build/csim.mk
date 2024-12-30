@@ -18,7 +18,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../src/sa_test.cpp ../../../../src/pe.cpp ../../../../src/sa.cpp
+HLS_SOURCES = ../../../../src/geem_test.c ../../../../src/geem_pe.c ../../../../src/geem_sa.c
 
 TARGET := csim.exe
 
@@ -58,6 +58,7 @@ IFLAG += -D__SIM_DDS__
 
 IFLAG += -D__DSP48E1__
 IFLAG += -g
+DFLAG += -DAUTOCC
 DFLAG += -D__xilinx_ip_top= -DAESL_TB
 CCFLAG += 
 TOOLCHAIN += 
@@ -70,20 +71,22 @@ all: $(TARGET)
 
 
 
-$(ObjDir)/sa_test.o: ../../../../src/sa_test.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../src/sa_test.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+AUTOCC := apcc  
 
--include $(ObjDir)/sa_test.d
+$(ObjDir)/geem_test.o: ../../../../src/geem_test.c $(ObjDir)/.dir
+	$(Echo) "   Compiling(apcc) ../../../../src/geem_test.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(AUTOCC) -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
-$(ObjDir)/pe.o: ../../../../src/pe.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../src/pe.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+-include $(ObjDir)/geem_test.d
 
--include $(ObjDir)/pe.d
+$(ObjDir)/geem_pe.o: ../../../../src/geem_pe.c $(ObjDir)/.dir
+	$(Echo) "   Compiling(apcc) ../../../../src/geem_pe.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(AUTOCC) -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
-$(ObjDir)/sa.o: ../../../../src/sa.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../src/sa.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+-include $(ObjDir)/geem_pe.d
 
--include $(ObjDir)/sa.d
+$(ObjDir)/geem_sa.o: ../../../../src/geem_sa.c $(ObjDir)/.dir
+	$(Echo) "   Compiling(apcc) ../../../../src/geem_sa.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(AUTOCC) -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/geem_sa.d
