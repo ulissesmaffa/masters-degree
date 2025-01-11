@@ -1,0 +1,47 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../../src/geem_test.c in debug mode
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/home/ulisses/Tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'ulisses' on host 'ulisses-thinkpad' (Linux_x86_64 version 5.15.0-124-generic) on Sun Dec 29 21:01:47 -03 2024
+INFO: [HLS 200-10] On os Ubuntu 20.04.6 LTS
+INFO: [HLS 200-10] In directory '/home/ulisses/Projects/masters-degree/geem/geem_hls/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_ulisses/14011111735516907616444
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../src/geem_sa.c in debug mode
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/home/ulisses/Tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'ulisses' on host 'ulisses-thinkpad' (Linux_x86_64 version 5.15.0-124-generic) on Sun Dec 29 21:01:51 -03 2024
+INFO: [HLS 200-10] On os Ubuntu 20.04.6 LTS
+INFO: [HLS 200-10] In directory '/home/ulisses/Projects/masters-degree/geem/geem_hls/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_ulisses/14011721735516911901910
+INFO: [APCC 202-1] APCC is done.
+   Generating csim.exe
+COMPUTE SA WAVES FUNCTION: SA 2X2
+
+Insert Buffer A: li_0[0]=3 li_1[0]=0 
+Insert Buffer B: tw_0[0]=11 tw_1[0]=0 
+Computing SA wave [0]
+
+Insert Buffer A: li_0[1]=2 li_1[1]=6 
+Insert Buffer B: tw_0[1]=9 tw_1[1]=12 
+Computing SA wave [1]
+
+Insert Buffer A: li_0[2]=1 li_1[2]=5 
+Insert Buffer B: tw_0[2]=7 tw_1[2]=10 
+Computing SA wave [2]
+
+Insert Buffer A: li_0[3]=0 li_1[3]=4 
+Insert Buffer B: tw_0[3]=0 tw_1[3]=8 
+Computing SA wave [3]
+
+Insert Buffer A: li_0[4]=0 li_1[4]=0 
+Insert Buffer B: tw_0[4]=0 tw_1[4]=0 
+Computing SA wave [4]
+
+SA Results:
+58 64 
+139 154 
+
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

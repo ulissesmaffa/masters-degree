@@ -1,0 +1,11 @@
+# Título do Trabalho
+** HLS-based Systolic Array for Accelerating GEMM (General Matrix Multiply) on FPGA
+
+# Resumo
+O projeto visa desenvolver um acelerador baseado em High-Level Synthesis (HLS) para realizar multiplicações de matrizes (GEMM) utilizando um array sistólico implementado em FPGA. Duas matrizes, A e B, serão armazenadas em uma memória contígua com parâmetros definidos de largura, altura e stride. Para que o cálculo seja compatível com o array sistólico, a matriz A deve possuir row=Nrow=N e a matriz B deve possuir col=Ncol=N, onde NN é o tamanho do array sistólico. O acelerador não suporta diretamente matrizes que gerem resultados maiores que N×NN×N.
+
+As matrizes poderão possuir um stride entre as linhas na memória. Esse stride representa os deslocamentos entre elementos contíguos das linhas de uma matriz, considerando o armazenamento em memória. Por exemplo, caso a matriz esteja armazenada de forma intercalada com outros dados, o stride define o intervalo necessário para alcançar os próximos elementos da mesma linha. O acelerador será capaz de reorganizar os dados em memória para viabilizar o cálculo no array sistólico.
+
+Durante a execução, cada elemento de processamento (Processing Element, PE) do array sistólico será responsável por realizar operações de acumulação multiplicativa (Multiply-Accumulate, MAC). Cada PE recebe elementos vindos da esquerda e de cima, processa o resultado e armazena o valor em um registrador interno. Esses valores poderão ser apagados sob controle programável ou salvos em uma posição específica da memória. O controle do funcionamento dos PEs será realizado por uma entidade chamada SA (Systolic Array Controller), que gerenciará as operações de salvamento e limpeza de registradores, bem como a coordenação entre os PEs.
+
+No caso de um array sistólico 2x2, o resultado será armazenado em 4 posições de memória. O tamanho do array sistólico será parametrizável, mas sempre em formato quadrado (N×NN×N), permitindo flexibilidade no dimensionamento do acelerador conforme as necessidades específicas de aplicação.

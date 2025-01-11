@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="geem_pe.c" path="/home/ulisses/Projects/masters-degree/geem/src/geem_pe.c"/>
+    <originFiles name="geem_sa.c" path="/home/ulisses/Projects/masters-degree/geem/src/geem_sa.c"/>
+  </source>
+  <testbench>
+    <originFiles name="geem_test.c" path="/home/ulisses/Projects/masters-degree/geem/src/geem_test.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
