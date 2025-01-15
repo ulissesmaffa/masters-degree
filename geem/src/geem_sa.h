@@ -24,6 +24,7 @@ void sa_reset(SA *sa);
 void sa_add_to_buffer_a(SA *sa, int i, int value);
 void sa_add_to_buffer_b(SA *sa, int j, int value);
 void sa_show_result(SA *sa);
+void sa_save_results(SA *sa);
 
 #endif
 

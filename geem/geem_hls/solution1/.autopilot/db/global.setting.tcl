@@ -40,7 +40,7 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xc7a35t:-cpg236:-1
-set SourceFiles {sc {} c {../../src/geem_pe.c ../../src/geem_sa.c}}
+set SourceFiles {sc {} c {../../src/geem_sa.c ../../src/geem_pe.c}}
 set SourceFlags {sc {} c {{} {}}}
 set DirectiveFile /home/ulisses/Projects/masters-degree/geem/geem_hls/solution1/solution1.directive
 set TBFiles {verilog ../../src/geem_test.c bc ../../src/geem_test.c vhdl ../../src/geem_test.c sc ../../src/geem_test.c cas ../../src/geem_test.c c {}}

@@ -11,11 +11,27 @@
   </errorLogs>
   <warningLogs>
     <logs>
-      <synLog/>
-      <simLog>
-        <logs message="WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the &quot;-mt off -v 1&quot; switches to see more information from the C compiler. The following environment variables have been detected:&#xA;    LIBRARY_PATH" projectName="geem_hls" solutionName="solution1" date="2025-01-14T21:54:59.890-0200" type="Warning"/>
-        <logs message="WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the &quot;-mt off -v 1&quot; switches to see more information from the C compiler. The following environment variables have been detected:&#xA;    LIBRARY_PATH" projectName="geem_hls" solutionName="solution1" date="2025-01-14T21:24:56.782-0200" type="Warning"/>
-      </simLog>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Port 'sa_compute/sa_ba_sa_q1' has no fanin or fanout and is left dangling.&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="geem_hls" solutionName="solution1" date="2025-01-15T17:36:46.451-0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'sa_compute/sa_ba_sa_d1' to 0." projectName="geem_hls" solutionName="solution1" date="2025-01-15T17:36:46.447-0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'sa_compute/sa_ba_sa_d1' has no fanin or fanout and is left dangling.&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="geem_hls" solutionName="solution1" date="2025-01-15T17:36:46.443-0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'sa_compute/sa_ba_sa_we1' to 0." projectName="geem_hls" solutionName="solution1" date="2025-01-15T17:36:46.439-0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'sa_compute/sa_ba_sa_we1' has no fanin or fanout and is left dangling.&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="geem_hls" solutionName="solution1" date="2025-01-15T17:36:46.436-0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'sa_compute/sa_ba_sa_ce1' to 0." projectName="geem_hls" solutionName="solution1" date="2025-01-15T17:36:46.432-0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'sa_compute/sa_ba_sa_ce1' has no fanin or fanout and is left dangling.&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="geem_hls" solutionName="solution1" date="2025-01-15T17:36:46.428-0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'sa_compute/sa_ba_sa_address1' to 0." projectName="geem_hls" solutionName="solution1" date="2025-01-15T17:36:46.423-0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'sa_compute/sa_ba_sa_address1' has no fanin or fanout and is left dangling.&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="geem_hls" solutionName="solution1" date="2025-01-15T17:36:46.420-0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'sa_compute/sa_ba_sa_q0' has no fanin or fanout and is left dangling.&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="geem_hls" solutionName="solution1" date="2025-01-15T17:36:46.417-0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'sa_compute/sa_ba_sa_d0' to 0." projectName="geem_hls" solutionName="solution1" date="2025-01-15T17:36:46.412-0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'sa_compute/sa_ba_sa_d0' has no fanin or fanout and is left dangling.&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="geem_hls" solutionName="solution1" date="2025-01-15T17:36:46.407-0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'sa_compute/sa_ba_sa_we0' to 0." projectName="geem_hls" solutionName="solution1" date="2025-01-15T17:36:46.403-0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'sa_compute/sa_ba_sa_we0' has no fanin or fanout and is left dangling.&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="geem_hls" solutionName="solution1" date="2025-01-15T17:36:46.398-0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'sa_compute/sa_ba_sa_ce0' to 0." projectName="geem_hls" solutionName="solution1" date="2025-01-15T17:36:46.394-0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'sa_compute/sa_ba_sa_ce0' has no fanin or fanout and is left dangling.&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="geem_hls" solutionName="solution1" date="2025-01-15T17:36:46.389-0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'sa_compute/sa_ba_sa_address0' to 0." projectName="geem_hls" solutionName="solution1" date="2025-01-15T17:36:46.386-0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'sa_compute/sa_ba_sa_address0' has no fanin or fanout and is left dangling.&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="geem_hls" solutionName="solution1" date="2025-01-15T17:36:46.380-0200" type="Warning"/>
+      </synLog>
+      <simLog/>
       <mgLog/>
       <packageLog/>
       <csimLog/>

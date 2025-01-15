@@ -5,8 +5,8 @@
 ############################################################
 open_project geem_hls
 set_top sa_compute
-add_files src/geem_sa.c
 add_files src/geem_pe.c
+add_files src/geem_sa.c
 add_files -tb src/geem_test.c -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 open_solution "solution1"
 set_part {xc7a35t-cpg236-1}

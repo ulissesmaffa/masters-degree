@@ -173,7 +173,11 @@
             ],
             "multiInterfaceRef": [
               "sa_ba_sa_address0",
-              "sa_ba_sa_d0"
+              "sa_ba_sa_address1",
+              "sa_ba_sa_d0",
+              "sa_ba_sa_d1",
+              "sa_ba_sa_q0",
+              "sa_ba_sa_q1"
             ],
             "structImpl": "interface"
           }
@@ -205,8 +209,8 @@
   },
   "Files": {
     "CSource": [
-      "..\/..\/src\/geem_pe.c",
-      "..\/..\/src\/geem_sa.c"
+      "..\/..\/src\/geem_sa.c",
+      "..\/..\/src\/geem_pe.c"
     ],
     "Vhdl": ["impl\/vhdl\/sa_compute.vhd"],
     "Verilog": ["impl\/verilog\/sa_compute.v"],
@@ -259,6 +263,17 @@
       "bundle_name": "sa_ba_sa",
       "bundle_role": "address0"
     },
+    "sa_ba_sa_address1": {
+      "type": "data",
+      "dir": "out",
+      "width": "2",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "2"
+        }},
+      "bundle_name": "sa_ba_sa",
+      "bundle_role": "address1"
+    },
     "sa_ba_sa_d0": {
       "type": "data",
       "dir": "out",
@@ -269,6 +284,39 @@
         }},
       "bundle_name": "sa_ba_sa",
       "bundle_role": "d0"
+    },
+    "sa_ba_sa_d1": {
+      "type": "data",
+      "dir": "out",
+      "width": "32",
+      "ctype": {"DATA": {
+          "Type": "integer signed",
+          "Width": "32"
+        }},
+      "bundle_name": "sa_ba_sa",
+      "bundle_role": "d1"
+    },
+    "sa_ba_sa_q0": {
+      "type": "data",
+      "dir": "in",
+      "width": "32",
+      "ctype": {"DATA": {
+          "Type": "integer signed",
+          "Width": "32"
+        }},
+      "bundle_name": "sa_ba_sa",
+      "bundle_role": "q0"
+    },
+    "sa_ba_sa_q1": {
+      "type": "data",
+      "dir": "in",
+      "width": "32",
+      "ctype": {"DATA": {
+          "Type": "integer signed",
+          "Width": "32"
+        }},
+      "bundle_name": "sa_ba_sa",
+      "bundle_role": "q1"
     },
     "sa_buffer_a_li_ready_address0": {
       "type": "data",
@@ -758,6 +806,30 @@
     "sa_ba_sa_d0": {
       "dir": "out",
       "width": "32"
+    },
+    "sa_ba_sa_q0": {
+      "dir": "in",
+      "width": "32"
+    },
+    "sa_ba_sa_address1": {
+      "dir": "out",
+      "width": "2"
+    },
+    "sa_ba_sa_ce1": {
+      "dir": "out",
+      "width": "1"
+    },
+    "sa_ba_sa_we1": {
+      "dir": "out",
+      "width": "1"
+    },
+    "sa_ba_sa_d1": {
+      "dir": "out",
+      "width": "32"
+    },
+    "sa_ba_sa_q1": {
+      "dir": "in",
+      "width": "32"
     }
   },
   "ModuleInfo": {
@@ -772,11 +844,11 @@
     "Metrics": {"sa_compute": {
         "Latency": {
           "LatencyBest": "4",
-          "LatencyAvg": "25",
-          "LatencyWorst": "66",
+          "LatencyAvg": "21",
+          "LatencyWorst": "53",
           "PipelineIIMin": "5",
-          "PipelineIIMax": "67",
-          "PipelineII": "5 ~ 67",
+          "PipelineIIMax": "54",
+          "PipelineII": "5 ~ 54",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -845,26 +917,12 @@
                 "PipelineII": "",
                 "PipelineDepth": "4"
               }]
-          },
-          {
-            "Name": "Loop 8",
-            "TripCount": "2",
-            "Latency": "12",
-            "PipelineII": "",
-            "PipelineDepth": "6",
-            "Loops": [{
-                "Name": "Loop 8.1",
-                "TripCount": "2",
-                "Latency": "4",
-                "PipelineII": "",
-                "PipelineDepth": "2"
-              }]
           }
         ],
         "Area": {
           "DSP48E": "3",
-          "FF": "177",
-          "LUT": "624",
+          "FF": "160",
+          "LUT": "528",
           "BRAM_18K": "0",
           "URAM": "0"
         }
@@ -880,7 +938,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2025-01-14 20:24:26 -03",
+    "Time": "2025-01-15 16:36:47 -03",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.2"
   }

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'sa_compute'" level="0">
-<item name = "Date">Tue Jan 14 20:24:25 2025
+<item name = "Date">Wed Jan 15 16:36:46 2025
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">geem_hls</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">4, 66, 40.000 ns, 0.660 us, 4, 66, none</column>
+<column name="">4, 53, 40.000 ns, 0.530 us, 4, 53, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -43,8 +43,6 @@
 <column name="- Loop 6">4, 4, 2, -, -, 2, no</column>
 <column name="- Loop 7">20, 20, 10, -, -, 2, no</column>
 <column name=" + Loop 7.1">8, 8, 4, -, -, 2, no</column>
-<column name="- Loop 8">12, 12, 6, -, -, 2, no</column>
-<column name=" + Loop 8.1">4, 4, 2, -, -, 2, no</column>
 </table>
 </item>
 </section>
@@ -57,14 +55,14 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, 3, 0, 282, -</column>
+<column name="Expression">-, 3, 0, 231, -</column>
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, -, 342, -</column>
-<column name="Register">-, -, 177, -, -</column>
+<column name="Multiplexer">-, -, -, 297, -</column>
+<column name="Register">-, -, 160, -, -</column>
 <specialColumn name="Available">100, 90, 41600, 20800, 0</specialColumn>
-<specialColumn name="Utilization (%)">0, 3, ~0, 3, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 3, ~0, 2, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -87,50 +85,42 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="mul_ln14_fu_572_p2">*, 3, 0, 21, 32, 32</column>
-<column name="add_ln71_fu_499_p2">+, 0, 0, 10, 2, 1</column>
-<column name="add_ln79_fu_561_p2">+, 0, 0, 13, 4, 4</column>
-<column name="add_ln86_fu_622_p2">+, 0, 0, 13, 4, 4</column>
-<column name="i_3_fu_412_p2">+, 0, 0, 10, 2, 1</column>
-<column name="i_6_fu_460_p2">+, 0, 0, 10, 2, 1</column>
-<column name="i_7_fu_527_p2">+, 0, 0, 10, 2, 1</column>
-<column name="i_8_fu_588_p2">+, 0, 0, 10, 2, 1</column>
-<column name="i_fu_378_p2">+, 0, 0, 10, 2, 1</column>
-<column name="j_2_fu_443_p2">+, 0, 0, 10, 2, 1</column>
-<column name="j_3_fu_551_p2">+, 0, 0, 10, 2, 1</column>
-<column name="j_6_fu_612_p2">+, 0, 0, 10, 2, 1</column>
-<column name="j_fu_395_p2">+, 0, 0, 10, 2, 1</column>
+<column name="mul_ln14_fu_528_p2">*, 3, 0, 21, 32, 32</column>
+<column name="add_ln71_fu_455_p2">+, 0, 0, 10, 2, 1</column>
+<column name="add_ln79_fu_517_p2">+, 0, 0, 13, 4, 4</column>
+<column name="i_3_fu_368_p2">+, 0, 0, 10, 2, 1</column>
+<column name="i_5_fu_416_p2">+, 0, 0, 10, 2, 1</column>
+<column name="i_6_fu_483_p2">+, 0, 0, 10, 2, 1</column>
+<column name="i_fu_334_p2">+, 0, 0, 10, 2, 1</column>
+<column name="j_2_fu_399_p2">+, 0, 0, 10, 2, 1</column>
+<column name="j_3_fu_507_p2">+, 0, 0, 10, 2, 1</column>
+<column name="j_fu_351_p2">+, 0, 0, 10, 2, 1</column>
 <column name="sa_pe_ba_d0">+, 0, 0, 39, 32, 32</column>
-<column name="icmp_ln35_fu_372_p2">icmp, 0, 0, 9, 2, 3</column>
-<column name="icmp_ln43_fu_389_p2">icmp, 0, 0, 9, 2, 3</column>
-<column name="icmp_ln51_fu_406_p2">icmp, 0, 0, 9, 2, 3</column>
-<column name="icmp_ln57_fu_437_p2">icmp, 0, 0, 9, 2, 3</column>
-<column name="icmp_ln63_fu_454_p2">icmp, 0, 0, 9, 2, 3</column>
-<column name="icmp_ln71_fu_493_p2">icmp, 0, 0, 9, 2, 3</column>
-<column name="icmp_ln77_fu_521_p2">icmp, 0, 0, 9, 2, 3</column>
-<column name="icmp_ln78_fu_545_p2">icmp, 0, 0, 9, 2, 3</column>
-<column name="icmp_ln84_fu_582_p2">icmp, 0, 0, 9, 2, 3</column>
-<column name="icmp_ln85_fu_606_p2">icmp, 0, 0, 9, 2, 3</column>
-<column name="or_ln65_fu_479_p2">or, 0, 0, 3, 3, 1</column>
-<column name="xor_ln72_fu_510_p2">xor, 0, 0, 3, 2, 3</column>
+<column name="icmp_ln35_fu_328_p2">icmp, 0, 0, 9, 2, 3</column>
+<column name="icmp_ln43_fu_345_p2">icmp, 0, 0, 9, 2, 3</column>
+<column name="icmp_ln51_fu_362_p2">icmp, 0, 0, 9, 2, 3</column>
+<column name="icmp_ln57_fu_393_p2">icmp, 0, 0, 9, 2, 3</column>
+<column name="icmp_ln63_fu_410_p2">icmp, 0, 0, 9, 2, 3</column>
+<column name="icmp_ln71_fu_449_p2">icmp, 0, 0, 9, 2, 3</column>
+<column name="icmp_ln77_fu_477_p2">icmp, 0, 0, 9, 2, 3</column>
+<column name="icmp_ln78_fu_501_p2">icmp, 0, 0, 9, 2, 3</column>
+<column name="or_ln65_fu_435_p2">or, 0, 0, 3, 3, 1</column>
+<column name="xor_ln72_fu_466_p2">xor, 0, 0, 3, 2, 3</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">105, 22, 1, 22</column>
-<column name="i_0_reg_260">9, 2, 2, 4</column>
-<column name="i_1_reg_282">9, 2, 2, 4</column>
-<column name="i_2_reg_305">9, 2, 2, 4</column>
-<column name="i_4_reg_328">9, 2, 2, 4</column>
-<column name="i_5_reg_350">9, 2, 2, 4</column>
-<column name="j_0_reg_271">9, 2, 2, 4</column>
-<column name="j_1_reg_294">9, 2, 2, 4</column>
-<column name="j_3_0_reg_316">9, 2, 2, 4</column>
-<column name="j_4_reg_339">9, 2, 2, 4</column>
-<column name="j_5_reg_361">9, 2, 2, 4</column>
+<column name="ap_NS_fsm">93, 19, 1, 19</column>
+<column name="i_0_reg_238">9, 2, 2, 4</column>
+<column name="i_1_reg_260">9, 2, 2, 4</column>
+<column name="i_2_reg_283">9, 2, 2, 4</column>
+<column name="i_4_reg_306">9, 2, 2, 4</column>
+<column name="j_0_reg_249">9, 2, 2, 4</column>
+<column name="j_1_reg_272">9, 2, 2, 4</column>
+<column name="j_3_0_reg_294">9, 2, 2, 4</column>
+<column name="j_4_reg_317">9, 2, 2, 4</column>
 <column name="sa_buffer_a_li_ready_address0">15, 3, 1, 3</column>
 <column name="sa_buffer_b_tw_ready_address0">15, 3, 1, 3</column>
-<column name="sa_pe_ba_address0">15, 3, 2, 6</column>
 <column name="sa_pe_bw_address0">15, 3, 2, 6</column>
 <column name="sa_pe_li_address0">21, 4, 2, 8</column>
 <column name="sa_pe_li_d0">15, 3, 32, 96</column>
@@ -141,39 +131,33 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln71_reg_719">2, 0, 2, 0</column>
-<column name="ap_CS_fsm">21, 0, 21, 0</column>
-<column name="i_0_reg_260">2, 0, 2, 0</column>
-<column name="i_1_reg_282">2, 0, 2, 0</column>
-<column name="i_2_reg_305">2, 0, 2, 0</column>
-<column name="i_3_reg_669">2, 0, 2, 0</column>
-<column name="i_4_reg_328">2, 0, 2, 0</column>
-<column name="i_5_reg_350">2, 0, 2, 0</column>
-<column name="i_6_reg_701">2, 0, 2, 0</column>
-<column name="i_7_reg_732">2, 0, 2, 0</column>
-<column name="i_8_reg_790">2, 0, 2, 0</column>
-<column name="i_reg_636">2, 0, 2, 0</column>
-<column name="icmp_ln35_reg_632">1, 0, 1, 0</column>
-<column name="icmp_ln43_reg_649">1, 0, 1, 0</column>
-<column name="j_0_reg_271">2, 0, 2, 0</column>
-<column name="j_1_reg_294">2, 0, 2, 0</column>
-<column name="j_2_reg_682">2, 0, 2, 0</column>
-<column name="j_3_0_reg_316">2, 0, 2, 0</column>
-<column name="j_3_reg_745">2, 0, 2, 0</column>
-<column name="j_4_reg_339">2, 0, 2, 0</column>
-<column name="j_5_reg_361">2, 0, 2, 0</column>
-<column name="j_6_reg_803">2, 0, 2, 0</column>
-<column name="j_reg_653">2, 0, 2, 0</column>
-<column name="mul_ln14_reg_782">32, 0, 32, 0</column>
-<column name="sa_pe_ba_addr_reg_767">2, 0, 2, 0</column>
-<column name="sa_pe_li_load_reg_772">32, 0, 32, 0</column>
-<column name="sa_pe_tw_load_reg_777">32, 0, 32, 0</column>
-<column name="tmp_1_reg_706">2, 0, 3, 1</column>
-<column name="zext_ln58_reg_687">2, 0, 64, 62</column>
-<column name="zext_ln78_reg_737">2, 0, 4, 2</column>
-<column name="zext_ln79_1_reg_750">4, 0, 64, 60</column>
-<column name="zext_ln85_reg_795">2, 0, 4, 2</column>
-<column name="zext_ln86_1_reg_808">4, 0, 64, 60</column>
+<column name="add_ln71_reg_625">2, 0, 2, 0</column>
+<column name="ap_CS_fsm">18, 0, 18, 0</column>
+<column name="i_0_reg_238">2, 0, 2, 0</column>
+<column name="i_1_reg_260">2, 0, 2, 0</column>
+<column name="i_2_reg_283">2, 0, 2, 0</column>
+<column name="i_3_reg_575">2, 0, 2, 0</column>
+<column name="i_4_reg_306">2, 0, 2, 0</column>
+<column name="i_5_reg_607">2, 0, 2, 0</column>
+<column name="i_6_reg_638">2, 0, 2, 0</column>
+<column name="i_reg_542">2, 0, 2, 0</column>
+<column name="icmp_ln35_reg_538">1, 0, 1, 0</column>
+<column name="icmp_ln43_reg_555">1, 0, 1, 0</column>
+<column name="j_0_reg_249">2, 0, 2, 0</column>
+<column name="j_1_reg_272">2, 0, 2, 0</column>
+<column name="j_2_reg_588">2, 0, 2, 0</column>
+<column name="j_3_0_reg_294">2, 0, 2, 0</column>
+<column name="j_3_reg_651">2, 0, 2, 0</column>
+<column name="j_4_reg_317">2, 0, 2, 0</column>
+<column name="j_reg_559">2, 0, 2, 0</column>
+<column name="mul_ln14_reg_688">32, 0, 32, 0</column>
+<column name="sa_pe_ba_addr_reg_673">2, 0, 2, 0</column>
+<column name="sa_pe_li_load_reg_678">32, 0, 32, 0</column>
+<column name="sa_pe_tw_load_reg_683">32, 0, 32, 0</column>
+<column name="tmp_1_reg_612">2, 0, 3, 1</column>
+<column name="zext_ln58_reg_593">2, 0, 64, 62</column>
+<column name="zext_ln78_reg_643">2, 0, 4, 2</column>
+<column name="zext_ln79_1_reg_656">4, 0, 64, 60</column>
 </table>
 </item>
 </section>
@@ -234,6 +218,12 @@
 <column name="sa_ba_sa_ce0">out, 1, ap_memory, sa_ba_sa, array</column>
 <column name="sa_ba_sa_we0">out, 1, ap_memory, sa_ba_sa, array</column>
 <column name="sa_ba_sa_d0">out, 32, ap_memory, sa_ba_sa, array</column>
+<column name="sa_ba_sa_q0">in, 32, ap_memory, sa_ba_sa, array</column>
+<column name="sa_ba_sa_address1">out, 2, ap_memory, sa_ba_sa, array</column>
+<column name="sa_ba_sa_ce1">out, 1, ap_memory, sa_ba_sa, array</column>
+<column name="sa_ba_sa_we1">out, 1, ap_memory, sa_ba_sa, array</column>
+<column name="sa_ba_sa_d1">out, 32, ap_memory, sa_ba_sa, array</column>
+<column name="sa_ba_sa_q1">in, 32, ap_memory, sa_ba_sa, array</column>
 </table>
 </item>
 </section>

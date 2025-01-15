@@ -1,7 +1,7 @@
 INFO: Applying HLS Y2K22 patch v1.2 for IP revision
 INFO: [HLS 200-10] Running '/home/ulisses/Tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'ulisses' on host 'ulisses-thinkpad' (Linux_x86_64 version 5.15.0-130-generic) on Tue Jan 14 20:24:05 -03 2025
+INFO: [HLS 200-10] For user 'ulisses' on host 'ulisses-thinkpad' (Linux_x86_64 version 5.15.0-130-generic) on Wed Jan 15 16:36:26 -03 2025
 INFO: [HLS 200-10] On os Ubuntu 20.04.6 LTS
 INFO: [HLS 200-10] In directory '/home/ulisses/Projects/masters-degree/geem/geem_hls/solution1/csim/build'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_ulisses/80441736897045391906
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_ulisses/568951736969786203318
 INFO: [APCC 202-1] APCC is done.

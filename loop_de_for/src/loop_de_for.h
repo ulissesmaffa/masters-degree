@@ -8,7 +8,7 @@ typedef struct {
 } LDF;
 
 void loop_init(LDF *ldf);
-void loop_compute(LDF *ldf, int a, int b, int i, int j);
+void loop_compute(LDF *ldf);
 void loop_show_ba(LDF *ldf);
 
 #endif

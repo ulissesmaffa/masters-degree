@@ -80,12 +80,15 @@ void sa_compute(SA *sa) {
         }
     }
 
+    /*
+    Inutilizado, função específica que salva
     // 8. Atualiza acumuladores SA
     for(i=0;i<N;i++){
         for(j=0;j<N;j++){
             sa->ba_sa[i][j] = sa->pe[i][j].ba;
         }
     }
+    */
 }
 
 void sa_reset(SA *sa) {
@@ -97,10 +100,11 @@ void sa_reset(SA *sa) {
 
         for (j=0;j<N;j++) {
             pe_reset(&sa->pe[i][j]);
-            sa->ba_sa[i][j] = 0;
+            //sa->ba_sa[i][j] = 0;
         }
     }
 }
+
 
 void sa_show_result(SA *sa){
     int i,j;
@@ -108,9 +112,20 @@ void sa_show_result(SA *sa){
     for(i=0;i<N;i++) {
         for(j=0;j<N;j++) {
             printf("%d ", sa->ba_sa[i][j]);
+            //printf("%d ", sa->pe[i][j].ba);
         }
         printf("\n");
     }
+}
+
+void sa_save_results(SA *sa){
+    int i,j;
+
+    for(i=0;i<N;i++) {
+        for(j=0;j<N;j++) {
+            sa->ba_sa[i][j] = sa->pe[i][j].ba;
+        }
+    }  
 }
 
 /*

@@ -85,6 +85,7 @@ void compute_sa_waves(
 
     // Mostra o resultado
     printf("\nSA Results:\n");
+    sa_save_results(sa);
     sa_show_result(sa);
     printf("\n");
 }

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'sa_compute'" level="0">
-<item name = "Date">Tue Jan 14 20:24:25 2025
+<item name = "Date">Wed Jan 15 16:36:46 2025
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">geem_hls</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">4, 66, 40.000 ns, 0.660 us, 4, 66, none</column>
+<column name="">4, 53, 40.000 ns, 0.530 us, 4, 53, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -43,8 +43,6 @@
 <column name="- Loop 6">4, 4, 2, -, -, 2, no</column>
 <column name="- Loop 7">20, 20, 10, -, -, 2, no</column>
 <column name=" + Loop 7.1">8, 8, 4, -, -, 2, no</column>
-<column name="- Loop 8">12, 12, 6, -, -, 2, no</column>
-<column name=" + Loop 8.1">4, 4, 2, -, -, 2, no</column>
 </table>
 </item>
 </section>

@@ -18,7 +18,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../src/geem_test.c ../../../../src/geem_sa.c ../../../../src/geem_pe.c
+HLS_SOURCES = ../../../../src/geem_test.c ../../../../src/geem_pe.c ../../../../src/geem_sa.c
 
 TARGET := csim.exe
 
@@ -80,14 +80,14 @@ $(ObjDir)/geem_test.o: ../../../../src/geem_test.c $(ObjDir)/.dir
 
 -include $(ObjDir)/geem_test.d
 
-$(ObjDir)/geem_sa.o: ../../../../src/geem_sa.c $(ObjDir)/.dir
-	$(Echo) "   Compiling(apcc) ../../../../src/geem_sa.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(AUTOCC) -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/geem_sa.d
-
 $(ObjDir)/geem_pe.o: ../../../../src/geem_pe.c $(ObjDir)/.dir
 	$(Echo) "   Compiling(apcc) ../../../../src/geem_pe.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(AUTOCC) -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/geem_pe.d
+
+$(ObjDir)/geem_sa.o: ../../../../src/geem_sa.c $(ObjDir)/.dir
+	$(Echo) "   Compiling(apcc) ../../../../src/geem_sa.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(AUTOCC) -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/geem_sa.d

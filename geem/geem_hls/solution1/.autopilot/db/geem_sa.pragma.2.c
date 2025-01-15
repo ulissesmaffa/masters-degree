@@ -914,8 +914,8 @@ void sa_compute(SA *sa);
 void sa_reset(SA *sa);
 void sa_add_to_buffer_a(SA *sa, int i, int value);
 void sa_add_to_buffer_b(SA *sa, int j, int value);
-
 void sa_show_result(SA *sa);
+void sa_save_results(SA *sa);
 # 3 "src/geem_sa.c" 2
 
 void sa_init(SA *sa) {
@@ -996,15 +996,8 @@ void sa_compute(SA *sa) {
             pe_compute(&sa->pe[i][j]);
         }
     }
-
-
-    for(i=0;i<2;i++){
-        for(j=0;j<2;j++){
-            sa->ba_sa[i][j] = sa->pe[i][j].ba;
-        }
-    }
+# 92 "src/geem_sa.c"
 }
-
 
 void sa_reset(SA *sa) {
     int i,j;
@@ -1015,7 +1008,7 @@ void sa_reset(SA *sa) {
 
         for (j=0;j<2;j++) {
             pe_reset(&sa->pe[i][j]);
-            sa->ba_sa[i][j] = 0;
+
         }
     }
 }
@@ -1027,7 +1020,18 @@ void sa_show_result(SA *sa){
     for(i=0;i<2;i++) {
         for(j=0;j<2;j++) {
             printf("%d ", sa->ba_sa[i][j]);
+
         }
         printf("\n");
+    }
+}
+
+void sa_save_results(SA *sa){
+    int i,j;
+
+    for(i=0;i<2;i++) {
+        for(j=0;j<2;j++) {
+            sa->ba_sa[i][j] = sa->pe[i][j].ba;
+        }
     }
 }
