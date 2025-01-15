@@ -1,6 +1,6 @@
 INFO: Applying HLS Y2K22 patch v1.2 for IP revision
 INFO: [HLS 200-10] Running '/home/ulisses/Tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/vivado_hls'
-INFO: [HLS 200-10] For user 'ulisses' on host 'ulisses-thinkpad' (Linux_x86_64 version 5.15.0-124-generic) on Sun Dec 29 21:03:12 -03 2024
+INFO: [HLS 200-10] For user 'ulisses' on host 'ulisses-thinkpad' (Linux_x86_64 version 5.15.0-130-generic) on Tue Jan 14 20:54:40 -03 2025
 INFO: [HLS 200-10] On os Ubuntu 20.04.6 LTS
 INFO: [HLS 200-10] In directory '/home/ulisses/Projects/masters-degree/geem'
 Sourcing Tcl script '/home/ulisses/Projects/masters-degree/geem/geem_hls/solution1/cosim.tcl'
@@ -15,51 +15,51 @@ INFO: [COSIM 212-14] Instrumenting C test bench ...
    Compiling (apcc) geem_pe.c_pre.c.tb.c
 INFO: Applying HLS Y2K22 patch v1.2 for IP revision
 INFO: [HLS 200-10] Running '/home/ulisses/Tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'ulisses' on host 'ulisses-thinkpad' (Linux_x86_64 version 5.15.0-124-generic) on Sun Dec 29 21:03:19 -03 2024
+INFO: [HLS 200-10] For user 'ulisses' on host 'ulisses-thinkpad' (Linux_x86_64 version 5.15.0-130-generic) on Tue Jan 14 20:54:48 -03 2025
 INFO: [HLS 200-10] On os Ubuntu 20.04.6 LTS
 INFO: [HLS 200-10] In directory '/home/ulisses/Projects/masters-degree/geem/geem_hls/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_ulisses/14015911735516999479031
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_ulisses/128331736898888137150
 INFO: [APCC 202-1] APCC is done.
    Compiling (apcc) geem_sa.c_pre.c.tb.c
 INFO: Applying HLS Y2K22 patch v1.2 for IP revision
 INFO: [HLS 200-10] Running '/home/ulisses/Tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'ulisses' on host 'ulisses-thinkpad' (Linux_x86_64 version 5.15.0-124-generic) on Sun Dec 29 21:03:22 -03 2024
+INFO: [HLS 200-10] For user 'ulisses' on host 'ulisses-thinkpad' (Linux_x86_64 version 5.15.0-130-generic) on Tue Jan 14 20:54:51 -03 2025
 INFO: [HLS 200-10] On os Ubuntu 20.04.6 LTS
 INFO: [HLS 200-10] In directory '/home/ulisses/Projects/masters-degree/geem/geem_hls/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_ulisses/14016511735517002857443
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_ulisses/128881736898891887091
 INFO: [APCC 202-1] APCC is done.
    Compiling (apcc) geem_test.c_pre.c.tb.c
 INFO: Applying HLS Y2K22 patch v1.2 for IP revision
 INFO: [HLS 200-10] Running '/home/ulisses/Tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'ulisses' on host 'ulisses-thinkpad' (Linux_x86_64 version 5.15.0-124-generic) on Sun Dec 29 21:03:26 -03 2024
+INFO: [HLS 200-10] For user 'ulisses' on host 'ulisses-thinkpad' (Linux_x86_64 version 5.15.0-130-generic) on Tue Jan 14 20:54:55 -03 2025
 INFO: [HLS 200-10] On os Ubuntu 20.04.6 LTS
 INFO: [HLS 200-10] In directory '/home/ulisses/Projects/masters-degree/geem/geem_hls/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_ulisses/14017101735517006253659
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_ulisses/129431736898895660167
 INFO: [APCC 202-1] APCC is done.
    Generating cosim.tv.exe
 INFO: [COSIM 212-302] Starting C TB testing ... 
 COMPUTE SA WAVES FUNCTION: SA 2X2
 
-Insert Buffer A: li_0[0]=3 li_1[0]=0 
-Insert Buffer B: tw_0[0]=11 tw_1[0]=0 
+Insert Buffer A: li_0[0]=2 li_1[0]=0 
+Insert Buffer B: tw_0[0]=9 tw_1[0]=0 
 Computing SA wave [0]
 
-Insert Buffer A: li_0[1]=2 li_1[1]=6 
-Insert Buffer B: tw_0[1]=9 tw_1[1]=12 
+Insert Buffer A: li_0[1]=1 li_1[1]=4 
+Insert Buffer B: tw_0[1]=7 tw_1[1]=10 
 Computing SA wave [1]
 
-Insert Buffer A: li_0[2]=1 li_1[2]=5 
-Insert Buffer B: tw_0[2]=7 tw_1[2]=10 
+Insert Buffer A: li_0[2]=0 li_1[2]=3 
+Insert Buffer B: tw_0[2]=0 tw_1[2]=8 
 Computing SA wave [2]
 
-Insert Buffer A: li_0[3]=0 li_1[3]=4 
-Insert Buffer B: tw_0[3]=0 tw_1[3]=8 
+Insert Buffer A: li_0[3]=0 li_1[3]=0 
+Insert Buffer B: tw_0[3]=0 tw_1[3]=0 
 Computing SA wave [3]
 
 Insert Buffer A: li_0[4]=0 li_1[4]=0 
@@ -67,8 +67,8 @@ Insert Buffer B: tw_0[4]=0 tw_1[4]=0
 Computing SA wave [4]
 
 SA Results:
-58 64 
-139 154 
+25 28 
+57 64 
 
 INFO: [COSIM 212-333] Generating C post check test bench ...
 INFO: [COSIM 212-12] Generating RTL test bench ...
@@ -135,7 +135,7 @@ Built simulation snapshot sa_compute
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 source /home/ulisses/Projects/masters-degree/geem/geem_hls/solution1/sim/verilog/xsim.dir/sa_compute/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Sun Dec 29 21:03:33 2024...
+INFO: [Common 17-206] Exiting Webtalk at Tue Jan 14 20:55:02 2025...
 
 ****** xsim v2019.2 (64-bit)
   **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
@@ -143,3 +143,4 @@ INFO: [Common 17-206] Exiting Webtalk at Sun Dec 29 21:03:33 2024...
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 start_gui
+Gtk-Message: 21:40:57.078: Failed to load module "canberra-gtk-module"

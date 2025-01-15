@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG  -rdynamic CMakeFiles/geem_tb.dir/src/geem_pe.c.o CMakeFiles/geem_tb.dir/src/geem_sa.c.o CMakeFiles/geem_tb.dir/src/geem_test.c.o  -o geem_tb 

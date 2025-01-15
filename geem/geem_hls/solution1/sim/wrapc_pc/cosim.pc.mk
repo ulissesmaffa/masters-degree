@@ -64,10 +64,10 @@ $(ObjDir)/geem_test.c_pre.c.tb.o : geem_test.c_pre.c.tb.c $(ObjDir)/.dir
 	$(Echo) "   Compiling (apcc) geem_test.c_pre.c.tb.c" $(AVE_DIR_DLOG)
 	$(Verb) $(AUTOCC) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
 
-$(ObjDir)/geem_sa.c_pre.c.tb.o : geem_sa.c_pre.c.tb.c $(ObjDir)/.dir
-	$(Echo) "   Compiling (apcc) geem_sa.c_pre.c.tb.c" $(AVE_DIR_DLOG)
-	$(Verb) $(AUTOCC) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
-
 $(ObjDir)/geem_pe.c_pre.c.tb.o : geem_pe.c_pre.c.tb.c $(ObjDir)/.dir
 	$(Echo) "   Compiling (apcc) geem_pe.c_pre.c.tb.c" $(AVE_DIR_DLOG)
+	$(Verb) $(AUTOCC) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
+
+$(ObjDir)/geem_sa.c_pre.c.tb.o : geem_sa.c_pre.c.tb.c $(ObjDir)/.dir
+	$(Echo) "   Compiling (apcc) geem_sa.c_pre.c.tb.c" $(AVE_DIR_DLOG)
 	$(Verb) $(AUTOCC) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \

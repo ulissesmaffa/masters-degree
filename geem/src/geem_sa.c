@@ -88,7 +88,6 @@ void sa_compute(SA *sa) {
     }
 }
 
-// zerar registradores e atribuir controle para ready=false
 void sa_reset(SA *sa) {
     int i,j;
 
@@ -103,7 +102,6 @@ void sa_reset(SA *sa) {
     }
 }
 
-// mostra valor em acumuladores do SA
 void sa_show_result(SA *sa){
     int i,j;
 

@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ulisses/Projects/masters-degree/loop_de_for/src/loop_de_for.h
+
+/home/ulisses/Projects/masters-degree/loop_de_for/src/loop_de_for_test.c
+stdio.h
+-
+loop_de_for.h
+/home/ulisses/Projects/masters-degree/loop_de_for/src/loop_de_for.h
+

@@ -1,0 +1,3 @@
+/home/ulisses/Projects/masters-degree/geem/build/CMakeFiles/edit_cache.dir
+/home/ulisses/Projects/masters-degree/geem/build/CMakeFiles/rebuild_cache.dir
+/home/ulisses/Projects/masters-degree/geem/build/CMakeFiles/geem_tb.dir

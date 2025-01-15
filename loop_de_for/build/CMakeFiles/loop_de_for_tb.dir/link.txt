@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG  -rdynamic CMakeFiles/loop_de_for_tb.dir/src/loop_de_for.c.o CMakeFiles/loop_de_for_tb.dir/src/loop_de_for_test.c.o  -o loop_de_for_tb 

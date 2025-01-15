@@ -784,7 +784,8 @@ void sa_compute(SA *sa);
 void sa_reset(SA *sa);
 void sa_add_to_buffer_a(SA *sa, int i, int value);
 void sa_add_to_buffer_b(SA *sa, int j, int value);
-void sa_top(SA *sa, int i, int value_a, int j, int value_b);
+
+void sa_show_result(SA *sa);
 # 3 "/home/ulisses/Projects/masters-degree/geem/src/geem_sa.c" 2
 
 void sa_init(SA *sa) {

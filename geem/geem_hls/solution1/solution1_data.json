@@ -12,9 +12,10 @@
     "Package": "-cpg236",
     "Speed": "-1"
   },
-  "HlsSolution": {
-    
-  },
+  "HlsSolution": {"Config": [
+      "config_export -format=ip_catalog",
+      "config_export -rtl=verilog"
+    ]},
   "Args": {"sa": {
       "index": "0",
       "type": {
@@ -204,8 +205,8 @@
   },
   "Files": {
     "CSource": [
-      "..\/..\/src\/geem_sa.c",
-      "..\/..\/src\/geem_pe.c"
+      "..\/..\/src\/geem_pe.c",
+      "..\/..\/src\/geem_sa.c"
     ],
     "Vhdl": ["impl\/vhdl\/sa_compute.vhd"],
     "Verilog": ["impl\/verilog\/sa_compute.v"],
@@ -879,7 +880,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2024-12-29 21:02:19 -03",
+    "Time": "2025-01-14 20:24:26 -03",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.2"
   }
